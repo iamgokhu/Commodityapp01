@@ -668,3 +668,37 @@
 2026-07-19 11:10:46,164 [ERROR] commodity_os.github_integration.github: Commit failed: [WinError 2] The system cannot find the file specified
 2026-07-19 11:10:46,165 [INFO] commodity_os: Cycle 1 complete - Health: 100/100, Quality: 100.00%
 2026-07-19 11:10:46,165 [INFO] commodity_os: Next cycle in 3600s...
+2026-07-19 11:39:59,809 [INFO] commodity_os: === Initializing CommodityOS ===
+2026-07-19 11:39:59,809 [INFO] commodity_os.core.orchestrator: Resource-Aware Orchestrator initializing...
+2026-07-19 11:40:04,361 [INFO] commodity_os.core.orchestrator: Resource check: CPU=34.5% RAM=94.7% Disk=41.0% Health=20.0
+2026-07-19 11:40:04,361 [INFO] commodity_os.monitoring.monitor: MonitoringSystem initializing...
+2026-07-19 11:40:04,361 [INFO] commodity_os.monitoring.monitor: Checkpoint loaded. Last stage index: 0
+2026-07-19 11:40:04,362 [INFO] commodity_os.monitoring.monitor: MonitoringSystem ready. 72 components tracked.
+2026-07-19 11:40:04,362 [INFO] commodity_os.meta_agents.orchestrator_agent: System Orchestrator Agent initialized
+2026-07-19 11:40:04,362 [INFO] commodity_os.meta_agents.quality_agent: Quality Agent initialized
+2026-07-19 11:40:04,362 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence Agent initialized
+2026-07-19 11:40:04,362 [INFO] commodity_os.github_integration.github: GitHub Integration initialized
+2026-07-19 11:40:04,362 [INFO] commodity_os: === CommodityOS initialized ===
+2026-07-19 11:40:04,362 [INFO] commodity_os: Starting automated collection pipeline...
+2026-07-19 11:40:04,362 [INFO] commodity_os: 
+============================================================
+2026-07-19 11:40:04,362 [INFO] commodity_os: CYCLE 1 START
+2026-07-19 11:40:04,362 [INFO] commodity_os: ============================================================
+2026-07-19 11:40:04,363 [INFO] commodity_os.meta_agents.orchestrator_agent: Cycle 1: Planning execution with mode=full
+2026-07-19 11:40:08,561 [INFO] commodity_os.core.orchestrator: Task api_health_check queued (priority=CRITICAL)
+2026-07-19 11:40:11,340 [INFO] commodity_os.core.orchestrator: Task resource_detection queued (priority=CRITICAL)
+2026-07-19 11:40:15,496 [INFO] commodity_os.core.orchestrator: Task crawl_indiamart queued (priority=HIGH)
+2026-07-19 11:40:19,780 [INFO] commodity_os.core.orchestrator: Task crawl_tradeindia queued (priority=HIGH)
+2026-07-19 11:40:21,498 [INFO] commodity_os.core.orchestrator: Task crawl_agmarknet queued (priority=HIGH)
+2026-07-19 11:40:23,905 [INFO] commodity_os.core.orchestrator: Task crawl_apmc queued (priority=MEDIUM)
+2026-07-19 11:40:26,161 [INFO] commodity_os.core.orchestrator: Task crawl_export_dir queued (priority=MEDIUM)
+2026-07-19 11:40:28,461 [INFO] commodity_os.core.orchestrator: Task data_validation queued (priority=HIGH)
+2026-07-19 11:40:31,663 [INFO] commodity_os.core.orchestrator: Task data_dedup queued (priority=HIGH)
+2026-07-19 11:40:36,018 [INFO] commodity_os.core.orchestrator: Task data_cleaning queued (priority=HIGH)
+2026-07-19 11:40:40,223 [INFO] commodity_os.core.orchestrator: Task data_normalization deferred (low resources)
+2026-07-19 11:40:42,943 [INFO] commodity_os.core.orchestrator: Task entity_recognition queued (priority=MEDIUM)
+2026-07-19 11:40:47,147 [INFO] commodity_os.core.orchestrator: Task commodity_classification deferred (low resources)
+2026-07-19 11:40:50,256 [INFO] commodity_os.core.orchestrator: Task sector_classification queued (priority=MEDIUM)
+2026-07-19 11:40:54,494 [INFO] commodity_os.core.orchestrator: Task knowledge_graph_update deferred (low resources)
+2026-07-19 11:40:56,780 [INFO] commodity_os.core.orchestrator: Task trend_analysis queued (priority=LOW)
+2026-07-19 11:40:59,233 [INFO] commodity_os.core.orchestrator: Task risk_analysis queued (priority=LOW)

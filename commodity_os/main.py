@@ -7,6 +7,7 @@ Main entrypoint that orchestrates the full pipeline:
 import asyncio
 import json
 import logging
+import shutil
 import sys
 import time
 from pathlib import Path
@@ -18,8 +19,12 @@ from commodity_os.meta_agents.orchestrator_agent import SystemOrchestratorAgent
 from commodity_os.meta_agents.quality_agent import QualityAgent
 from commodity_os.meta_agents.executive_agent import ExecutiveIntelligenceAgent
 from commodity_os.github_integration.github import GitHubIntegration
+from commodity_os.dashboard.generator import DashboardGenerator
 
 CONFIG_PATH = Path(__file__).parent / "config.json"
+DATA_DIR = Path(__file__).resolve().parent.parent / "data"
+OUTPUT_DIR = Path(__file__).resolve().parent.parent / "output"
+DOCS_DIR = Path(__file__).resolve().parent.parent / "docs"
 
 logging.basicConfig(
     level=logging.INFO,
@@ -37,6 +42,39 @@ def load_config() -> dict:
         with open(CONFIG_PATH) as f:
             return json.load(f)
     return {}
+
+
+def load_existing_data() -> list:
+    entities_file = OUTPUT_DIR / "all_entities.json"
+    if entities_file.exists():
+        with open(entities_file) as f:
+            raw = json.load(f)
+        entities = []
+        for e in raw:
+            geo = e.get('geography', {})
+            products = e.get('product_categories', [])
+            prices = e.get('prices', [])
+            price = prices[0] if prices else {}
+            contact = e.get('contact_details', {})
+            entities.append({
+                'name': e.get('name', 'N/A'),
+                'type': e.get('entity_type', 'Unknown'),
+                'product': products[0] if products else 'Unknown',
+                'state': geo.get('state', 'Unknown'),
+                'district': geo.get('district') or 'Unknown',
+                'taluk': geo.get('taluk') or 'Unknown',
+                'phone': contact.get('phone') or contact.get('mobile') or 'N/A',
+                'email': contact.get('email') or 'N/A',
+                'website': contact.get('website') or 'N/A',
+                'price': price.get('market_price_today', 0),
+                'unit': price.get('unit', 'KG'),
+                'source': e.get('data_sources', ['unknown'])[0].replace('Source', '').lower() if e.get('data_sources') else 'unknown',
+                'year': e.get('year_established', 'N/A'),
+                'gst': e.get('gst_number') or 'N/A',
+                'confidence': e.get('confidence_score', 0),
+            })
+        return entities
+    return []
 
 
 class CommodityOS:
@@ -120,8 +158,23 @@ class CommodityOS:
                     ]),
                 }, source="main")
 
+                entities = load_existing_data()
+                if entities:
+                    dash_gen = DashboardGenerator()
+                    consolidated = {"entities": entities, "stats": {"total": len(entities)}}
+                    await dash_gen.generate(entities, consolidated)
+                    src_html = OUTPUT_DIR / "dashboard.html"
+                    if src_html.exists():
+                        shutil.copy2(src_html, DOCS_DIR / "index.html")
+                        logger.info(f"Dashboard copied to docs/")
+                    data_file = DOCS_DIR / "data.json"
+                    with open(data_file, 'w') as f:
+                        json.dump(entities, f)
+                    logger.info(f"Data exported to docs/data.json ({len(entities)} entities)")
+
                 if self.config.get("auto_publish", True):
-                    await self.github.full_publish_cycle()
+                    await self.github.auto_commit(f"Update dashboard - cycle {self._cycle_count}")
+                    await self.github.push()
 
                 dash = self.monitoring.get_health_dashboard()
                 health = dash.get("overall_health_score", 0)
