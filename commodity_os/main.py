@@ -211,7 +211,7 @@ class CommodityOS:
             "executive": self.executive_agent.get_executive_summary(),
             "github": self.github.get_status(),
             "monitoring": self.monitoring.get_health_dashboard(),
-            "crawlers": len(self.integration.crawler_manager.list_crawlers()),
+            "spiders": len(self.integration.spider_manager.spiders),
             "graph_stats": self.integration.graph.get_stats(),
         }
 

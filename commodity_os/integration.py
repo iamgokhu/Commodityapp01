@@ -1,6 +1,6 @@
-"""Integration layer: Crawlers → Data Pipeline → Knowledge Graph → Dashboard → GitHub.
+"""Integration layer: CrawlSpiders → Data Pipeline → Knowledge Graph → Dashboard → GitHub.
 
-Wires all 28 crawlers to the data pipeline, processes results through the
+Wires 10 CrawlSpiders (real HTTP-based) to the data pipeline, processes results through the
 knowledge graph, generates dashboard, and publishes to GitHub Pages.
 """
 import asyncio
@@ -13,10 +13,10 @@ from typing import Any, Dict, List
 
 from commodity_os.core.events import event_bus, EventType
 from commodity_os.core.orchestrator import ResourceAwareOrchestrator
-from commodity_os.crawlers.base import CrawlerManager
 from commodity_os.data_pipeline.pipeline import DataPipeline
 from commodity_os.knowledge_graph.graph import KnowledgeGraph
 from commodity_os.dashboard.generator import DashboardGenerator
+from commodity_os.crawlers.spider import CrawlSpiderManager
 
 logger = logging.getLogger(__name__)
 
@@ -67,67 +67,19 @@ def _map_crawler_record(record: Dict[str, Any]) -> Dict[str, Any]:
 # ---------------------------------------------------------------------------
 
 class IntegrationOrchestrator:
-    """Wires the full pipeline: Crawl → Process → Graph → Dashboard."""
+    """Wires the full pipeline: CrawlSpider → Process → Graph → Dashboard."""
 
     def __init__(self, config: dict = None):
         self.config = config or {}
-        self.crawler_manager = CrawlerManager()
+        self.spider_manager = CrawlSpiderManager()
         self.pipeline = DataPipeline()
         self.graph = KnowledgeGraph()
         self.orchestrator = ResourceAwareOrchestrator()
-        self._register_all_crawlers()
-
-    def _register_all_crawlers(self):
-        """Register all 28 crawlers in the CrawlerManager."""
-        from commodity_os.crawlers.base import (
-            IndiaMARTCrawler, TradeIndiaCrawler, AgMarkNetCrawler, APMCCrawler,
-            ExportDirectoryCrawler, AmazonBusinessCrawler, FlipkartWholesaleCrawler,
-            GovernmentAPICrawler, LinkedInCrawler, NewsCrawler,
-            JioMartCrawler, DMartCrawler, BigBasketCrawler, BlinkitCrawler,
-            ZeptoCrawler, SwiggyInstamartCrawler, RelianceFreshCrawler,
-            MoreRetailCrawler, SpencersCrawler, WalmartGlobalCrawler,
-            CostcoGlobalCrawler, CarrefourGlobalCrawler, TescoGlobalCrawler,
-            AlibabaCrawler, AmazonGlobalCrawler, SeafoodExporterCrawler,
-            CorporateFarmCrawler, MarineHarvestCrawler,
-        )
-        crawlers = [
-            IndiaMARTCrawler(),
-            TradeIndiaCrawler(),
-            AgMarkNetCrawler(),
-            APMCCrawler(),
-            ExportDirectoryCrawler(),
-            AmazonBusinessCrawler(),
-            FlipkartWholesaleCrawler(),
-            GovernmentAPICrawler(),
-            LinkedInCrawler(),
-            NewsCrawler(),
-            JioMartCrawler(),
-            DMartCrawler(),
-            BigBasketCrawler(),
-            BlinkitCrawler(),
-            ZeptoCrawler(),
-            SwiggyInstamartCrawler(),
-            RelianceFreshCrawler(),
-            MoreRetailCrawler(),
-            SpencersCrawler(),
-            WalmartGlobalCrawler(),
-            CostcoGlobalCrawler(),
-            CarrefourGlobalCrawler(),
-            TescoGlobalCrawler(),
-            AlibabaCrawler(),
-            AmazonGlobalCrawler(),
-            SeafoodExporterCrawler(),
-            CorporateFarmCrawler(),
-            MarineHarvestCrawler(),
-        ]
-        for crawler in crawlers:
-            self.crawler_manager.register(crawler)
-        logger.info(f"Registered {len(crawlers)} crawlers")
 
     async def run_collection_cycle(self) -> Dict[str, Any]:
-        """Run a full collection cycle across all crawlers."""
+        """Run a full collection cycle across all CrawlSpiders."""
         cycle_start = time.time()
-        logger.info("=== Starting collection cycle ===")
+        logger.info("=== Starting collection cycle (CrawlSpider) ===")
 
         # 1. Run orchestrator cycle to check resources
         await self.orchestrator.initialize()
@@ -136,26 +88,8 @@ class IntegrationOrchestrator:
         logger.info(f"Resources: CPU={snap.cpu_percent:.1f}% RAM={snap.ram_percent:.1f}% "
                      f"Health={self.orchestrator.resource_monitor.get_health_score(snap):.1f}")
 
-        # 2. Collect raw data from all crawlers
-        all_raw_entities = []
-        crawler_stats = {}
-
-        for crawler_info in self.crawler_manager.list_crawlers():
-            crawler_id = crawler_info["crawler_id"]
-            crawler = self.crawler_manager.get_crawler(crawler_id)
-            if not crawler:
-                continue
-
-            try:
-                task = {"commodity": "all", "region": "all"}
-                entities = await crawler.fetch(task)
-                all_raw_entities.extend(entities)
-                crawler_stats[crawler_id] = {"entities_collected": len(entities), "status": "success"}
-                logger.info(f"Crawler {crawler_id}: {len(entities)} entities collected")
-            except Exception as e:
-                crawler_stats[crawler_id] = {"entities_collected": 0, "status": "error", "error": str(e)}
-                logger.error(f"Crawler {crawler_id} failed: {e}")
-
+        # 2. Collect raw data from all CrawlSpiders (real HTTP)
+        all_raw_entities, spider_stats = await self.spider_manager.run_all()
         logger.info(f"Total raw entities collected: {len(all_raw_entities)}")
 
         # 3. Map crawler output to data pipeline schema
@@ -251,7 +185,7 @@ class IntegrationOrchestrator:
                 "pipeline_output": pipeline_result.records_out,
                 "pipeline_stages": [s.__dict__ for s in pipeline_result.stages],
                 "graph_stats": self.graph.get_stats(),
-                "crawler_stats": crawler_stats,
+                "spider_stats": spider_stats,
                 "resources": snap.to_dict(),
             }, f, indent=2, default=str)
 
@@ -318,7 +252,7 @@ class IntegrationOrchestrator:
             "pipeline_records_out": pipeline_result.records_out,
             "graph_nodes": self.graph.graph.number_of_nodes(),
             "graph_edges": self.graph.graph.number_of_edges(),
-            "crawler_stats": crawler_stats,
+            "spider_stats": spider_stats,
             "health_score": self.orchestrator.resource_monitor.get_health_score(snap),
         }
         logger.info(f"=== Collection cycle complete in {cycle_duration:.1f}s ===")
@@ -326,5 +260,5 @@ class IntegrationOrchestrator:
 
     async def shutdown(self):
         await self.orchestrator.shutdown()
-        await self.crawler_manager.stop_all()
+        await self.spider_manager.close_all()
         logger.info("Integration orchestrator shut down")
