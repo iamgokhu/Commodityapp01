@@ -1,7 +1,7 @@
 {
-  "generated_at": 1784467502.493541,
+  "generated_at": 1784467917.2704275,
   "summary": {
-    "total_entities": 202,
+    "total_entities": 195,
     "states_covered": 16,
     "products": 0,
     "entity_types": 0
@@ -31,60 +31,48 @@
   "bar": {
     "by_state": [
       {
-        "name": "Tamil Nadu",
-        "value": 19
+        "name": "Kerala",
+        "value": 18
       },
       {
-        "name": "Odisha",
-        "value": 19
+        "name": "Haryana",
+        "value": 18
       },
       {
-        "name": "Maharashtra",
+        "name": "Karnataka",
+        "value": 17
+      },
+      {
+        "name": "Bihar",
         "value": 16
       },
       {
         "name": "Gujarat",
-        "value": 16
+        "value": 15
       },
       {
-        "name": "West Bengal",
+        "name": "Tamil Nadu",
         "value": 14
       },
       {
-        "name": "Kerala",
+        "name": "West Bengal",
         "value": 13
-      },
-      {
-        "name": "Haryana",
-        "value": 13
-      },
-      {
-        "name": "Telangana",
-        "value": 13
-      },
-      {
-        "name": "Punjab",
-        "value": 12
-      },
-      {
-        "name": "Bihar",
-        "value": 10
-      },
-      {
-        "name": "Karnataka",
-        "value": 10
-      },
-      {
-        "name": "Rajasthan",
-        "value": 10
-      },
-      {
-        "name": "Madhya Pradesh",
-        "value": 10
       },
       {
         "name": "Andhra Pradesh",
-        "value": 10
+        "value": 13
+      },
+      {
+        "name": "Maharashtra",
+        "value": 11
+      },
+      {
+        "name": "Rajasthan",
+        "value": 11
+      },
+      {
+        "name": "Telangana",
+        "value": 9
       },
       {
         "name": "Assam",
@@ -92,75 +80,87 @@
       },
       {
         "name": "Uttar Pradesh",
-        "value": 8
+        "value": 9
+      },
+      {
+        "name": "Odisha",
+        "value": 9
+      },
+      {
+        "name": "Madhya Pradesh",
+        "value": 7
+      },
+      {
+        "name": "Punjab",
+        "value": 6
       }
     ],
     "by_product": [
       {
         "name": "Unknown",
-        "value": 202
+        "value": 195
       }
     ],
     "by_type": [
       {
         "name": "Unknown",
-        "value": 202
+        "value": 195
       }
     ]
   },
   "pie": {
     "state": [
       {
-        "name": "Tamil Nadu",
-        "value": 19
+        "name": "Kerala",
+        "value": 18
       },
       {
-        "name": "Odisha",
-        "value": 19
+        "name": "Haryana",
+        "value": 18
       },
       {
-        "name": "Maharashtra",
+        "name": "Karnataka",
+        "value": 17
+      },
+      {
+        "name": "Bihar",
         "value": 16
       },
       {
         "name": "Gujarat",
-        "value": 16
+        "value": 15
       },
       {
-        "name": "West Bengal",
+        "name": "Tamil Nadu",
         "value": 14
       },
       {
-        "name": "Kerala",
+        "name": "West Bengal",
         "value": 13
       },
       {
-        "name": "Haryana",
+        "name": "Andhra Pradesh",
         "value": 13
       },
       {
-        "name": "Telangana",
-        "value": 13
+        "name": "Maharashtra",
+        "value": 11
       },
       {
-        "name": "Punjab",
-        "value": 12
-      },
-      {
-        "name": "Bihar",
-        "value": 10
+        "name": "Rajasthan",
+        "value": 11
       }
     ],
     "product": [
       {
         "name": "Unknown",
-        "value": 202
+        "value": 195
       }
     ],
     "entity_type": [
       {
         "name": "Unknown",
-        "value": 202
+        "value": 195
       }
     ]
   },
@@ -176,7 +176,7 @@
             "children": [
               {
                 "name": "Guntur Rural",
-                "value": 1
+                "value": 2
               }
             ]
           },
@@ -185,7 +185,7 @@
             "children": [
               {
                 "name": "Hyderabad Rural",
-                "value": 3
+                "value": 2
               }
             ]
           },
@@ -194,7 +194,7 @@
             "children": [
               {
                 "name": "Tirupati Rural",
-                "value": 3
+                "value": 1
               }
             ]
           },
@@ -206,6 +206,15 @@
                 "value": 3
               }
             ]
+          },
+          {
+            "name": "Visakhapatnam",
+            "children": [
+              {
+                "name": "Visakhapatnam Rural",
+                "value": 5
+              }
+            ]
           }
         ]
       },
@@ -213,11 +222,20 @@
         "name": "Assam",
         "children": [
           {
+            "name": "Dibrugarh",
+            "children": [
+              {
+                "name": "Dibrugarh Rural",
+                "value": 3
+              }
+            ]
+          },
+          {
             "name": "Guwahati",
             "children": [
               {
                 "name": "Guwahati Rural",
-                "value": 2
+                "value": 1
               }
             ]
           },
@@ -226,16 +244,7 @@
             "children": [
               {
                 "name": "Jorhat Rural",
-                "value": 3
-              }
-            ]
-          },
-          {
-            "name": "Silchar",
-            "children": [
-              {
-                "name": "Silchar Rural",
-                "value": 1
+                "value": 2
               }
             ]
           },
@@ -258,7 +267,7 @@
             "children": [
               {
                 "name": "Bhagalpur Rural",
-                "value": 4
+                "value": 2
               }
             ]
           },
@@ -267,7 +276,7 @@
             "children": [
               {
                 "name": "Gaya Rural",
-                "value": 1
+                "value": 5
               }
             ]
           },
@@ -276,7 +285,7 @@
             "children": [
               {
                 "name": "Munger Rural",
-                "value": 2
+                "value": 3
               }
             ]
           },
@@ -285,7 +294,7 @@
             "children": [
               {
                 "name": "Muzaffarpur Rural",
-                "value": 2
+                "value": 3
               }
             ]
           },
@@ -294,7 +303,7 @@
             "children": [
               {
                 "name": "Patna Rural",
-                "value": 1
+                "value": 3
               }
             ]
           }
@@ -308,15 +317,6 @@
             "children": [
               {
                 "name": "Ahmedabad Rural",
-                "value": 4
-              }
-            ]
-          },
-          {
-            "name": "Anand",
-            "children": [
-              {
-                "name": "Anand Rural",
                 "value": 3
               }
             ]
@@ -326,7 +326,7 @@
             "children": [
               {
                 "name": "Rajkot Rural",
-                "value": 1
+                "value": 2
               }
             ]
           },
@@ -335,7 +335,7 @@
             "children": [
               {
                 "name": "Surat Rural",
-                "value": 4
+                "value": 7
               }
             ]
           },
@@ -344,7 +344,7 @@
             "children": [
               {
                 "name": "Vadodara Rural",
-                "value": 4
+                "value": 3
               }
             ]
           }
@@ -358,7 +358,7 @@
             "children": [
               {
                 "name": "Ambala Rural",
-                "value": 3
+                "value": 1
               }
             ]
           },
@@ -367,7 +367,7 @@
             "children": [
               {
                 "name": "Faridabad Rural",
-                "value": 5
+                "value": 3
               }
             ]
           },
@@ -376,7 +376,16 @@
             "children": [
               {
                 "name": "Gurgaon Rural",
-                "value": 1
+                "value": 3
+              }
+            ]
+          },
+          {
+            "name": "Karnal",
+            "children": [
+              {
+                "name": "Karnal Rural",
+                "value": 6
               }
             ]
           },
@@ -385,7 +394,7 @@
             "children": [
               {
                 "name": "Panipat Rural",
-                "value": 4
+                "value": 5
               }
             ]
           }
@@ -399,7 +408,7 @@
             "children": [
               {
                 "name": "Belagavi Rural",
-                "value": 2
+                "value": 4
               }
             ]
           },
@@ -408,6 +417,15 @@
             "children": [
               {
                 "name": "Bengaluru Rural",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "name": "Hubballi",
+            "children": [
+              {
+                "name": "Hubballi Rural",
                 "value": 4
               }
             ]
@@ -417,7 +435,7 @@
             "children": [
               {
                 "name": "Mangaluru Rural",
-                "value": 2
+                "value": 3
               }
             ]
           },
@@ -426,7 +444,7 @@
             "children": [
               {
                 "name": "Mysuru Rural",
-                "value": 2
+                "value": 4
               }
             ]
           }
@@ -449,7 +467,7 @@
             "children": [
               {
                 "name": "Kollam Rural",
-                "value": 1
+                "value": 5
               }
             ]
           },
@@ -458,7 +476,7 @@
             "children": [
               {
                 "name": "Kozhikode Rural",
-                "value": 2
+                "value": 3
               }
             ]
           },
@@ -467,7 +485,7 @@
             "children": [
               {
                 "name": "Thiruvananthapuram Rural",
-                "value": 2
+                "value": 3
               }
             ]
           },
@@ -476,7 +494,7 @@
             "children": [
               {
                 "name": "Thrissur Rural",
-                "value": 5
+                "value": 4
               }
             ]
           }
@@ -490,7 +508,7 @@
             "children": [
               {
                 "name": "Bhopal Rural",
-                "value": 1
+                "value": 2
               }
             ]
           },
@@ -508,7 +526,16 @@
             "children": [
               {
                 "name": "Indore Rural",
-                "value": 3
+                "value": 2
+              }
+            ]
+          },
+          {
+            "name": "Jabalpur",
+            "children": [
+              {
+                "name": "Jabalpur Rural",
+                "value": 1
               }
             ]
           },
@@ -517,7 +544,7 @@
             "children": [
               {
                 "name": "Ujjain Rural",
-                "value": 5
+                "value": 1
               }
             ]
           }
@@ -531,7 +558,7 @@
             "children": [
               {
                 "name": "Aurangabad Rural",
-                "value": 4
+                "value": 3
               }
             ]
           },
@@ -540,7 +567,7 @@
             "children": [
               {
                 "name": "Mumbai Rural",
-                "value": 2
+                "value": 1
               }
             ]
           },
@@ -558,7 +585,7 @@
             "children": [
               {
                 "name": "Nashik Rural",
-                "value": 3
+                "value": 2
               }
             ]
           },
@@ -567,7 +594,7 @@
             "children": [
               {
                 "name": "Pune Rural",
-                "value": 4
+                "value": 2
               }
             ]
           }
@@ -581,25 +608,7 @@
             "children": [
               {
                 "name": "Berhampur Rural",
-                "value": 9
-              }
-            ]
-          },
-          {
-            "name": "Bhubaneswar",
-            "children": [
-              {
-                "name": "Bhubaneswar Rural",
-                "value": 2
-              }
-            ]
-          },
-          {
-            "name": "Cuttack",
-            "children": [
-              {
-                "name": "Cuttack Rural",
-                "value": 3
+                "value": 1
               }
             ]
           },
@@ -608,7 +617,7 @@
             "children": [
               {
                 "name": "Rourkela Rural",
-                "value": 2
+                "value": 5
               }
             ]
           },
@@ -627,20 +636,11 @@
         "name": "Punjab",
         "children": [
           {
-            "name": "Amritsar",
-            "children": [
-              {
-                "name": "Amritsar Rural",
-                "value": 2
-              }
-            ]
-          },
-          {
             "name": "Bathinda",
             "children": [
               {
                 "name": "Bathinda Rural",
-                "value": 2
+                "value": 3
               }
             ]
           },
@@ -649,7 +649,7 @@
             "children": [
               {
                 "name": "Jalandhar Rural",
-                "value": 2
+                "value": 1
               }
             ]
           },
@@ -658,15 +658,6 @@
             "children": [
               {
                 "name": "Ludhiana Rural",
-                "value": 4
-              }
-            ]
-          },
-          {
-            "name": "Patiala",
-            "children": [
-              {
-                "name": "Patiala Rural",
                 "value": 2
               }
             ]
@@ -677,11 +668,20 @@
         "name": "Rajasthan",
         "children": [
           {
+            "name": "Ajmer",
+            "children": [
+              {
+                "name": "Ajmer Rural",
+                "value": 2
+              }
+            ]
+          },
+          {
             "name": "Jaipur",
             "children": [
               {
                 "name": "Jaipur Rural",
-                "value": 4
+                "value": 1
               }
             ]
           },
@@ -708,7 +708,7 @@
             "children": [
               {
                 "name": "Udaipur Rural",
-                "value": 1
+                "value": 3
               }
             ]
           }
@@ -731,7 +731,7 @@
             "children": [
               {
                 "name": "Coimbatore Rural",
-                "value": 6
+                "value": 2
               }
             ]
           },
@@ -740,7 +740,7 @@
             "children": [
               {
                 "name": "Salem Rural",
-                "value": 5
+                "value": 3
               }
             ]
           },
@@ -749,7 +749,7 @@
             "children": [
               {
                 "name": "Tiruchirappalli Rural",
-                "value": 2
+                "value": 3
               }
             ]
           }
@@ -763,7 +763,7 @@
             "children": [
               {
                 "name": "Hyderabad Rural",
-                "value": 4
+                "value": 2
               }
             ]
           },
@@ -772,7 +772,7 @@
             "children": [
               {
                 "name": "Karimnagar Rural",
-                "value": 3
+                "value": 1
               }
             ]
           },
@@ -781,7 +781,7 @@
             "children": [
               {
                 "name": "Khammam Rural",
-                "value": 3
+                "value": 1
               }
             ]
           },
@@ -790,6 +790,15 @@
             "children": [
               {
                 "name": "Nizamabad Rural",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "name": "Warangal",
+            "children": [
+              {
+                "name": "Warangal Rural",
                 "value": 3
               }
             ]
@@ -822,7 +831,7 @@
             "children": [
               {
                 "name": "Lucknow Rural",
-                "value": 3
+                "value": 2
               }
             ]
           },
@@ -831,6 +840,15 @@
             "children": [
               {
                 "name": "Meerut Rural",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "name": "Varanasi",
+            "children": [
+              {
+                "name": "Varanasi Rural",
                 "value": 2
               }
             ]
@@ -845,7 +863,7 @@
             "children": [
               {
                 "name": "Asansol Rural",
-                "value": 2
+                "value": 3
               }
             ]
           },
@@ -863,7 +881,7 @@
             "children": [
               {
                 "name": "Howrah Rural",
-                "value": 4
+                "value": 2
               }
             ]
           },
@@ -892,137 +910,147 @@
   "force": {
     "nodes": [
       {
-        "id": "Kiran Traders",
-        "group": "Wholesaler",
+        "id": "Shree Exports",
+        "group": "Exporter",
+        "state": "Gujarat"
+      },
+      {
+        "id": "Global Farmers Prod.",
+        "group": "Exporter",
         "state": "West Bengal"
       },
       {
-        "id": "National Market Yard",
-        "group": "Exporter",
-        "state": "Maharashtra"
-      },
-      {
-        "id": "Hindustan Enterprises",
+        "id": "Hindustan Farmers Prod.",
         "group": "Wholesaler",
-        "state": "Punjab"
+        "state": "Karnataka"
       },
       {
-        "id": "Shree Trading Co.",
-        "group": "Manufacturer",
-        "state": "Assam"
+        "id": "Royal Exports",
+        "group": "Wholesaler",
+        "state": "Karnataka"
       },
       {
-        "id": "Royal Commodities",
+        "id": "Royal Agro Foods",
         "group": "Manufacturer",
+        "state": "Kerala"
+      },
+      {
+        "id": "Kiran Agro Foods",
+        "group": "Exporter",
+        "state": "Haryana"
+      },
+      {
+        "id": "Indian Store House",
+        "group": "Exporter",
         "state": "Bihar"
       },
       {
-        "id": "Global Exports",
-        "group": "Wholesaler",
-        "state": "Uttar Pradesh"
-      },
-      {
-        "id": "Hindustan Impex",
-        "group": "Manufacturer",
+        "id": "Raj Supply Chain",
+        "group": "Exporter",
         "state": "Tamil Nadu"
       },
       {
-        "id": "Lakshmi Supply Chain",
-        "group": "Wholesaler",
-        "state": "Karnataka"
+        "id": "Lakshmi Exports",
+        "group": "Manufacturer",
+        "state": "Telangana"
+      },
+      {
+        "id": "Sai Corporation",
+        "group": "Manufacturer",
+        "state": "Telangana"
       },
       {
         "id": "Hindustan Market Yard",
-        "group": "Manufacturer",
-        "state": "Gujarat"
-      },
-      {
-        "id": "Pacific Industries",
-        "group": "Government Market Yard",
-        "state": "Karnataka"
-      },
-      {
-        "id": "Sri Agro Foods",
-        "group": "Government Market Yard",
-        "state": "Rajasthan"
-      },
-      {
-        "id": "Om Traders",
         "group": "Government Market Yard",
         "state": "Punjab"
       },
       {
-        "id": "Ganesh Industries",
+        "id": "Global Supply Chain",
         "group": "Government Market Yard",
-        "state": "Kerala"
+        "state": "Assam"
       },
       {
-        "id": "Bharat Industries",
+        "id": "Premier Enterprises",
         "group": "Government Market Yard",
-        "state": "Haryana"
+        "state": "Andhra Pradesh"
       },
       {
-        "id": "Lakshmi Trading Co.",
+        "id": "Global Store House",
+        "group": "Government Market Yard",
+        "state": "West Bengal"
+      },
+      {
+        "id": "Kiran Agri Business",
         "group": "Government Market Yard",
         "state": "Tamil Nadu"
       },
       {
-        "id": "Lakshmi Impex",
-        "group": "APMC Market",
+        "id": "Raj Farmers Prod.",
+        "group": "Government Market Yard",
+        "state": "Tamil Nadu"
+      },
+      {
+        "id": "Royal Farmers Prod.",
+        "group": "Government Market Yard",
         "state": "Gujarat"
       },
       {
-        "id": "Shree Agri Business",
+        "id": "Indian Agri Business",
+        "group": "Government Market Yard",
+        "state": "Assam"
+      },
+      {
+        "id": "Hindustan Trading Co.",
+        "group": "APMC Market",
+        "state": "Maharashtra"
+      },
+      {
+        "id": "Premier Agri Business",
         "group": "APMC Market",
         "state": "West Bengal"
       },
       {
-        "id": "Sri Trading Co.",
+        "id": "Raj Agro Foods",
         "group": "Exporter",
-        "state": "Haryana"
+        "state": "Andhra Pradesh"
       },
       {
-        "id": "Royal Store House",
+        "id": "Sri Impex",
         "group": "Exporter",
-        "state": "Gujarat"
+        "state": "West Bengal"
       },
       {
-        "id": "Om Enterprises",
-        "group": "Exporter",
-        "state": "Rajasthan"
-      },
-      {
-        "id": "Global Market Yard",
-        "group": "Exporter",
-        "state": "Odisha"
-      },
-      {
-        "id": "Pacific Commodities",
+        "id": "Pacific Industries",
         "group": "Exporter",
         "state": "Telangana"
       },
       {
-        "id": "Raj Traders",
+        "id": "Pacific Trading Co.",
         "group": "Online Seller",
         "state": "Kerala"
       },
       {
-        "id": "Sri Exports",
+        "id": "Hindustan Store House",
         "group": "Online Seller",
-        "state": "Uttar Pradesh"
+        "state": "Maharashtra"
       },
       {
-        "id": "Premier Market Yard",
+        "id": "Hindustan Corporation",
         "group": "Online Seller",
-        "state": "Madhya Pradesh"
+        "state": "Kerala"
       },
       {
-        "id": "Shree Supply Chain",
+        "id": "Kiran Enterprises",
         "group": "Online Seller",
-        "state": "Telangana"
+        "state": "Tamil Nadu"
       },
       {
-        "id": "Sri Agri Business",
+        "id": "Lakshmi Enterprises",
+        "group": "Online Seller",
+        "state": "Karnataka"
+      },
+      {
+        "id": "Sai Commodities",
         "group": "Online Seller",
         "state": "Tamil Nadu"
       },
@@ -1032,434 +1060,279 @@
         "state": "Punjab"
       },
       {
-        "id": "Om Corporation",
-        "group": "Online Seller",
-        "state": "Tamil Nadu"
-      },
-      {
-        "id": "Sai Agri Business",
-        "group": "Online Seller",
-        "state": "Kerala"
-      },
-      {
-        "id": "Lakshmi Agri Business",
-        "group": "Online Seller",
-        "state": "Maharashtra"
-      },
-      {
-        "id": "Premier Industries",
-        "group": "Online Seller",
-        "state": "Rajasthan"
-      },
-      {
-        "id": "Pacific Corporation",
-        "group": "Online Seller",
-        "state": "Karnataka"
-      },
-      {
-        "id": "Hindustan Farmers Prod.",
-        "group": "Government Source",
-        "state": "Tamil Nadu"
-      },
-      {
-        "id": "Kiran Agri Business",
-        "group": "Government Source",
-        "state": "Gujarat"
-      },
-      {
-        "id": "Global Agro Foods",
-        "group": "Government Source",
-        "state": "Uttar Pradesh"
-      },
-      {
-        "id": "Kiran Exports",
-        "group": "Government Source",
-        "state": "Kerala"
-      },
-      {
-        "id": "Raj Enterprises",
-        "group": "Government Source",
-        "state": "Rajasthan"
-      },
-      {
-        "id": "Ganesh Supply Chain",
-        "group": "Government Source",
-        "state": "West Bengal"
-      },
-      {
-        "id": "Pacific Enterprises",
-        "group": "Government Source",
-        "state": "Madhya Pradesh"
-      },
-      {
-        "id": "Shree Enterprises",
-        "group": "Government Source",
-        "state": "Tamil Nadu"
-      },
-      {
-        "id": "Indian Agri Business",
-        "group": "Government Source",
-        "state": "Kerala"
-      },
-      {
-        "id": "National Trading Co.",
-        "group": "Government Source",
-        "state": "Telangana"
-      },
-      {
-        "id": "Om Farmers Prod.",
-        "group": "Government Source",
-        "state": "Haryana"
-      },
-      {
-        "id": "Kiran Industries",
-        "group": "Manufacturer",
-        "state": "Andhra Pradesh"
-      },
-      {
-        "id": "Om Supply Chain",
-        "group": "Wholesaler",
-        "state": "Punjab"
-      },
-      {
-        "id": "Kiran Impex",
-        "group": "Wholesaler",
-        "state": "Karnataka"
-      },
-      {
-        "id": "Pacific Supply Chain",
-        "group": "Exporter",
-        "state": "Andhra Pradesh"
-      },
-      {
-        "id": "Shree Farmers Prod.",
-        "group": "Manufacturer",
-        "state": "Andhra Pradesh"
-      },
-      {
-        "id": "Lakshmi Store House",
-        "group": "News Reference",
-        "state": "Assam"
-      },
-      {
-        "id": "Global Commodities",
-        "group": "News Reference",
-        "state": "Tamil Nadu"
-      },
-      {
-        "id": "Royal Farmers Prod.",
-        "group": "News Reference",
-        "state": "Tamil Nadu"
-      },
-      {
-        "id": "Lakshmi Commodities",
-        "group": "News Reference",
-        "state": "Assam"
-      },
-      {
-        "id": "Hindustan Industries",
-        "group": "News Reference",
-        "state": "Assam"
-      },
-      {
-        "id": "Bharat Market Yard",
-        "group": "Online Seller",
-        "state": "Odisha"
-      },
-      {
-        "id": "Sri Store House",
-        "group": "Online Seller",
-        "state": "Andhra Pradesh"
-      },
-      {
-        "id": "Royal Impex",
-        "group": "Online Seller",
-        "state": "Uttar Pradesh"
-      },
-      {
-        "id": "Sai Supply Chain",
-        "group": "Online Seller",
-        "state": "Haryana"
-      },
-      {
-        "id": "Indian Enterprises",
-        "group": "Online Seller",
-        "state": "Tamil Nadu"
-      },
-      {
-        "id": "Premier Enterprises",
-        "group": "Online Seller",
-        "state": "Maharashtra"
-      },
-      {
-        "id": "Sai Agro Foods",
-        "group": "Online Seller",
-        "state": "Bihar"
-      },
-      {
-        "id": "Ganesh Store House",
-        "group": "Online Seller",
-        "state": "Punjab"
-      },
-      {
         "id": "Global Industries",
         "group": "Online Seller",
-        "state": "Assam"
+        "state": "Rajasthan"
       },
       {
-        "id": "National Traders",
-        "group": "Online Seller",
-        "state": "Maharashtra"
-      },
-      {
-        "id": "Sai Enterprises",
+        "id": "Shree Commodities",
         "group": "Online Seller",
         "state": "West Bengal"
       },
       {
-        "id": "Sri Impex",
+        "id": "Sri Enterprises",
         "group": "Online Seller",
-        "state": "Karnataka"
-      },
-      {
-        "id": "Om Agri Business",
-        "group": "Online Seller",
-        "state": "Rajasthan"
-      },
-      {
-        "id": "Indian Corporation",
-        "group": "Online Seller",
-        "state": "Gujarat"
-      },
-      {
-        "id": "Indian Impex",
-        "group": "Online Seller",
-        "state": "Maharashtra"
-      },
-      {
-        "id": "Lakshmi Industries",
-        "group": "Online Seller",
-        "state": "Haryana"
-      },
-      {
-        "id": "Kiran Enterprises",
-        "group": "Online Seller",
-        "state": "Andhra Pradesh"
-      },
-      {
-        "id": "Shree Corporation",
-        "group": "Online Seller",
-        "state": "Bihar"
-      },
-      {
-        "id": "Premier Exports",
-        "group": "Online Seller",
-        "state": "Telangana"
-      },
-      {
-        "id": "Indian Supply Chain",
-        "group": "Online Seller",
-        "state": "Bihar"
-      },
-      {
-        "id": "Raj Agri Business",
-        "group": "Online Seller",
-        "state": "Haryana"
-      },
-      {
-        "id": "Global Farmers Prod.",
-        "group": "Online Seller",
-        "state": "Kerala"
-      },
-      {
-        "id": "Sai Impex",
-        "group": "Online Seller",
-        "state": "Maharashtra"
-      },
-      {
-        "id": "Hindustan Traders",
-        "group": "Online Seller",
-        "state": "Odisha"
-      },
-      {
-        "id": "Sri Market Yard",
-        "group": "Online Seller",
-        "state": "Bihar"
-      },
-      {
-        "id": "Kiran Supply Chain",
-        "group": "Online Seller",
-        "state": "Tamil Nadu"
-      },
-      {
-        "id": "Indian Agro Foods",
-        "group": "Online Seller",
-        "state": "Haryana"
-      },
-      {
-        "id": "Shree Industries",
-        "group": "Online Seller",
-        "state": "Telangana"
-      },
-      {
-        "id": "Global Traders",
-        "group": "Online Seller",
-        "state": "Gujarat"
-      },
-      {
-        "id": "National Agro Foods",
-        "group": "Online Seller",
-        "state": "Gujarat"
-      },
-      {
-        "id": "Royal Industries",
-        "group": "Online Seller",
-        "state": "Kerala"
+        "state": "Uttar Pradesh"
       },
       {
         "id": "Sri Supply Chain",
         "group": "Online Seller",
-        "state": "Tamil Nadu"
+        "state": "Madhya Pradesh"
       },
       {
-        "id": "Shree Exports",
-        "group": "Online Seller",
-        "state": "Odisha"
-      },
-      {
-        "id": "Bharat Traders",
-        "group": "Online Seller",
-        "state": "Maharashtra"
-      },
-      {
-        "id": "Kiran Market Yard",
-        "group": "Online Seller",
-        "state": "Rajasthan"
-      },
-      {
-        "id": "Sai Exports",
-        "group": "Online Seller",
-        "state": "Rajasthan"
-      },
-      {
-        "id": "National Industries",
-        "group": "Online Seller",
-        "state": "Odisha"
-      },
-      {
-        "id": "Royal Market Yard",
-        "group": "Online Seller",
-        "state": "West Bengal"
-      },
-      {
-        "id": "Lakshmi Farmers Prod.",
-        "group": "Online Seller",
-        "state": "Assam"
-      },
-      {
-        "id": "Pacific Exports",
+        "id": "Hindustan Industries",
         "group": "Online Seller",
         "state": "Tamil Nadu"
       },
       {
-        "id": "Premier Agro Foods",
-        "group": "Online Seller",
-        "state": "West Bengal"
-      },
-      {
-        "id": "Ganesh Farmers Prod.",
+        "id": "Sri Market Yard",
         "group": "Online Seller",
         "state": "Odisha"
       },
       {
         "id": "Premier Corporation",
         "group": "Online Seller",
-        "state": "Assam"
+        "state": "Telangana"
       },
       {
-        "id": "Ganesh Market Yard",
+        "id": "Global Agri Business",
         "group": "Online Seller",
         "state": "Haryana"
       },
       {
-        "id": "Om Impex",
+        "id": "Ganesh Store House",
         "group": "Online Seller",
-        "state": "Madhya Pradesh"
+        "state": "Haryana"
       },
       {
-        "id": "Ganesh Exports",
+        "id": "Shree Market Yard",
         "group": "Online Seller",
-        "state": "Andhra Pradesh"
+        "state": "Haryana"
       },
       {
-        "id": "Kiran Farmers Prod.",
+        "id": "Kiran Commodities",
         "group": "Online Seller",
-        "state": "Telangana"
+        "state": "Haryana"
       },
       {
-        "id": "Hindustan Store House",
-        "group": "Online Seller",
-        "state": "Telangana"
-      },
-      {
-        "id": "Om Agro Foods",
-        "group": "Online Seller",
-        "state": "Tamil Nadu"
-      },
-      {
-        "id": "National Agri Business",
-        "group": "Online Seller",
-        "state": "Maharashtra"
-      },
-      {
-        "id": "Bharat Farmers Prod.",
-        "group": "Online Seller",
-        "state": "Odisha"
-      },
-      {
-        "id": "Raj Industries",
-        "group": "Online Seller",
-        "state": "Odisha"
-      },
-      {
-        "id": "Royal Trading Co.",
-        "group": "Online Seller",
-        "state": "West Bengal"
-      },
-      {
-        "id": "Bharat Enterprises",
-        "group": "Online Seller",
-        "state": "Telangana"
-      },
-      {
-        "id": "Raj Market Yard",
-        "group": "Online Seller",
-        "state": "Odisha"
-      },
-      {
-        "id": "Royal Agri Business",
+        "id": "Bharat Store House",
         "group": "Online Seller",
         "state": "Gujarat"
+      },
+      {
+        "id": "Ganesh Agro Foods",
+        "group": "Online Seller",
+        "state": "Assam"
       },
       {
         "id": "Pacific Agro Foods",
-        "group": "Online Seller",
+        "group": "Government Source",
         "state": "Kerala"
       },
       {
-        "id": "Sri Enterprises",
-        "group": "Online Seller",
-        "state": "Gujarat"
+        "id": "Lakshmi Traders",
+        "group": "Government Source",
+        "state": "Madhya Pradesh"
       },
       {
-        "id": "Ganesh Impex",
+        "id": "Om Impex",
+        "group": "Government Source",
+        "state": "Assam"
+      },
+      {
+        "id": "Bharat Exports",
+        "group": "Government Source",
+        "state": "Maharashtra"
+      },
+      {
+        "id": "Royal Agri Business",
+        "group": "Government Source",
+        "state": "Andhra Pradesh"
+      },
+      {
+        "id": "Shree Trading Co.",
+        "group": "Government Source",
+        "state": "Rajasthan"
+      },
+      {
+        "id": "National Commodities",
+        "group": "Government Source",
+        "state": "Andhra Pradesh"
+      },
+      {
+        "id": "Kiran Store House",
+        "group": "Government Source",
+        "state": "Haryana"
+      },
+      {
+        "id": "Om Agro Foods",
+        "group": "Government Source",
+        "state": "Kerala"
+      },
+      {
+        "id": "Raj Commodities",
+        "group": "Government Source",
+        "state": "Maharashtra"
+      },
+      {
+        "id": "Kiran Farmers Prod.",
+        "group": "Government Source",
+        "state": "Karnataka"
+      },
+      {
+        "id": "Bharat Trading Co.",
+        "group": "Government Source",
+        "state": "Karnataka"
+      },
+      {
+        "id": "Hindustan Exports",
+        "group": "Government Source",
+        "state": "Karnataka"
+      },
+      {
+        "id": "Om Corporation",
+        "group": "Government Source",
+        "state": "Tamil Nadu"
+      },
+      {
+        "id": "National Traders",
+        "group": "Manufacturer",
+        "state": "Kerala"
+      },
+      {
+        "id": "Bharat Farmers Prod.",
+        "group": "Wholesaler",
+        "state": "Rajasthan"
+      },
+      {
+        "id": "Premier Trading Co.",
+        "group": "Exporter",
+        "state": "Andhra Pradesh"
+      },
+      {
+        "id": "Lakshmi Store House",
+        "group": "News Reference",
+        "state": "Telangana"
+      },
+      {
+        "id": "Royal Supply Chain",
+        "group": "News Reference",
+        "state": "Haryana"
+      },
+      {
+        "id": "National Store House",
+        "group": "News Reference",
+        "state": "Assam"
+      },
+      {
+        "id": "Global Enterprises",
+        "group": "News Reference",
+        "state": "Maharashtra"
+      },
+      {
+        "id": "Pacific Exports",
+        "group": "News Reference",
+        "state": "Maharashtra"
+      },
+      {
+        "id": "Premier Traders",
+        "group": "Online Seller",
+        "state": "Rajasthan"
+      },
+      {
+        "id": "Lakshmi Impex",
         "group": "Online Seller",
         "state": "Uttar Pradesh"
       },
       {
-        "id": "Hindustan Trading Co.",
+        "id": "Sai Industries",
+        "group": "Online Seller",
+        "state": "Rajasthan"
+      },
+      {
+        "id": "Lakshmi Supply Chain",
+        "group": "Online Seller",
+        "state": "Tamil Nadu"
+      },
+      {
+        "id": "Sri Industries",
+        "group": "Online Seller",
+        "state": "Andhra Pradesh"
+      },
+      {
+        "id": "Sai Agri Business",
+        "group": "Online Seller",
+        "state": "Haryana"
+      },
+      {
+        "id": "Pacific Traders",
+        "group": "Online Seller",
+        "state": "Bihar"
+      },
+      {
+        "id": "Premier Agro Foods",
+        "group": "Online Seller",
+        "state": "Karnataka"
+      },
+      {
+        "id": "Indian Traders",
+        "group": "Online Seller",
+        "state": "Rajasthan"
+      },
+      {
+        "id": "Hindustan Commodities",
+        "group": "Online Seller",
+        "state": "Gujarat"
+      },
+      {
+        "id": "Global Traders",
+        "group": "Online Seller",
+        "state": "Bihar"
+      },
+      {
+        "id": "Indian Enterprises",
+        "group": "Online Seller",
+        "state": "Haryana"
+      },
+      {
+        "id": "Premier Exports",
+        "group": "Online Seller",
+        "state": "Andhra Pradesh"
+      },
+      {
+        "id": "Global Exports",
+        "group": "Online Seller",
+        "state": "Gujarat"
+      },
+      {
+        "id": "Ganesh Traders",
+        "group": "Online Seller",
+        "state": "Madhya Pradesh"
+      },
+      {
+        "id": "Ganesh Farmers Prod.",
+        "group": "Online Seller",
+        "state": "Andhra Pradesh"
+      },
+      {
+        "id": "Om Commodities",
+        "group": "Online Seller",
+        "state": "Odisha"
+      },
+      {
+        "id": "Lakshmi Agro Foods",
+        "group": "Online Seller",
+        "state": "Kerala"
+      },
+      {
+        "id": "National Corporation",
         "group": "Online Seller",
         "state": "West Bengal"
+      },
+      {
+        "id": "Om Trading Co.",
+        "group": "Online Seller",
+        "state": "Tamil Nadu"
       },
       {
         "id": "Indian Commodities",
@@ -1467,140 +1340,261 @@
         "state": "Odisha"
       },
       {
-        "id": "Premier Traders",
+        "id": "Sai Supply Chain",
         "group": "Online Seller",
-        "state": "Maharashtra"
+        "state": "Kerala"
       },
       {
-        "id": "National Exports",
+        "id": "Bharat Agri Business",
         "group": "Online Seller",
-        "state": "Punjab"
+        "state": "Telangana"
       },
       {
-        "id": "Bharat Corporation",
+        "id": "National Agri Business",
+        "group": "Online Seller",
+        "state": "Karnataka"
+      },
+      {
+        "id": "Ganesh Market Yard",
+        "group": "Online Seller",
+        "state": "West Bengal"
+      },
+      {
+        "id": "Lakshmi Corporation",
+        "group": "Online Seller",
+        "state": "Uttar Pradesh"
+      },
+      {
+        "id": "Sai Exports",
+        "group": "Online Seller",
+        "state": "Karnataka"
+      },
+      {
+        "id": "Kiran Corporation",
+        "group": "Online Seller",
+        "state": "Haryana"
+      },
+      {
+        "id": "Raj Enterprises",
         "group": "Online Seller",
         "state": "Bihar"
       },
       {
-        "id": "Sri Traders",
+        "id": "Bharat Impex",
         "group": "Online Seller",
-        "state": "Maharashtra"
+        "state": "Kerala"
       },
       {
-        "id": "Premier Commodities",
+        "id": "Om Farmers Prod.",
         "group": "Online Seller",
-        "state": "Rajasthan"
+        "state": "Madhya Pradesh"
+      },
+      {
+        "id": "Royal Trading Co.",
+        "group": "Online Seller",
+        "state": "Punjab"
       },
       {
         "id": "Shree Impex",
         "group": "Online Seller",
-        "state": "Kerala"
+        "state": "Bihar"
       },
       {
-        "id": "Om Trading Co.",
+        "id": "Royal Market Yard",
         "group": "Online Seller",
-        "state": "Odisha"
+        "state": "Tamil Nadu"
       },
       {
-        "id": "Om Industries",
+        "id": "Lakshmi Farmers Prod.",
         "group": "Online Seller",
-        "state": "Kerala"
+        "state": "Assam"
       },
       {
-        "id": "Indian Industries",
+        "id": "Premier Impex",
+        "group": "Online Seller",
+        "state": "West Bengal"
+      },
+      {
+        "id": "Sai Market Yard",
+        "group": "Online Seller",
+        "state": "Haryana"
+      },
+      {
+        "id": "Royal Corporation",
+        "group": "Online Seller",
+        "state": "Andhra Pradesh"
+      },
+      {
+        "id": "Royal Traders",
         "group": "Online Seller",
         "state": "Karnataka"
       },
       {
-        "id": "Premier Trading Co.",
+        "id": "Lakshmi Trading Co.",
         "group": "Online Seller",
-        "state": "Odisha"
+        "state": "Gujarat"
       },
       {
-        "id": "Raj Impex",
+        "id": "Indian Impex",
+        "group": "Online Seller",
+        "state": "Haryana"
+      },
+      {
+        "id": "Royal Industries",
+        "group": "Online Seller",
+        "state": "Gujarat"
+      },
+      {
+        "id": "Sai Store House",
+        "group": "Online Seller",
+        "state": "Rajasthan"
+      },
+      {
+        "id": "National Industries",
+        "group": "Online Seller",
+        "state": "Bihar"
+      },
+      {
+        "id": "Pacific Store House",
+        "group": "Online Seller",
+        "state": "West Bengal"
+      },
+      {
+        "id": "Global Trading Co.",
+        "group": "Online Seller",
+        "state": "Karnataka"
+      },
+      {
+        "id": "Shree Agro Foods",
+        "group": "Online Seller",
+        "state": "Haryana"
+      },
+      {
+        "id": "Om Market Yard",
         "group": "Online Seller",
         "state": "Punjab"
       },
       {
-        "id": "Pacific Farmers Prod.",
+        "id": "Hindustan Agri Business",
         "group": "Online Seller",
-        "state": "Punjab"
+        "state": "Madhya Pradesh"
       },
       {
-        "id": "Lakshmi Enterprises",
+        "id": "Pacific Corporation",
         "group": "Online Seller",
-        "state": "Punjab"
+        "state": "Bihar"
       },
       {
-        "id": "Raj Agro Foods",
-        "group": "Marine Exporter",
-        "state": "Odisha"
+        "id": "Raj Corporation",
+        "group": "Online Seller",
+        "state": "Bihar"
       },
       {
-        "id": "National Store House",
-        "group": "Marine Exporter",
+        "id": "Om Supply Chain",
+        "group": "Online Seller",
+        "state": "Gujarat"
+      },
+      {
+        "id": "Ganesh Corporation",
+        "group": "Online Seller",
+        "state": "West Bengal"
+      },
+      {
+        "id": "Om Traders",
+        "group": "Online Seller",
+        "state": "Andhra Pradesh"
+      },
+      {
+        "id": "Global Agro Foods",
+        "group": "Online Seller",
         "state": "Telangana"
       },
       {
-        "id": "Sai Trading Co.",
-        "group": "Marine Exporter",
+        "id": "Kiran Market Yard",
+        "group": "Online Seller",
         "state": "Karnataka"
       },
       {
-        "id": "Premier Supply Chain",
+        "id": "Shree Traders",
+        "group": "Online Seller",
+        "state": "Rajasthan"
+      },
+      {
+        "id": "Raj Industries",
+        "group": "Online Seller",
+        "state": "Haryana"
+      },
+      {
+        "id": "Kiran Traders",
+        "group": "Online Seller",
+        "state": "Tamil Nadu"
+      },
+      {
+        "id": "Indian Supply Chain",
+        "group": "Online Seller",
+        "state": "Maharashtra"
+      },
+      {
+        "id": "National Farmers Prod.",
+        "group": "Online Seller",
+        "state": "Bihar"
+      },
+      {
+        "id": "Hindustan Impex",
+        "group": "Online Seller",
+        "state": "Karnataka"
+      },
+      {
+        "id": "Indian Exports",
         "group": "Marine Exporter",
         "state": "Gujarat"
       },
       {
-        "id": "Sai Market Yard",
+        "id": "Om Enterprises",
         "group": "Marine Exporter",
-        "state": "Telangana"
+        "state": "Andhra Pradesh"
       },
       {
-        "id": "Sai Traders",
-        "group": "Corporate Farm",
-        "state": "Odisha"
+        "id": "Bharat Commodities",
+        "group": "Marine Exporter",
+        "state": "Bihar"
+      },
+      {
+        "id": "Shree Farmers Prod.",
+        "group": "Marine Exporter",
+        "state": "Gujarat"
+      },
+      {
+        "id": "Bharat Market Yard",
+        "group": "Marine Exporter",
+        "state": "Gujarat"
+      },
+      {
+        "id": "Kiran Trading Co.",
+        "group": "Marine Farm",
+        "state": "Kerala"
       },
       {
         "id": "Om Store House",
         "group": "Marine Farm",
-        "state": "Uttar Pradesh"
+        "state": "West Bengal"
       }
     ],
     "links": []
   },
   "table": [
     {
-      "name": "Kiran Traders",
-      "state": "West Bengal",
-      "district": "Asansol",
-      "taluk": "Asansol Rural",
+      "name": "Shree Exports",
+      "state": "Gujarat",
+      "district": "Rajkot",
+      "taluk": "Rajkot Rural",
       "product": "",
-      "category": "Rice",
-      "type": "Wholesaler",
-      "contact": {
-        "phone": "+91-8950380349",
-        "email": "contact@kirantraders.com",
-        "website": "www.kirantraders.com"
-      },
-      "email": "",
-      "website": "",
-      "market_price": "",
-      "year_established": "",
-      "source": "indiamart.com"
-    },
-    {
-      "name": "National Market Yard",
-      "state": "Maharashtra",
-      "district": "Pune",
-      "taluk": "Pune Rural",
-      "product": "",
-      "category": "Rice",
+      "category": "Sugar",
       "type": "Exporter",
       "contact": {
-        "phone": "+91-9577949860",
-        "email": "contact@nationalmarket.com",
-        "website": "www.nationalmarket.com"
+        "phone": "+91-7540504176",
+        "email": "contact@shreeexports.com",
+        "website": "www.shreeexports.com"
       },
       "email": "",
       "website": "",
@@ -1609,17 +1603,36 @@
       "source": "indiamart.com"
     },
     {
-      "name": "Hindustan Enterprises",
-      "state": "Punjab",
-      "district": "Ludhiana",
-      "taluk": "Ludhiana Rural",
+      "name": "Global Farmers Prod.",
+      "state": "West Bengal",
+      "district": "Howrah",
+      "taluk": "Howrah Rural",
+      "product": "",
+      "category": "Wheat",
+      "type": "Exporter",
+      "contact": {
+        "phone": "+91-8164782581",
+        "email": "contact@globalfarmers.com",
+        "website": "www.globalfarmers.com"
+      },
+      "email": "",
+      "website": "",
+      "market_price": "",
+      "year_established": "",
+      "source": "indiamart.com"
+    },
+    {
+      "name": "Hindustan Farmers Prod.",
+      "state": "Karnataka",
+      "district": "Hubballi",
+      "taluk": "Hubballi Rural",
       "product": "",
       "category": "Grains",
       "type": "Wholesaler",
       "contact": {
-        "phone": "+91-8428460298",
-        "email": "contact@hindustanenterprises.com",
-        "website": "www.hindustanenterprises.com"
+        "phone": "+91-8196184956",
+        "email": "contact@hindustanfarmers.com",
+        "website": "www.hindustanfarmers.com"
       },
       "email": "",
       "website": "",
@@ -1628,17 +1641,36 @@
       "source": "indiamart.com"
     },
     {
-      "name": "Shree Trading Co.",
-      "state": "Assam",
-      "district": "Tezpur",
-      "taluk": "Tezpur Rural",
+      "name": "Royal Exports",
+      "state": "Karnataka",
+      "district": "Hubballi",
+      "taluk": "Hubballi Rural",
       "product": "",
-      "category": "Pulses",
+      "category": "Wheat",
+      "type": "Wholesaler",
+      "contact": {
+        "phone": "+91-7104412395",
+        "email": "contact@royalexports.com",
+        "website": "www.royalexports.com"
+      },
+      "email": "",
+      "website": "",
+      "market_price": "",
+      "year_established": "",
+      "source": "indiamart.com"
+    },
+    {
+      "name": "Royal Agro Foods",
+      "state": "Kerala",
+      "district": "Kochi",
+      "taluk": "Kochi Rural",
+      "product": "",
+      "category": "Rice",
       "type": "Manufacturer",
       "contact": {
-        "phone": "+91-8819032823",
-        "email": "contact@shreetrading.com",
-        "website": "www.shreetrading.com"
+        "phone": "+91-7812590372",
+        "email": "contact@royalagro.com",
+        "website": "www.royalagro.com"
       },
       "email": "",
       "website": "",
@@ -1647,74 +1679,93 @@
       "source": "indiamart.com"
     },
     {
-      "name": "Royal Commodities",
+      "name": "Kiran Agro Foods",
+      "state": "Haryana",
+      "district": "Gurgaon",
+      "taluk": "Gurgaon Rural",
+      "product": "",
+      "category": "Oilseeds",
+      "type": "Exporter",
+      "contact": {
+        "phone": "+91-9230335330",
+        "email": "contact@kiranagro.com",
+        "website": "www.kiranagro.com"
+      },
+      "email": "",
+      "website": "",
+      "market_price": "",
+      "year_established": "",
+      "source": "indiamart.com"
+    },
+    {
+      "name": "Indian Store House",
       "state": "Bihar",
-      "district": "Muzaffarpur",
-      "taluk": "Muzaffarpur Rural",
+      "district": "Munger",
+      "taluk": "Munger Rural",
+      "product": "",
+      "category": "Rice",
+      "type": "Exporter",
+      "contact": {
+        "phone": "+91-9337962082",
+        "email": "contact@indianstore.com",
+        "website": "www.indianstore.com"
+      },
+      "email": "",
+      "website": "",
+      "market_price": "",
+      "year_established": "",
+      "source": "indiamart.com"
+    },
+    {
+      "name": "Raj Supply Chain",
+      "state": "Tamil Nadu",
+      "district": "Coimbatore",
+      "taluk": "Coimbatore Rural",
+      "product": "",
+      "category": "Oilseeds",
+      "type": "Exporter",
+      "contact": {
+        "phone": "+91-7409230830",
+        "email": "contact@rajsupply.com",
+        "website": "www.rajsupply.com"
+      },
+      "email": "",
+      "website": "",
+      "market_price": "",
+      "year_established": "",
+      "source": "tradeindia.com"
+    },
+    {
+      "name": "Lakshmi Exports",
+      "state": "Telangana",
+      "district": "Nizamabad",
+      "taluk": "Nizamabad Rural",
       "product": "",
       "category": "Wheat",
       "type": "Manufacturer",
       "contact": {
-        "phone": "+91-8213540233",
-        "email": "contact@royalcommodities.com",
-        "website": "www.royalcommodities.com"
+        "phone": "+91-8299179963",
+        "email": "contact@lakshmiexports.com",
+        "website": "www.lakshmiexports.com"
       },
       "email": "",
       "website": "",
       "market_price": "",
       "year_established": "",
-      "source": "indiamart.com"
+      "source": "tradeindia.com"
     },
     {
-      "name": "Global Exports",
-      "state": "Uttar Pradesh",
-      "district": "Kanpur",
-      "taluk": "Kanpur Rural",
+      "name": "Sai Corporation",
+      "state": "Telangana",
+      "district": "Nizamabad",
+      "taluk": "Nizamabad Rural",
       "product": "",
-      "category": "Pulses",
-      "type": "Wholesaler",
-      "contact": {
-        "phone": "+91-7905115665",
-        "email": "contact@globalexports.com",
-        "website": "www.globalexports.com"
-      },
-      "email": "",
-      "website": "",
-      "market_price": "",
-      "year_established": "",
-      "source": "indiamart.com"
-    },
-    {
-      "name": "Hindustan Impex",
-      "state": "Tamil Nadu",
-      "district": "Salem",
-      "taluk": "Salem Rural",
-      "product": "",
-      "category": "Sugar",
+      "category": "Wheat",
       "type": "Manufacturer",
       "contact": {
-        "phone": "+91-8972435132",
-        "email": "contact@hindustanimpex.com",
-        "website": "www.hindustanimpex.com"
-      },
-      "email": "",
-      "website": "",
-      "market_price": "",
-      "year_established": "",
-      "source": "indiamart.com"
-    },
-    {
-      "name": "Lakshmi Supply Chain",
-      "state": "Karnataka",
-      "district": "Bengaluru",
-      "taluk": "Bengaluru Rural",
-      "product": "",
-      "category": "Oilseeds",
-      "type": "Wholesaler",
-      "contact": {
-        "phone": "+91-9913185046",
-        "email": "contact@lakshmisupply.com",
-        "website": "www.lakshmisupply.com"
+        "phone": "+91-7400470473",
+        "email": "contact@saicorporation.com",
+        "website": "www.saicorporation.com"
       },
       "email": "",
       "website": "",
@@ -1724,14 +1775,14 @@
     },
     {
       "name": "Hindustan Market Yard",
-      "state": "Gujarat",
-      "district": "Vadodara",
-      "taluk": "Vadodara Rural",
+      "state": "Punjab",
+      "district": "Bathinda",
+      "taluk": "Bathinda Rural",
       "product": "",
-      "category": "Oilseeds",
-      "type": "Manufacturer",
+      "category": "Pulses",
+      "type": "Government Market Yard",
       "contact": {
-        "phone": "+91-9365650191",
+        "phone": "+91-9633254210",
         "email": "contact@hindustanmarket.com",
         "website": "www.hindustanmarket.com"
       },
@@ -1739,18 +1790,227 @@
       "website": "",
       "market_price": "",
       "year_established": "",
-      "source": "tradeindia.com"
+      "source": "agmarknet.gov.in"
     },
     {
-      "name": "Pacific Industries",
-      "state": "Karnataka",
-      "district": "Bengaluru",
-      "taluk": "Bengaluru Rural",
+      "name": "Global Supply Chain",
+      "state": "Assam",
+      "district": "Tezpur",
+      "taluk": "Tezpur Rural",
+      "product": "",
+      "category": "Grains",
+      "type": "Government Market Yard",
+      "contact": {
+        "phone": "+91-8464158162",
+        "email": "contact@globalsupply.com",
+        "website": "www.globalsupply.com"
+      },
+      "email": "",
+      "website": "",
+      "market_price": "",
+      "year_established": "",
+      "source": "agmarknet.gov.in"
+    },
+    {
+      "name": "Premier Enterprises",
+      "state": "Andhra Pradesh",
+      "district": "Visakhapatnam",
+      "taluk": "Visakhapatnam Rural",
+      "product": "",
+      "category": "Wheat",
+      "type": "Government Market Yard",
+      "contact": {
+        "phone": "+91-9932262696",
+        "email": "contact@premierenterprises.com",
+        "website": "www.premierenterprises.com"
+      },
+      "email": "",
+      "website": "",
+      "market_price": "",
+      "year_established": "",
+      "source": "agmarknet.gov.in"
+    },
+    {
+      "name": "Global Store House",
+      "state": "West Bengal",
+      "district": "Durgapur",
+      "taluk": "Durgapur Rural",
+      "product": "",
+      "category": "Grains",
+      "type": "Government Market Yard",
+      "contact": {
+        "phone": "+91-7768280077",
+        "email": "contact@globalstore.com",
+        "website": "www.globalstore.com"
+      },
+      "email": "",
+      "website": "",
+      "market_price": "",
+      "year_established": "",
+      "source": "agmarknet.gov.in"
+    },
+    {
+      "name": "Kiran Agri Business",
+      "state": "Tamil Nadu",
+      "district": "Salem",
+      "taluk": "Salem Rural",
+      "product": "",
+      "category": "Sugar",
+      "type": "Government Market Yard",
+      "contact": {
+        "phone": "+91-9100811484",
+        "email": "contact@kiranagri.com",
+        "website": "www.kiranagri.com"
+      },
+      "email": "",
+      "website": "",
+      "market_price": "",
+      "year_established": "",
+      "source": "agmarknet.gov.in"
+    },
+    {
+      "name": "Raj Farmers Prod.",
+      "state": "Tamil Nadu",
+      "district": "Chennai",
+      "taluk": "Chennai Rural",
       "product": "",
       "category": "Pulses",
       "type": "Government Market Yard",
       "contact": {
-        "phone": "+91-9900853120",
+        "phone": "+91-7939645153",
+        "email": "contact@rajfarmers.com",
+        "website": "www.rajfarmers.com"
+      },
+      "email": "",
+      "website": "",
+      "market_price": "",
+      "year_established": "",
+      "source": "agmarknet.gov.in"
+    },
+    {
+      "name": "Royal Farmers Prod.",
+      "state": "Gujarat",
+      "district": "Ahmedabad",
+      "taluk": "Ahmedabad Rural",
+      "product": "",
+      "category": "Pulses",
+      "type": "Government Market Yard",
+      "contact": {
+        "phone": "+91-8282433563",
+        "email": "contact@royalfarmers.com",
+        "website": "www.royalfarmers.com"
+      },
+      "email": "",
+      "website": "",
+      "market_price": "",
+      "year_established": "",
+      "source": "agmarknet.gov.in"
+    },
+    {
+      "name": "Indian Agri Business",
+      "state": "Assam",
+      "district": "Guwahati",
+      "taluk": "Guwahati Rural",
+      "product": "",
+      "category": "Rice",
+      "type": "Government Market Yard",
+      "contact": {
+        "phone": "+91-7711026762",
+        "email": "contact@indianagri.com",
+        "website": "www.indianagri.com"
+      },
+      "email": "",
+      "website": "",
+      "market_price": "",
+      "year_established": "",
+      "source": "agmarknet.gov.in"
+    },
+    {
+      "name": "Hindustan Trading Co.",
+      "state": "Maharashtra",
+      "district": "Nagpur",
+      "taluk": "Nagpur Rural",
+      "product": "",
+      "category": "Wheat",
+      "type": "APMC Market",
+      "contact": {
+        "phone": "+91-8373908188",
+        "email": "contact@hindustantrading.com",
+        "website": "www.hindustantrading.com"
+      },
+      "email": "",
+      "website": "",
+      "market_price": "",
+      "year_established": "",
+      "source": "apmc_market"
+    },
+    {
+      "name": "Premier Agri Business",
+      "state": "West Bengal",
+      "district": "Kolkata",
+      "taluk": "Kolkata Rural",
+      "product": "",
+      "category": "Pulses",
+      "type": "APMC Market",
+      "contact": {
+        "phone": "+91-9231934231",
+        "email": "contact@premieragri.com",
+        "website": "www.premieragri.com"
+      },
+      "email": "",
+      "website": "",
+      "market_price": "",
+      "year_established": "",
+      "source": "apmc_market"
+    },
+    {
+      "name": "Raj Agro Foods",
+      "state": "Andhra Pradesh",
+      "district": "Visakhapatnam",
+      "taluk": "Visakhapatnam Rural",
+      "product": "",
+      "category": "Grains",
+      "type": "Exporter",
+      "contact": {
+        "phone": "+91-9659656100",
+        "email": "contact@rajagro.com",
+        "website": "www.rajagro.com"
+      },
+      "email": "",
+      "website": "",
+      "market_price": "",
+      "year_established": "",
+      "source": "export_directory"
+    },
+    {
+      "name": "Sri Impex",
+      "state": "West Bengal",
+      "district": "Durgapur",
+      "taluk": "Durgapur Rural",
+      "product": "",
+      "category": "Grains",
+      "type": "Exporter",
+      "contact": {
+        "phone": "+91-7928404748",
+        "email": "contact@sriimpex.com",
+        "website": "www.sriimpex.com"
+      },
+      "email": "",
+      "website": "",
+      "market_price": "",
+      "year_established": "",
+      "source": "export_directory"
+    },
+    {
+      "name": "Pacific Industries",
+      "state": "Telangana",
+      "district": "Hyderabad",
+      "taluk": "Hyderabad Rural",
+      "product": "",
+      "category": "Oilseeds",
+      "type": "Exporter",
+      "contact": {
+        "phone": "+91-9478054410",
         "email": "contact@pacificindustries.com",
         "website": "www.pacificindustries.com"
       },
@@ -1758,248 +2018,58 @@
       "website": "",
       "market_price": "",
       "year_established": "",
-      "source": "agmarknet.gov.in"
+      "source": "export_directory"
     },
     {
-      "name": "Sri Agro Foods",
-      "state": "Rajasthan",
-      "district": "Jaipur",
-      "taluk": "Jaipur Rural",
-      "product": "",
-      "category": "Oilseeds",
-      "type": "Government Market Yard",
-      "contact": {
-        "phone": "+91-8861463026",
-        "email": "contact@sriagro.com",
-        "website": "www.sriagro.com"
-      },
-      "email": "",
-      "website": "",
-      "market_price": "",
-      "year_established": "",
-      "source": "agmarknet.gov.in"
-    },
-    {
-      "name": "Om Traders",
-      "state": "Punjab",
-      "district": "Ludhiana",
-      "taluk": "Ludhiana Rural",
-      "product": "",
-      "category": "Pulses",
-      "type": "Government Market Yard",
-      "contact": {
-        "phone": "+91-7105439158",
-        "email": "contact@omtraders.com",
-        "website": "www.omtraders.com"
-      },
-      "email": "",
-      "website": "",
-      "market_price": "",
-      "year_established": "",
-      "source": "agmarknet.gov.in"
-    },
-    {
-      "name": "Ganesh Industries",
+      "name": "Pacific Trading Co.",
       "state": "Kerala",
-      "district": "Thrissur",
-      "taluk": "Thrissur Rural",
-      "product": "",
-      "category": "Oilseeds",
-      "type": "Government Market Yard",
-      "contact": {
-        "phone": "+91-8704149043",
-        "email": "contact@ganeshindustries.com",
-        "website": "www.ganeshindustries.com"
-      },
-      "email": "",
-      "website": "",
-      "market_price": "",
-      "year_established": "",
-      "source": "agmarknet.gov.in"
-    },
-    {
-      "name": "Bharat Industries",
-      "state": "Haryana",
-      "district": "Ambala",
-      "taluk": "Ambala Rural",
-      "product": "",
-      "category": "Pulses",
-      "type": "Government Market Yard",
-      "contact": {
-        "phone": "+91-9369097527",
-        "email": "contact@bharatindustries.com",
-        "website": "www.bharatindustries.com"
-      },
-      "email": "",
-      "website": "",
-      "market_price": "",
-      "year_established": "",
-      "source": "agmarknet.gov.in"
-    },
-    {
-      "name": "Lakshmi Trading Co.",
-      "state": "Tamil Nadu",
-      "district": "Chennai",
-      "taluk": "Chennai Rural",
+      "district": "Kochi",
+      "taluk": "Kochi Rural",
       "product": "",
       "category": "Sugar",
-      "type": "Government Market Yard",
+      "type": "Online Seller",
       "contact": {
-        "phone": "+91-9546486831",
-        "email": "contact@lakshmitrading.com",
-        "website": "www.lakshmitrading.com"
+        "phone": "+91-9245014807",
+        "email": "contact@pacifictrading.com",
+        "website": "www.pacifictrading.com"
       },
       "email": "",
       "website": "",
       "market_price": "",
       "year_established": "",
-      "source": "agmarknet.gov.in"
+      "source": "amazon.in"
     },
     {
-      "name": "Lakshmi Impex",
-      "state": "Gujarat",
-      "district": "Ahmedabad",
-      "taluk": "Ahmedabad Rural",
-      "product": "",
-      "category": "Wheat",
-      "type": "APMC Market",
-      "contact": {
-        "phone": "+91-9259123107",
-        "email": "contact@lakshmiimpex.com",
-        "website": "www.lakshmiimpex.com"
-      },
-      "email": "",
-      "website": "",
-      "market_price": "",
-      "year_established": "",
-      "source": "apmc_market"
-    },
-    {
-      "name": "Shree Agri Business",
-      "state": "West Bengal",
-      "district": "Howrah",
-      "taluk": "Howrah Rural",
+      "name": "Hindustan Store House",
+      "state": "Maharashtra",
+      "district": "Nagpur",
+      "taluk": "Nagpur Rural",
       "product": "",
       "category": "Pulses",
-      "type": "APMC Market",
+      "type": "Online Seller",
       "contact": {
-        "phone": "+91-7929033248",
-        "email": "contact@shreeagri.com",
-        "website": "www.shreeagri.com"
+        "phone": "+91-7998727548",
+        "email": "contact@hindustanstore.com",
+        "website": "www.hindustanstore.com"
       },
       "email": "",
       "website": "",
       "market_price": "",
       "year_established": "",
-      "source": "apmc_market"
+      "source": "amazon.in"
     },
     {
-      "name": "Sri Trading Co.",
-      "state": "Haryana",
-      "district": "Panipat",
-      "taluk": "Panipat Rural",
+      "name": "Hindustan Corporation",
+      "state": "Kerala",
+      "district": "Kollam",
+      "taluk": "Kollam Rural",
       "product": "",
       "category": "Rice",
-      "type": "Exporter",
-      "contact": {
-        "phone": "+91-7943704728",
-        "email": "contact@sritrading.com",
-        "website": "www.sritrading.com"
-      },
-      "email": "",
-      "website": "",
-      "market_price": "",
-      "year_established": "",
-      "source": "export_directory"
-    },
-    {
-      "name": "Royal Store House",
-      "state": "Gujarat",
-      "district": "Surat",
-      "taluk": "Surat Rural",
-      "product": "",
-      "category": "Sugar",
-      "type": "Exporter",
-      "contact": {
-        "phone": "+91-7434675781",
-        "email": "contact@royalstore.com",
-        "website": "www.royalstore.com"
-      },
-      "email": "",
-      "website": "",
-      "market_price": "",
-      "year_established": "",
-      "source": "export_directory"
-    },
-    {
-      "name": "Om Enterprises",
-      "state": "Rajasthan",
-      "district": "Jaipur",
-      "taluk": "Jaipur Rural",
-      "product": "",
-      "category": "Oilseeds",
-      "type": "Exporter",
-      "contact": {
-        "phone": "+91-8595881217",
-        "email": "contact@omenterprises.com",
-        "website": "www.omenterprises.com"
-      },
-      "email": "",
-      "website": "",
-      "market_price": "",
-      "year_established": "",
-      "source": "export_directory"
-    },
-    {
-      "name": "Global Market Yard",
-      "state": "Odisha",
-      "district": "Berhampur",
-      "taluk": "Berhampur Rural",
-      "product": "",
-      "category": "Oilseeds",
-      "type": "Exporter",
-      "contact": {
-        "phone": "+91-8592664911",
-        "email": "contact@globalmarket.com",
-        "website": "www.globalmarket.com"
-      },
-      "email": "",
-      "website": "",
-      "market_price": "",
-      "year_established": "",
-      "source": "export_directory"
-    },
-    {
-      "name": "Pacific Commodities",
-      "state": "Telangana",
-      "district": "Khammam",
-      "taluk": "Khammam Rural",
-      "product": "",
-      "category": "Wheat",
-      "type": "Exporter",
-      "contact": {
-        "phone": "+91-9662325824",
-        "email": "contact@pacificcommodities.com",
-        "website": "www.pacificcommodities.com"
-      },
-      "email": "",
-      "website": "",
-      "market_price": "",
-      "year_established": "",
-      "source": "export_directory"
-    },
-    {
-      "name": "Raj Traders",
-      "state": "Kerala",
-      "district": "Kozhikode",
-      "taluk": "Kozhikode Rural",
-      "product": "",
-      "category": "Wheat",
       "type": "Online Seller",
       "contact": {
-        "phone": "+91-9356063812",
-        "email": "contact@rajtraders.com",
-        "website": "www.rajtraders.com"
+        "phone": "+91-7612607796",
+        "email": "contact@hindustancorporation.com",
+        "website": "www.hindustancorporation.com"
       },
       "email": "",
       "website": "",
@@ -2008,74 +2078,55 @@
       "source": "amazon.in"
     },
     {
-      "name": "Sri Exports",
-      "state": "Uttar Pradesh",
-      "district": "Meerut",
-      "taluk": "Meerut Rural",
-      "product": "",
-      "category": "Pulses",
-      "type": "Online Seller",
-      "contact": {
-        "phone": "+91-9297153040",
-        "email": "contact@sriexports.com",
-        "website": "www.sriexports.com"
-      },
-      "email": "",
-      "website": "",
-      "market_price": "",
-      "year_established": "",
-      "source": "amazon.in"
-    },
-    {
-      "name": "Premier Market Yard",
-      "state": "Madhya Pradesh",
-      "district": "Ujjain",
-      "taluk": "Ujjain Rural",
-      "product": "",
-      "category": "Pulses",
-      "type": "Online Seller",
-      "contact": {
-        "phone": "+91-8642529395",
-        "email": "contact@premiermarket.com",
-        "website": "www.premiermarket.com"
-      },
-      "email": "",
-      "website": "",
-      "market_price": "",
-      "year_established": "",
-      "source": "amazon.in"
-    },
-    {
-      "name": "Shree Supply Chain",
-      "state": "Telangana",
-      "district": "Hyderabad",
-      "taluk": "Hyderabad Rural",
-      "product": "",
-      "category": "Pulses",
-      "type": "Online Seller",
-      "contact": {
-        "phone": "+91-8618923622",
-        "email": "contact@shreesupply.com",
-        "website": "www.shreesupply.com"
-      },
-      "email": "",
-      "website": "",
-      "market_price": "",
-      "year_established": "",
-      "source": "amazon.in"
-    },
-    {
-      "name": "Sri Agri Business",
+      "name": "Kiran Enterprises",
       "state": "Tamil Nadu",
       "district": "Chennai",
       "taluk": "Chennai Rural",
       "product": "",
-      "category": "Oilseeds",
+      "category": "Rice",
       "type": "Online Seller",
       "contact": {
-        "phone": "+91-8304802273",
-        "email": "contact@sriagri.com",
-        "website": "www.sriagri.com"
+        "phone": "+91-7244787344",
+        "email": "contact@kiranenterprises.com",
+        "website": "www.kiranenterprises.com"
+      },
+      "email": "",
+      "website": "",
+      "market_price": "",
+      "year_established": "",
+      "source": "amazon.in"
+    },
+    {
+      "name": "Lakshmi Enterprises",
+      "state": "Karnataka",
+      "district": "Belagavi",
+      "taluk": "Belagavi Rural",
+      "product": "",
+      "category": "Grains",
+      "type": "Online Seller",
+      "contact": {
+        "phone": "+91-8642718066",
+        "email": "contact@lakshmienterprises.com",
+        "website": "www.lakshmienterprises.com"
+      },
+      "email": "",
+      "website": "",
+      "market_price": "",
+      "year_established": "",
+      "source": "amazon.in"
+    },
+    {
+      "name": "Sai Commodities",
+      "state": "Tamil Nadu",
+      "district": "Tiruchirappalli",
+      "taluk": "Tiruchirappalli Rural",
+      "product": "",
+      "category": "Sugar",
+      "type": "Online Seller",
+      "contact": {
+        "phone": "+91-8463127784",
+        "email": "contact@saicommodities.com",
+        "website": "www.saicommodities.com"
       },
       "email": "",
       "website": "",
@@ -2086,13 +2137,13 @@
     {
       "name": "National Impex",
       "state": "Punjab",
-      "district": "Patiala",
-      "taluk": "Patiala Rural",
+      "district": "Ludhiana",
+      "taluk": "Ludhiana Rural",
       "product": "",
-      "category": "Rice",
+      "category": "Pulses",
       "type": "Online Seller",
       "contact": {
-        "phone": "+91-9592696457",
+        "phone": "+91-7288884298",
         "email": "contact@nationalimpex.com",
         "website": "www.nationalimpex.com"
       },
@@ -2100,96 +2151,96 @@
       "website": "",
       "market_price": "",
       "year_established": "",
-      "source": "flipkart.com"
+      "source": "amazon.in"
     },
     {
-      "name": "Om Corporation",
-      "state": "Tamil Nadu",
-      "district": "Coimbatore",
-      "taluk": "Coimbatore Rural",
-      "product": "",
-      "category": "Sugar",
-      "type": "Online Seller",
-      "contact": {
-        "phone": "+91-9179245704",
-        "email": "contact@omcorporation.com",
-        "website": "www.omcorporation.com"
-      },
-      "email": "",
-      "website": "",
-      "market_price": "",
-      "year_established": "",
-      "source": "flipkart.com"
-    },
-    {
-      "name": "Sai Agri Business",
-      "state": "Kerala",
-      "district": "Kozhikode",
-      "taluk": "Kozhikode Rural",
-      "product": "",
-      "category": "Sugar",
-      "type": "Online Seller",
-      "contact": {
-        "phone": "+91-8852159695",
-        "email": "contact@saiagri.com",
-        "website": "www.saiagri.com"
-      },
-      "email": "",
-      "website": "",
-      "market_price": "",
-      "year_established": "",
-      "source": "flipkart.com"
-    },
-    {
-      "name": "Lakshmi Agri Business",
-      "state": "Maharashtra",
-      "district": "Aurangabad",
-      "taluk": "Aurangabad Rural",
-      "product": "",
-      "category": "Rice",
-      "type": "Online Seller",
-      "contact": {
-        "phone": "+91-8344676590",
-        "email": "contact@lakshmiagri.com",
-        "website": "www.lakshmiagri.com"
-      },
-      "email": "",
-      "website": "",
-      "market_price": "",
-      "year_established": "",
-      "source": "flipkart.com"
-    },
-    {
-      "name": "Premier Industries",
+      "name": "Global Industries",
       "state": "Rajasthan",
-      "district": "Jodhpur",
-      "taluk": "Jodhpur Rural",
+      "district": "Ajmer",
+      "taluk": "Ajmer Rural",
       "product": "",
       "category": "Pulses",
       "type": "Online Seller",
       "contact": {
-        "phone": "+91-8387975202",
-        "email": "contact@premierindustries.com",
-        "website": "www.premierindustries.com"
+        "phone": "+91-7973329612",
+        "email": "contact@globalindustries.com",
+        "website": "www.globalindustries.com"
       },
       "email": "",
       "website": "",
       "market_price": "",
       "year_established": "",
-      "source": "flipkart.com"
+      "source": "amazon.in"
     },
     {
-      "name": "Pacific Corporation",
-      "state": "Karnataka",
-      "district": "Mangaluru",
-      "taluk": "Mangaluru Rural",
+      "name": "Shree Commodities",
+      "state": "West Bengal",
+      "district": "Kolkata",
+      "taluk": "Kolkata Rural",
       "product": "",
-      "category": "Grains",
+      "category": "Oilseeds",
       "type": "Online Seller",
       "contact": {
-        "phone": "+91-8939551461",
-        "email": "contact@pacificcorporation.com",
-        "website": "www.pacificcorporation.com"
+        "phone": "+91-7339001451",
+        "email": "contact@shreecommodities.com",
+        "website": "www.shreecommodities.com"
+      },
+      "email": "",
+      "website": "",
+      "market_price": "",
+      "year_established": "",
+      "source": "amazon.in"
+    },
+    {
+      "name": "Sri Enterprises",
+      "state": "Uttar Pradesh",
+      "district": "Kanpur",
+      "taluk": "Kanpur Rural",
+      "product": "",
+      "category": "Oilseeds",
+      "type": "Online Seller",
+      "contact": {
+        "phone": "+91-7359508532",
+        "email": "contact@srienterprises.com",
+        "website": "www.srienterprises.com"
+      },
+      "email": "",
+      "website": "",
+      "market_price": "",
+      "year_established": "",
+      "source": "amazon.in"
+    },
+    {
+      "name": "Sri Supply Chain",
+      "state": "Madhya Pradesh",
+      "district": "Ujjain",
+      "taluk": "Ujjain Rural",
+      "product": "",
+      "category": "Oilseeds",
+      "type": "Online Seller",
+      "contact": {
+        "phone": "+91-8839991085",
+        "email": "contact@srisupply.com",
+        "website": "www.srisupply.com"
+      },
+      "email": "",
+      "website": "",
+      "market_price": "",
+      "year_established": "",
+      "source": "amazon.in"
+    },
+    {
+      "name": "Hindustan Industries",
+      "state": "Tamil Nadu",
+      "district": "Chennai",
+      "taluk": "Chennai Rural",
+      "product": "",
+      "category": "Sugar",
+      "type": "Online Seller",
+      "contact": {
+        "phone": "+91-8776284503",
+        "email": "contact@hindustanindustries.com",
+        "website": "www.hindustanindustries.com"
       },
       "email": "",
       "website": "",
@@ -2199,14 +2250,14 @@
     },
     {
       "name": "Hindustan Farmers Prod.",
-      "state": "Tamil Nadu",
-      "district": "Chennai",
-      "taluk": "Chennai Rural",
+      "state": "Gujarat",
+      "district": "Surat",
+      "taluk": "Surat Rural",
       "product": "",
       "category": "Sugar",
-      "type": "Government Source",
+      "type": "Online Seller",
       "contact": {
-        "phone": "+91-7941951711",
+        "phone": "+91-7174558005",
         "email": "contact@hindustanfarmers.com",
         "website": "www.hindustanfarmers.com"
       },
@@ -2214,229 +2265,172 @@
       "website": "",
       "market_price": "",
       "year_established": "",
-      "source": "data.gov.in"
+      "source": "flipkart.com"
     },
     {
-      "name": "Kiran Agri Business",
-      "state": "Gujarat",
-      "district": "Anand",
-      "taluk": "Anand Rural",
-      "product": "",
-      "category": "Oilseeds",
-      "type": "Government Source",
-      "contact": {
-        "phone": "+91-8234036212",
-        "email": "contact@kiranagri.com",
-        "website": "www.kiranagri.com"
-      },
-      "email": "",
-      "website": "",
-      "market_price": "",
-      "year_established": "",
-      "source": "data.gov.in"
-    },
-    {
-      "name": "Global Agro Foods",
-      "state": "Uttar Pradesh",
-      "district": "Lucknow",
-      "taluk": "Lucknow Rural",
-      "product": "",
-      "category": "Sugar",
-      "type": "Government Source",
-      "contact": {
-        "phone": "+91-7287130689",
-        "email": "contact@globalagro.com",
-        "website": "www.globalagro.com"
-      },
-      "email": "",
-      "website": "",
-      "market_price": "",
-      "year_established": "",
-      "source": "data.gov.in"
-    },
-    {
-      "name": "Kiran Exports",
-      "state": "Kerala",
-      "district": "Thrissur",
-      "taluk": "Thrissur Rural",
-      "product": "",
-      "category": "Pulses",
-      "type": "Government Source",
-      "contact": {
-        "phone": "+91-9772590032",
-        "email": "contact@kiranexports.com",
-        "website": "www.kiranexports.com"
-      },
-      "email": "",
-      "website": "",
-      "market_price": "",
-      "year_established": "",
-      "source": "data.gov.in"
-    },
-    {
-      "name": "Hindustan Enterprises",
-      "state": "Punjab",
-      "district": "Jalandhar",
-      "taluk": "Jalandhar Rural",
-      "product": "",
-      "category": "Oilseeds",
-      "type": "Government Source",
-      "contact": {
-        "phone": "+91-9845360297",
-        "email": "contact@hindustanenterprises.com",
-        "website": "www.hindustanenterprises.com"
-      },
-      "email": "",
-      "website": "",
-      "market_price": "",
-      "year_established": "",
-      "source": "data.gov.in"
-    },
-    {
-      "name": "Raj Enterprises",
-      "state": "Rajasthan",
-      "district": "Jodhpur",
-      "taluk": "Jodhpur Rural",
-      "product": "",
-      "category": "Grains",
-      "type": "Government Source",
-      "contact": {
-        "phone": "+91-8257184483",
-        "email": "contact@rajenterprises.com",
-        "website": "www.rajenterprises.com"
-      },
-      "email": "",
-      "website": "",
-      "market_price": "",
-      "year_established": "",
-      "source": "data.gov.in"
-    },
-    {
-      "name": "Ganesh Supply Chain",
-      "state": "West Bengal",
-      "district": "Durgapur",
-      "taluk": "Durgapur Rural",
-      "product": "",
-      "category": "Sugar",
-      "type": "Government Source",
-      "contact": {
-        "phone": "+91-9397319991",
-        "email": "contact@ganeshsupply.com",
-        "website": "www.ganeshsupply.com"
-      },
-      "email": "",
-      "website": "",
-      "market_price": "",
-      "year_established": "",
-      "source": "data.gov.in"
-    },
-    {
-      "name": "Pacific Enterprises",
-      "state": "Madhya Pradesh",
-      "district": "Bhopal",
-      "taluk": "Bhopal Rural",
-      "product": "",
-      "category": "Pulses",
-      "type": "Government Source",
-      "contact": {
-        "phone": "+91-7141696372",
-        "email": "contact@pacificenterprises.com",
-        "website": "www.pacificenterprises.com"
-      },
-      "email": "",
-      "website": "",
-      "market_price": "",
-      "year_established": "",
-      "source": "data.gov.in"
-    },
-    {
-      "name": "Shree Enterprises",
-      "state": "Tamil Nadu",
-      "district": "Coimbatore",
-      "taluk": "Coimbatore Rural",
+      "name": "Sri Market Yard",
+      "state": "Odisha",
+      "district": "Rourkela",
+      "taluk": "Rourkela Rural",
       "product": "",
       "category": "Rice",
-      "type": "Government Source",
+      "type": "Online Seller",
       "contact": {
-        "phone": "+91-9531036227",
-        "email": "contact@shreeenterprises.com",
-        "website": "www.shreeenterprises.com"
+        "phone": "+91-7916483759",
+        "email": "contact@srimarket.com",
+        "website": "www.srimarket.com"
       },
       "email": "",
       "website": "",
       "market_price": "",
       "year_established": "",
-      "source": "data.gov.in"
+      "source": "flipkart.com"
     },
     {
-      "name": "Om Traders",
-      "state": "Maharashtra",
-      "district": "Nagpur",
-      "taluk": "Nagpur Rural",
-      "product": "",
-      "category": "Grains",
-      "type": "Government Source",
-      "contact": {
-        "phone": "+91-8335897491",
-        "email": "contact@omtraders.com",
-        "website": "www.omtraders.com"
-      },
-      "email": "",
-      "website": "",
-      "market_price": "",
-      "year_established": "",
-      "source": "data.gov.in"
-    },
-    {
-      "name": "Indian Agri Business",
-      "state": "Kerala",
-      "district": "Kochi",
-      "taluk": "Kochi Rural",
-      "product": "",
-      "category": "Oilseeds",
-      "type": "Government Source",
-      "contact": {
-        "phone": "+91-9945955450",
-        "email": "contact@indianagri.com",
-        "website": "www.indianagri.com"
-      },
-      "email": "",
-      "website": "",
-      "market_price": "",
-      "year_established": "",
-      "source": "data.gov.in"
-    },
-    {
-      "name": "National Trading Co.",
+      "name": "Premier Corporation",
       "state": "Telangana",
-      "district": "Karimnagar",
-      "taluk": "Karimnagar Rural",
+      "district": "Khammam",
+      "taluk": "Khammam Rural",
       "product": "",
       "category": "Rice",
-      "type": "Government Source",
+      "type": "Online Seller",
       "contact": {
-        "phone": "+91-8501059586",
-        "email": "contact@nationaltrading.com",
-        "website": "www.nationaltrading.com"
+        "phone": "+91-7501465147",
+        "email": "contact@premiercorporation.com",
+        "website": "www.premiercorporation.com"
       },
       "email": "",
       "website": "",
       "market_price": "",
       "year_established": "",
-      "source": "data.gov.in"
+      "source": "flipkart.com"
     },
     {
-      "name": "Om Farmers Prod.",
+      "name": "Global Agri Business",
       "state": "Haryana",
       "district": "Gurgaon",
       "taluk": "Gurgaon Rural",
       "product": "",
+      "category": "Oilseeds",
+      "type": "Online Seller",
+      "contact": {
+        "phone": "+91-9615935294",
+        "email": "contact@globalagri.com",
+        "website": "www.globalagri.com"
+      },
+      "email": "",
+      "website": "",
+      "market_price": "",
+      "year_established": "",
+      "source": "flipkart.com"
+    },
+    {
+      "name": "Ganesh Store House",
+      "state": "Haryana",
+      "district": "Ambala",
+      "taluk": "Ambala Rural",
+      "product": "",
+      "category": "Rice",
+      "type": "Online Seller",
+      "contact": {
+        "phone": "+91-8270928430",
+        "email": "contact@ganeshstore.com",
+        "website": "www.ganeshstore.com"
+      },
+      "email": "",
+      "website": "",
+      "market_price": "",
+      "year_established": "",
+      "source": "flipkart.com"
+    },
+    {
+      "name": "Shree Market Yard",
+      "state": "Haryana",
+      "district": "Panipat",
+      "taluk": "Panipat Rural",
+      "product": "",
+      "category": "Sugar",
+      "type": "Online Seller",
+      "contact": {
+        "phone": "+91-8648392710",
+        "email": "contact@shreemarket.com",
+        "website": "www.shreemarket.com"
+      },
+      "email": "",
+      "website": "",
+      "market_price": "",
+      "year_established": "",
+      "source": "flipkart.com"
+    },
+    {
+      "name": "Kiran Commodities",
+      "state": "Haryana",
+      "district": "Karnal",
+      "taluk": "Karnal Rural",
+      "product": "",
+      "category": "Grains",
+      "type": "Online Seller",
+      "contact": {
+        "phone": "+91-8248482685",
+        "email": "contact@kirancommodities.com",
+        "website": "www.kirancommodities.com"
+      },
+      "email": "",
+      "website": "",
+      "market_price": "",
+      "year_established": "",
+      "source": "flipkart.com"
+    },
+    {
+      "name": "Bharat Store House",
+      "state": "Gujarat",
+      "district": "Ahmedabad",
+      "taluk": "Ahmedabad Rural",
+      "product": "",
+      "category": "Rice",
+      "type": "Online Seller",
+      "contact": {
+        "phone": "+91-7970519813",
+        "email": "contact@bharatstore.com",
+        "website": "www.bharatstore.com"
+      },
+      "email": "",
+      "website": "",
+      "market_price": "",
+      "year_established": "",
+      "source": "flipkart.com"
+    },
+    {
+      "name": "Ganesh Agro Foods",
+      "state": "Assam",
+      "district": "Jorhat",
+      "taluk": "Jorhat Rural",
+      "product": "",
+      "category": "Sugar",
+      "type": "Online Seller",
+      "contact": {
+        "phone": "+91-8957665944",
+        "email": "contact@ganeshagro.com",
+        "website": "www.ganeshagro.com"
+      },
+      "email": "",
+      "website": "",
+      "market_price": "",
+      "year_established": "",
+      "source": "flipkart.com"
+    },
+    {
+      "name": "Sri Impex",
+      "state": "Karnataka",
+      "district": "Mangaluru",
+      "taluk": "Mangaluru Rural",
+      "product": "",
       "category": "Pulses",
       "type": "Government Source",
       "contact": {
-        "phone": "+91-9199770691",
-        "email": "contact@omfarmers.com",
-        "website": "www.omfarmers.com"
+        "phone": "+91-7334299927",
+        "email": "contact@sriimpex.com",
+        "website": "www.sriimpex.com"
       },
       "email": "",
       "website": "",
@@ -2445,187 +2439,214 @@
       "source": "data.gov.in"
     },
     {
-      "name": "Kiran Industries",
+      "name": "Pacific Agro Foods",
+      "state": "Kerala",
+      "district": "Kollam",
+      "taluk": "Kollam Rural",
+      "product": "",
+      "category": "Oilseeds",
+      "type": "Government Source",
+      "contact": {
+        "phone": "+91-9751759028",
+        "email": "contact@pacificagro.com",
+        "website": "www.pacificagro.com"
+      },
+      "email": "",
+      "website": "",
+      "market_price": "",
+      "year_established": "",
+      "source": "data.gov.in"
+    },
+    {
+      "name": "Lakshmi Traders",
+      "state": "Madhya Pradesh",
+      "district": "Jabalpur",
+      "taluk": "Jabalpur Rural",
+      "product": "",
+      "category": "Grains",
+      "type": "Government Source",
+      "contact": {
+        "phone": "+91-8851878166",
+        "email": "contact@lakshmitraders.com",
+        "website": "www.lakshmitraders.com"
+      },
+      "email": "",
+      "website": "",
+      "market_price": "",
+      "year_established": "",
+      "source": "data.gov.in"
+    },
+    {
+      "name": "Om Impex",
+      "state": "Assam",
+      "district": "Tezpur",
+      "taluk": "Tezpur Rural",
+      "product": "",
+      "category": "Rice",
+      "type": "Government Source",
+      "contact": {
+        "phone": "+91-7704436014",
+        "email": "contact@omimpex.com",
+        "website": "www.omimpex.com"
+      },
+      "email": "",
+      "website": "",
+      "market_price": "",
+      "year_established": "",
+      "source": "data.gov.in"
+    },
+    {
+      "name": "Bharat Exports",
+      "state": "Maharashtra",
+      "district": "Nashik",
+      "taluk": "Nashik Rural",
+      "product": "",
+      "category": "Oilseeds",
+      "type": "Government Source",
+      "contact": {
+        "phone": "+91-8179474985",
+        "email": "contact@bharatexports.com",
+        "website": "www.bharatexports.com"
+      },
+      "email": "",
+      "website": "",
+      "market_price": "",
+      "year_established": "",
+      "source": "data.gov.in"
+    },
+    {
+      "name": "Royal Agri Business",
       "state": "Andhra Pradesh",
       "district": "Vijayawada",
       "taluk": "Vijayawada Rural",
       "product": "",
-      "category": "Sugar",
-      "type": "Manufacturer",
-      "contact": {
-        "phone": "+91-7233113701",
-        "email": "contact@kiranindustries.com",
-        "website": "www.kiranindustries.com"
-      },
-      "email": "",
-      "website": "",
-      "market_price": "",
-      "year_established": "",
-      "source": "linkedin.com"
-    },
-    {
-      "name": "Om Supply Chain",
-      "state": "Punjab",
-      "district": "Jalandhar",
-      "taluk": "Jalandhar Rural",
-      "product": "",
       "category": "Grains",
-      "type": "Wholesaler",
+      "type": "Government Source",
       "contact": {
-        "phone": "+91-7625595823",
-        "email": "contact@omsupply.com",
-        "website": "www.omsupply.com"
+        "phone": "+91-9343141482",
+        "email": "contact@royalagri.com",
+        "website": "www.royalagri.com"
       },
       "email": "",
       "website": "",
       "market_price": "",
       "year_established": "",
-      "source": "linkedin.com"
-    },
-    {
-      "name": "Kiran Impex",
-      "state": "Karnataka",
-      "district": "Mangaluru",
-      "taluk": "Mangaluru Rural",
-      "product": "",
-      "category": "Wheat",
-      "type": "Wholesaler",
-      "contact": {
-        "phone": "+91-8898422123",
-        "email": "contact@kiranimpex.com",
-        "website": "www.kiranimpex.com"
-      },
-      "email": "",
-      "website": "",
-      "market_price": "",
-      "year_established": "",
-      "source": "linkedin.com"
-    },
-    {
-      "name": "National Market Yard",
-      "state": "Gujarat",
-      "district": "Surat",
-      "taluk": "Surat Rural",
-      "product": "",
-      "category": "Sugar",
-      "type": "Manufacturer",
-      "contact": {
-        "phone": "+91-7291372608",
-        "email": "contact@nationalmarket.com",
-        "website": "www.nationalmarket.com"
-      },
-      "email": "",
-      "website": "",
-      "market_price": "",
-      "year_established": "",
-      "source": "linkedin.com"
+      "source": "data.gov.in"
     }
   ],
   "consolidated": {},
   "product_hierarchy": {},
   "state_hierarchy": {
-    "West Bengal": {
-      "Asansol": 2,
-      "Howrah": 4,
-      "Durgapur": 3,
-      "Siliguri": 3,
-      "Kolkata": 2
+    "Gujarat": {
+      "Rajkot": 2,
+      "Ahmedabad": 3,
+      "Surat": 7,
+      "Vadodara": 3
     },
-    "Maharashtra": {
-      "Pune": 4,
-      "Aurangabad": 4,
-      "Nagpur": 3,
-      "Nashik": 3,
-      "Mumbai": 2
+    "West Bengal": {
+      "Howrah": 2,
+      "Durgapur": 3,
+      "Kolkata": 2,
+      "Siliguri": 3,
+      "Asansol": 3
+    },
+    "Karnataka": {
+      "Hubballi": 4,
+      "Belagavi": 4,
+      "Mangaluru": 3,
+      "Mysuru": 4,
+      "Bengaluru": 2
+    },
+    "Kerala": {
+      "Kochi": 3,
+      "Kollam": 5,
+      "Thrissur": 4,
+      "Kozhikode": 3,
+      "Thiruvananthapuram": 3
+    },
+    "Haryana": {
+      "Gurgaon": 3,
+      "Ambala": 1,
+      "Panipat": 5,
+      "Karnal": 6,
+      "Faridabad": 3
+    },
+    "Bihar": {
+      "Munger": 3,
+      "Bhagalpur": 2,
+      "Muzaffarpur": 3,
+      "Gaya": 5,
+      "Patna": 3
+    },
+    "Tamil Nadu": {
+      "Coimbatore": 2,
+      "Salem": 3,
+      "Chennai": 6,
+      "Tiruchirappalli": 3
+    },
+    "Telangana": {
+      "Nizamabad": 2,
+      "Hyderabad": 2,
+      "Khammam": 1,
+      "Karimnagar": 1,
+      "Warangal": 3
     },
     "Punjab": {
-      "Ludhiana": 4,
-      "Patiala": 2,
-      "Jalandhar": 2,
-      "Amritsar": 2,
-      "Bathinda": 2
+      "Bathinda": 3,
+      "Ludhiana": 2,
+      "Jalandhar": 1
     },
     "Assam": {
       "Tezpur": 3,
-      "Jorhat": 3,
-      "Guwahati": 2,
-      "Silchar": 1
+      "Guwahati": 1,
+      "Jorhat": 2,
+      "Dibrugarh": 3
     },
-    "Bihar": {
-      "Muzaffarpur": 2,
-      "Bhagalpur": 4,
-      "Patna": 1,
-      "Munger": 2,
-      "Gaya": 1
+    "Andhra Pradesh": {
+      "Visakhapatnam": 5,
+      "Vijayawada": 3,
+      "Guntur": 2,
+      "Tirupati": 1,
+      "Hyderabad": 2
+    },
+    "Maharashtra": {
+      "Nagpur": 3,
+      "Nashik": 2,
+      "Aurangabad": 3,
+      "Pune": 2,
+      "Mumbai": 1
+    },
+    "Rajasthan": {
+      "Ajmer": 2,
+      "Kota": 2,
+      "Jodhpur": 3,
+      "Udaipur": 3,
+      "Jaipur": 1
     },
     "Uttar Pradesh": {
       "Kanpur": 1,
+      "Lucknow": 2,
+      "Agra": 2,
       "Meerut": 2,
-      "Lucknow": 3,
-      "Agra": 2
-    },
-    "Tamil Nadu": {
-      "Salem": 5,
-      "Chennai": 6,
-      "Coimbatore": 6,
-      "Tiruchirappalli": 2
-    },
-    "Karnataka": {
-      "Bengaluru": 4,
-      "Mangaluru": 2,
-      "Mysuru": 2,
-      "Belagavi": 2
-    },
-    "Gujarat": {
-      "Vadodara": 4,
-      "Ahmedabad": 4,
-      "Surat": 4,
-      "Anand": 3,
-      "Rajkot": 1
-    },
-    "Rajasthan": {
-      "Jaipur": 4,
-      "Jodhpur": 3,
-      "Udaipur": 1,
-      "Kota": 2
-    },
-    "Kerala": {
-      "Thrissur": 5,
-      "Kozhikode": 2,
-      "Kochi": 3,
-      "Thiruvananthapuram": 2,
-      "Kollam": 1
-    },
-    "Haryana": {
-      "Ambala": 3,
-      "Panipat": 4,
-      "Gurgaon": 1,
-      "Faridabad": 5
-    },
-    "Odisha": {
-      "Berhampur": 9,
-      "Bhubaneswar": 2,
-      "Sambalpur": 3,
-      "Cuttack": 3,
-      "Rourkela": 2
-    },
-    "Telangana": {
-      "Khammam": 3,
-      "Hyderabad": 4,
-      "Karimnagar": 3,
-      "Nizamabad": 3
+      "Varanasi": 2
     },
     "Madhya Pradesh": {
-      "Ujjain": 5,
-      "Bhopal": 1,
-      "Indore": 3,
-      "Gwalior": 1
+      "Ujjain": 1,
+      "Jabalpur": 1,
+      "Bhopal": 2,
+      "Gwalior": 1,
+      "Indore": 2
     },
-    "Andhra Pradesh": {
-      "Vijayawada": 3,
-      "Hyderabad": 3,
-      "Tirupati": 3,
-      "Guntur": 1
+    "Odisha": {
+      "Rourkela": 5,
+      "Berhampur": 1,
+      "Sambalpur": 3
     }
+  },
+  "system_metrics": {
+    "cpu": 36.1,
+    "ram": 86.2,
+    "disk": 41.0,
+    "platform": "Windows"
   }
 }

@@ -1,222 +1,222 @@
 {
   "cycle": 0,
-  "raw_entities": 202,
-  "pipeline_output": 118,
+  "raw_entities": 195,
+  "pipeline_output": 120,
   "pipeline_stages": [
     {
       "stage_name": "validation",
-      "input_count": 202,
-      "output_count": 202,
+      "input_count": 195,
+      "output_count": 195,
       "errors": 0,
       "skipped": 0,
-      "processing_time_ms": 0.714500027243048,
+      "processing_time_ms": 0.5598000134341419,
       "error_details": []
     },
     {
       "stage_name": "deduplication",
-      "input_count": 202,
-      "output_count": 118,
+      "input_count": 195,
+      "output_count": 120,
       "errors": 0,
-      "skipped": 84,
-      "processing_time_ms": 1352.1970000001602,
+      "skipped": 75,
+      "processing_time_ms": 1300.651800003834,
       "error_details": []
     },
     {
       "stage_name": "cleaning",
-      "input_count": 118,
-      "output_count": 118,
+      "input_count": 120,
+      "output_count": 120,
       "errors": 0,
       "skipped": 0,
-      "processing_time_ms": 3.360699978657067,
+      "processing_time_ms": 2.7384000131860375,
       "error_details": []
     },
     {
       "stage_name": "normalization",
-      "input_count": 118,
-      "output_count": 118,
+      "input_count": 120,
+      "output_count": 120,
       "errors": 0,
       "skipped": 0,
-      "processing_time_ms": 0.40279998211190104,
+      "processing_time_ms": 0.35830005072057247,
       "error_details": []
     },
     {
       "stage_name": "translation",
-      "input_count": 118,
-      "output_count": 118,
+      "input_count": 120,
+      "output_count": 120,
       "errors": 0,
       "skipped": 0,
-      "processing_time_ms": 0.9160999907180667,
+      "processing_time_ms": 0.8935999940149486,
       "error_details": []
     },
     {
       "stage_name": "entity_recognition",
-      "input_count": 118,
-      "output_count": 118,
+      "input_count": 120,
+      "output_count": 120,
       "errors": 0,
       "skipped": 0,
-      "processing_time_ms": 0.651500013191253,
+      "processing_time_ms": 0.35149999894201756,
       "error_details": []
     },
     {
       "stage_name": "commodity_classification",
-      "input_count": 118,
-      "output_count": 118,
+      "input_count": 120,
+      "output_count": 120,
       "errors": 0,
       "skipped": 0,
-      "processing_time_ms": 2.3064000415615737,
+      "processing_time_ms": 2.036800025962293,
       "error_details": []
     },
     {
       "stage_name": "sector_classification",
-      "input_count": 118,
-      "output_count": 118,
+      "input_count": 120,
+      "output_count": 120,
       "errors": 0,
       "skipped": 0,
-      "processing_time_ms": 1.2833999935537577,
+      "processing_time_ms": 1.7476999782957137,
       "error_details": []
     }
   ],
   "graph_stats": {
-    "total_nodes": 347,
-    "total_edges": 1476,
-    "entity_count": 225,
+    "total_nodes": 349,
+    "total_edges": 1793,
+    "entity_count": 227,
     "commodity_count": 27,
     "geography_count": 95,
     "relationship_counts": {
-      "SUPPLIES": 756,
-      "LOCATED_IN": 720
+      "SUPPLIES": 927,
+      "LOCATED_IN": 866
     },
     "is_dag": true,
     "num_connected_components": 85
   },
   "crawler_stats": {
-    "indiamart.com_88d0f607": {
+    "indiamart.com_88682d35": {
       "entities_collected": 7,
       "status": "success"
     },
-    "tradeindia.com_2dcc5825": {
-      "entities_collected": 2,
-      "status": "success"
-    },
-    "agmarknet.gov.in_adffd314": {
-      "entities_collected": 6,
-      "status": "success"
-    },
-    "apmc_market_2c59068b": {
-      "entities_collected": 2,
-      "status": "success"
-    },
-    "export_directory_acc915a2": {
-      "entities_collected": 5,
-      "status": "success"
-    },
-    "amazon.in_b8087514": {
-      "entities_collected": 5,
-      "status": "success"
-    },
-    "flipkart.com_de12ebed": {
-      "entities_collected": 6,
-      "status": "success"
-    },
-    "data.gov.in_21c28500": {
-      "entities_collected": 13,
-      "status": "success"
-    },
-    "linkedin.com_c4ad5a48": {
-      "entities_collected": 6,
-      "status": "success"
-    },
-    "commodity_news_762cc0b0": {
-      "entities_collected": 7,
-      "status": "success"
-    },
-    "jiomart.com_2057dab9": {
-      "entities_collected": 9,
-      "status": "success"
-    },
-    "dmart.in_549d6416": {
-      "entities_collected": 4,
-      "status": "success"
-    },
-    "bigbasket.com_bc6baba3": {
-      "entities_collected": 9,
-      "status": "success"
-    },
-    "blinkit.com_e21188d7": {
-      "entities_collected": 11,
-      "status": "success"
-    },
-    "zepto.com_02888408": {
-      "entities_collected": 14,
-      "status": "success"
-    },
-    "swiggy.com_11d03e2b": {
-      "entities_collected": 10,
-      "status": "success"
-    },
-    "reliancefresh.com_2daabddd": {
-      "entities_collected": 10,
-      "status": "success"
-    },
-    "more.com_df266ba9": {
-      "entities_collected": 7,
-      "status": "success"
-    },
-    "spencers.in_77a3fd79": {
+    "tradeindia.com_5c2c1580": {
       "entities_collected": 3,
       "status": "success"
     },
-    "walmart.com_88208dc2": {
-      "entities_collected": 11,
-      "status": "success"
-    },
-    "costco.com_a2334a5d": {
-      "entities_collected": 5,
-      "status": "success"
-    },
-    "carrefour.com_d7cd4c72": {
+    "agmarknet.gov.in_f14bbb60": {
       "entities_collected": 8,
       "status": "success"
     },
-    "tesco.com_d513e7f1": {
-      "entities_collected": 4,
+    "apmc_market_a9ab1218": {
+      "entities_collected": 2,
       "status": "success"
     },
-    "alibaba.com_238a8cd0": {
-      "entities_collected": 9,
-      "status": "success"
-    },
-    "amazon.com_e6047947": {
-      "entities_collected": 11,
-      "status": "success"
-    },
-    "seafood_export_b6f75ac7": {
-      "entities_collected": 10,
-      "status": "success"
-    },
-    "corporate_farm_e16ea318": {
+    "export_directory_a100cc4b": {
       "entities_collected": 3,
       "status": "success"
     },
-    "marine_harvest_d972e909": {
+    "amazon.in_de059ca2": {
+      "entities_collected": 11,
+      "status": "success"
+    },
+    "flipkart.com_fa70be0f": {
+      "entities_collected": 10,
+      "status": "success"
+    },
+    "data.gov.in_9eafc578": {
+      "entities_collected": 19,
+      "status": "success"
+    },
+    "linkedin.com_0b67dead": {
+      "entities_collected": 3,
+      "status": "success"
+    },
+    "commodity_news_61abe81c": {
+      "entities_collected": 6,
+      "status": "success"
+    },
+    "jiomart.com_c43d6ae3": {
+      "entities_collected": 7,
+      "status": "success"
+    },
+    "dmart.in_fb531734": {
+      "entities_collected": 10,
+      "status": "success"
+    },
+    "bigbasket.com_f55593d6": {
+      "entities_collected": 8,
+      "status": "success"
+    },
+    "blinkit.com_dbe88346": {
+      "entities_collected": 14,
+      "status": "success"
+    },
+    "zepto.com_edda2f75": {
+      "entities_collected": 7,
+      "status": "success"
+    },
+    "swiggy.com_61ddc16e": {
+      "entities_collected": 7,
+      "status": "success"
+    },
+    "reliancefresh.com_3cdbd3b0": {
       "entities_collected": 5,
+      "status": "success"
+    },
+    "more.com_9e81c622": {
+      "entities_collected": 4,
+      "status": "success"
+    },
+    "spencers.in_71326064": {
+      "entities_collected": 3,
+      "status": "success"
+    },
+    "walmart.com_c443e96d": {
+      "entities_collected": 7,
+      "status": "success"
+    },
+    "costco.com_7ea9a77e": {
+      "entities_collected": 6,
+      "status": "success"
+    },
+    "carrefour.com_4b8cc601": {
+      "entities_collected": 6,
+      "status": "success"
+    },
+    "tesco.com_006603d2": {
+      "entities_collected": 7,
+      "status": "success"
+    },
+    "alibaba.com_e4ae0d76": {
+      "entities_collected": 7,
+      "status": "success"
+    },
+    "amazon.com_e91fd4e4": {
+      "entities_collected": 10,
+      "status": "success"
+    },
+    "seafood_export_e92d385c": {
+      "entities_collected": 7,
+      "status": "success"
+    },
+    "corporate_farm_55ed58af": {
+      "entities_collected": 4,
+      "status": "success"
+    },
+    "marine_harvest_3b318e4f": {
+      "entities_collected": 4,
       "status": "success"
     }
   },
   "resources": {
-    "timestamp": 1784451529.0925665,
-    "cpu_percent": 23.1,
+    "timestamp": 1784467638.9300137,
+    "cpu_percent": 16.7,
     "ram_total_gb": 7.823066711425781,
-    "ram_used_gb": 7.374263763427734,
-    "ram_percent": 94.3,
+    "ram_used_gb": 6.882343292236328,
+    "ram_percent": 88.0,
     "disk_total_gb": 41.117183685302734,
-    "disk_used_gb": 16.86113739013672,
+    "disk_used_gb": 16.86233139038086,
     "disk_percent": 41.0,
     "gpu_available": false,
     "gpu_name": "N/A",
     "gpu_memory_gb": 0.0,
     "network_available": false,
-    "load_average": 0.231,
+    "load_average": 0.16699999999999998,
     "runtime_remaining_minutes": 999.0,
     "queue_length": 0,
     "api_budget_remaining": 1.0

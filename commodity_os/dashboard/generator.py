@@ -54,6 +54,19 @@ class DashboardGenerator:
         data = self._safe_entities(entities)
         ts = time.time()
 
+        # Real system metrics
+        system_metrics = {"cpu": 0, "ram": 0, "disk": 0, "platform": "unknown"}
+        try:
+            import psutil
+            system_metrics = {
+                "cpu": psutil.cpu_percent(interval=0.5),
+                "ram": psutil.virtual_memory().percent,
+                "disk": psutil.disk_usage("/").percent if hasattr(psutil, "disk_usage") else 0,
+                "platform": __import__("platform").system(),
+            }
+        except Exception:
+            pass
+
         bar_by_state = self._count_field(data, "state")
         bar_by_product = self._count_field(data, "product")
         bar_by_type = self._count_field(data, "type")
@@ -112,6 +125,7 @@ class DashboardGenerator:
             "consolidated": consolidated,
             "product_hierarchy": product_hierarchy,
             "state_hierarchy": state_hierarchy,
+            "system_metrics": system_metrics,
         }
 
     # ------------------------------------------------------------------
@@ -913,16 +927,17 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
 
     // ===== MONITORING PAGE =====
     function renderMonitoringPage() {
-        const cpu = Math.floor(Math.random() * 30) + 20;
-        const ram = Math.floor(Math.random() * 15) + 80;
-        const disk = 40;
-        document.getElementById('m-cpu').textContent = cpu + '%';
+        const metrics = (typeof EMBEDDED_DATA !== 'undefined' && EMBEDDED_DATA.system_metrics) ? EMBEDDED_DATA.system_metrics : {};
+        const cpu = metrics.cpu || 0;
+        const ram = metrics.ram || 0;
+        const disk = metrics.disk || 40;
+        document.getElementById('m-cpu').textContent = cpu.toFixed(1) + '%';
         document.getElementById('m-cpu-bar').style.width = cpu + '%';
         document.getElementById('m-cpu-bar').style.background = cpu > 80 ? '#ef4444' : cpu > 50 ? '#f59e0b' : '#22c55e';
-        document.getElementById('m-ram').textContent = ram + '%';
+        document.getElementById('m-ram').textContent = ram.toFixed(1) + '%';
         document.getElementById('m-ram-bar').style.width = ram + '%';
         document.getElementById('m-ram-bar').style.background = ram > 90 ? '#ef4444' : ram > 70 ? '#f59e0b' : '#22c55e';
-        document.getElementById('m-disk').textContent = disk + '%';
+        document.getElementById('m-disk').textContent = disk.toFixed(1) + '%';
         document.getElementById('m-disk-bar').style.width = disk + '%';
         document.getElementById('system-info').innerHTML = `<div style="font-size:13px;line-height:2">
             <div><strong>Platform:</strong> Windows</div>
