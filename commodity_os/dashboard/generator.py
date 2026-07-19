@@ -215,7 +215,6 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="300">
     <title>CommodityOS - Market Intelligence Dashboard</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
     <style>
@@ -366,7 +365,8 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
                 <input type="text" placeholder="Search products, entities, districts...">
             </div>
             <div class="header-actions">
-                <div class="live-badge"><div class="live-dot"></div>Live Monitoring</div>
+                <div style="font-size:12px;color:#64748b" id="last-update">Loading...</div>
+                <div class="live-badge"><div class="live-dot"></div>Live</div>
                 <div class="header-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0"/></svg></div>
             </div>
         </div>
@@ -501,6 +501,14 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
         { name: 'GitHub Push', color: '#64748b' }
     ];
 
+    // --- Chart instances (for destroy before recreate) ---
+    let productChartInstance = null;
+    let stateChartInstance = null;
+    let bubbleChartInstance = null;
+    let typeChartInstance = null;
+    let autoRefreshTimer = null;
+    let lastUpdate = null;
+
     function render(entities) {
         document.getElementById('s-entities').textContent = entities.length.toLocaleString();
         const states = [...new Set(entities.map(e=>e.state).filter(Boolean))];
@@ -514,20 +522,26 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
         document.getElementById('progress-fill').style.width = pct+'%';
         document.getElementById('progress-text').textContent = entities.length.toLocaleString()+' / 5,000 collected';
 
+        // Update timestamp
+        lastUpdate = new Date();
+        const tsEl = document.getElementById('last-update');
+        if (tsEl) tsEl.textContent = 'Last updated: ' + lastUpdate.toLocaleTimeString();
+
         // --- Polar Area Chart: Product Distribution ---
         const pCounts = {};
         entities.forEach(e=>{const p=e.product||'Unknown';pCounts[p]=(pCounts[p]||0)+1;});
         const pLabels = Object.keys(pCounts);
         const pValues = Object.values(pCounts);
         const polarColors = ['#22c55e','#3b82f6','#f59e0b','#ef4444','#8b5cf6','#ec4899','#06b6d4','#14b8a6','#f97316','#64748b','#a855f7','#e11d48'];
-        new Chart(document.getElementById('productChart'), {
+        if (productChartInstance) productChartInstance.destroy();
+        productChartInstance = new Chart(document.getElementById('productChart'), {
             type: 'polarArea',
             data: {
                 labels: pLabels,
                 datasets: [{ data: pValues, backgroundColor: polarColors.map(c => c + '99'), borderColor: polarColors, borderWidth: 2 }]
             },
             options: {
-                responsive: true, maintainAspectRatio: false,
+                responsive: true, maintainAspectRatio: false, animation: { duration: 600 },
                 plugins: { legend: { position: 'right', labels: { padding: 10, font: { size: 11 } } } },
                 scales: { r: { ticks: { display: false }, grid: { color: '#e2e8f0' } } }
             }
@@ -537,7 +551,8 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
         const sCounts = {};
         entities.forEach(e=>{const s=e.state||'Unknown';sCounts[s]=(sCounts[s]||0)+1;});
         const sSorted = Object.entries(sCounts).sort((a,b)=>b[1]-a[1]).slice(0,8);
-        new Chart(document.getElementById('stateChart'), {
+        if (stateChartInstance) stateChartInstance.destroy();
+        stateChartInstance = new Chart(document.getElementById('stateChart'), {
             type: 'radar',
             data: {
                 labels: sSorted.map(s=>s[0]),
@@ -554,7 +569,7 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
                 }]
             },
             options: {
-                responsive: true, maintainAspectRatio: false,
+                responsive: true, maintainAspectRatio: false, animation: { duration: 600 },
                 plugins: { legend: { display: false } },
                 scales: { r: { beginAtZero: true, grid: { color: '#e2e8f0' }, pointLabels: { font: { size: 11 } }, ticks: { display: false } } }
             }
@@ -583,11 +598,12 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
                 borderWidth: 1
             };
         });
-        new Chart(document.getElementById('bubbleChart'), {
+        if (bubbleChartInstance) bubbleChartInstance.destroy();
+        bubbleChartInstance = new Chart(document.getElementById('bubbleChart'), {
             type: 'bubble',
             data: { datasets: bubbleDatasets },
             options: {
-                responsive: true, maintainAspectRatio: false,
+                responsive: true, maintainAspectRatio: false, animation: { duration: 600 },
                 plugins: { legend: { position: 'top', labels: { padding: 12, font: { size: 11 } } } },
                 scales: {
                     x: { title: { display: true, text: 'District Index', font: { size: 11 } }, grid: { color: '#f1f5f9' } },
@@ -599,10 +615,11 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
         // --- Doughnut: Entity Type Split ---
         const tCounts = {};
         entities.forEach(e=>{const t=e.type||'Unknown';tCounts[t]=(tCounts[t]||0)+1;});
-        new Chart(document.getElementById('typeChart'), {
+        if (typeChartInstance) typeChartInstance.destroy();
+        typeChartInstance = new Chart(document.getElementById('typeChart'), {
             type: 'doughnut',
             data: { labels: Object.keys(tCounts), datasets: [{ data: Object.values(tCounts), backgroundColor: ['#22c55e','#3b82f6','#f59e0b','#ef4444','#8b5cf6','#06b6d4'], borderWidth: 0 }] },
-            options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'bottom', labels: { padding: 16, font: { size: 12 } } } } }
+            options: { responsive: true, maintainAspectRatio: false, animation: { duration: 600 }, plugins: { legend: { position: 'bottom', labels: { padding: 16, font: { size: 12 } } } } }
         });
 
         // Crawler List
@@ -658,12 +675,31 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
         }).join('');
     }
 
-    // Load from embedded data or fetch
+    // --- Dynamic data loading ---
+    function fetchData() {
+        return fetch('data.json?t=' + Date.now())
+            .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+            .then(data => {
+                if (Array.isArray(data) && data.length) {
+                    render(data);
+                } else if (data && data.table && data.table.length) {
+                    render(data.table);
+                }
+            });
+    }
+
+    function startAutoRefresh(intervalMs) {
+        if (autoRefreshTimer) clearInterval(autoRefreshTimer);
+        autoRefreshTimer = setInterval(fetchData, intervalMs);
+    }
+
+    // Initial load
     const EMBEDDED_DATA = __DASHBOARD_DATA__;
     if (EMBEDDED_DATA && EMBEDDED_DATA.table && EMBEDDED_DATA.table.length) {
         render(EMBEDDED_DATA.table);
+        startAutoRefresh(30000);
     } else {
-        fetch('data.json').then(r=>r.json()).then(render).catch(()=>{
+        fetchData().then(() => startAutoRefresh(30000)).catch(()=>{
             const demo = Array.from({length:200},(_,i)=>({
                 name:`Entity ${i+1}`,product:['Sugar','Rice','Wheat','Pulses','Grains','Dals','Basmathi Rice'][i%7],
                 type:['Manufacturer','Wholesaler','Exporter'][i%3],state:['Maharashtra','Uttar Pradesh','Punjab','Gujarat','Rajasthan','Karnataka','Tamil Nadu'][i%7],
