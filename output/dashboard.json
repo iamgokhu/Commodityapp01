@@ -1,10 +1,10 @@
 {
-  "generated_at": 1784445175.413585,
+  "generated_at": 1784445820.6472704,
   "summary": {
     "total_entities": 2,
     "states_covered": 2,
     "products": 2,
-    "entity_types": 0
+    "entity_types": 2
   },
   "filters": {
     "states": [
@@ -15,7 +15,10 @@
       "Rice",
       "Sugar"
     ],
-    "entity_types": []
+    "types": [
+      "Manufacturer",
+      "Wholesaler"
+    ]
   },
   "bar": {
     "by_state": [
@@ -40,8 +43,12 @@
     ],
     "by_type": [
       {
-        "name": "Unknown",
-        "value": 2
+        "name": "Manufacturer",
+        "value": 1
+      },
+      {
+        "name": "Wholesaler",
+        "value": 1
       }
     ]
   },
@@ -68,8 +75,12 @@
     ],
     "entity_type": [
       {
-        "name": "Unknown",
-        "value": 2
+        "name": "Manufacturer",
+        "value": 1
+      },
+      {
+        "name": "Wholesaler",
+        "value": 1
       }
     ]
   },
@@ -129,12 +140,13 @@
       "district": "",
       "taluk": "",
       "product": "Sugar",
-      "entity_type": "",
+      "type": "",
       "contact": "",
       "email": "",
       "website": "",
       "market_price": "",
-      "year_established": ""
+      "year_established": "",
+      "source": ""
     },
     {
       "name": "Co B",
@@ -142,12 +154,13 @@
       "district": "",
       "taluk": "",
       "product": "Rice",
-      "entity_type": "",
+      "type": "",
       "contact": "",
       "email": "",
       "website": "",
       "market_price": "",
-      "year_established": ""
+      "year_established": "",
+      "source": ""
     }
   ],
   "consolidated": {
