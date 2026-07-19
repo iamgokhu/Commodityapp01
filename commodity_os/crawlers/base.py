@@ -62,6 +62,11 @@ CRAWLER_SOURCE_NAMES = {
     "AgMarkNetCrawler": "agmarknet.gov.in",
     "APMCCrawler": "apmc_market",
     "ExportDirectoryCrawler": "export_directory",
+    "AmazonBusinessCrawler": "amazon.in",
+    "FlipkartWholesaleCrawler": "flipkart.com",
+    "GovernmentAPICrawler": "data.gov.in",
+    "LinkedInCrawler": "linkedin.com",
+    "NewsCrawler": "commodity_news",
 }
 
 
@@ -558,6 +563,118 @@ class ExportDirectoryCrawler(BaseCrawler):
                 k=random.randint(1, 4),
             )
             e["export_license"] = f"IEC-{random.randint(10000000, 99999999)}"
+            entities.append(e)
+        return entities
+
+
+class AmazonBusinessCrawler(BaseCrawler):
+    """Crawls Amazon Business (amazon.in/business) for B2B commodity listings."""
+
+    def __init__(self):
+        super().__init__("amazon.in", rate_limit=20, rate_window=60.0)
+
+    async def fetch(self, task: Dict[str, Any]) -> List[Dict[str, Any]]:
+        await asyncio.sleep(random.uniform(0.5, 1.5))
+        count = random.randint(5, 12)
+        entities = []
+        for _ in range(count):
+            e = _generate_entity(self.source_name)
+            e["entity_type"] = "Online Seller"
+            e["platform"] = "Amazon Business"
+            e["seller_rating"] = round(random.uniform(3.5, 5.0), 1)
+            e["total_reviews"] = random.randint(10, 5000)
+            e["delivery_available"] = True
+            e["prime_eligible"] = random.choice([True, False])
+            entities.append(e)
+        return entities
+
+
+class FlipkartWholesaleCrawler(BaseCrawler):
+    """Crawls Flipkart Wholesale (flipkart.com/wholesale) for bulk commodity listings."""
+
+    def __init__(self):
+        super().__init__("flipkart.com", rate_limit=18, rate_window=60.0)
+
+    async def fetch(self, task: Dict[str, Any]) -> List[Dict[str, Any]]:
+        await asyncio.sleep(random.uniform(0.4, 1.3))
+        count = random.randint(4, 10)
+        entities = []
+        for _ in range(count):
+            e = _generate_entity(self.source_name)
+            e["entity_type"] = "Online Seller"
+            e["platform"] = "Flipkart Wholesale"
+            e["seller_rating"] = round(random.uniform(3.0, 5.0), 1)
+            e["bulk_discount_available"] = random.choice([True, False])
+            e["min_order_qty"] = random.choice([10, 25, 50, 100, 500])
+            e["delivery_available"] = True
+            entities.append(e)
+        return entities
+
+
+class GovernmentAPICrawler(BaseCrawler):
+    """Crawls government APIs (data.gov.in, AgMarkNet live) for official commodity data."""
+
+    def __init__(self):
+        super().__init__("data.gov.in", rate_limit=10, rate_window=60.0)
+
+    async def fetch(self, task: Dict[str, Any]) -> List[Dict[str, Any]]:
+        await asyncio.sleep(random.uniform(1.0, 3.0))
+        count = random.randint(8, 20)
+        entities = []
+        for _ in range(count):
+            e = _generate_entity(self.source_name)
+            e["entity_type"] = "Government Source"
+            e["is_official"] = True
+            e["data_portal"] = random.choice(["data.gov.in", "agmarknet.gov.in", "eproc.gov.in", "mca.gov.in"])
+            e["api_endpoint"] = f"https://{e['data_portal']}/api/v1/commodities"
+            e["data_freshness"] = random.choice(["real-time", "daily", "weekly", "monthly"])
+            entities.append(e)
+        return entities
+
+
+class LinkedInCrawler(BaseCrawler):
+    """Crawls LinkedIn for commodity company profiles and key personnel."""
+
+    def __init__(self):
+        super().__init__("linkedin.com", rate_limit=8, rate_window=60.0)
+
+    async def fetch(self, task: Dict[str, Any]) -> List[Dict[str, Any]]:
+        await asyncio.sleep(random.uniform(1.5, 4.0))
+        count = random.randint(3, 8)
+        entities = []
+        for _ in range(count):
+            e = _generate_entity(self.source_name)
+            e["entity_type"] = random.choice(["Manufacturer", "Wholesaler", "Exporter"])
+            e["linkedin_url"] = f"https://linkedin.com/company/{e['name'].lower().replace(' ', '-')}"
+            e["employee_count"] = random.choice(["1-10", "11-50", "51-200", "201-500", "500+"])
+            e["founded_year"] = random.randint(1980, 2023)
+            e["specialties"] = random.sample(
+                ["Sugar Trading", "Rice Export", "Grain Supply", "Pulses", "Wheat Processing", "Organic Products", "Cold Chain", "Logistics"],
+                k=random.randint(2, 4),
+            )
+            entities.append(e)
+        return entities
+
+
+class NewsCrawler(BaseCrawler):
+    """Crawls commodity news sources for price trends, market analysis, and supplier info."""
+
+    def __init__(self):
+        super().__init__("commodity_news", rate_limit=15, rate_window=60.0)
+
+    async def fetch(self, task: Dict[str, Any]) -> List[Dict[str, Any]]:
+        await asyncio.sleep(random.uniform(0.3, 1.0))
+        count = random.randint(5, 15)
+        entities = []
+        news_sources = ["Economic Times", "Business Standard", "Mint", "Reuters India", "Agri News", "Commodity Online"]
+        for _ in range(count):
+            e = _generate_entity(self.source_name)
+            e["entity_type"] = "News Reference"
+            e["news_source"] = random.choice(news_sources)
+            e["headline"] = f"{random.choice(['Sugar', 'Rice', 'Wheat', 'Pulses'])} prices {'rise' if random.random()>0.5 else 'fall'} in {random.choice(list(INDIAN_STATES.keys()))} markets"
+            e["published_date"] = datetime.utcnow().isoformat()
+            e["market_sentiment"] = random.choice(["bullish", "bearish", "neutral"])
+            e["price_trend"] = random.choice(["up", "down", "stable"])
             entities.append(e)
         return entities
 

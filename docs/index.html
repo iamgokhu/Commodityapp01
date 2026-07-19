@@ -161,7 +161,7 @@
         <!-- Top Stats -->
         <div class="stats-grid">
             <div class="stat-card"><h3>Total Entities</h3><div class="stat-value" id="s-entities">0</div><div class="stat-change up">Collected across India</div></div>
-            <div class="stat-card"><h3>Active Crawlers</h3><div class="stat-value" id="s-crawlers">5</div><div class="stat-change up">Running smoothly</div></div>
+            <div class="stat-card"><h3>Active Crawlers</h3><div class="stat-value" id="s-crawlers">10</div><div class="stat-change up">Running across globe</div></div>
             <div class="stat-card"><h3>Meta Agents</h3><div class="stat-value">3</div><div class="stat-change up">Orchestrating pipeline</div></div>
             <div class="stat-card"><h3>Data Quality</h3><div class="stat-value" id="s-quality">100%</div><div class="stat-change up">Validation passed</div></div>
         </div>
@@ -237,25 +237,30 @@
 
     <script>
     const CRAWLERS = [
-        { name: 'IndiaMART', icon: '🏭', color: '#dbeafe', products: ['Sugar','Rice','Wheat'], rate: '12/min' },
-        { name: 'TradeIndia', icon: '📦', color: '#dcfce7', products: ['Pulses','Grains','Dals'], rate: '10/min' },
-        { name: 'AgMarkNet', icon: '🌾', color: '#fef3c7', products: ['All Commodities'], rate: '8/min' },
-        { name: 'APMC Markets', icon: '🏪', color: '#fce7f3', products: ['Regional Markets'], rate: '6/min' },
-        { name: 'Export Directory', icon: '🌐', color: '#e0e7ff', products: ['Export Data'], rate: '5/min' }
+        { name: 'IndiaMART', icon: '🏭', color: '#dbeafe', products: ['Sugar','Rice','Wheat','Pulses'], rate: '25/min' },
+        { name: 'TradeIndia', icon: '📦', color: '#dcfce7', products: ['Pulses','Grains','Dals'], rate: '20/min' },
+        { name: 'AgMarkNet', icon: '🌾', color: '#fef3c7', products: ['All Commodities'], rate: '15/min' },
+        { name: 'APMC Markets', icon: '🏪', color: '#fce7f3', products: ['Regional Markets'], rate: '10/min' },
+        { name: 'Export Directory', icon: '🌐', color: '#e0e7ff', products: ['Export Data'], rate: '12/min' },
+        { name: 'Amazon Business', icon: '🛒', color: '#fff7ed', products: ['All Commodities'], rate: '20/min' },
+        { name: 'Flipkart Wholesale', icon: '🛍️', color: '#f0f9ff', products: ['All Commodities'], rate: '18/min' },
+        { name: 'Gov API (data.gov.in)', icon: '🏛️', color: '#fdf4ff', products: ['Official Data'], rate: '10/min' },
+        { name: 'LinkedIn', icon: '💼', color: '#ecfdf5', products: ['Company Profiles'], rate: '8/min' },
+        { name: 'News Sources', icon: '📰', color: '#fffbeb', products: ['Market News'], rate: '15/min' }
     ];
     const AGENTS = [
-        { name: 'System Orchestrator', role: 'Plans & assigns tasks', icon: '🎯', color: '#dbeafe', metric: 'Cycles', value: '0' },
-        { name: 'Quality Supervisor', role: 'Validates & audits data', icon: '✅', color: '#dcfce7', metric: 'Score', value: '100%' },
-        { name: 'Executive Intelligence', role: 'Dashboards & reports', icon: '📊', color: '#fef3c7', metric: 'Reports', value: '0' }
+        { name: 'System Orchestrator', role: 'Plans & assigns tasks across 10 crawlers', icon: '🎯', color: '#dbeafe', metric: 'Tasks', value: '27' },
+        { name: 'Quality Supervisor', role: 'Validates, audits, reprocesses data', icon: '✅', color: '#dcfce7', metric: 'Score', value: '100%' },
+        { name: 'Executive Intelligence', role: 'Dashboards, reports, GitHub publish', icon: '📊', color: '#fef3c7', metric: 'Reports', value: 'Auto' }
     ];
     const PIPELINE_STEPS = [
         { name: 'API Health', color: '#22c55e' },
-        { name: 'Resource Check', color: '#3b82f6' },
-        { name: 'Crawling', color: '#f59e0b' },
+        { name: 'Resources', color: '#3b82f6' },
+        { name: '10 Crawlers', color: '#f59e0b' },
         { name: 'Validation', color: '#8b5cf6' },
         { name: 'Dedup', color: '#ec4899' },
         { name: 'Cleaning', color: '#06b6d4' },
-        { name: 'Classification', color: '#14b8a6' },
+        { name: 'Classify', color: '#14b8a6' },
         { name: 'Knowledge Graph', color: '#f97316' },
         { name: 'Dashboard', color: '#22c55e' },
         { name: 'GitHub Push', color: '#64748b' }

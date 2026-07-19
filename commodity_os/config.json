@@ -1,7 +1,7 @@
 {
   "system": {
     "name": "CommodityOS",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "log_level": "INFO"
   },
   "cycle": {
@@ -10,62 +10,31 @@
     "auto_publish": true
   },
   "products": [
-    "Sugar",
-    "Rice",
-    "Grains",
-    "Pulses",
-    "Wheat",
-    "Dals",
-    "Basmathi Rice"
+    "Sugar", "Rice", "Grains", "Pulses", "Wheat", "Dals", "Basmathi Rice",
+    "Oilseeds", "Spices", "Cotton", "Tea", "Coffee", "Rubber", "Coconut"
   ],
   "states": [
-    "Maharashtra",
-    "Uttar Pradesh",
-    "Punjab",
-    "Gujarat",
-    "Rajasthan",
-    "Madhya Pradesh",
-    "Karnataka",
-    "Tamil Nadu",
-    "Andhra Pradesh",
-    "West Bengal",
-    "Bihar",
-    "Odisha",
-    "Telangana",
-    "Kerala",
-    "Haryana"
+    "Maharashtra", "Uttar Pradesh", "Punjab", "Gujarat", "Rajasthan",
+    "Madhya Pradesh", "Karnataka", "Tamil Nadu", "Andhra Pradesh", "West Bengal",
+    "Bihar", "Odisha", "Telangana", "Kerala", "Haryana", "Assam", "Chhattisgarh"
   ],
-  "entity_types": [
-    "Manufacturer",
-    "Wholesaler",
-    "Exporter"
+  "countries": [
+    "India", "USA", "China", "Brazil", "Thailand", "Vietnam", "Pakistan",
+    "Indonesia", "Bangladesh", "Sri Lanka", "Nepal", "Myanmar", "UAE",
+    "Saudi Arabia", "UK", "Germany", "Japan", "Singapore", "Malaysia", "Australia"
   ],
+  "entity_types": ["Manufacturer", "Wholesaler", "Exporter", "Online Seller", "Government Source", "News Reference"],
   "crawlers": {
-    "indiamart": {
-      "enabled": true,
-      "max_retries": 3,
-      "rate_limit_per_minute": 10
-    },
-    "tradeindia": {
-      "enabled": true,
-      "max_retries": 3,
-      "rate_limit_per_minute": 10
-    },
-    "agmarknet": {
-      "enabled": true,
-      "max_retries": 3,
-      "rate_limit_per_minute": 5
-    },
-    "apmc": {
-      "enabled": true,
-      "max_retries": 2,
-      "rate_limit_per_minute": 5
-    },
-    "export_directory": {
-      "enabled": true,
-      "max_retries": 2,
-      "rate_limit_per_minute": 5
-    }
+    "indiamart": { "enabled": true, "max_retries": 3, "rate_limit_per_minute": 25, "products": ["Sugar","Rice","Wheat","Pulses","Grains"] },
+    "tradeindia": { "enabled": true, "max_retries": 3, "rate_limit_per_minute": 20, "products": ["Pulses","Grains","Dals","Oilseeds"] },
+    "agmarknet": { "enabled": true, "max_retries": 3, "rate_limit_per_minute": 15, "products": ["All Commodities"] },
+    "apmc": { "enabled": true, "max_retries": 2, "rate_limit_per_minute": 10, "products": ["Regional Markets"] },
+    "export_directory": { "enabled": true, "max_retries": 2, "rate_limit_per_minute": 12, "products": ["Export Data"] },
+    "amazon_business": { "enabled": true, "max_retries": 3, "rate_limit_per_minute": 20, "products": ["All Commodities"], "platform": "amazon.in/business" },
+    "flipkart_wholesale": { "enabled": true, "max_retries": 3, "rate_limit_per_minute": 18, "products": ["All Commodities"], "platform": "flipkart.com/wholesale" },
+    "government_api": { "enabled": true, "max_retries": 2, "rate_limit_per_minute": 10, "products": ["Official Data"], "portals": ["data.gov.in","agmarknet.gov.in","eproc.gov.in"] },
+    "linkedin": { "enabled": true, "max_retries": 2, "rate_limit_per_minute": 8, "products": ["Company Profiles"], "platform": "linkedin.com" },
+    "news": { "enabled": true, "max_retries": 2, "rate_limit_per_minute": 15, "products": ["Market News"], "sources": ["Economic Times","Business Standard","Reuters India"] }
   },
   "pipeline": {
     "dedup_similarity_threshold": 0.85,
