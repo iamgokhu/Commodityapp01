@@ -38,6 +38,7 @@ def _map_crawler_record(record: Dict[str, Any]) -> Dict[str, Any]:
     return {
         "company_name": record.get("name", ""),
         "product": record.get("commodity", record.get("commodity_group", "")),
+        "category": record.get("commodity_group", ""),
         "entity_type": record.get("entity_type", ""),
         "contact_phone": contact.get("phone", ""),
         "address": record.get("office_address", ""),

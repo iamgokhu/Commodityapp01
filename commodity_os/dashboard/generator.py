@@ -218,7 +218,8 @@ class DashboardGenerator:
                 "district": e.get("district", ""),
                 "taluk": e.get("taluk", ""),
                 "product": e.get("product", ""),
-                "type": e.get("entity_type", ""),
+                "category": e.get("category", e.get("commodity_group", "")),
+                "type": e.get("entity_type", e.get("type", "")),
                 "contact": e.get("contact", e.get("phone", "")),
                 "email": e.get("email", ""),
                 "website": e.get("website", ""),
@@ -694,7 +695,7 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
     function renderProductCategories() {
         const catCounts = {}, catEntities = {};
         allEntities.forEach(e => {
-            const cat = e.category || e.product || 'Unknown';
+            const cat = e.category || e.commodity_group || e.product || 'Unknown';
             catCounts[cat] = (catCounts[cat] || 0) + 1;
             if (!catEntities[cat]) catEntities[cat] = [];
             catEntities[cat].push(e);
@@ -724,7 +725,7 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
     function drillProductCategory(category) {
         if (!category) { renderProductsPage(); return; }
         const subcats = {};
-        allEntities.filter(e => (e.category || e.product) === category).forEach(e => {
+        allEntities.filter(e => (e.category || e.commodity_group || e.product) === category).forEach(e => {
             const sub = e.product || 'Unknown';
             subcats[sub] = (subcats[sub] || 0) + 1;
         });
@@ -747,7 +748,7 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
             data: { labels: subArr.map(s=>s[0]), datasets: [{ data: subArr.map(s=>s[1]), backgroundColor: colors.slice(0,subArr.length).map(c=>c+'99'), borderColor: colors.slice(0,subArr.length), borderWidth: 2 }] },
             options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'right', labels: { padding: 8, font: { size: 10 } } } }, scales: { r: { ticks: { display: false }, grid: { color: '#e2e8f0' } } } }
         });
-        const filtered = allEntities.filter(e => (e.category || e.product) === category);
+        const filtered = allEntities.filter(e => (e.category || e.commodity_group || e.product) === category);
         renderProductEntities(filtered);
     }
 
@@ -755,7 +756,7 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
         document.getElementById('product-breadcrumb').innerHTML = `<span class="breadcrumb-item" onclick="renderProductsPage()">All Categories</span><span class="breadcrumb-sep">/</span><span class="breadcrumb-item" onclick="drillProductCategory('${category.replace(/'/g,"\\'")}')">${category}</span><span class="breadcrumb-sep">/</span><span class="breadcrumb-current">${product}</span>`;
         document.getElementById('product-detail-title').textContent = product + ' - Entities by District';
         const distCounts = {};
-        allEntities.filter(e => (e.category || e.product) === category && e.product === product).forEach(e => {
+        allEntities.filter(e => (e.category || e.commodity_group || e.product) === category && e.product === product).forEach(e => {
             const d = e.district || 'Unknown';
             distCounts[d] = (distCounts[d] || 0) + 1;
         });
@@ -770,7 +771,7 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
             data: { labels: distArr.slice(0,15).map(d=>d[0]), datasets: [{ label: 'Entities', data: distArr.slice(0,15).map(d=>d[1]), backgroundColor: '#22c55e99', borderColor: '#22c55e', borderWidth: 1, borderRadius: 6 }] },
             options: { responsive: true, maintainAspectRatio: false, indexAxis: 'y', plugins: { legend: { display: false } }, scales: { x: { beginAtZero: true, grid: { color: '#f1f5f9' } }, y: { grid: { display: false } } } }
         });
-        const filtered = allEntities.filter(e => (e.category || e.product) === category && e.product === product);
+        const filtered = allEntities.filter(e => (e.category || e.commodity_group || e.product) === category && e.product === product);
         renderProductEntities(filtered);
     }
 
@@ -778,7 +779,7 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
         document.getElementById('product-entities-title').textContent = 'Entities (' + entities.length + ')';
         document.getElementById('product-entities-table').innerHTML = entities.slice(0,50).map(e => {
             const tc = (e.type||'').toLowerCase()==='manufacturer'?'tag-m':(e.type||'').toLowerCase()==='exporter'?'tag-e':'tag-w';
-            return `<tr><td><strong>${e.name||'N/A'}</strong></td><td>${e.product||'N/A'}</td><td>${e.category||e.product||'N/A'}</td><td><span class="tag ${tc}">${e.type||'N/A'}</span></td><td>${e.state||'N/A'}</td><td>${e.district||'N/A'}</td><td>${e.source||'N/A'}</td></tr>`;
+            return `<tr><td><strong>${e.name||'N/A'}</strong></td><td>${e.product||'N/A'}</td><td>${e.category||e.commodity_group||e.product||'N/A'}</td><td><span class="tag ${tc}">${e.type||'N/A'}</span></td><td>${e.state||'N/A'}</td><td>${e.district||'N/A'}</td><td>${e.source||'N/A'}</td></tr>`;
         }).join('');
     }
 
