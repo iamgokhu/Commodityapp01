@@ -46,18 +46,18 @@
     },
     {
       "id": "entity:ganesh corporation",
-      "entity_type": "Online Seller",
-      "source": "bigbasket.com",
-      "state": "Odisha",
-      "district": "Rourkela",
-      "commodity": "Maize",
+      "entity_type": "government source",
+      "source": "data.gov.in",
+      "state": "Bihar",
+      "district": "Patna",
+      "commodity": "non-basmati rice",
       "node_type": "entity",
       "name": "Ganesh Corporation"
     },
     {
       "id": "commodity:raw sugar",
       "node_type": "commodity",
-      "name": "raw sugar"
+      "name": "Raw Sugar"
     },
     {
       "id": "geography:karnataka",
@@ -73,11 +73,11 @@
     },
     {
       "id": "entity:shree exports",
-      "entity_type": "manufacturer",
-      "source": "indiamart.com",
-      "state": "Uttar Pradesh",
-      "district": "Lucknow",
-      "commodity": "ponni rice",
+      "entity_type": "online seller",
+      "source": "amazon.com",
+      "state": "Andhra Pradesh",
+      "district": "Visakhapatnam",
+      "commodity": "jaggery",
       "node_type": "entity",
       "name": "Shree Exports"
     },
@@ -100,11 +100,11 @@
     },
     {
       "id": "entity:sai enterprises",
-      "entity_type": "Government Market Yard",
-      "source": "agmarknet.gov.in",
-      "state": "Telangana",
-      "district": "Khammam",
-      "commodity": "Refined Sugar",
+      "entity_type": "Online Seller",
+      "source": "walmart.com",
+      "state": "Punjab",
+      "district": "Amritsar",
+      "commodity": "Maize",
       "node_type": "entity",
       "name": "Sai Enterprises"
     },
@@ -127,11 +127,11 @@
     },
     {
       "id": "entity:premier corporation",
-      "entity_type": "manufacturer",
-      "source": "tradeindia.com",
-      "state": "Haryana",
-      "district": "Karnal",
-      "commodity": "moong dal",
+      "entity_type": "government source",
+      "source": "data.gov.in",
+      "state": "Assam",
+      "district": "Jorhat",
+      "commodity": "groundnut",
       "node_type": "entity",
       "name": "Premier Corporation"
     },
@@ -154,18 +154,18 @@
     },
     {
       "id": "entity:national impex",
-      "entity_type": "manufacturer",
-      "source": "tradeindia.com",
-      "state": "Haryana",
-      "district": "Faridabad",
-      "commodity": "groundnut",
+      "entity_type": "Online Seller",
+      "source": "bigbasket.com",
+      "state": "Uttar Pradesh",
+      "district": "Kanpur",
+      "commodity": "Bajra",
       "node_type": "entity",
       "name": "National Impex"
     },
     {
       "id": "commodity:groundnut",
       "node_type": "commodity",
-      "name": "Groundnut"
+      "name": "groundnut"
     },
     {
       "id": "geography:faridabad",
@@ -202,11 +202,11 @@
     },
     {
       "id": "entity:global commodities",
-      "entity_type": "Online Seller",
-      "source": "zepto.com",
-      "state": "Karnataka",
-      "district": "Bengaluru",
-      "commodity": "Sunflower Seeds",
+      "entity_type": "Marine Farm",
+      "source": "marine_harvest",
+      "state": "Assam",
+      "district": "Jorhat",
+      "commodity": "Brown Sugar",
       "node_type": "entity",
       "name": "Global Commodities"
     },
@@ -244,11 +244,11 @@
     },
     {
       "id": "entity:global enterprises",
-      "entity_type": "Online Seller",
-      "source": "jiomart.com",
-      "state": "Rajasthan",
-      "district": "Ajmer",
-      "commodity": "Lokwan Wheat",
+      "entity_type": "exporter",
+      "source": "export_directory",
+      "state": "Telangana",
+      "district": "Hyderabad",
+      "commodity": "durum wheat",
       "node_type": "entity",
       "name": "Global Enterprises"
     },
@@ -284,10 +284,10 @@
     {
       "id": "entity:royal exports",
       "entity_type": "Online Seller",
-      "source": "dmart.in",
-      "state": "Tamil Nadu",
-      "district": "Salem",
-      "commodity": "Refined Sugar",
+      "source": "walmart.com",
+      "state": "Assam",
+      "district": "Silchar",
+      "commodity": "Brown Sugar",
       "node_type": "entity",
       "name": "Royal Exports"
     },
@@ -310,18 +310,18 @@
     },
     {
       "id": "entity:indian agro foods",
-      "entity_type": "government market yard",
-      "source": "agmarknet.gov.in",
-      "state": "Tamil Nadu",
-      "district": "Madurai",
-      "commodity": "mustard seeds",
+      "entity_type": "online seller",
+      "source": "swiggy.com",
+      "state": "Telangana",
+      "district": "Karimnagar",
+      "commodity": "ponni rice",
       "node_type": "entity",
       "name": "Indian Agro Foods"
     },
     {
       "id": "commodity:mustard seeds",
       "node_type": "commodity",
-      "name": "Mustard Seeds"
+      "name": "mustard seeds"
     },
     {
       "id": "geography:tamil nadu",
@@ -352,11 +352,11 @@
     },
     {
       "id": "entity:royal traders",
-      "entity_type": "government market yard",
-      "source": "agmarknet.gov.in",
-      "state": "Maharashtra",
-      "district": "Mumbai",
-      "commodity": "chana dal",
+      "entity_type": "online seller",
+      "source": "jiomart.com",
+      "state": "Madhya Pradesh",
+      "district": "Bhopal",
+      "commodity": "pbw wheat",
       "node_type": "entity",
       "name": "Royal Traders"
     },
@@ -380,7 +380,7 @@
     {
       "id": "commodity:jaggery",
       "node_type": "commodity",
-      "name": "jaggery"
+      "name": "Jaggery"
     },
     {
       "id": "geography:tiruchirappalli",
@@ -390,11 +390,11 @@
     },
     {
       "id": "entity:pacific trading co.",
-      "entity_type": "Online Seller",
-      "source": "walmart.com",
-      "state": "Madhya Pradesh",
-      "district": "Jabalpur",
-      "commodity": "Refined Sugar",
+      "entity_type": "online seller",
+      "source": "blinkit.com",
+      "state": "Andhra Pradesh",
+      "district": "Guntur",
+      "commodity": "raw sugar",
       "node_type": "entity",
       "name": "Pacific Trading Co."
     },
@@ -411,11 +411,11 @@
     },
     {
       "id": "entity:hindustan trading co.",
-      "entity_type": "Government Source",
-      "source": "data.gov.in",
-      "state": "Rajasthan",
-      "district": "Ajmer",
-      "commodity": "Foxtail Millet",
+      "entity_type": "Online Seller",
+      "source": "jiomart.com",
+      "state": "Andhra Pradesh",
+      "district": "Visakhapatnam",
+      "commodity": "Sunflower Seeds",
       "node_type": "entity",
       "name": "Hindustan Trading Co."
     },
@@ -427,11 +427,11 @@
     },
     {
       "id": "entity:hindustan farmers prod.",
-      "entity_type": "government market yard",
-      "source": "agmarknet.gov.in",
-      "state": "Telangana",
-      "district": "Karimnagar",
-      "commodity": "jaggery",
+      "entity_type": "online seller",
+      "source": "amazon.in",
+      "state": "Madhya Pradesh",
+      "district": "Ujjain",
+      "commodity": "toor dal",
       "node_type": "entity",
       "name": "Hindustan Farmers Prod."
     },
@@ -445,9 +445,9 @@
       "id": "entity:hindustan impex",
       "entity_type": "government market yard",
       "source": "agmarknet.gov.in",
-      "state": "Gujarat",
-      "district": "Surat",
-      "commodity": "jaggery",
+      "state": "Tamil Nadu",
+      "district": "Madurai",
+      "commodity": "lokwan wheat",
       "node_type": "entity",
       "name": "Hindustan Impex"
     },
@@ -491,11 +491,11 @@
     },
     {
       "id": "entity:global agro foods",
-      "entity_type": "Online Seller",
-      "source": "carrefour.com",
-      "state": "Rajasthan",
-      "district": "Ajmer",
-      "commodity": "Non-Basmati Rice",
+      "entity_type": "news reference",
+      "source": "commodity_news",
+      "state": "Punjab",
+      "district": "Patiala",
+      "commodity": "refined sugar",
       "node_type": "entity",
       "name": "Global Agro Foods"
     },
@@ -529,11 +529,11 @@
     },
     {
       "id": "entity:premier agri business",
-      "entity_type": "Online Seller",
-      "source": "dmart.in",
-      "state": "Madhya Pradesh",
-      "district": "Ujjain",
-      "commodity": "Jaggery",
+      "entity_type": "government source",
+      "source": "data.gov.in",
+      "state": "Bihar",
+      "district": "Gaya",
+      "commodity": "soybean",
       "node_type": "entity",
       "name": "Premier Agri Business"
     },
@@ -561,27 +561,27 @@
     {
       "id": "entity:raj commodities",
       "entity_type": "Online Seller",
-      "source": "zepto.com",
+      "source": "swiggy.com",
       "state": "Telangana",
-      "district": "Karimnagar",
-      "commodity": "Chana Dal",
+      "district": "Warangal",
+      "commodity": "PBW Wheat",
       "node_type": "entity",
       "name": "Raj Commodities"
     },
     {
       "id": "entity:ganesh trading co.",
-      "entity_type": "Online Seller",
-      "source": "spencers.in",
-      "state": "Haryana",
-      "district": "Karnal",
-      "commodity": "Maize",
+      "entity_type": "online seller",
+      "source": "swiggy.com",
+      "state": "Telangana",
+      "district": "Nizamabad",
+      "commodity": "chana dal",
       "node_type": "entity",
       "name": "Ganesh Trading Co."
     },
     {
       "id": "commodity:foxtail millet",
       "node_type": "commodity",
-      "name": "foxtail millet"
+      "name": "Foxtail Millet"
     },
     {
       "id": "geography:ahmedabad",
@@ -608,10 +608,10 @@
     {
       "id": "entity:sri supply chain",
       "entity_type": "Online Seller",
-      "source": "blinkit.com",
-      "state": "Assam",
-      "district": "Guwahati",
-      "commodity": "Bajra",
+      "source": "amazon.com",
+      "state": "Haryana",
+      "district": "Karnal",
+      "commodity": "Basmati Rice",
       "node_type": "entity",
       "name": "Sri Supply Chain"
     },
@@ -645,7 +645,7 @@
     {
       "id": "commodity:durum wheat",
       "node_type": "commodity",
-      "name": "durum wheat"
+      "name": "Durum Wheat"
     },
     {
       "id": "geography:muzaffarpur",
@@ -656,10 +656,10 @@
     {
       "id": "entity:pacific farmers prod.",
       "entity_type": "Online Seller",
-      "source": "tesco.com",
-      "state": "Telangana",
-      "district": "Khammam",
-      "commodity": "Sesame",
+      "source": "amazon.com",
+      "state": "Andhra Pradesh",
+      "district": "Hyderabad",
+      "commodity": "Ponni Rice",
       "node_type": "entity",
       "name": "Pacific Farmers Prod."
     },
@@ -671,11 +671,11 @@
     },
     {
       "id": "entity:bharat traders",
-      "entity_type": "Online Seller",
-      "source": "costco.com",
-      "state": "Tamil Nadu",
-      "district": "Salem",
-      "commodity": "Sharbati Wheat",
+      "entity_type": "Marine Exporter",
+      "source": "seafood_export",
+      "state": "Andhra Pradesh",
+      "district": "Guntur",
+      "commodity": "Sona Masuri",
       "node_type": "entity",
       "name": "Bharat Traders"
     },
@@ -714,7 +714,7 @@
     {
       "id": "commodity:ragi",
       "node_type": "commodity",
-      "name": "Ragi"
+      "name": "ragi"
     },
     {
       "id": "geography:amritsar",
@@ -735,7 +735,7 @@
     {
       "id": "commodity:soybean",
       "node_type": "commodity",
-      "name": "soybean"
+      "name": "Soybean"
     },
     {
       "id": "geography:warangal",
@@ -763,9 +763,9 @@
       "id": "entity:kiran impex",
       "entity_type": "online seller",
       "source": "amazon.in",
-      "state": "Haryana",
-      "district": "Gurgaon",
-      "commodity": "sunflower seeds",
+      "state": "Tamil Nadu",
+      "district": "Tiruchirappalli",
+      "commodity": "pbw wheat",
       "node_type": "entity",
       "name": "Kiran Impex"
     },
@@ -788,10 +788,10 @@
     {
       "id": "entity:sri corporation",
       "entity_type": "online seller",
-      "source": "flipkart.com",
-      "state": "Karnataka",
-      "district": "Mysuru",
-      "commodity": "sona masuri",
+      "source": "spencers.in",
+      "state": "Andhra Pradesh",
+      "district": "Tirupati",
+      "commodity": "basmati rice",
       "node_type": "entity",
       "name": "Sri Corporation"
     },
@@ -803,11 +803,11 @@
     },
     {
       "id": "entity:om trading co.",
-      "entity_type": "Government Source",
-      "source": "data.gov.in",
-      "state": "Tamil Nadu",
-      "district": "Madurai",
-      "commodity": "Bajra",
+      "entity_type": "online seller",
+      "source": "flipkart.com",
+      "state": "Punjab",
+      "district": "Patiala",
+      "commodity": "sona masuri",
       "node_type": "entity",
       "name": "Om Trading Co."
     },
@@ -819,11 +819,11 @@
     },
     {
       "id": "entity:sri industries",
-      "entity_type": "Online Seller",
-      "source": "swiggy.com",
-      "state": "Haryana",
-      "district": "Karnal",
-      "commodity": "Toor Dal",
+      "entity_type": "online seller",
+      "source": "blinkit.com",
+      "state": "West Bengal",
+      "district": "Siliguri",
+      "commodity": "masoor dal",
       "node_type": "entity",
       "name": "Sri Industries"
     },
@@ -846,11 +846,11 @@
     },
     {
       "id": "entity:om farmers prod.",
-      "entity_type": "Marine Exporter",
-      "source": "seafood_export",
-      "state": "Karnataka",
-      "district": "Mangaluru",
-      "commodity": "Ragi",
+      "entity_type": "online seller",
+      "source": "blinkit.com",
+      "state": "Assam",
+      "district": "Jorhat",
+      "commodity": "basmati rice",
       "node_type": "entity",
       "name": "Om Farmers Prod."
     },
@@ -868,21 +868,21 @@
     },
     {
       "id": "entity:om market yard",
-      "entity_type": "Online Seller",
-      "source": "blinkit.com",
-      "state": "Assam",
-      "district": "Tezpur",
-      "commodity": "Toor Dal",
+      "entity_type": "government source",
+      "source": "data.gov.in",
+      "state": "Punjab",
+      "district": "Ludhiana",
+      "commodity": "sesame",
       "node_type": "entity",
       "name": "Om Market Yard"
     },
     {
       "id": "entity:national commodities",
-      "entity_type": "government source",
-      "source": "data.gov.in",
-      "state": "Assam",
-      "district": "Guwahati",
-      "commodity": "masoor dal",
+      "entity_type": "online seller",
+      "source": "spencers.in",
+      "state": "Andhra Pradesh",
+      "district": "Guntur",
+      "commodity": "groundnut",
       "node_type": "entity",
       "name": "National Commodities"
     },
@@ -905,11 +905,11 @@
     },
     {
       "id": "entity:om enterprises",
-      "entity_type": "Online Seller",
-      "source": "swiggy.com",
-      "state": "Rajasthan",
-      "district": "Jaipur",
-      "commodity": "Jowar",
+      "entity_type": "online seller",
+      "source": "amazon.com",
+      "state": "Gujarat",
+      "district": "Anand",
+      "commodity": "sunflower seeds",
       "node_type": "entity",
       "name": "Om Enterprises"
     },
@@ -921,11 +921,11 @@
     },
     {
       "id": "entity:global industries",
-      "entity_type": "government source",
-      "source": "data.gov.in",
-      "state": "Bihar",
-      "district": "Gaya",
-      "commodity": "sona masuri",
+      "entity_type": "exporter",
+      "source": "tradeindia.com",
+      "state": "Madhya Pradesh",
+      "district": "Ujjain",
+      "commodity": "jowar",
       "node_type": "entity",
       "name": "Global Industries"
     },
@@ -964,11 +964,11 @@
     },
     {
       "id": "entity:om commodities",
-      "entity_type": "Online Seller",
-      "source": "tesco.com",
-      "state": "Haryana",
-      "district": "Faridabad",
-      "commodity": "Lokwan Wheat",
+      "entity_type": "online seller",
+      "source": "costco.com",
+      "state": "West Bengal",
+      "district": "Kolkata",
+      "commodity": "durum wheat",
       "node_type": "entity",
       "name": "Om Commodities"
     },
@@ -985,11 +985,11 @@
     },
     {
       "id": "entity:premier store house",
-      "entity_type": "government source",
-      "source": "data.gov.in",
-      "state": "Rajasthan",
-      "district": "Kota",
-      "commodity": "jaggery",
+      "entity_type": "online seller",
+      "source": "walmart.com",
+      "state": "Karnataka",
+      "district": "Mangaluru",
+      "commodity": "masoor dal",
       "node_type": "entity",
       "name": "Premier Store House"
     },
@@ -1017,11 +1017,11 @@
     },
     {
       "id": "entity:bharat supply chain",
-      "entity_type": "government source",
-      "source": "data.gov.in",
-      "state": "Maharashtra",
-      "district": "Nashik",
-      "commodity": "basmati rice",
+      "entity_type": "Online Seller",
+      "source": "blinkit.com",
+      "state": "Karnataka",
+      "district": "Mysuru",
+      "commodity": "Mustard Seeds",
       "node_type": "entity",
       "name": "Bharat Supply Chain"
     },
@@ -1033,31 +1033,31 @@
     },
     {
       "id": "entity:sai trading co.",
-      "entity_type": "government source",
-      "source": "data.gov.in",
-      "state": "Kerala",
-      "district": "Kollam",
-      "commodity": "mustard seeds",
+      "entity_type": "online seller",
+      "source": "reliancefresh.com",
+      "state": "Tamil Nadu",
+      "district": "Madurai",
+      "commodity": "sunflower seeds",
       "node_type": "entity",
       "name": "Sai Trading Co."
     },
     {
       "id": "entity:national industries",
-      "entity_type": "Online Seller",
-      "source": "blinkit.com",
-      "state": "Telangana",
-      "district": "Nizamabad",
-      "commodity": "Bajra",
+      "entity_type": "online seller",
+      "source": "costco.com",
+      "state": "Karnataka",
+      "district": "Mangaluru",
+      "commodity": "ponni rice",
       "node_type": "entity",
       "name": "National Industries"
     },
     {
       "id": "entity:kiran farmers prod.",
-      "entity_type": "Corporate Farm",
-      "source": "corporate_farm",
-      "state": "Gujarat",
-      "district": "Rajkot",
-      "commodity": "Maize",
+      "entity_type": "online seller",
+      "source": "walmart.com",
+      "state": "Tamil Nadu",
+      "district": "Tiruchirappalli",
+      "commodity": "maize",
       "node_type": "entity",
       "name": "Kiran Farmers Prod."
     },
@@ -1073,11 +1073,11 @@
     },
     {
       "id": "entity:premier farmers prod.",
-      "entity_type": "wholesaler",
-      "source": "linkedin.com",
-      "state": "Rajasthan",
-      "district": "Udaipur",
-      "commodity": "maize",
+      "entity_type": "Online Seller",
+      "source": "zepto.com",
+      "state": "Maharashtra",
+      "district": "Mumbai",
+      "commodity": "Masoor Dal",
       "node_type": "entity",
       "name": "Premier Farmers Prod."
     },
@@ -1094,11 +1094,11 @@
     },
     {
       "id": "entity:indian enterprises",
-      "entity_type": "Online Seller",
-      "source": "bigbasket.com",
-      "state": "Odisha",
-      "district": "Sambalpur",
-      "commodity": "Brown Sugar",
+      "entity_type": "news reference",
+      "source": "commodity_news",
+      "state": "Haryana",
+      "district": "Faridabad",
+      "commodity": "soybean",
       "node_type": "entity",
       "name": "Indian Enterprises"
     },
@@ -1126,21 +1126,21 @@
     },
     {
       "id": "entity:sri commodities",
-      "entity_type": "News Reference",
-      "source": "commodity_news",
-      "state": "Rajasthan",
-      "district": "Jaipur",
+      "entity_type": "Corporate Farm",
+      "source": "corporate_farm",
+      "state": "Haryana",
+      "district": "Ambala",
       "commodity": "Ponni Rice",
       "node_type": "entity",
       "name": "Sri Commodities"
     },
     {
       "id": "entity:om industries",
-      "entity_type": "news reference",
-      "source": "commodity_news",
-      "state": "Telangana",
-      "district": "Warangal",
-      "commodity": "ponni rice",
+      "entity_type": "online seller",
+      "source": "more.com",
+      "state": "Bihar",
+      "district": "Muzaffarpur",
+      "commodity": "sunflower seeds",
       "node_type": "entity",
       "name": "Om Industries"
     },
@@ -1156,11 +1156,11 @@
     },
     {
       "id": "entity:national exports",
-      "entity_type": "online seller",
-      "source": "jiomart.com",
-      "state": "Uttar Pradesh",
-      "district": "Agra",
-      "commodity": "bajra",
+      "entity_type": "Online Seller",
+      "source": "tesco.com",
+      "state": "Punjab",
+      "district": "Ludhiana",
+      "commodity": "Jaggery",
       "node_type": "entity",
       "name": "National Exports"
     },
@@ -1228,11 +1228,11 @@
     },
     {
       "id": "entity:bharat market yard",
-      "entity_type": "Online Seller",
-      "source": "costco.com",
-      "state": "Telangana",
-      "district": "Warangal",
-      "commodity": "Urad Dal",
+      "entity_type": "government source",
+      "source": "data.gov.in",
+      "state": "Assam",
+      "district": "Guwahati",
+      "commodity": "groundnut",
       "node_type": "entity",
       "name": "Bharat Market Yard"
     },
@@ -1270,31 +1270,31 @@
     },
     {
       "id": "entity:shree store house",
-      "entity_type": "Online Seller",
-      "source": "bigbasket.com",
-      "state": "Punjab",
-      "district": "Amritsar",
-      "commodity": "Moong Dal",
+      "entity_type": "online seller",
+      "source": "dmart.in",
+      "state": "Madhya Pradesh",
+      "district": "Jabalpur",
+      "commodity": "non-basmati rice",
       "node_type": "entity",
       "name": "Shree Store House"
     },
     {
       "id": "entity:indian corporation",
-      "entity_type": "Online Seller",
-      "source": "bigbasket.com",
-      "state": "Odisha",
-      "district": "Bhubaneswar",
-      "commodity": "Bajra",
+      "entity_type": "Government Source",
+      "source": "data.gov.in",
+      "state": "Tamil Nadu",
+      "district": "Madurai",
+      "commodity": "PBW Wheat",
       "node_type": "entity",
       "name": "Indian Corporation"
     },
     {
       "id": "entity:sai exports",
-      "entity_type": "online seller",
-      "source": "bigbasket.com",
-      "state": "Andhra Pradesh",
-      "district": "Visakhapatnam",
-      "commodity": "jaggery",
+      "entity_type": "Online Seller",
+      "source": "zepto.com",
+      "state": "Bihar",
+      "district": "Patna",
+      "commodity": "Raw Sugar",
       "node_type": "entity",
       "name": "Sai Exports"
     },
@@ -1367,9 +1367,9 @@
     {
       "id": "entity:pacific impex",
       "entity_type": "Online Seller",
-      "source": "walmart.com",
-      "state": "Telangana",
-      "district": "Nizamabad",
+      "source": "blinkit.com",
+      "state": "Rajasthan",
+      "district": "Kota",
       "commodity": "Ragi",
       "node_type": "entity",
       "name": "Pacific Impex"
@@ -1392,11 +1392,11 @@
     },
     {
       "id": "entity:bharat store house",
-      "entity_type": "online seller",
-      "source": "zepto.com",
-      "state": "Maharashtra",
-      "district": "Nagpur",
-      "commodity": "refined sugar",
+      "entity_type": "government source",
+      "source": "data.gov.in",
+      "state": "Andhra Pradesh",
+      "district": "Visakhapatnam",
+      "commodity": "soybean",
       "node_type": "entity",
       "name": "Bharat Store House"
     },
@@ -1418,11 +1418,11 @@
     },
     {
       "id": "entity:premier enterprises",
-      "entity_type": "online seller",
-      "source": "zepto.com",
-      "state": "Haryana",
-      "district": "Gurgaon",
-      "commodity": "sona masuri",
+      "entity_type": "apmc market",
+      "source": "apmc_market",
+      "state": "Maharashtra",
+      "district": "Aurangabad",
+      "commodity": "lokwan wheat",
       "node_type": "entity",
       "name": "Premier Enterprises"
     },
@@ -1438,11 +1438,11 @@
     },
     {
       "id": "entity:om impex",
-      "entity_type": "Marine Exporter",
-      "source": "seafood_export",
-      "state": "West Bengal",
-      "district": "Durgapur",
-      "commodity": "Sona Masuri",
+      "entity_type": "online seller",
+      "source": "amazon.com",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "commodity": "non-basmati rice",
       "node_type": "entity",
       "name": "Om Impex"
     },
@@ -1479,11 +1479,11 @@
     },
     {
       "id": "entity:shree commodities",
-      "entity_type": "online seller",
-      "source": "swiggy.com",
-      "state": "West Bengal",
-      "district": "Howrah",
-      "commodity": "ponni rice",
+      "entity_type": "Online Seller",
+      "source": "alibaba.com",
+      "state": "Karnataka",
+      "district": "Hubballi",
+      "commodity": "Bajra",
       "node_type": "entity",
       "name": "Shree Commodities"
     },
@@ -1496,10 +1496,10 @@
     {
       "id": "entity:lakshmi traders",
       "entity_type": "online seller",
-      "source": "reliancefresh.com",
-      "state": "Telangana",
-      "district": "Khammam",
-      "commodity": "sunflower seeds",
+      "source": "walmart.com",
+      "state": "Madhya Pradesh",
+      "district": "Jabalpur",
+      "commodity": "sesame",
       "node_type": "entity",
       "name": "Lakshmi Traders"
     },
@@ -1515,11 +1515,11 @@
     },
     {
       "id": "entity:hindustan agri business",
-      "entity_type": "Online Seller",
-      "source": "reliancefresh.com",
-      "state": "Rajasthan",
-      "district": "Udaipur",
-      "commodity": "Foxtail Millet",
+      "entity_type": "marine farm",
+      "source": "marine_harvest",
+      "state": "Odisha",
+      "district": "Cuttack",
+      "commodity": "basmati rice",
       "node_type": "entity",
       "name": "Hindustan Agri Business"
     },
@@ -1541,11 +1541,11 @@
     },
     {
       "id": "entity:lakshmi agri business",
-      "entity_type": "online seller",
-      "source": "more.com",
-      "state": "Gujarat",
-      "district": "Vadodara",
-      "commodity": "foxtail millet",
+      "entity_type": "marine farm",
+      "source": "marine_harvest",
+      "state": "Odisha",
+      "district": "Bhubaneswar",
+      "commodity": "moong dal",
       "node_type": "entity",
       "name": "Lakshmi Agri Business"
     },
@@ -1574,10 +1574,10 @@
     {
       "id": "entity:om exports",
       "entity_type": "online seller",
-      "source": "spencers.in",
-      "state": "Uttar Pradesh",
-      "district": "Agra",
-      "commodity": "toor dal",
+      "source": "costco.com",
+      "state": "Kerala",
+      "district": "Kochi",
+      "commodity": "basmati rice",
       "node_type": "entity",
       "name": "Om Exports"
     },
@@ -1593,11 +1593,11 @@
     },
     {
       "id": "entity:raj supply chain",
-      "entity_type": "Online Seller",
-      "source": "spencers.in",
+      "entity_type": "government market yard",
+      "source": "agmarknet.gov.in",
       "state": "West Bengal",
-      "district": "Howrah",
-      "commodity": "Basmati Rice",
+      "district": "Siliguri",
+      "commodity": "groundnut",
       "node_type": "entity",
       "name": "Raj Supply Chain"
     },
@@ -1635,11 +1635,11 @@
     },
     {
       "id": "entity:ganesh traders",
-      "entity_type": "online seller",
-      "source": "walmart.com",
-      "state": "Maharashtra",
-      "district": "Aurangabad",
-      "commodity": "jaggery",
+      "entity_type": "news reference",
+      "source": "commodity_news",
+      "state": "Rajasthan",
+      "district": "Ajmer",
+      "commodity": "bajra",
       "node_type": "entity",
       "name": "Ganesh Traders"
     },
@@ -1655,31 +1655,31 @@
     },
     {
       "id": "entity:bharat corporation",
-      "entity_type": "online seller",
-      "source": "walmart.com",
+      "entity_type": "Online Seller",
+      "source": "swiggy.com",
       "state": "Andhra Pradesh",
-      "district": "Visakhapatnam",
-      "commodity": "basmati rice",
+      "district": "Hyderabad",
+      "commodity": "Urad Dal",
       "node_type": "entity",
       "name": "Bharat Corporation"
     },
     {
       "id": "entity:hindustan store house",
-      "entity_type": "online seller",
-      "source": "costco.com",
-      "state": "Haryana",
-      "district": "Panipat",
-      "commodity": "moong dal",
+      "entity_type": "government source",
+      "source": "data.gov.in",
+      "state": "Maharashtra",
+      "district": "Aurangabad",
+      "commodity": "jaggery",
       "node_type": "entity",
       "name": "Hindustan Store House"
     },
     {
       "id": "entity:global supply chain",
-      "entity_type": "Online Seller",
-      "source": "amazon.com",
-      "state": "Andhra Pradesh",
-      "district": "Tirupati",
-      "commodity": "Refined Sugar",
+      "entity_type": "online seller",
+      "source": "blinkit.com",
+      "state": "Punjab",
+      "district": "Bathinda",
+      "commodity": "basmati rice",
       "node_type": "entity",
       "name": "Global Supply Chain"
     },
@@ -1695,21 +1695,21 @@
     },
     {
       "id": "entity:royal trading co.",
-      "entity_type": "online seller",
-      "source": "costco.com",
-      "state": "West Bengal",
-      "district": "Kolkata",
-      "commodity": "toor dal",
+      "entity_type": "marine exporter",
+      "source": "seafood_export",
+      "state": "Andhra Pradesh",
+      "district": "Vijayawada",
+      "commodity": "basmati rice",
       "node_type": "entity",
       "name": "Royal Trading Co."
     },
     {
       "id": "entity:pacific enterprises",
       "entity_type": "online seller",
-      "source": "costco.com",
-      "state": "Uttar Pradesh",
-      "district": "Kanpur",
-      "commodity": "jaggery",
+      "source": "blinkit.com",
+      "state": "Rajasthan",
+      "district": "Udaipur",
+      "commodity": "sesame",
       "node_type": "entity",
       "name": "Pacific Enterprises"
     },
@@ -1721,11 +1721,11 @@
     },
     {
       "id": "entity:ganesh industries",
-      "entity_type": "online seller",
-      "source": "costco.com",
-      "state": "Maharashtra",
-      "district": "Aurangabad",
-      "commodity": "urad dal",
+      "entity_type": "government source",
+      "source": "data.gov.in",
+      "state": "Telangana",
+      "district": "Khammam",
+      "commodity": "sunflower seeds",
       "node_type": "entity",
       "name": "Ganesh Industries"
     },
@@ -1733,9 +1733,9 @@
       "id": "entity:bharat agro foods",
       "entity_type": "online seller",
       "source": "costco.com",
-      "state": "Gujarat",
-      "district": "Surat",
-      "commodity": "toor dal",
+      "state": "Andhra Pradesh",
+      "district": "Visakhapatnam",
+      "commodity": "bajra",
       "node_type": "entity",
       "name": "Bharat Agro Foods"
     },
@@ -1771,11 +1771,11 @@
     },
     {
       "id": "entity:national corporation",
-      "entity_type": "online seller",
-      "source": "carrefour.com",
-      "state": "Rajasthan",
-      "district": "Jodhpur",
-      "commodity": "sesame",
+      "entity_type": "marine farm",
+      "source": "marine_harvest",
+      "state": "Karnataka",
+      "district": "Bengaluru",
+      "commodity": "ponni rice",
       "node_type": "entity",
       "name": "National Corporation"
     },
@@ -1802,10 +1802,10 @@
     {
       "id": "entity:global exports",
       "entity_type": "online seller",
-      "source": "tesco.com",
-      "state": "Uttar Pradesh",
-      "district": "Kanpur",
-      "commodity": "non-basmati rice",
+      "source": "bigbasket.com",
+      "state": "Andhra Pradesh",
+      "district": "Tirupati",
+      "commodity": "mustard seeds",
       "node_type": "entity",
       "name": "Global Exports"
     },
@@ -1841,11 +1841,11 @@
     },
     {
       "id": "entity:raj market yard",
-      "entity_type": "online seller",
-      "source": "alibaba.com",
-      "state": "Gujarat",
-      "district": "Surat",
-      "commodity": "sesame",
+      "entity_type": "Online Seller",
+      "source": "amazon.com",
+      "state": "Odisha",
+      "district": "Bhubaneswar",
+      "commodity": "Foxtail Millet",
       "node_type": "entity",
       "name": "Raj Market Yard"
     },
@@ -1867,11 +1867,11 @@
     },
     {
       "id": "entity:pacific store house",
-      "entity_type": "online seller",
-      "source": "amazon.com",
-      "state": "West Bengal",
-      "district": "Kolkata",
-      "commodity": "soybean",
+      "entity_type": "government source",
+      "source": "data.gov.in",
+      "state": "Punjab",
+      "district": "Bathinda",
+      "commodity": "ponni rice",
       "node_type": "entity",
       "name": "Pacific Store House"
     },
@@ -1898,10 +1898,10 @@
     {
       "id": "entity:indian supply chain",
       "entity_type": "Online Seller",
-      "source": "amazon.com",
-      "state": "Haryana",
-      "district": "Gurgaon",
-      "commodity": "Mustard Seeds",
+      "source": "costco.com",
+      "state": "Madhya Pradesh",
+      "district": "Indore",
+      "commodity": "Urad Dal",
       "node_type": "entity",
       "name": "Indian Supply Chain"
     },
@@ -1924,30 +1924,30 @@
     {
       "id": "entity:kiran agri business",
       "entity_type": "Online Seller",
-      "source": "amazon.com",
-      "state": "Madhya Pradesh",
-      "district": "Jabalpur",
-      "commodity": "Sunflower Seeds",
+      "source": "tesco.com",
+      "state": "Andhra Pradesh",
+      "district": "Vijayawada",
+      "commodity": "Durum Wheat",
       "node_type": "entity",
       "name": "Kiran Agri Business"
     },
     {
       "id": "entity:premier traders",
-      "entity_type": "online seller",
-      "source": "amazon.com",
-      "state": "Telangana",
-      "district": "Khammam",
-      "commodity": "sharbati wheat",
+      "entity_type": "Government Source",
+      "source": "data.gov.in",
+      "state": "Kerala",
+      "district": "Kochi",
+      "commodity": "Masoor Dal",
       "node_type": "entity",
       "name": "Premier Traders"
     },
     {
       "id": "entity:shree agro foods",
       "entity_type": "online seller",
-      "source": "amazon.com",
-      "state": "Haryana",
-      "district": "Gurgaon",
-      "commodity": "durum wheat",
+      "source": "carrefour.com",
+      "state": "Andhra Pradesh",
+      "district": "Visakhapatnam",
+      "commodity": "foxtail millet",
       "node_type": "entity",
       "name": "Shree Agro Foods"
     },
@@ -1973,11 +1973,11 @@
     },
     {
       "id": "entity:sri market yard",
-      "entity_type": "Marine Exporter",
-      "source": "seafood_export",
-      "state": "Assam",
-      "district": "Silchar",
-      "commodity": "Raw Sugar",
+      "entity_type": "online seller",
+      "source": "amazon.in",
+      "state": "Tamil Nadu",
+      "district": "Tiruchirappalli",
+      "commodity": "groundnut",
       "node_type": "entity",
       "name": "Sri Market Yard"
     },
@@ -1989,11 +1989,11 @@
     },
     {
       "id": "entity:shree enterprises",
-      "entity_type": "marine exporter",
-      "source": "seafood_export",
+      "entity_type": "Online Seller",
+      "source": "swiggy.com",
       "state": "West Bengal",
-      "district": "Howrah",
-      "commodity": "moong dal",
+      "district": "Kolkata",
+      "commodity": "Bajra",
       "node_type": "entity",
       "name": "Shree Enterprises"
     },
@@ -2009,21 +2009,21 @@
     },
     {
       "id": "entity:pacific agri business",
-      "entity_type": "corporate farm",
-      "source": "corporate_farm",
-      "state": "Maharashtra",
-      "district": "Pune",
-      "commodity": "sunflower seeds",
+      "entity_type": "Online Seller",
+      "source": "amazon.com",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "commodity": "Maize",
       "node_type": "entity",
       "name": "Pacific Agri Business"
     },
     {
       "id": "entity:lakshmi trading co.",
-      "entity_type": "corporate farm",
-      "source": "corporate_farm",
-      "state": "Telangana",
-      "district": "Hyderabad",
-      "commodity": "non-basmati rice",
+      "entity_type": "online seller",
+      "source": "blinkit.com",
+      "state": "Karnataka",
+      "district": "Belagavi",
+      "commodity": "groundnut",
       "node_type": "entity",
       "name": "Lakshmi Trading Co."
     },
@@ -2031,19 +2031,19 @@
       "id": "entity:royal industries",
       "entity_type": "marine farm",
       "source": "marine_harvest",
-      "state": "West Bengal",
-      "district": "Kolkata",
-      "commodity": "masoor dal",
+      "state": "Karnataka",
+      "district": "Mysuru",
+      "commodity": "mustard seeds",
       "node_type": "entity",
       "name": "Royal Industries"
     },
     {
       "id": "entity:global trading co.",
-      "entity_type": "Marine Farm",
-      "source": "marine_harvest",
-      "state": "Punjab",
-      "district": "Patiala",
-      "commodity": "Refined Sugar",
+      "entity_type": "Online Seller",
+      "source": "amazon.com",
+      "state": "Kerala",
+      "district": "Kozhikode",
+      "commodity": "Non-Basmati Rice",
       "node_type": "entity",
       "name": "Global Trading Co."
     },
@@ -2052,6 +2052,618 @@
       "node_type": "geography",
       "name": "Patiala",
       "level": "district"
+    },
+    {
+      "id": "entity:sai agro foods",
+      "entity_type": "Marine Exporter",
+      "source": "seafood_export",
+      "state": "Maharashtra",
+      "district": "Nashik",
+      "commodity": "Refined Sugar",
+      "node_type": "entity",
+      "name": "Sai Agro Foods"
+    },
+    {
+      "id": "geography:ludhiana",
+      "node_type": "geography",
+      "name": "Ludhiana",
+      "level": "district"
+    },
+    {
+      "id": "entity:ganesh exports",
+      "entity_type": "government market yard",
+      "source": "agmarknet.gov.in",
+      "state": "Rajasthan",
+      "district": "Jodhpur",
+      "commodity": "basmati rice",
+      "node_type": "entity",
+      "name": "Ganesh Exports"
+    },
+    {
+      "id": "entity:raj farmers prod.",
+      "entity_type": "Online Seller",
+      "source": "flipkart.com",
+      "state": "Karnataka",
+      "district": "Hubballi",
+      "commodity": "Bajra",
+      "node_type": "entity",
+      "name": "Raj Farmers Prod."
+    },
+    {
+      "id": "geography:meerut",
+      "node_type": "geography",
+      "name": "Meerut",
+      "level": "district"
+    },
+    {
+      "id": "entity:kiran exports",
+      "entity_type": "Online Seller",
+      "source": "carrefour.com",
+      "state": "Gujarat",
+      "district": "Ahmedabad",
+      "commodity": "Bajra",
+      "node_type": "entity",
+      "name": "Kiran Exports"
+    },
+    {
+      "id": "entity:royal agri business",
+      "entity_type": "government market yard",
+      "source": "agmarknet.gov.in",
+      "state": "West Bengal",
+      "district": "Asansol",
+      "commodity": "bajra",
+      "node_type": "entity",
+      "name": "Royal Agri Business"
+    },
+    {
+      "id": "entity:premier agro foods",
+      "entity_type": "Government Source",
+      "source": "data.gov.in",
+      "state": "Rajasthan",
+      "district": "Kota",
+      "commodity": "Sunflower Seeds",
+      "node_type": "entity",
+      "name": "Premier Agro Foods"
+    },
+    {
+      "id": "entity:royal impex",
+      "entity_type": "online seller",
+      "source": "amazon.in",
+      "state": "Karnataka",
+      "district": "Belagavi",
+      "commodity": "toor dal",
+      "node_type": "entity",
+      "name": "Royal Impex"
+    },
+    {
+      "id": "entity:lakshmi agro foods",
+      "entity_type": "online seller",
+      "source": "amazon.in",
+      "state": "Maharashtra",
+      "district": "Nashik",
+      "commodity": "sharbati wheat",
+      "node_type": "entity",
+      "name": "Lakshmi Agro Foods"
+    },
+    {
+      "id": "entity:hindustan traders",
+      "entity_type": "News Reference",
+      "source": "commodity_news",
+      "state": "Gujarat",
+      "district": "Rajkot",
+      "commodity": "Chana Dal",
+      "node_type": "entity",
+      "name": "Hindustan Traders"
+    },
+    {
+      "id": "geography:dibrugarh",
+      "node_type": "geography",
+      "name": "Dibrugarh",
+      "level": "district"
+    },
+    {
+      "id": "entity:sai commodities",
+      "entity_type": "Online Seller",
+      "source": "bigbasket.com",
+      "state": "Kerala",
+      "district": "Thiruvananthapuram",
+      "commodity": "Sona Masuri",
+      "node_type": "entity",
+      "name": "Sai Commodities"
+    },
+    {
+      "id": "entity:sai corporation",
+      "entity_type": "Online Seller",
+      "source": "alibaba.com",
+      "state": "Bihar",
+      "district": "Gaya",
+      "commodity": "Jowar",
+      "node_type": "entity",
+      "name": "Sai Corporation"
+    },
+    {
+      "id": "entity:hindustan corporation",
+      "entity_type": "Online Seller",
+      "source": "walmart.com",
+      "state": "Telangana",
+      "district": "Karimnagar",
+      "commodity": "Ragi",
+      "node_type": "entity",
+      "name": "Hindustan Corporation"
+    },
+    {
+      "id": "entity:bharat industries",
+      "entity_type": "Online Seller",
+      "source": "blinkit.com",
+      "state": "Assam",
+      "district": "Jorhat",
+      "commodity": "Masoor Dal",
+      "node_type": "entity",
+      "name": "Bharat Industries"
+    },
+    {
+      "id": "geography:patna",
+      "node_type": "geography",
+      "name": "Patna",
+      "level": "district"
+    },
+    {
+      "id": "entity:ganesh impex",
+      "entity_type": "Online Seller",
+      "source": "zepto.com",
+      "state": "Uttar Pradesh",
+      "district": "Varanasi",
+      "commodity": "Mustard Seeds",
+      "node_type": "entity",
+      "name": "Ganesh Impex"
+    },
+    {
+      "id": "entity:kiran store house",
+      "entity_type": "manufacturer",
+      "source": "linkedin.com",
+      "state": "Andhra Pradesh",
+      "district": "Visakhapatnam",
+      "commodity": "sharbati wheat",
+      "node_type": "entity",
+      "name": "Kiran Store House"
+    },
+    {
+      "id": "entity:indian store house",
+      "entity_type": "News Reference",
+      "source": "commodity_news",
+      "state": "Assam",
+      "district": "Guwahati",
+      "commodity": "Groundnut",
+      "node_type": "entity",
+      "name": "Indian Store House"
+    },
+    {
+      "id": "entity:om corporation",
+      "entity_type": "news reference",
+      "source": "commodity_news",
+      "state": "Maharashtra",
+      "district": "Mumbai",
+      "commodity": "urad dal",
+      "node_type": "entity",
+      "name": "Om Corporation"
+    },
+    {
+      "id": "entity:sai impex",
+      "entity_type": "Online Seller",
+      "source": "amazon.com",
+      "state": "Odisha",
+      "district": "Berhampur",
+      "commodity": "Sharbati Wheat",
+      "node_type": "entity",
+      "name": "Sai Impex"
+    },
+    {
+      "id": "entity:lakshmi store house",
+      "entity_type": "online seller",
+      "source": "amazon.com",
+      "state": "Kerala",
+      "district": "Thiruvananthapuram",
+      "commodity": "groundnut",
+      "node_type": "entity",
+      "name": "Lakshmi Store House"
+    },
+    {
+      "id": "geography:jalandhar",
+      "node_type": "geography",
+      "name": "Jalandhar",
+      "level": "district"
+    },
+    {
+      "id": "entity:shree market yard",
+      "entity_type": "news reference",
+      "source": "commodity_news",
+      "state": "Rajasthan",
+      "district": "Kota",
+      "commodity": "mustard seeds",
+      "node_type": "entity",
+      "name": "Shree Market Yard"
+    },
+    {
+      "id": "entity:om agri business",
+      "entity_type": "online seller",
+      "source": "jiomart.com",
+      "state": "Uttar Pradesh",
+      "district": "Lucknow",
+      "commodity": "ponni rice",
+      "node_type": "entity",
+      "name": "Om Agri Business"
+    },
+    {
+      "id": "entity:hindustan market yard",
+      "entity_type": "online seller",
+      "source": "jiomart.com",
+      "state": "Odisha",
+      "district": "Cuttack",
+      "commodity": "ragi",
+      "node_type": "entity",
+      "name": "Hindustan Market Yard"
+    },
+    {
+      "id": "entity:indian commodities",
+      "entity_type": "online seller",
+      "source": "dmart.in",
+      "state": "Punjab",
+      "district": "Bathinda",
+      "commodity": "foxtail millet",
+      "node_type": "entity",
+      "name": "Indian Commodities"
+    },
+    {
+      "id": "entity:national market yard",
+      "entity_type": "Online Seller",
+      "source": "costco.com",
+      "state": "Andhra Pradesh",
+      "district": "Hyderabad",
+      "commodity": "Soybean",
+      "node_type": "entity",
+      "name": "National Market Yard"
+    },
+    {
+      "id": "entity:om supply chain",
+      "entity_type": "online seller",
+      "source": "dmart.in",
+      "state": "Punjab",
+      "district": "Amritsar",
+      "commodity": "ponni rice",
+      "node_type": "entity",
+      "name": "Om Supply Chain"
+    },
+    {
+      "id": "entity:kiran market yard",
+      "entity_type": "Online Seller",
+      "source": "dmart.in",
+      "state": "Haryana",
+      "district": "Ambala",
+      "commodity": "Groundnut",
+      "node_type": "entity",
+      "name": "Kiran Market Yard"
+    },
+    {
+      "id": "geography:vijayawada",
+      "node_type": "geography",
+      "name": "Vijayawada",
+      "level": "district"
+    },
+    {
+      "id": "entity:kiran commodities",
+      "entity_type": "Online Seller",
+      "source": "walmart.com",
+      "state": "Odisha",
+      "district": "Berhampur",
+      "commodity": "Urad Dal",
+      "node_type": "entity",
+      "name": "Kiran Commodities"
+    },
+    {
+      "id": "entity:lakshmi corporation",
+      "entity_type": "Online Seller",
+      "source": "reliancefresh.com",
+      "state": "Madhya Pradesh",
+      "district": "Ujjain",
+      "commodity": "Lokwan Wheat",
+      "node_type": "entity",
+      "name": "Lakshmi Corporation"
+    },
+    {
+      "id": "entity:sri traders",
+      "entity_type": "Marine Farm",
+      "source": "marine_harvest",
+      "state": "Haryana",
+      "district": "Panipat",
+      "commodity": "Jaggery",
+      "node_type": "entity",
+      "name": "Sri Traders"
+    },
+    {
+      "id": "entity:raj enterprises",
+      "entity_type": "Online Seller",
+      "source": "reliancefresh.com",
+      "state": "Maharashtra",
+      "district": "Mumbai",
+      "commodity": "Brown Sugar",
+      "node_type": "entity",
+      "name": "Raj Enterprises"
+    },
+    {
+      "id": "entity:kiran enterprises",
+      "entity_type": "Online Seller",
+      "source": "amazon.com",
+      "state": "Kerala",
+      "district": "Thrissur",
+      "commodity": "Moong Dal",
+      "node_type": "entity",
+      "name": "Kiran Enterprises"
+    },
+    {
+      "id": "entity:sri impex",
+      "entity_type": "Online Seller",
+      "source": "zepto.com",
+      "state": "Odisha",
+      "district": "Berhampur",
+      "commodity": "Sesame",
+      "node_type": "entity",
+      "name": "Sri Impex"
+    },
+    {
+      "id": "entity:bharat trading co.",
+      "entity_type": "online seller",
+      "source": "swiggy.com",
+      "state": "Tamil Nadu",
+      "district": "Salem",
+      "commodity": "groundnut",
+      "node_type": "entity",
+      "name": "Bharat Trading Co."
+    },
+    {
+      "id": "entity:pacific traders",
+      "entity_type": "Online Seller",
+      "source": "alibaba.com",
+      "state": "Maharashtra",
+      "district": "Mumbai",
+      "commodity": "Refined Sugar",
+      "node_type": "entity",
+      "name": "Pacific Traders"
+    },
+    {
+      "id": "entity:kiran traders",
+      "entity_type": "Online Seller",
+      "source": "amazon.com",
+      "state": "Telangana",
+      "district": "Karimnagar",
+      "commodity": "Ponni Rice",
+      "node_type": "entity",
+      "name": "Kiran Traders"
+    },
+    {
+      "id": "entity:national supply chain",
+      "entity_type": "online seller",
+      "source": "more.com",
+      "state": "Odisha",
+      "district": "Sambalpur",
+      "commodity": "bajra",
+      "node_type": "entity",
+      "name": "National Supply Chain"
+    },
+    {
+      "id": "entity:royal supply chain",
+      "entity_type": "Online Seller",
+      "source": "more.com",
+      "state": "Madhya Pradesh",
+      "district": "Jabalpur",
+      "commodity": "Sesame",
+      "node_type": "entity",
+      "name": "Royal Supply Chain"
+    },
+    {
+      "id": "entity:lakshmi exports",
+      "entity_type": "online seller",
+      "source": "more.com",
+      "state": "Rajasthan",
+      "district": "Kota",
+      "commodity": "non-basmati rice",
+      "node_type": "entity",
+      "name": "Lakshmi Exports"
+    },
+    {
+      "id": "entity:indian farmers prod.",
+      "entity_type": "Online Seller",
+      "source": "more.com",
+      "state": "Karnataka",
+      "district": "Belagavi",
+      "commodity": "Non-Basmati Rice",
+      "node_type": "entity",
+      "name": "Indian Farmers Prod."
+    },
+    {
+      "id": "entity:national store house",
+      "entity_type": "Corporate Farm",
+      "source": "corporate_farm",
+      "state": "Karnataka",
+      "district": "Hubballi",
+      "commodity": "PBW Wheat",
+      "node_type": "entity",
+      "name": "National Store House"
+    },
+    {
+      "id": "entity:hindustan agro foods",
+      "entity_type": "Online Seller",
+      "source": "walmart.com",
+      "state": "Uttar Pradesh",
+      "district": "Lucknow",
+      "commodity": "Sona Masuri",
+      "node_type": "entity",
+      "name": "Hindustan Agro Foods"
+    },
+    {
+      "id": "entity:indian market yard",
+      "entity_type": "Online Seller",
+      "source": "walmart.com",
+      "state": "Rajasthan",
+      "district": "Kota",
+      "commodity": "Durum Wheat",
+      "node_type": "entity",
+      "name": "Indian Market Yard"
+    },
+    {
+      "id": "entity:lakshmi farmers prod.",
+      "entity_type": "online seller",
+      "source": "walmart.com",
+      "state": "Karnataka",
+      "district": "Belagavi",
+      "commodity": "soybean",
+      "node_type": "entity",
+      "name": "Lakshmi Farmers Prod."
+    },
+    {
+      "id": "entity:global impex",
+      "entity_type": "online seller",
+      "source": "walmart.com",
+      "state": "Tamil Nadu",
+      "district": "Coimbatore",
+      "commodity": "sharbati wheat",
+      "node_type": "entity",
+      "name": "Global Impex"
+    },
+    {
+      "id": "entity:lakshmi market yard",
+      "entity_type": "online seller",
+      "source": "costco.com",
+      "state": "Uttar Pradesh",
+      "district": "Lucknow",
+      "commodity": "brown sugar",
+      "node_type": "entity",
+      "name": "Lakshmi Market Yard"
+    },
+    {
+      "id": "entity:om traders",
+      "entity_type": "Online Seller",
+      "source": "amazon.com",
+      "state": "Tamil Nadu",
+      "district": "Chennai",
+      "commodity": "Refined Sugar",
+      "node_type": "entity",
+      "name": "Om Traders"
+    },
+    {
+      "id": "entity:royal enterprises",
+      "entity_type": "Online Seller",
+      "source": "carrefour.com",
+      "state": "Uttar Pradesh",
+      "district": "Meerut",
+      "commodity": "Sona Masuri",
+      "node_type": "entity",
+      "name": "Royal Enterprises"
+    },
+    {
+      "id": "entity:indian exports",
+      "entity_type": "online seller",
+      "source": "carrefour.com",
+      "state": "Punjab",
+      "district": "Patiala",
+      "commodity": "pbw wheat",
+      "node_type": "entity",
+      "name": "Indian Exports"
+    },
+    {
+      "id": "entity:bharat impex",
+      "entity_type": "online seller",
+      "source": "tesco.com",
+      "state": "Haryana",
+      "district": "Faridabad",
+      "commodity": "ragi",
+      "node_type": "entity",
+      "name": "Bharat Impex"
+    },
+    {
+      "id": "entity:national trading co.",
+      "entity_type": "Marine Farm",
+      "source": "marine_harvest",
+      "state": "Odisha",
+      "district": "Bhubaneswar",
+      "commodity": "Refined Sugar",
+      "node_type": "entity",
+      "name": "National Trading Co."
+    },
+    {
+      "id": "entity:raj exports",
+      "entity_type": "online seller",
+      "source": "alibaba.com",
+      "state": "West Bengal",
+      "district": "Siliguri",
+      "commodity": "masoor dal",
+      "node_type": "entity",
+      "name": "Raj Exports"
+    },
+    {
+      "id": "entity:royal commodities",
+      "entity_type": "Online Seller",
+      "source": "alibaba.com",
+      "state": "Maharashtra",
+      "district": "Nashik",
+      "commodity": "Lokwan Wheat",
+      "node_type": "entity",
+      "name": "Royal Commodities"
+    },
+    {
+      "id": "entity:sri trading co.",
+      "entity_type": "Online Seller",
+      "source": "amazon.com",
+      "state": "Kerala",
+      "district": "Kozhikode",
+      "commodity": "Sona Masuri",
+      "node_type": "entity",
+      "name": "Sri Trading Co."
+    },
+    {
+      "id": "entity:premier supply chain",
+      "entity_type": "online seller",
+      "source": "amazon.com",
+      "state": "Karnataka",
+      "district": "Mangaluru",
+      "commodity": "raw sugar",
+      "node_type": "entity",
+      "name": "Premier Supply Chain"
+    },
+    {
+      "id": "entity:sri agro foods",
+      "entity_type": "Marine Exporter",
+      "source": "seafood_export",
+      "state": "Karnataka",
+      "district": "Hubballi",
+      "commodity": "Jowar",
+      "node_type": "entity",
+      "name": "Sri Agro Foods"
+    },
+    {
+      "id": "entity:shree farmers prod.",
+      "entity_type": "marine exporter",
+      "source": "seafood_export",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "commodity": "jaggery",
+      "node_type": "entity",
+      "name": "Shree Farmers Prod."
+    },
+    {
+      "id": "entity:indian trading co.",
+      "entity_type": "Corporate Farm",
+      "source": "corporate_farm",
+      "state": "Madhya Pradesh",
+      "district": "Jabalpur",
+      "commodity": "Raw Sugar",
+      "node_type": "entity",
+      "name": "Indian Trading Co."
+    },
+    {
+      "id": "x",
+      "type": "Manufacturer",
+      "node_type": "entity",
+      "name": "X"
     }
   ],
   "edges": [
@@ -2091,6 +2703,16 @@
       "relationship": "LOCATED_IN"
     },
     {
+      "source": "entity:ganesh corporation",
+      "target": "commodity:non-basmati rice",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:ganesh corporation",
+      "target": "geography:bihar",
+      "relationship": "LOCATED_IN"
+    },
+    {
       "source": "entity:shree exports",
       "target": "commodity:ponni rice",
       "relationship": "SUPPLIES"
@@ -2098,6 +2720,16 @@
     {
       "source": "entity:shree exports",
       "target": "geography:uttar pradesh",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:shree exports",
+      "target": "commodity:jaggery",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:shree exports",
+      "target": "geography:andhra pradesh",
       "relationship": "LOCATED_IN"
     },
     {
@@ -2121,6 +2753,16 @@
       "relationship": "LOCATED_IN"
     },
     {
+      "source": "entity:sai enterprises",
+      "target": "commodity:maize",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:sai enterprises",
+      "target": "geography:punjab",
+      "relationship": "LOCATED_IN"
+    },
+    {
       "source": "entity:premier corporation",
       "target": "commodity:moong dal",
       "relationship": "SUPPLIES"
@@ -2131,6 +2773,16 @@
       "relationship": "LOCATED_IN"
     },
     {
+      "source": "entity:premier corporation",
+      "target": "commodity:groundnut",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:premier corporation",
+      "target": "geography:assam",
+      "relationship": "LOCATED_IN"
+    },
+    {
       "source": "entity:national impex",
       "target": "commodity:groundnut",
       "relationship": "SUPPLIES"
@@ -2138,6 +2790,26 @@
     {
       "source": "entity:national impex",
       "target": "geography:haryana",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:national impex",
+      "target": "commodity:toor dal",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:national impex",
+      "target": "geography:tamil nadu",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:national impex",
+      "target": "commodity:bajra",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:national impex",
+      "target": "geography:uttar pradesh",
       "relationship": "LOCATED_IN"
     },
     {
@@ -2211,6 +2883,26 @@
       "relationship": "LOCATED_IN"
     },
     {
+      "source": "entity:global commodities",
+      "target": "commodity:jaggery",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:global commodities",
+      "target": "geography:uttar pradesh",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:global commodities",
+      "target": "commodity:brown sugar",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:global commodities",
+      "target": "geography:assam",
+      "relationship": "LOCATED_IN"
+    },
+    {
       "source": "entity:pacific corporation",
       "target": "commodity:toor dal",
       "relationship": "SUPPLIES"
@@ -2256,6 +2948,16 @@
       "relationship": "LOCATED_IN"
     },
     {
+      "source": "entity:global enterprises",
+      "target": "commodity:durum wheat",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:global enterprises",
+      "target": "geography:telangana",
+      "relationship": "LOCATED_IN"
+    },
+    {
       "source": "entity:royal exports",
       "target": "commodity:lokwan wheat",
       "relationship": "SUPPLIES"
@@ -2276,6 +2978,21 @@
       "relationship": "LOCATED_IN"
     },
     {
+      "source": "entity:royal exports",
+      "target": "commodity:toor dal",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:royal exports",
+      "target": "commodity:brown sugar",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:royal exports",
+      "target": "geography:assam",
+      "relationship": "LOCATED_IN"
+    },
+    {
       "source": "entity:indian agro foods",
       "target": "commodity:mustard seeds",
       "relationship": "SUPPLIES"
@@ -2283,6 +3000,26 @@
     {
       "source": "entity:indian agro foods",
       "target": "geography:tamil nadu",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:indian agro foods",
+      "target": "commodity:sona masuri",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:indian agro foods",
+      "target": "geography:uttar pradesh",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:indian agro foods",
+      "target": "commodity:ponni rice",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:indian agro foods",
+      "target": "geography:telangana",
       "relationship": "LOCATED_IN"
     },
     {
@@ -2311,6 +3048,16 @@
       "relationship": "LOCATED_IN"
     },
     {
+      "source": "entity:royal traders",
+      "target": "commodity:pbw wheat",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:royal traders",
+      "target": "geography:madhya pradesh",
+      "relationship": "LOCATED_IN"
+    },
+    {
       "source": "entity:pacific trading co.",
       "target": "commodity:basmati rice",
       "relationship": "SUPPLIES"
@@ -2328,6 +3075,16 @@
     {
       "source": "entity:pacific trading co.",
       "target": "geography:madhya pradesh",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:pacific trading co.",
+      "target": "commodity:raw sugar",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:pacific trading co.",
+      "target": "geography:andhra pradesh",
       "relationship": "LOCATED_IN"
     },
     {
@@ -2351,6 +3108,26 @@
       "relationship": "LOCATED_IN"
     },
     {
+      "source": "entity:hindustan trading co.",
+      "target": "commodity:raw sugar",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:hindustan trading co.",
+      "target": "geography:maharashtra",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:hindustan trading co.",
+      "target": "commodity:sunflower seeds",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:hindustan trading co.",
+      "target": "geography:andhra pradesh",
+      "relationship": "LOCATED_IN"
+    },
+    {
       "source": "entity:hindustan farmers prod.",
       "target": "commodity:jaggery",
       "relationship": "SUPPLIES"
@@ -2361,6 +3138,16 @@
       "relationship": "LOCATED_IN"
     },
     {
+      "source": "entity:hindustan farmers prod.",
+      "target": "commodity:toor dal",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:hindustan farmers prod.",
+      "target": "geography:madhya pradesh",
+      "relationship": "LOCATED_IN"
+    },
+    {
       "source": "entity:hindustan impex",
       "target": "commodity:jaggery",
       "relationship": "SUPPLIES"
@@ -2368,6 +3155,16 @@
     {
       "source": "entity:hindustan impex",
       "target": "geography:gujarat",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:hindustan impex",
+      "target": "commodity:lokwan wheat",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:hindustan impex",
+      "target": "geography:tamil nadu",
       "relationship": "LOCATED_IN"
     },
     {
@@ -2441,6 +3238,11 @@
       "relationship": "LOCATED_IN"
     },
     {
+      "source": "entity:global agro foods",
+      "target": "commodity:refined sugar",
+      "relationship": "SUPPLIES"
+    },
+    {
       "source": "entity:indian industries",
       "target": "commodity:lokwan wheat",
       "relationship": "SUPPLIES"
@@ -2468,6 +3270,16 @@
     {
       "source": "entity:premier agri business",
       "target": "geography:madhya pradesh",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:premier agri business",
+      "target": "commodity:soybean",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:premier agri business",
+      "target": "geography:bihar",
       "relationship": "LOCATED_IN"
     },
     {
@@ -2521,6 +3333,21 @@
       "relationship": "LOCATED_IN"
     },
     {
+      "source": "entity:raj commodities",
+      "target": "commodity:basmati rice",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:raj commodities",
+      "target": "geography:bihar",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:raj commodities",
+      "target": "commodity:pbw wheat",
+      "relationship": "SUPPLIES"
+    },
+    {
       "source": "entity:ganesh trading co.",
       "target": "commodity:foxtail millet",
       "relationship": "SUPPLIES"
@@ -2538,6 +3365,16 @@
     {
       "source": "entity:ganesh trading co.",
       "target": "geography:haryana",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:ganesh trading co.",
+      "target": "commodity:chana dal",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:ganesh trading co.",
+      "target": "geography:telangana",
       "relationship": "LOCATED_IN"
     },
     {
@@ -2591,6 +3428,26 @@
       "relationship": "LOCATED_IN"
     },
     {
+      "source": "entity:sri supply chain",
+      "target": "commodity:maize",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:sri supply chain",
+      "target": "geography:telangana",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:sri supply chain",
+      "target": "commodity:basmati rice",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:sri supply chain",
+      "target": "geography:haryana",
+      "relationship": "LOCATED_IN"
+    },
+    {
       "source": "entity:lakshmi enterprises",
       "target": "commodity:durum wheat",
       "relationship": "SUPPLIES"
@@ -2636,6 +3493,26 @@
       "relationship": "LOCATED_IN"
     },
     {
+      "source": "entity:pacific farmers prod.",
+      "target": "commodity:sunflower seeds",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:pacific farmers prod.",
+      "target": "geography:karnataka",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:pacific farmers prod.",
+      "target": "commodity:ponni rice",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:pacific farmers prod.",
+      "target": "geography:andhra pradesh",
+      "relationship": "LOCATED_IN"
+    },
+    {
       "source": "entity:bharat traders",
       "target": "commodity:basmati rice",
       "relationship": "SUPPLIES"
@@ -2668,6 +3545,26 @@
     {
       "source": "entity:bharat traders",
       "target": "geography:tamil nadu",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:bharat traders",
+      "target": "commodity:lokwan wheat",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:bharat traders",
+      "target": "geography:rajasthan",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:bharat traders",
+      "target": "commodity:sona masuri",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:bharat traders",
+      "target": "geography:andhra pradesh",
       "relationship": "LOCATED_IN"
     },
     {
@@ -2776,6 +3673,16 @@
       "relationship": "LOCATED_IN"
     },
     {
+      "source": "entity:kiran impex",
+      "target": "commodity:pbw wheat",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:kiran impex",
+      "target": "geography:tamil nadu",
+      "relationship": "LOCATED_IN"
+    },
+    {
       "source": "entity:raj agri business",
       "target": "commodity:foxtail millet",
       "relationship": "SUPPLIES"
@@ -2806,6 +3713,16 @@
       "relationship": "LOCATED_IN"
     },
     {
+      "source": "entity:sri corporation",
+      "target": "commodity:basmati rice",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:sri corporation",
+      "target": "geography:andhra pradesh",
+      "relationship": "LOCATED_IN"
+    },
+    {
       "source": "entity:om trading co.",
       "target": "commodity:sona masuri",
       "relationship": "SUPPLIES"
@@ -2823,6 +3740,11 @@
     {
       "source": "entity:om trading co.",
       "target": "geography:tamil nadu",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:om trading co.",
+      "target": "geography:punjab",
       "relationship": "LOCATED_IN"
     },
     {
@@ -2846,6 +3768,16 @@
       "relationship": "LOCATED_IN"
     },
     {
+      "source": "entity:sri industries",
+      "target": "commodity:masoor dal",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:sri industries",
+      "target": "geography:west bengal",
+      "relationship": "LOCATED_IN"
+    },
+    {
       "source": "entity:om farmers prod.",
       "target": "commodity:chana dal",
       "relationship": "SUPPLIES"
@@ -2863,6 +3795,16 @@
     {
       "source": "entity:om farmers prod.",
       "target": "geography:karnataka",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:om farmers prod.",
+      "target": "commodity:basmati rice",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:om farmers prod.",
+      "target": "geography:assam",
       "relationship": "LOCATED_IN"
     },
     {
@@ -2886,6 +3828,16 @@
       "relationship": "LOCATED_IN"
     },
     {
+      "source": "entity:om market yard",
+      "target": "commodity:sesame",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:om market yard",
+      "target": "geography:punjab",
+      "relationship": "LOCATED_IN"
+    },
+    {
       "source": "entity:national commodities",
       "target": "commodity:masoor dal",
       "relationship": "SUPPLIES"
@@ -2893,6 +3845,16 @@
     {
       "source": "entity:national commodities",
       "target": "geography:assam",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:national commodities",
+      "target": "commodity:groundnut",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:national commodities",
+      "target": "geography:andhra pradesh",
       "relationship": "LOCATED_IN"
     },
     {
@@ -2931,6 +3893,11 @@
       "relationship": "SUPPLIES"
     },
     {
+      "source": "entity:om enterprises",
+      "target": "commodity:sunflower seeds",
+      "relationship": "SUPPLIES"
+    },
+    {
       "source": "entity:global industries",
       "target": "commodity:sona masuri",
       "relationship": "SUPPLIES"
@@ -2938,6 +3905,16 @@
     {
       "source": "entity:global industries",
       "target": "geography:bihar",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:global industries",
+      "target": "commodity:jowar",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:global industries",
+      "target": "geography:madhya pradesh",
       "relationship": "LOCATED_IN"
     },
     {
@@ -2986,6 +3963,11 @@
       "relationship": "LOCATED_IN"
     },
     {
+      "source": "entity:om commodities",
+      "target": "commodity:durum wheat",
+      "relationship": "SUPPLIES"
+    },
+    {
       "source": "entity:premier store house",
       "target": "commodity:jaggery",
       "relationship": "SUPPLIES"
@@ -2993,6 +3975,16 @@
     {
       "source": "entity:premier store house",
       "target": "geography:rajasthan",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:premier store house",
+      "target": "commodity:masoor dal",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:premier store house",
+      "target": "geography:karnataka",
       "relationship": "LOCATED_IN"
     },
     {
@@ -3016,6 +4008,16 @@
       "relationship": "LOCATED_IN"
     },
     {
+      "source": "entity:bharat supply chain",
+      "target": "commodity:mustard seeds",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:bharat supply chain",
+      "target": "geography:karnataka",
+      "relationship": "LOCATED_IN"
+    },
+    {
       "source": "entity:sai trading co.",
       "target": "commodity:mustard seeds",
       "relationship": "SUPPLIES"
@@ -3023,6 +4025,16 @@
     {
       "source": "entity:sai trading co.",
       "target": "geography:kerala",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:sai trading co.",
+      "target": "commodity:sunflower seeds",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:sai trading co.",
+      "target": "geography:tamil nadu",
       "relationship": "LOCATED_IN"
     },
     {
@@ -3043,6 +4055,16 @@
     {
       "source": "entity:national industries",
       "target": "geography:telangana",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:national industries",
+      "target": "commodity:ponni rice",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:national industries",
+      "target": "geography:karnataka",
       "relationship": "LOCATED_IN"
     },
     {
@@ -3076,6 +4098,11 @@
       "relationship": "LOCATED_IN"
     },
     {
+      "source": "entity:kiran farmers prod.",
+      "target": "geography:tamil nadu",
+      "relationship": "LOCATED_IN"
+    },
+    {
       "source": "entity:premier market yard",
       "target": "commodity:sesame",
       "relationship": "SUPPLIES"
@@ -3106,6 +4133,26 @@
       "relationship": "LOCATED_IN"
     },
     {
+      "source": "entity:premier farmers prod.",
+      "target": "commodity:brown sugar",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:premier farmers prod.",
+      "target": "geography:assam",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:premier farmers prod.",
+      "target": "commodity:masoor dal",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:premier farmers prod.",
+      "target": "geography:maharashtra",
+      "relationship": "LOCATED_IN"
+    },
+    {
       "source": "entity:indian enterprises",
       "target": "commodity:masoor dal",
       "relationship": "SUPPLIES"
@@ -3124,6 +4171,11 @@
       "source": "entity:indian enterprises",
       "target": "geography:odisha",
       "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:indian enterprises",
+      "target": "commodity:soybean",
+      "relationship": "SUPPLIES"
     },
     {
       "source": "entity:raj traders",
@@ -3146,6 +4198,31 @@
       "relationship": "LOCATED_IN"
     },
     {
+      "source": "entity:sri commodities",
+      "target": "commodity:sharbati wheat",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:sri commodities",
+      "target": "geography:karnataka",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:sri commodities",
+      "target": "commodity:brown sugar",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:sri commodities",
+      "target": "geography:gujarat",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:sri commodities",
+      "target": "geography:haryana",
+      "relationship": "LOCATED_IN"
+    },
+    {
       "source": "entity:om industries",
       "target": "commodity:ponni rice",
       "relationship": "SUPPLIES"
@@ -3153,6 +4230,16 @@
     {
       "source": "entity:om industries",
       "target": "geography:telangana",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:om industries",
+      "target": "commodity:sunflower seeds",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:om industries",
+      "target": "geography:bihar",
       "relationship": "LOCATED_IN"
     },
     {
@@ -3184,6 +4271,21 @@
       "source": "entity:national exports",
       "target": "geography:uttar pradesh",
       "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:national exports",
+      "target": "commodity:urad dal",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:national exports",
+      "target": "geography:punjab",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:national exports",
+      "target": "commodity:jaggery",
+      "relationship": "SUPPLIES"
     },
     {
       "source": "entity:royal store house",
@@ -3266,6 +4368,16 @@
       "relationship": "LOCATED_IN"
     },
     {
+      "source": "entity:bharat market yard",
+      "target": "commodity:groundnut",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:bharat market yard",
+      "target": "geography:assam",
+      "relationship": "LOCATED_IN"
+    },
+    {
       "source": "entity:kiran corporation",
       "target": "commodity:lokwan wheat",
       "relationship": "SUPPLIES"
@@ -3316,6 +4428,16 @@
       "relationship": "LOCATED_IN"
     },
     {
+      "source": "entity:shree store house",
+      "target": "commodity:non-basmati rice",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:shree store house",
+      "target": "geography:madhya pradesh",
+      "relationship": "LOCATED_IN"
+    },
+    {
       "source": "entity:indian corporation",
       "target": "commodity:bajra",
       "relationship": "SUPPLIES"
@@ -3326,6 +4448,31 @@
       "relationship": "LOCATED_IN"
     },
     {
+      "source": "entity:indian corporation",
+      "target": "commodity:refined sugar",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:indian corporation",
+      "target": "commodity:raw sugar",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:indian corporation",
+      "target": "geography:gujarat",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:indian corporation",
+      "target": "commodity:pbw wheat",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:indian corporation",
+      "target": "geography:tamil nadu",
+      "relationship": "LOCATED_IN"
+    },
+    {
       "source": "entity:sai exports",
       "target": "commodity:jaggery",
       "relationship": "SUPPLIES"
@@ -3333,6 +4480,26 @@
     {
       "source": "entity:sai exports",
       "target": "geography:andhra pradesh",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:sai exports",
+      "target": "commodity:raw sugar",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:sai exports",
+      "target": "geography:maharashtra",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:sai exports",
+      "target": "geography:haryana",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:sai exports",
+      "target": "geography:bihar",
       "relationship": "LOCATED_IN"
     },
     {
@@ -3406,6 +4573,11 @@
       "relationship": "LOCATED_IN"
     },
     {
+      "source": "entity:pacific impex",
+      "target": "geography:rajasthan",
+      "relationship": "LOCATED_IN"
+    },
+    {
       "source": "entity:ganesh market yard",
       "target": "commodity:sesame",
       "relationship": "SUPPLIES"
@@ -3436,6 +4608,26 @@
       "relationship": "LOCATED_IN"
     },
     {
+      "source": "entity:bharat store house",
+      "target": "commodity:jaggery",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:bharat store house",
+      "target": "geography:telangana",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:bharat store house",
+      "target": "commodity:soybean",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:bharat store house",
+      "target": "geography:andhra pradesh",
+      "relationship": "LOCATED_IN"
+    },
+    {
       "source": "entity:royal market yard",
       "target": "commodity:moong dal",
       "relationship": "SUPPLIES"
@@ -3453,6 +4645,16 @@
     {
       "source": "entity:premier enterprises",
       "target": "geography:haryana",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:premier enterprises",
+      "target": "commodity:lokwan wheat",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:premier enterprises",
+      "target": "geography:maharashtra",
       "relationship": "LOCATED_IN"
     },
     {
@@ -3493,6 +4695,16 @@
     {
       "source": "entity:om impex",
       "target": "geography:west bengal",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:om impex",
+      "target": "commodity:non-basmati rice",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:om impex",
+      "target": "geography:uttar pradesh",
       "relationship": "LOCATED_IN"
     },
     {
@@ -3546,6 +4758,26 @@
       "relationship": "LOCATED_IN"
     },
     {
+      "source": "entity:shree commodities",
+      "target": "commodity:ragi",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:shree commodities",
+      "target": "geography:maharashtra",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:shree commodities",
+      "target": "commodity:bajra",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:shree commodities",
+      "target": "geography:karnataka",
+      "relationship": "LOCATED_IN"
+    },
+    {
       "source": "entity:lakshmi traders",
       "target": "commodity:sunflower seeds",
       "relationship": "SUPPLIES"
@@ -3553,6 +4785,16 @@
     {
       "source": "entity:lakshmi traders",
       "target": "geography:telangana",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:lakshmi traders",
+      "target": "commodity:sesame",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:lakshmi traders",
+      "target": "geography:madhya pradesh",
       "relationship": "LOCATED_IN"
     },
     {
@@ -3586,6 +4828,16 @@
       "relationship": "LOCATED_IN"
     },
     {
+      "source": "entity:hindustan agri business",
+      "target": "commodity:basmati rice",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:hindustan agri business",
+      "target": "geography:odisha",
+      "relationship": "LOCATED_IN"
+    },
+    {
       "source": "entity:bharat enterprises",
       "target": "commodity:brown sugar",
       "relationship": "SUPPLIES"
@@ -3606,6 +4858,16 @@
       "relationship": "LOCATED_IN"
     },
     {
+      "source": "entity:lakshmi agri business",
+      "target": "commodity:moong dal",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:lakshmi agri business",
+      "target": "geography:odisha",
+      "relationship": "LOCATED_IN"
+    },
+    {
       "source": "entity:indian traders",
       "target": "commodity:jaggery",
       "relationship": "SUPPLIES"
@@ -3623,6 +4885,16 @@
     {
       "source": "entity:om exports",
       "target": "geography:uttar pradesh",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:om exports",
+      "target": "commodity:basmati rice",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:om exports",
+      "target": "geography:kerala",
       "relationship": "LOCATED_IN"
     },
     {
@@ -3654,6 +4926,11 @@
       "source": "entity:raj supply chain",
       "target": "geography:west bengal",
       "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:raj supply chain",
+      "target": "commodity:groundnut",
+      "relationship": "SUPPLIES"
     },
     {
       "source": "entity:ganesh farmers prod.",
@@ -3696,6 +4973,16 @@
       "relationship": "LOCATED_IN"
     },
     {
+      "source": "entity:ganesh traders",
+      "target": "commodity:bajra",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:ganesh traders",
+      "target": "geography:rajasthan",
+      "relationship": "LOCATED_IN"
+    },
+    {
       "source": "entity:kiran agro foods",
       "target": "commodity:urad dal",
       "relationship": "SUPPLIES"
@@ -3716,6 +5003,21 @@
       "relationship": "LOCATED_IN"
     },
     {
+      "source": "entity:bharat corporation",
+      "target": "commodity:durum wheat",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:bharat corporation",
+      "target": "geography:uttar pradesh",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:bharat corporation",
+      "target": "commodity:urad dal",
+      "relationship": "SUPPLIES"
+    },
+    {
       "source": "entity:hindustan store house",
       "target": "commodity:moong dal",
       "relationship": "SUPPLIES"
@@ -3723,6 +5025,16 @@
     {
       "source": "entity:hindustan store house",
       "target": "geography:haryana",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:hindustan store house",
+      "target": "commodity:jaggery",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:hindustan store house",
+      "target": "geography:maharashtra",
       "relationship": "LOCATED_IN"
     },
     {
@@ -3751,6 +5063,16 @@
       "relationship": "LOCATED_IN"
     },
     {
+      "source": "entity:global supply chain",
+      "target": "commodity:basmati rice",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:global supply chain",
+      "target": "geography:punjab",
+      "relationship": "LOCATED_IN"
+    },
+    {
       "source": "entity:ganesh enterprises",
       "target": "commodity:brown sugar",
       "relationship": "SUPPLIES"
@@ -3771,6 +5093,36 @@
       "relationship": "LOCATED_IN"
     },
     {
+      "source": "entity:royal trading co.",
+      "target": "commodity:jaggery",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:royal trading co.",
+      "target": "geography:assam",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:royal trading co.",
+      "target": "commodity:ponni rice",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:royal trading co.",
+      "target": "geography:gujarat",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:royal trading co.",
+      "target": "commodity:basmati rice",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:royal trading co.",
+      "target": "geography:andhra pradesh",
+      "relationship": "LOCATED_IN"
+    },
+    {
       "source": "entity:pacific enterprises",
       "target": "commodity:jaggery",
       "relationship": "SUPPLIES"
@@ -3778,6 +5130,16 @@
     {
       "source": "entity:pacific enterprises",
       "target": "geography:uttar pradesh",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:pacific enterprises",
+      "target": "commodity:sesame",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:pacific enterprises",
+      "target": "geography:rajasthan",
       "relationship": "LOCATED_IN"
     },
     {
@@ -3791,6 +5153,16 @@
       "relationship": "LOCATED_IN"
     },
     {
+      "source": "entity:ganesh industries",
+      "target": "commodity:sunflower seeds",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:ganesh industries",
+      "target": "geography:telangana",
+      "relationship": "LOCATED_IN"
+    },
+    {
       "source": "entity:bharat agro foods",
       "target": "commodity:toor dal",
       "relationship": "SUPPLIES"
@@ -3798,6 +5170,26 @@
     {
       "source": "entity:bharat agro foods",
       "target": "geography:gujarat",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:bharat agro foods",
+      "target": "commodity:refined sugar",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:bharat agro foods",
+      "target": "geography:odisha",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:bharat agro foods",
+      "target": "commodity:bajra",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:bharat agro foods",
+      "target": "geography:andhra pradesh",
       "relationship": "LOCATED_IN"
     },
     {
@@ -3841,6 +5233,16 @@
       "relationship": "LOCATED_IN"
     },
     {
+      "source": "entity:national corporation",
+      "target": "commodity:ponni rice",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:national corporation",
+      "target": "geography:karnataka",
+      "relationship": "LOCATED_IN"
+    },
+    {
       "source": "entity:sai store house",
       "target": "commodity:sharbati wheat",
       "relationship": "SUPPLIES"
@@ -3886,6 +5288,16 @@
       "relationship": "LOCATED_IN"
     },
     {
+      "source": "entity:global exports",
+      "target": "commodity:mustard seeds",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:global exports",
+      "target": "geography:andhra pradesh",
+      "relationship": "LOCATED_IN"
+    },
+    {
       "source": "entity:shree agri business",
       "target": "commodity:durum wheat",
       "relationship": "SUPPLIES"
@@ -3926,6 +5338,26 @@
       "relationship": "LOCATED_IN"
     },
     {
+      "source": "entity:raj market yard",
+      "target": "commodity:sona masuri",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:raj market yard",
+      "target": "geography:madhya pradesh",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:raj market yard",
+      "target": "commodity:foxtail millet",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:raj market yard",
+      "target": "geography:odisha",
+      "relationship": "LOCATED_IN"
+    },
+    {
       "source": "entity:om agro foods",
       "target": "commodity:basmati rice",
       "relationship": "SUPPLIES"
@@ -3943,6 +5375,16 @@
     {
       "source": "entity:pacific store house",
       "target": "geography:west bengal",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:pacific store house",
+      "target": "commodity:ponni rice",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:pacific store house",
+      "target": "geography:punjab",
       "relationship": "LOCATED_IN"
     },
     {
@@ -3976,6 +5418,21 @@
       "relationship": "LOCATED_IN"
     },
     {
+      "source": "entity:indian supply chain",
+      "target": "commodity:masoor dal",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:indian supply chain",
+      "target": "commodity:urad dal",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:indian supply chain",
+      "target": "geography:madhya pradesh",
+      "relationship": "LOCATED_IN"
+    },
+    {
       "source": "entity:shree industries",
       "target": "commodity:sunflower seeds",
       "relationship": "SUPPLIES"
@@ -3996,6 +5453,26 @@
       "relationship": "LOCATED_IN"
     },
     {
+      "source": "entity:kiran agri business",
+      "target": "commodity:raw sugar",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:kiran agri business",
+      "target": "geography:telangana",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:kiran agri business",
+      "target": "commodity:durum wheat",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:kiran agri business",
+      "target": "geography:andhra pradesh",
+      "relationship": "LOCATED_IN"
+    },
+    {
       "source": "entity:premier traders",
       "target": "commodity:sharbati wheat",
       "relationship": "SUPPLIES"
@@ -4006,6 +5483,26 @@
       "relationship": "LOCATED_IN"
     },
     {
+      "source": "entity:premier traders",
+      "target": "commodity:brown sugar",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:premier traders",
+      "target": "geography:gujarat",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:premier traders",
+      "target": "commodity:masoor dal",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:premier traders",
+      "target": "geography:kerala",
+      "relationship": "LOCATED_IN"
+    },
+    {
       "source": "entity:shree agro foods",
       "target": "commodity:durum wheat",
       "relationship": "SUPPLIES"
@@ -4013,6 +5510,26 @@
     {
       "source": "entity:shree agro foods",
       "target": "geography:haryana",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:shree agro foods",
+      "target": "commodity:maize",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:shree agro foods",
+      "target": "geography:rajasthan",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:shree agro foods",
+      "target": "commodity:foxtail millet",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:shree agro foods",
+      "target": "geography:andhra pradesh",
       "relationship": "LOCATED_IN"
     },
     {
@@ -4046,6 +5563,16 @@
       "relationship": "LOCATED_IN"
     },
     {
+      "source": "entity:sri market yard",
+      "target": "commodity:groundnut",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:sri market yard",
+      "target": "geography:tamil nadu",
+      "relationship": "LOCATED_IN"
+    },
+    {
       "source": "entity:shree enterprises",
       "target": "commodity:moong dal",
       "relationship": "SUPPLIES"
@@ -4054,6 +5581,21 @@
       "source": "entity:shree enterprises",
       "target": "geography:west bengal",
       "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:shree enterprises",
+      "target": "commodity:pbw wheat",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:shree enterprises",
+      "target": "geography:andhra pradesh",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:shree enterprises",
+      "target": "commodity:bajra",
+      "relationship": "SUPPLIES"
     },
     {
       "source": "entity:premier industries",
@@ -4076,6 +5618,26 @@
       "relationship": "LOCATED_IN"
     },
     {
+      "source": "entity:pacific agri business",
+      "target": "commodity:ponni rice",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:pacific agri business",
+      "target": "geography:kerala",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:pacific agri business",
+      "target": "commodity:maize",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:pacific agri business",
+      "target": "geography:uttar pradesh",
+      "relationship": "LOCATED_IN"
+    },
+    {
       "source": "entity:lakshmi trading co.",
       "target": "commodity:non-basmati rice",
       "relationship": "SUPPLIES"
@@ -4083,6 +5645,16 @@
     {
       "source": "entity:lakshmi trading co.",
       "target": "geography:telangana",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:lakshmi trading co.",
+      "target": "commodity:groundnut",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:lakshmi trading co.",
+      "target": "geography:karnataka",
       "relationship": "LOCATED_IN"
     },
     {
@@ -4096,6 +5668,16 @@
       "relationship": "LOCATED_IN"
     },
     {
+      "source": "entity:royal industries",
+      "target": "commodity:mustard seeds",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:royal industries",
+      "target": "geography:karnataka",
+      "relationship": "LOCATED_IN"
+    },
+    {
       "source": "entity:global trading co.",
       "target": "commodity:refined sugar",
       "relationship": "SUPPLIES"
@@ -4103,6 +5685,866 @@
     {
       "source": "entity:global trading co.",
       "target": "geography:punjab",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:global trading co.",
+      "target": "geography:haryana",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:global trading co.",
+      "target": "commodity:raw sugar",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:global trading co.",
+      "target": "geography:bihar",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:global trading co.",
+      "target": "commodity:non-basmati rice",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:global trading co.",
+      "target": "geography:kerala",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:sai agro foods",
+      "target": "commodity:moong dal",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:sai agro foods",
+      "target": "geography:punjab",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:sai agro foods",
+      "target": "commodity:refined sugar",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:sai agro foods",
+      "target": "geography:west bengal",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:sai agro foods",
+      "target": "geography:maharashtra",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:ganesh exports",
+      "target": "commodity:basmati rice",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:ganesh exports",
+      "target": "geography:rajasthan",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:raj farmers prod.",
+      "target": "commodity:toor dal",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:raj farmers prod.",
+      "target": "geography:uttar pradesh",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:raj farmers prod.",
+      "target": "commodity:bajra",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:raj farmers prod.",
+      "target": "geography:karnataka",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:kiran exports",
+      "target": "commodity:pbw wheat",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:kiran exports",
+      "target": "geography:madhya pradesh",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:kiran exports",
+      "target": "commodity:bajra",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:kiran exports",
+      "target": "geography:gujarat",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:royal agri business",
+      "target": "commodity:bajra",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:royal agri business",
+      "target": "geography:west bengal",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:premier agro foods",
+      "target": "commodity:pbw wheat",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:premier agro foods",
+      "target": "geography:gujarat",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:premier agro foods",
+      "target": "commodity:sunflower seeds",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:premier agro foods",
+      "target": "geography:rajasthan",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:royal impex",
+      "target": "commodity:toor dal",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:royal impex",
+      "target": "geography:karnataka",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:lakshmi agro foods",
+      "target": "commodity:sharbati wheat",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:lakshmi agro foods",
+      "target": "geography:maharashtra",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:hindustan traders",
+      "target": "commodity:bajra",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:hindustan traders",
+      "target": "geography:assam",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:hindustan traders",
+      "target": "commodity:chana dal",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:hindustan traders",
+      "target": "geography:gujarat",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:sai commodities",
+      "target": "commodity:mustard seeds",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:sai commodities",
+      "target": "geography:telangana",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:sai commodities",
+      "target": "commodity:sona masuri",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:sai commodities",
+      "target": "geography:kerala",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:sai corporation",
+      "target": "commodity:pbw wheat",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:sai corporation",
+      "target": "geography:west bengal",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:sai corporation",
+      "target": "commodity:groundnut",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:sai corporation",
+      "target": "geography:karnataka",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:sai corporation",
+      "target": "commodity:durum wheat",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:sai corporation",
+      "target": "geography:gujarat",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:sai corporation",
+      "target": "commodity:jowar",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:sai corporation",
+      "target": "geography:bihar",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:hindustan corporation",
+      "target": "commodity:mustard seeds",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:hindustan corporation",
+      "target": "geography:karnataka",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:hindustan corporation",
+      "target": "commodity:ragi",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:hindustan corporation",
+      "target": "geography:telangana",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:bharat industries",
+      "target": "commodity:groundnut",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:bharat industries",
+      "target": "geography:odisha",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:bharat industries",
+      "target": "commodity:masoor dal",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:bharat industries",
+      "target": "geography:assam",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:ganesh impex",
+      "target": "commodity:durum wheat",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:ganesh impex",
+      "target": "geography:west bengal",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:ganesh impex",
+      "target": "commodity:mustard seeds",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:ganesh impex",
+      "target": "geography:uttar pradesh",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:kiran store house",
+      "target": "commodity:sharbati wheat",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:kiran store house",
+      "target": "geography:andhra pradesh",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:indian store house",
+      "target": "commodity:groundnut",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:indian store house",
+      "target": "geography:assam",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:om corporation",
+      "target": "commodity:urad dal",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:om corporation",
+      "target": "geography:maharashtra",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:sai impex",
+      "target": "commodity:chana dal",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:sai impex",
+      "target": "geography:bihar",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:sai impex",
+      "target": "commodity:sharbati wheat",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:sai impex",
+      "target": "geography:odisha",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:lakshmi store house",
+      "target": "commodity:pbw wheat",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:lakshmi store house",
+      "target": "geography:punjab",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:lakshmi store house",
+      "target": "commodity:groundnut",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:lakshmi store house",
+      "target": "geography:kerala",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:shree market yard",
+      "target": "commodity:mustard seeds",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:shree market yard",
+      "target": "geography:rajasthan",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:om agri business",
+      "target": "commodity:ponni rice",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:om agri business",
+      "target": "geography:uttar pradesh",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:hindustan market yard",
+      "target": "commodity:ragi",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:hindustan market yard",
+      "target": "geography:odisha",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:indian commodities",
+      "target": "commodity:foxtail millet",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:indian commodities",
+      "target": "geography:punjab",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:national market yard",
+      "target": "commodity:lokwan wheat",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:national market yard",
+      "target": "geography:punjab",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:national market yard",
+      "target": "commodity:urad dal",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:national market yard",
+      "target": "geography:odisha",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:national market yard",
+      "target": "commodity:soybean",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:national market yard",
+      "target": "geography:andhra pradesh",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:om supply chain",
+      "target": "commodity:ponni rice",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:om supply chain",
+      "target": "geography:punjab",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:kiran market yard",
+      "target": "commodity:groundnut",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:kiran market yard",
+      "target": "geography:haryana",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:kiran commodities",
+      "target": "commodity:ragi",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:kiran commodities",
+      "target": "geography:punjab",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:kiran commodities",
+      "target": "commodity:urad dal",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:kiran commodities",
+      "target": "geography:odisha",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:lakshmi corporation",
+      "target": "commodity:chana dal",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:lakshmi corporation",
+      "target": "geography:karnataka",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:lakshmi corporation",
+      "target": "commodity:lokwan wheat",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:lakshmi corporation",
+      "target": "geography:madhya pradesh",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:sri traders",
+      "target": "commodity:durum wheat",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:sri traders",
+      "target": "geography:uttar pradesh",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:sri traders",
+      "target": "commodity:jaggery",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:sri traders",
+      "target": "geography:haryana",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:raj enterprises",
+      "target": "commodity:jowar",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:raj enterprises",
+      "target": "geography:bihar",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:raj enterprises",
+      "target": "commodity:brown sugar",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:raj enterprises",
+      "target": "geography:maharashtra",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:kiran enterprises",
+      "target": "commodity:sharbati wheat",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:kiran enterprises",
+      "target": "geography:karnataka",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:kiran enterprises",
+      "target": "commodity:moong dal",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:kiran enterprises",
+      "target": "geography:kerala",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:sri impex",
+      "target": "commodity:sesame",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:sri impex",
+      "target": "geography:odisha",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:bharat trading co.",
+      "target": "commodity:groundnut",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:bharat trading co.",
+      "target": "geography:tamil nadu",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:pacific traders",
+      "target": "commodity:sharbati wheat",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:pacific traders",
+      "target": "geography:madhya pradesh",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:pacific traders",
+      "target": "commodity:refined sugar",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:pacific traders",
+      "target": "geography:maharashtra",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:kiran traders",
+      "target": "commodity:durum wheat",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:kiran traders",
+      "target": "geography:punjab",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:kiran traders",
+      "target": "commodity:ponni rice",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:kiran traders",
+      "target": "geography:telangana",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:national supply chain",
+      "target": "commodity:bajra",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:national supply chain",
+      "target": "geography:odisha",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:royal supply chain",
+      "target": "commodity:sesame",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:royal supply chain",
+      "target": "geography:madhya pradesh",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:lakshmi exports",
+      "target": "commodity:non-basmati rice",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:lakshmi exports",
+      "target": "geography:rajasthan",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:indian farmers prod.",
+      "target": "commodity:non-basmati rice",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:indian farmers prod.",
+      "target": "geography:karnataka",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:national store house",
+      "target": "commodity:raw sugar",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:national store house",
+      "target": "geography:haryana",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:national store house",
+      "target": "commodity:pbw wheat",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:national store house",
+      "target": "geography:karnataka",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:hindustan agro foods",
+      "target": "commodity:sona masuri",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:hindustan agro foods",
+      "target": "geography:uttar pradesh",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:indian market yard",
+      "target": "commodity:durum wheat",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:indian market yard",
+      "target": "geography:rajasthan",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:lakshmi farmers prod.",
+      "target": "commodity:soybean",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:lakshmi farmers prod.",
+      "target": "geography:karnataka",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:global impex",
+      "target": "commodity:sharbati wheat",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:global impex",
+      "target": "geography:tamil nadu",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:lakshmi market yard",
+      "target": "commodity:brown sugar",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:lakshmi market yard",
+      "target": "geography:uttar pradesh",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:om traders",
+      "target": "commodity:sona masuri",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:om traders",
+      "target": "geography:gujarat",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:om traders",
+      "target": "commodity:refined sugar",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:om traders",
+      "target": "geography:tamil nadu",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:royal enterprises",
+      "target": "commodity:sona masuri",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:royal enterprises",
+      "target": "geography:uttar pradesh",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:indian exports",
+      "target": "commodity:pbw wheat",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:indian exports",
+      "target": "geography:punjab",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:bharat impex",
+      "target": "commodity:ragi",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:bharat impex",
+      "target": "geography:haryana",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:national trading co.",
+      "target": "commodity:sona masuri",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:national trading co.",
+      "target": "geography:rajasthan",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:national trading co.",
+      "target": "commodity:refined sugar",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:national trading co.",
+      "target": "geography:odisha",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:raj exports",
+      "target": "commodity:masoor dal",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:raj exports",
+      "target": "geography:west bengal",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:royal commodities",
+      "target": "commodity:lokwan wheat",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:royal commodities",
+      "target": "geography:maharashtra",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:sri trading co.",
+      "target": "commodity:sona masuri",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:sri trading co.",
+      "target": "geography:kerala",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:premier supply chain",
+      "target": "commodity:raw sugar",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:premier supply chain",
+      "target": "geography:karnataka",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:sri agro foods",
+      "target": "commodity:jowar",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:sri agro foods",
+      "target": "geography:karnataka",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:shree farmers prod.",
+      "target": "commodity:jaggery",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:shree farmers prod.",
+      "target": "geography:uttar pradesh",
+      "relationship": "LOCATED_IN"
+    },
+    {
+      "source": "entity:indian trading co.",
+      "target": "commodity:raw sugar",
+      "relationship": "SUPPLIES"
+    },
+    {
+      "source": "entity:indian trading co.",
+      "target": "geography:madhya pradesh",
       "relationship": "LOCATED_IN"
     }
   ]

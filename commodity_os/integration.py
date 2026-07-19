@@ -13,25 +13,16 @@ from typing import Any, Dict, List
 
 from commodity_os.core.events import event_bus, EventType
 from commodity_os.core.orchestrator import ResourceAwareOrchestrator
-from commodity_os.crawlers.base import (
-    CrawlerManager,
-    IndiaMARTCrawler, TradeIndiaCrawler, AgMarkNetCrawler, APMCCrawler,
-    ExportDirectoryCrawler, AmazonBusinessCrawler, FlipkartWholesaleCrawler,
-    GovernmentAPICrawler, LinkedInCrawler, NewsCrawler,
-    JioMartCrawler, DMartCrawler, BigBasketCrawler, BlinkitCrawler,
-    ZeptoCrawler, SwiggyInstamartCrawler, RelianceFreshCrawler,
-    MoreRetailCrawler, SpencersCrawler, WalmartGlobalCrawler,
-    CostcoGlobalCrawler, CarrefourGlobalCrawler, TescoGlobalCrawler,
-    AlibabaCrawler, AmazonGlobalCrawler, SeafoodExporterCrawler,
-    CorporateFarmCrawler, MarineHarvestCrawler,
-)
+from commodity_os.crawlers.base import CrawlerManager
 from commodity_os.data_pipeline.pipeline import DataPipeline
 from commodity_os.knowledge_graph.graph import KnowledgeGraph
+from commodity_os.dashboard.generator import DashboardGenerator
 
 logger = logging.getLogger(__name__)
 
 DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 OUTPUT_DIR = Path(__file__).resolve().parent.parent / "output"
+DOCS_DIR = Path(__file__).resolve().parent.parent / "docs"
 
 
 # ---------------------------------------------------------------------------
@@ -87,6 +78,17 @@ class IntegrationOrchestrator:
 
     def _register_all_crawlers(self):
         """Register all 28 crawlers in the CrawlerManager."""
+        from commodity_os.crawlers.base import (
+            IndiaMARTCrawler, TradeIndiaCrawler, AgMarkNetCrawler, APMCCrawler,
+            ExportDirectoryCrawler, AmazonBusinessCrawler, FlipkartWholesaleCrawler,
+            GovernmentAPICrawler, LinkedInCrawler, NewsCrawler,
+            JioMartCrawler, DMartCrawler, BigBasketCrawler, BlinkitCrawler,
+            ZeptoCrawler, SwiggyInstamartCrawler, RelianceFreshCrawler,
+            MoreRetailCrawler, SpencersCrawler, WalmartGlobalCrawler,
+            CostcoGlobalCrawler, CarrefourGlobalCrawler, TescoGlobalCrawler,
+            AlibabaCrawler, AmazonGlobalCrawler, SeafoodExporterCrawler,
+            CorporateFarmCrawler, MarineHarvestCrawler,
+        )
         crawlers = [
             IndiaMARTCrawler(),
             TradeIndiaCrawler(),
@@ -233,6 +235,52 @@ class IntegrationOrchestrator:
         # 7. Discover relationships
         discovered = self.graph.discover_relationships()
         logger.info(f"Discovered relationships: {discovered}")
+
+        # 8. Generate dashboard
+        dash_gen = DashboardGenerator(str(OUTPUT_DIR))
+        dashboard_entities = []
+        for record in mapped_records:
+            dashboard_entities.append({
+                "name": record.get("company_name", ""),
+                "type": record.get("entity_type", ""),
+                "product": record.get("product", ""),
+                "state": record.get("state", ""),
+                "district": record.get("district", ""),
+                "taluk": record.get("taluk", ""),
+                "phone": record.get("contact_phone", ""),
+                "email": record.get("email", ""),
+                "website": record.get("website", ""),
+                "price": record.get("market_price", 0),
+                "unit": record.get("price_unit", "KG"),
+                "source": record.get("source", ""),
+                "year": record.get("year_of_establishment", ""),
+                "gst": record.get("gst_number", ""),
+                "confidence": 0.8,
+                "entity_type": record.get("entity_type", ""),
+            })
+        consolidated = {"entities": dashboard_entities, "stats": {"total": len(dashboard_entities)}}
+        await dash_gen.generate(dashboard_entities, consolidated)
+
+        # 9. Copy dashboard to docs/ for GitHub Pages
+        DOCS_DIR.mkdir(parents=True, exist_ok=True)
+        src_html = OUTPUT_DIR / "dashboard.html"
+        if src_html.exists():
+            import shutil
+            shutil.copy2(src_html, DOCS_DIR / "index.html")
+            logger.info("Dashboard copied to docs/index.html")
+
+        src_json = OUTPUT_DIR / "dashboard.json"
+        if src_json.exists():
+            import shutil
+            shutil.copy2(src_json, DOCS_DIR / "dashboard.json")
+            logger.info("Dashboard JSON copied to docs/")
+
+        # 10. Copy entities to docs for frontend data
+        entities_file = OUTPUT_DIR / "all_entities.json"
+        if entities_file.exists():
+            import shutil
+            shutil.copy2(entities_file, DOCS_DIR / "data.json")
+            logger.info("Entity data copied to docs/data.json")
 
         cycle_duration = time.time() - cycle_start
         summary = {

@@ -1,0 +1,6370 @@
+{
+  "generated_at": 1784445147.4494743,
+  "summary": {
+    "total_entities": 194,
+    "states_covered": 16,
+    "products": 53,
+    "entity_types": 16
+  },
+  "filters": {
+    "states": [
+      "Andhra Pradesh",
+      "Assam",
+      "Bihar",
+      "Gujarat",
+      "Haryana",
+      "Karnataka",
+      "Kerala",
+      "Madhya Pradesh",
+      "Maharashtra",
+      "Odisha",
+      "Punjab",
+      "Rajasthan",
+      "Tamil Nadu",
+      "Telangana",
+      "Uttar Pradesh",
+      "West Bengal"
+    ],
+    "products": [
+      "Bajra",
+      "Basmati Rice",
+      "Brown Sugar",
+      "Chana Dal",
+      "Durum Wheat",
+      "Foxtail Millet",
+      "Groundnut",
+      "Jaggery",
+      "Jowar",
+      "Lokwan Wheat",
+      "Maize",
+      "Masoor Dal",
+      "Moong Dal",
+      "Mustard Seeds",
+      "Non-Basmati Rice",
+      "PBW Wheat",
+      "Ponni Rice",
+      "Ragi",
+      "Raw Sugar",
+      "Refined Sugar",
+      "Sesame",
+      "Sharbati Wheat",
+      "Sona Masuri",
+      "Soybean",
+      "Sunflower Seeds",
+      "Urad Dal",
+      "bajra",
+      "basmati rice",
+      "brown sugar",
+      "chana dal",
+      "durum wheat",
+      "foxtail millet",
+      "groundnut",
+      "jaggery",
+      "jowar",
+      "lokwan wheat",
+      "maize",
+      "masoor dal",
+      "moong dal",
+      "mustard seeds",
+      "non-basmati rice",
+      "pbw wheat",
+      "ponni rice",
+      "ragi",
+      "raw sugar",
+      "refined sugar",
+      "sesame",
+      "sharbati wheat",
+      "sona masuri",
+      "soybean",
+      "sunflower seeds",
+      "toor dal",
+      "urad dal"
+    ],
+    "entity_types": [
+      "Corporate Farm",
+      "Government Source",
+      "Marine Exporter",
+      "Marine Farm",
+      "News Reference",
+      "Online Seller",
+      "apmc market",
+      "exporter",
+      "government market yard",
+      "government source",
+      "manufacturer",
+      "marine exporter",
+      "marine farm",
+      "news reference",
+      "online seller",
+      "wholesaler"
+    ]
+  },
+  "bar": {
+    "by_state": [
+      {
+        "name": "Karnataka",
+        "value": 20
+      },
+      {
+        "name": "Andhra Pradesh",
+        "value": 17
+      },
+      {
+        "name": "Punjab",
+        "value": 16
+      },
+      {
+        "name": "Uttar Pradesh",
+        "value": 14
+      },
+      {
+        "name": "Odisha",
+        "value": 13
+      },
+      {
+        "name": "Madhya Pradesh",
+        "value": 12
+      },
+      {
+        "name": "Maharashtra",
+        "value": 12
+      },
+      {
+        "name": "Rajasthan",
+        "value": 11
+      },
+      {
+        "name": "Telangana",
+        "value": 11
+      },
+      {
+        "name": "Haryana",
+        "value": 11
+      },
+      {
+        "name": "Gujarat",
+        "value": 11
+      },
+      {
+        "name": "Tamil Nadu",
+        "value": 10
+      },
+      {
+        "name": "Assam",
+        "value": 10
+      },
+      {
+        "name": "West Bengal",
+        "value": 9
+      },
+      {
+        "name": "Bihar",
+        "value": 9
+      },
+      {
+        "name": "Kerala",
+        "value": 8
+      }
+    ],
+    "by_product": [
+      {
+        "name": "groundnut",
+        "value": 9
+      },
+      {
+        "name": "basmati rice",
+        "value": 8
+      },
+      {
+        "name": "pbw wheat",
+        "value": 8
+      },
+      {
+        "name": "ponni rice",
+        "value": 7
+      },
+      {
+        "name": "raw sugar",
+        "value": 6
+      },
+      {
+        "name": "durum wheat",
+        "value": 6
+      },
+      {
+        "name": "jaggery",
+        "value": 5
+      },
+      {
+        "name": "toor dal",
+        "value": 5
+      },
+      {
+        "name": "sona masuri",
+        "value": 5
+      },
+      {
+        "name": "bajra",
+        "value": 5
+      },
+      {
+        "name": "Refined Sugar",
+        "value": 5
+      },
+      {
+        "name": "Bajra",
+        "value": 5
+      },
+      {
+        "name": "Raw Sugar",
+        "value": 5
+      },
+      {
+        "name": "sunflower seeds",
+        "value": 5
+      },
+      {
+        "name": "Sona Masuri",
+        "value": 5
+      },
+      {
+        "name": "lokwan wheat",
+        "value": 4
+      },
+      {
+        "name": "refined sugar",
+        "value": 4
+      },
+      {
+        "name": "sharbati wheat",
+        "value": 4
+      },
+      {
+        "name": "Mustard Seeds",
+        "value": 4
+      },
+      {
+        "name": "soybean",
+        "value": 4
+      },
+      {
+        "name": "non-basmati rice",
+        "value": 4
+      },
+      {
+        "name": "Brown Sugar",
+        "value": 4
+      },
+      {
+        "name": "masoor dal",
+        "value": 4
+      },
+      {
+        "name": "Urad Dal",
+        "value": 4
+      },
+      {
+        "name": "Ponni Rice",
+        "value": 4
+      },
+      {
+        "name": "moong dal",
+        "value": 3
+      },
+      {
+        "name": "brown sugar",
+        "value": 3
+      },
+      {
+        "name": "PBW Wheat",
+        "value": 3
+      },
+      {
+        "name": "Masoor Dal",
+        "value": 3
+      },
+      {
+        "name": "sesame",
+        "value": 3
+      },
+      {
+        "name": "Groundnut",
+        "value": 3
+      },
+      {
+        "name": "chana dal",
+        "value": 3
+      },
+      {
+        "name": "mustard seeds",
+        "value": 3
+      },
+      {
+        "name": "Sharbati Wheat",
+        "value": 3
+      },
+      {
+        "name": "ragi",
+        "value": 3
+      },
+      {
+        "name": "Ragi",
+        "value": 3
+      },
+      {
+        "name": "Jaggery",
+        "value": 3
+      },
+      {
+        "name": "Durum Wheat",
+        "value": 3
+      },
+      {
+        "name": "Maize",
+        "value": 3
+      },
+      {
+        "name": "jowar",
+        "value": 2
+      },
+      {
+        "name": "Sunflower Seeds",
+        "value": 2
+      },
+      {
+        "name": "urad dal",
+        "value": 2
+      },
+      {
+        "name": "foxtail millet",
+        "value": 2
+      },
+      {
+        "name": "Sesame",
+        "value": 2
+      },
+      {
+        "name": "maize",
+        "value": 2
+      },
+      {
+        "name": "Lokwan Wheat",
+        "value": 2
+      },
+      {
+        "name": "Non-Basmati Rice",
+        "value": 2
+      },
+      {
+        "name": "Jowar",
+        "value": 2
+      },
+      {
+        "name": "Chana Dal",
+        "value": 1
+      },
+      {
+        "name": "Soybean",
+        "value": 1
+      },
+      {
+        "name": "Moong Dal",
+        "value": 1
+      },
+      {
+        "name": "Basmati Rice",
+        "value": 1
+      },
+      {
+        "name": "Foxtail Millet",
+        "value": 1
+      }
+    ],
+    "by_type": [
+      {
+        "name": "online seller",
+        "value": 69
+      },
+      {
+        "name": "Online Seller",
+        "value": 57
+      },
+      {
+        "name": "government source",
+        "value": 12
+      },
+      {
+        "name": "news reference",
+        "value": 10
+      },
+      {
+        "name": "government market yard",
+        "value": 9
+      },
+      {
+        "name": "Government Source",
+        "value": 6
+      },
+      {
+        "name": "exporter",
+        "value": 5
+      },
+      {
+        "name": "wholesaler",
+        "value": 4
+      },
+      {
+        "name": "marine farm",
+        "value": 4
+      },
+      {
+        "name": "News Reference",
+        "value": 3
+      },
+      {
+        "name": "Marine Exporter",
+        "value": 3
+      },
+      {
+        "name": "Corporate Farm",
+        "value": 3
+      },
+      {
+        "name": "Marine Farm",
+        "value": 3
+      },
+      {
+        "name": "manufacturer",
+        "value": 2
+      },
+      {
+        "name": "apmc market",
+        "value": 2
+      },
+      {
+        "name": "marine exporter",
+        "value": 2
+      }
+    ]
+  },
+  "pie": {
+    "state": [
+      {
+        "name": "Karnataka",
+        "value": 20
+      },
+      {
+        "name": "Andhra Pradesh",
+        "value": 17
+      },
+      {
+        "name": "Punjab",
+        "value": 16
+      },
+      {
+        "name": "Uttar Pradesh",
+        "value": 14
+      },
+      {
+        "name": "Odisha",
+        "value": 13
+      },
+      {
+        "name": "Madhya Pradesh",
+        "value": 12
+      },
+      {
+        "name": "Maharashtra",
+        "value": 12
+      },
+      {
+        "name": "Rajasthan",
+        "value": 11
+      },
+      {
+        "name": "Telangana",
+        "value": 11
+      },
+      {
+        "name": "Haryana",
+        "value": 11
+      }
+    ],
+    "product": [
+      {
+        "name": "groundnut",
+        "value": 9
+      },
+      {
+        "name": "basmati rice",
+        "value": 8
+      },
+      {
+        "name": "pbw wheat",
+        "value": 8
+      },
+      {
+        "name": "ponni rice",
+        "value": 7
+      },
+      {
+        "name": "raw sugar",
+        "value": 6
+      },
+      {
+        "name": "durum wheat",
+        "value": 6
+      },
+      {
+        "name": "jaggery",
+        "value": 5
+      },
+      {
+        "name": "toor dal",
+        "value": 5
+      },
+      {
+        "name": "sona masuri",
+        "value": 5
+      },
+      {
+        "name": "bajra",
+        "value": 5
+      },
+      {
+        "name": "Refined Sugar",
+        "value": 5
+      },
+      {
+        "name": "Bajra",
+        "value": 5
+      },
+      {
+        "name": "Raw Sugar",
+        "value": 5
+      },
+      {
+        "name": "sunflower seeds",
+        "value": 5
+      },
+      {
+        "name": "Sona Masuri",
+        "value": 5
+      },
+      {
+        "name": "lokwan wheat",
+        "value": 4
+      },
+      {
+        "name": "refined sugar",
+        "value": 4
+      },
+      {
+        "name": "sharbati wheat",
+        "value": 4
+      },
+      {
+        "name": "Mustard Seeds",
+        "value": 4
+      },
+      {
+        "name": "soybean",
+        "value": 4
+      },
+      {
+        "name": "non-basmati rice",
+        "value": 4
+      },
+      {
+        "name": "Brown Sugar",
+        "value": 4
+      },
+      {
+        "name": "masoor dal",
+        "value": 4
+      },
+      {
+        "name": "Urad Dal",
+        "value": 4
+      },
+      {
+        "name": "Ponni Rice",
+        "value": 4
+      },
+      {
+        "name": "moong dal",
+        "value": 3
+      },
+      {
+        "name": "brown sugar",
+        "value": 3
+      },
+      {
+        "name": "PBW Wheat",
+        "value": 3
+      },
+      {
+        "name": "Masoor Dal",
+        "value": 3
+      },
+      {
+        "name": "sesame",
+        "value": 3
+      },
+      {
+        "name": "Groundnut",
+        "value": 3
+      },
+      {
+        "name": "chana dal",
+        "value": 3
+      },
+      {
+        "name": "mustard seeds",
+        "value": 3
+      },
+      {
+        "name": "Sharbati Wheat",
+        "value": 3
+      },
+      {
+        "name": "ragi",
+        "value": 3
+      },
+      {
+        "name": "Ragi",
+        "value": 3
+      },
+      {
+        "name": "Jaggery",
+        "value": 3
+      },
+      {
+        "name": "Durum Wheat",
+        "value": 3
+      },
+      {
+        "name": "Maize",
+        "value": 3
+      },
+      {
+        "name": "jowar",
+        "value": 2
+      },
+      {
+        "name": "Sunflower Seeds",
+        "value": 2
+      },
+      {
+        "name": "urad dal",
+        "value": 2
+      },
+      {
+        "name": "foxtail millet",
+        "value": 2
+      },
+      {
+        "name": "Sesame",
+        "value": 2
+      },
+      {
+        "name": "maize",
+        "value": 2
+      },
+      {
+        "name": "Lokwan Wheat",
+        "value": 2
+      },
+      {
+        "name": "Non-Basmati Rice",
+        "value": 2
+      },
+      {
+        "name": "Jowar",
+        "value": 2
+      },
+      {
+        "name": "Chana Dal",
+        "value": 1
+      },
+      {
+        "name": "Soybean",
+        "value": 1
+      },
+      {
+        "name": "Moong Dal",
+        "value": 1
+      },
+      {
+        "name": "Basmati Rice",
+        "value": 1
+      },
+      {
+        "name": "Foxtail Millet",
+        "value": 1
+      }
+    ],
+    "entity_type": [
+      {
+        "name": "online seller",
+        "value": 69
+      },
+      {
+        "name": "Online Seller",
+        "value": 57
+      },
+      {
+        "name": "government source",
+        "value": 12
+      },
+      {
+        "name": "news reference",
+        "value": 10
+      },
+      {
+        "name": "government market yard",
+        "value": 9
+      },
+      {
+        "name": "Government Source",
+        "value": 6
+      },
+      {
+        "name": "exporter",
+        "value": 5
+      },
+      {
+        "name": "wholesaler",
+        "value": 4
+      },
+      {
+        "name": "marine farm",
+        "value": 4
+      },
+      {
+        "name": "News Reference",
+        "value": 3
+      },
+      {
+        "name": "Marine Exporter",
+        "value": 3
+      },
+      {
+        "name": "Corporate Farm",
+        "value": 3
+      },
+      {
+        "name": "Marine Farm",
+        "value": 3
+      },
+      {
+        "name": "manufacturer",
+        "value": 2
+      },
+      {
+        "name": "apmc market",
+        "value": 2
+      },
+      {
+        "name": "marine exporter",
+        "value": 2
+      }
+    ]
+  },
+  "price_trends": [],
+  "treemap": {
+    "name": "India",
+    "children": [
+      {
+        "name": "Andhra Pradesh",
+        "children": [
+          {
+            "name": "Guntur",
+            "children": [
+              {
+                "name": "Guntur Rural",
+                "value": 3
+              }
+            ]
+          },
+          {
+            "name": "Hyderabad",
+            "children": [
+              {
+                "name": "Hyderabad Rural",
+                "value": 3
+              }
+            ]
+          },
+          {
+            "name": "Tirupati",
+            "children": [
+              {
+                "name": "Tirupati Rural",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "name": "Vijayawada",
+            "children": [
+              {
+                "name": "Vijayawada Rural",
+                "value": 3
+              }
+            ]
+          },
+          {
+            "name": "Visakhapatnam",
+            "children": [
+              {
+                "name": "Visakhapatnam Rural",
+                "value": 6
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Assam",
+        "children": [
+          {
+            "name": "Dibrugarh",
+            "children": [
+              {
+                "name": "Dibrugarh Rural",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "name": "Guwahati",
+            "children": [
+              {
+                "name": "Guwahati Rural",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "name": "Jorhat",
+            "children": [
+              {
+                "name": "Jorhat Rural",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "name": "Silchar",
+            "children": [
+              {
+                "name": "Silchar Rural",
+                "value": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Bihar",
+        "children": [
+          {
+            "name": "Gaya",
+            "children": [
+              {
+                "name": "Gaya Rural",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "name": "Munger",
+            "children": [
+              {
+                "name": "Munger Rural",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Muzaffarpur",
+            "children": [
+              {
+                "name": "Muzaffarpur Rural",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "name": "Patna",
+            "children": [
+              {
+                "name": "Patna Rural",
+                "value": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Gujarat",
+        "children": [
+          {
+            "name": "Ahmedabad",
+            "children": [
+              {
+                "name": "Ahmedabad Rural",
+                "value": 3
+              }
+            ]
+          },
+          {
+            "name": "Anand",
+            "children": [
+              {
+                "name": "Anand Rural",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "name": "Rajkot",
+            "children": [
+              {
+                "name": "Rajkot Rural",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Surat",
+            "children": [
+              {
+                "name": "Surat Rural",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "name": "Vadodara",
+            "children": [
+              {
+                "name": "Vadodara Rural",
+                "value": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Haryana",
+        "children": [
+          {
+            "name": "Ambala",
+            "children": [
+              {
+                "name": "Ambala Rural",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "name": "Faridabad",
+            "children": [
+              {
+                "name": "Faridabad Rural",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "name": "Gurgaon",
+            "children": [
+              {
+                "name": "Gurgaon Rural",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "name": "Karnal",
+            "children": [
+              {
+                "name": "Karnal Rural",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Panipat",
+            "children": [
+              {
+                "name": "Panipat Rural",
+                "value": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Karnataka",
+        "children": [
+          {
+            "name": "Belagavi",
+            "children": [
+              {
+                "name": "Belagavi Rural",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "name": "Bengaluru",
+            "children": [
+              {
+                "name": "Bengaluru Rural",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "name": "Hubballi",
+            "children": [
+              {
+                "name": "Hubballi Rural",
+                "value": 5
+              }
+            ]
+          },
+          {
+            "name": "Mangaluru",
+            "children": [
+              {
+                "name": "Mangaluru Rural",
+                "value": 3
+              }
+            ]
+          },
+          {
+            "name": "Mysuru",
+            "children": [
+              {
+                "name": "Mysuru Rural",
+                "value": 6
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Kerala",
+        "children": [
+          {
+            "name": "Kochi",
+            "children": [
+              {
+                "name": "Kochi Rural",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "name": "Kozhikode",
+            "children": [
+              {
+                "name": "Kozhikode Rural",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "name": "Thiruvananthapuram",
+            "children": [
+              {
+                "name": "Thiruvananthapuram Rural",
+                "value": 3
+              }
+            ]
+          },
+          {
+            "name": "Thrissur",
+            "children": [
+              {
+                "name": "Thrissur Rural",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Madhya Pradesh",
+        "children": [
+          {
+            "name": "Bhopal",
+            "children": [
+              {
+                "name": "Bhopal Rural",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Gwalior",
+            "children": [
+              {
+                "name": "Gwalior Rural",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "name": "Indore",
+            "children": [
+              {
+                "name": "Indore Rural",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Jabalpur",
+            "children": [
+              {
+                "name": "Jabalpur Rural",
+                "value": 5
+              }
+            ]
+          },
+          {
+            "name": "Ujjain",
+            "children": [
+              {
+                "name": "Ujjain Rural",
+                "value": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Maharashtra",
+        "children": [
+          {
+            "name": "Aurangabad",
+            "children": [
+              {
+                "name": "Aurangabad Rural",
+                "value": 3
+              }
+            ]
+          },
+          {
+            "name": "Mumbai",
+            "children": [
+              {
+                "name": "Mumbai Rural",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "name": "Nagpur",
+            "children": [
+              {
+                "name": "Nagpur Rural",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Nashik",
+            "children": [
+              {
+                "name": "Nashik Rural",
+                "value": 3
+              }
+            ]
+          },
+          {
+            "name": "Pune",
+            "children": [
+              {
+                "name": "Pune Rural",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Odisha",
+        "children": [
+          {
+            "name": "Berhampur",
+            "children": [
+              {
+                "name": "Berhampur Rural",
+                "value": 3
+              }
+            ]
+          },
+          {
+            "name": "Bhubaneswar",
+            "children": [
+              {
+                "name": "Bhubaneswar Rural",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "name": "Cuttack",
+            "children": [
+              {
+                "name": "Cuttack Rural",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "name": "Rourkela",
+            "children": [
+              {
+                "name": "Rourkela Rural",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "name": "Sambalpur",
+            "children": [
+              {
+                "name": "Sambalpur Rural",
+                "value": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Punjab",
+        "children": [
+          {
+            "name": "Amritsar",
+            "children": [
+              {
+                "name": "Amritsar Rural",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "name": "Bathinda",
+            "children": [
+              {
+                "name": "Bathinda Rural",
+                "value": 3
+              }
+            ]
+          },
+          {
+            "name": "Jalandhar",
+            "children": [
+              {
+                "name": "Jalandhar Rural",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "name": "Ludhiana",
+            "children": [
+              {
+                "name": "Ludhiana Rural",
+                "value": 6
+              }
+            ]
+          },
+          {
+            "name": "Patiala",
+            "children": [
+              {
+                "name": "Patiala Rural",
+                "value": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Rajasthan",
+        "children": [
+          {
+            "name": "Ajmer",
+            "children": [
+              {
+                "name": "Ajmer Rural",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "name": "Jodhpur",
+            "children": [
+              {
+                "name": "Jodhpur Rural",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Kota",
+            "children": [
+              {
+                "name": "Kota Rural",
+                "value": 6
+              }
+            ]
+          },
+          {
+            "name": "Udaipur",
+            "children": [
+              {
+                "name": "Udaipur Rural",
+                "value": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Tamil Nadu",
+        "children": [
+          {
+            "name": "Chennai",
+            "children": [
+              {
+                "name": "Chennai Rural",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Coimbatore",
+            "children": [
+              {
+                "name": "Coimbatore Rural",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Madurai",
+            "children": [
+              {
+                "name": "Madurai Rural",
+                "value": 3
+              }
+            ]
+          },
+          {
+            "name": "Salem",
+            "children": [
+              {
+                "name": "Salem Rural",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Tiruchirappalli",
+            "children": [
+              {
+                "name": "Tiruchirappalli Rural",
+                "value": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Telangana",
+        "children": [
+          {
+            "name": "Hyderabad",
+            "children": [
+              {
+                "name": "Hyderabad Rural",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "name": "Karimnagar",
+            "children": [
+              {
+                "name": "Karimnagar Rural",
+                "value": 3
+              }
+            ]
+          },
+          {
+            "name": "Khammam",
+            "children": [
+              {
+                "name": "Khammam Rural",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Nizamabad",
+            "children": [
+              {
+                "name": "Nizamabad Rural",
+                "value": 3
+              }
+            ]
+          },
+          {
+            "name": "Warangal",
+            "children": [
+              {
+                "name": "Warangal Rural",
+                "value": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Uttar Pradesh",
+        "children": [
+          {
+            "name": "Agra",
+            "children": [
+              {
+                "name": "Agra Rural",
+                "value": 3
+              }
+            ]
+          },
+          {
+            "name": "Kanpur",
+            "children": [
+              {
+                "name": "Kanpur Rural",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "name": "Lucknow",
+            "children": [
+              {
+                "name": "Lucknow Rural",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "name": "Meerut",
+            "children": [
+              {
+                "name": "Meerut Rural",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "name": "Varanasi",
+            "children": [
+              {
+                "name": "Varanasi Rural",
+                "value": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "West Bengal",
+        "children": [
+          {
+            "name": "Asansol",
+            "children": [
+              {
+                "name": "Asansol Rural",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Durgapur",
+            "children": [
+              {
+                "name": "Durgapur Rural",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Howrah",
+            "children": [
+              {
+                "name": "Howrah Rural",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "name": "Kolkata",
+            "children": [
+              {
+                "name": "Kolkata Rural",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "name": "Siliguri",
+            "children": [
+              {
+                "name": "Siliguri Rural",
+                "value": 3
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "force": {
+    "nodes": [
+      {
+        "id": "Bharat Traders",
+        "group": "exporter",
+        "state": "Rajasthan"
+      },
+      {
+        "id": "Bharat Store House",
+        "group": "wholesaler",
+        "state": "Telangana"
+      },
+      {
+        "id": "Sai Agro Foods",
+        "group": "manufacturer",
+        "state": "Punjab"
+      },
+      {
+        "id": "Indian Corporation",
+        "group": "wholesaler",
+        "state": "Odisha"
+      },
+      {
+        "id": "Global Trading Co.",
+        "group": "wholesaler",
+        "state": "Haryana"
+      },
+      {
+        "id": "Global Industries",
+        "group": "exporter",
+        "state": "Madhya Pradesh"
+      },
+      {
+        "id": "Ganesh Exports",
+        "group": "government market yard",
+        "state": "Rajasthan"
+      },
+      {
+        "id": "Raj Supply Chain",
+        "group": "government market yard",
+        "state": "West Bengal"
+      },
+      {
+        "id": "Raj Farmers Prod.",
+        "group": "government market yard",
+        "state": "Uttar Pradesh"
+      },
+      {
+        "id": "Hindustan Trading Co.",
+        "group": "government market yard",
+        "state": "Maharashtra"
+      },
+      {
+        "id": "Sai Exports",
+        "group": "government market yard",
+        "state": "Maharashtra"
+      },
+      {
+        "id": "Kiran Exports",
+        "group": "government market yard",
+        "state": "Madhya Pradesh"
+      },
+      {
+        "id": "Hindustan Impex",
+        "group": "government market yard",
+        "state": "Tamil Nadu"
+      },
+      {
+        "id": "Raj Market Yard",
+        "group": "government market yard",
+        "state": "Madhya Pradesh"
+      },
+      {
+        "id": "Royal Agri Business",
+        "group": "government market yard",
+        "state": "West Bengal"
+      },
+      {
+        "id": "Premier Agro Foods",
+        "group": "apmc market",
+        "state": "Gujarat"
+      },
+      {
+        "id": "Premier Enterprises",
+        "group": "apmc market",
+        "state": "Maharashtra"
+      },
+      {
+        "id": "Raj Commodities",
+        "group": "exporter",
+        "state": "Bihar"
+      },
+      {
+        "id": "Global Enterprises",
+        "group": "exporter",
+        "state": "Telangana"
+      },
+      {
+        "id": "Hindustan Farmers Prod.",
+        "group": "online seller",
+        "state": "Madhya Pradesh"
+      },
+      {
+        "id": "Royal Exports",
+        "group": "online seller",
+        "state": "Gujarat"
+      },
+      {
+        "id": "Pacific Agri Business",
+        "group": "online seller",
+        "state": "Kerala"
+      },
+      {
+        "id": "Kiran Impex",
+        "group": "online seller",
+        "state": "Tamil Nadu"
+      },
+      {
+        "id": "Royal Impex",
+        "group": "online seller",
+        "state": "Karnataka"
+      },
+      {
+        "id": "Lakshmi Agro Foods",
+        "group": "online seller",
+        "state": "Maharashtra"
+      },
+      {
+        "id": "Sri Market Yard",
+        "group": "online seller",
+        "state": "Tamil Nadu"
+      },
+      {
+        "id": "Om Trading Co.",
+        "group": "online seller",
+        "state": "Punjab"
+      },
+      {
+        "id": "Hindustan Traders",
+        "group": "online seller",
+        "state": "Assam"
+      },
+      {
+        "id": "Sai Commodities",
+        "group": "Online Seller",
+        "state": "Telangana"
+      },
+      {
+        "id": "Premier Traders",
+        "group": "government source",
+        "state": "Gujarat"
+      },
+      {
+        "id": "Sai Corporation",
+        "group": "government source",
+        "state": "West Bengal"
+      },
+      {
+        "id": "Bharat Market Yard",
+        "group": "government source",
+        "state": "Assam"
+      },
+      {
+        "id": "Premier Agri Business",
+        "group": "government source",
+        "state": "Bihar"
+      },
+      {
+        "id": "Hindustan Corporation",
+        "group": "Government Source",
+        "state": "Karnataka"
+      },
+      {
+        "id": "Premier Corporation",
+        "group": "government source",
+        "state": "Assam"
+      },
+      {
+        "id": "Hindustan Store House",
+        "group": "government source",
+        "state": "Maharashtra"
+      },
+      {
+        "id": "Bharat Industries",
+        "group": "government source",
+        "state": "Odisha"
+      },
+      {
+        "id": "Ganesh Industries",
+        "group": "government source",
+        "state": "Telangana"
+      },
+      {
+        "id": "Ganesh Corporation",
+        "group": "government source",
+        "state": "Bihar"
+      },
+      {
+        "id": "Pacific Store House",
+        "group": "government source",
+        "state": "Punjab"
+      },
+      {
+        "id": "Om Market Yard",
+        "group": "government source",
+        "state": "Punjab"
+      },
+      {
+        "id": "Ganesh Impex",
+        "group": "exporter",
+        "state": "West Bengal"
+      },
+      {
+        "id": "Kiran Store House",
+        "group": "manufacturer",
+        "state": "Andhra Pradesh"
+      },
+      {
+        "id": "Indian Agro Foods",
+        "group": "wholesaler",
+        "state": "Uttar Pradesh"
+      },
+      {
+        "id": "Global Agro Foods",
+        "group": "news reference",
+        "state": "Punjab"
+      },
+      {
+        "id": "Indian Store House",
+        "group": "News Reference",
+        "state": "Assam"
+      },
+      {
+        "id": "Premier Farmers Prod.",
+        "group": "news reference",
+        "state": "Assam"
+      },
+      {
+        "id": "Indian Enterprises",
+        "group": "news reference",
+        "state": "Haryana"
+      },
+      {
+        "id": "Ganesh Traders",
+        "group": "news reference",
+        "state": "Rajasthan"
+      },
+      {
+        "id": "Om Corporation",
+        "group": "news reference",
+        "state": "Maharashtra"
+      },
+      {
+        "id": "Sai Impex",
+        "group": "news reference",
+        "state": "Bihar"
+      },
+      {
+        "id": "Kiran Agri Business",
+        "group": "news reference",
+        "state": "Telangana"
+      },
+      {
+        "id": "National Impex",
+        "group": "news reference",
+        "state": "Tamil Nadu"
+      },
+      {
+        "id": "Lakshmi Store House",
+        "group": "news reference",
+        "state": "Punjab"
+      },
+      {
+        "id": "Shree Market Yard",
+        "group": "news reference",
+        "state": "Rajasthan"
+      },
+      {
+        "id": "Sri Commodities",
+        "group": "News Reference",
+        "state": "Karnataka"
+      },
+      {
+        "id": "Bharat Corporation",
+        "group": "online seller",
+        "state": "Uttar Pradesh"
+      },
+      {
+        "id": "Om Agri Business",
+        "group": "online seller",
+        "state": "Uttar Pradesh"
+      },
+      {
+        "id": "Royal Traders",
+        "group": "online seller",
+        "state": "Madhya Pradesh"
+      },
+      {
+        "id": "Hindustan Market Yard",
+        "group": "online seller",
+        "state": "Odisha"
+      },
+      {
+        "id": "Indian Commodities",
+        "group": "online seller",
+        "state": "Punjab"
+      },
+      {
+        "id": "National Market Yard",
+        "group": "online seller",
+        "state": "Punjab"
+      },
+      {
+        "id": "Om Supply Chain",
+        "group": "online seller",
+        "state": "Punjab"
+      },
+      {
+        "id": "Shree Store House",
+        "group": "online seller",
+        "state": "Madhya Pradesh"
+      },
+      {
+        "id": "Kiran Market Yard",
+        "group": "Online Seller",
+        "state": "Haryana"
+      },
+      {
+        "id": "Shree Enterprises",
+        "group": "online seller",
+        "state": "Andhra Pradesh"
+      },
+      {
+        "id": "Global Exports",
+        "group": "online seller",
+        "state": "Andhra Pradesh"
+      },
+      {
+        "id": "Pacific Impex",
+        "group": "online seller",
+        "state": "Haryana"
+      },
+      {
+        "id": "Kiran Commodities",
+        "group": "Online Seller",
+        "state": "Punjab"
+      },
+      {
+        "id": "Pacific Trading Co.",
+        "group": "online seller",
+        "state": "Andhra Pradesh"
+      },
+      {
+        "id": "Indian Supply Chain",
+        "group": "online seller",
+        "state": "Haryana"
+      },
+      {
+        "id": "Pacific Enterprises",
+        "group": "online seller",
+        "state": "Rajasthan"
+      },
+      {
+        "id": "Lakshmi Corporation",
+        "group": "online seller",
+        "state": "Karnataka"
+      },
+      {
+        "id": "Global Supply Chain",
+        "group": "online seller",
+        "state": "Punjab"
+      },
+      {
+        "id": "Lakshmi Trading Co.",
+        "group": "online seller",
+        "state": "Karnataka"
+      },
+      {
+        "id": "Om Farmers Prod.",
+        "group": "online seller",
+        "state": "Assam"
+      },
+      {
+        "id": "Global Commodities",
+        "group": "online seller",
+        "state": "Uttar Pradesh"
+      },
+      {
+        "id": "Royal Trading Co.",
+        "group": "Online Seller",
+        "state": "Assam"
+      },
+      {
+        "id": "Sri Industries",
+        "group": "online seller",
+        "state": "West Bengal"
+      },
+      {
+        "id": "Bharat Supply Chain",
+        "group": "Online Seller",
+        "state": "Karnataka"
+      },
+      {
+        "id": "Sri Traders",
+        "group": "online seller",
+        "state": "Uttar Pradesh"
+      },
+      {
+        "id": "Raj Enterprises",
+        "group": "online seller",
+        "state": "Bihar"
+      },
+      {
+        "id": "Kiran Enterprises",
+        "group": "Online Seller",
+        "state": "Karnataka"
+      },
+      {
+        "id": "Sri Impex",
+        "group": "Online Seller",
+        "state": "Odisha"
+      },
+      {
+        "id": "Ganesh Trading Co.",
+        "group": "online seller",
+        "state": "Telangana"
+      },
+      {
+        "id": "Bharat Trading Co.",
+        "group": "online seller",
+        "state": "Tamil Nadu"
+      },
+      {
+        "id": "Pacific Farmers Prod.",
+        "group": "online seller",
+        "state": "Karnataka"
+      },
+      {
+        "id": "Sai Trading Co.",
+        "group": "online seller",
+        "state": "Tamil Nadu"
+      },
+      {
+        "id": "Shree Agro Foods",
+        "group": "online seller",
+        "state": "Rajasthan"
+      },
+      {
+        "id": "Pacific Traders",
+        "group": "online seller",
+        "state": "Madhya Pradesh"
+      },
+      {
+        "id": "Kiran Traders",
+        "group": "online seller",
+        "state": "Punjab"
+      },
+      {
+        "id": "National Supply Chain",
+        "group": "online seller",
+        "state": "Odisha"
+      },
+      {
+        "id": "Royal Supply Chain",
+        "group": "Online Seller",
+        "state": "Madhya Pradesh"
+      },
+      {
+        "id": "Bharat Agro Foods",
+        "group": "online seller",
+        "state": "Odisha"
+      },
+      {
+        "id": "Shree Commodities",
+        "group": "online seller",
+        "state": "Maharashtra"
+      },
+      {
+        "id": "Om Industries",
+        "group": "online seller",
+        "state": "Bihar"
+      },
+      {
+        "id": "Lakshmi Exports",
+        "group": "online seller",
+        "state": "Rajasthan"
+      },
+      {
+        "id": "Indian Farmers Prod.",
+        "group": "Online Seller",
+        "state": "Karnataka"
+      },
+      {
+        "id": "Sri Corporation",
+        "group": "online seller",
+        "state": "Andhra Pradesh"
+      },
+      {
+        "id": "National Commodities",
+        "group": "online seller",
+        "state": "Andhra Pradesh"
+      },
+      {
+        "id": "National Store House",
+        "group": "online seller",
+        "state": "Haryana"
+      },
+      {
+        "id": "Sai Enterprises",
+        "group": "Online Seller",
+        "state": "Punjab"
+      },
+      {
+        "id": "Hindustan Agro Foods",
+        "group": "Online Seller",
+        "state": "Uttar Pradesh"
+      },
+      {
+        "id": "Lakshmi Traders",
+        "group": "online seller",
+        "state": "Madhya Pradesh"
+      },
+      {
+        "id": "Kiran Farmers Prod.",
+        "group": "online seller",
+        "state": "Tamil Nadu"
+      },
+      {
+        "id": "Indian Market Yard",
+        "group": "Online Seller",
+        "state": "Rajasthan"
+      },
+      {
+        "id": "Lakshmi Farmers Prod.",
+        "group": "online seller",
+        "state": "Karnataka"
+      },
+      {
+        "id": "Global Impex",
+        "group": "online seller",
+        "state": "Tamil Nadu"
+      },
+      {
+        "id": "Premier Store House",
+        "group": "online seller",
+        "state": "Karnataka"
+      },
+      {
+        "id": "National Industries",
+        "group": "online seller",
+        "state": "Karnataka"
+      },
+      {
+        "id": "Sri Supply Chain",
+        "group": "Online Seller",
+        "state": "Telangana"
+      },
+      {
+        "id": "Om Commodities",
+        "group": "online seller",
+        "state": "West Bengal"
+      },
+      {
+        "id": "Lakshmi Market Yard",
+        "group": "online seller",
+        "state": "Uttar Pradesh"
+      },
+      {
+        "id": "Om Exports",
+        "group": "online seller",
+        "state": "Kerala"
+      },
+      {
+        "id": "Om Traders",
+        "group": "online seller",
+        "state": "Gujarat"
+      },
+      {
+        "id": "Royal Enterprises",
+        "group": "Online Seller",
+        "state": "Uttar Pradesh"
+      },
+      {
+        "id": "Indian Exports",
+        "group": "online seller",
+        "state": "Punjab"
+      },
+      {
+        "id": "Bharat Impex",
+        "group": "online seller",
+        "state": "Haryana"
+      },
+      {
+        "id": "National Exports",
+        "group": "online seller",
+        "state": "Punjab"
+      },
+      {
+        "id": "National Trading Co.",
+        "group": "online seller",
+        "state": "Rajasthan"
+      },
+      {
+        "id": "Raj Exports",
+        "group": "online seller",
+        "state": "West Bengal"
+      },
+      {
+        "id": "Royal Commodities",
+        "group": "Online Seller",
+        "state": "Maharashtra"
+      },
+      {
+        "id": "Om Enterprises",
+        "group": "online seller",
+        "state": "Gujarat"
+      },
+      {
+        "id": "Sri Trading Co.",
+        "group": "Online Seller",
+        "state": "Kerala"
+      },
+      {
+        "id": "Shree Exports",
+        "group": "online seller",
+        "state": "Andhra Pradesh"
+      },
+      {
+        "id": "Premier Supply Chain",
+        "group": "online seller",
+        "state": "Karnataka"
+      },
+      {
+        "id": "Om Impex",
+        "group": "online seller",
+        "state": "Uttar Pradesh"
+      },
+      {
+        "id": "Sri Agro Foods",
+        "group": "Marine Exporter",
+        "state": "Karnataka"
+      },
+      {
+        "id": "Shree Farmers Prod.",
+        "group": "marine exporter",
+        "state": "Uttar Pradesh"
+      },
+      {
+        "id": "Indian Trading Co.",
+        "group": "Corporate Farm",
+        "state": "Madhya Pradesh"
+      },
+      {
+        "id": "Royal Industries",
+        "group": "marine farm",
+        "state": "Karnataka"
+      },
+      {
+        "id": "Lakshmi Agri Business",
+        "group": "marine farm",
+        "state": "Odisha"
+      },
+      {
+        "id": "National Corporation",
+        "group": "marine farm",
+        "state": "Karnataka"
+      },
+      {
+        "id": "Hindustan Agri Business",
+        "group": "marine farm",
+        "state": "Odisha"
+      }
+    ],
+    "links": []
+  },
+  "table": [
+    {
+      "name": "Bharat Traders",
+      "state": "Rajasthan",
+      "district": "Ajmer",
+      "taluk": "Ajmer Rural",
+      "product": "lokwan wheat",
+      "entity_type": "exporter",
+      "contact": "+91-7487915618",
+      "email": "contact@bharattraders.com",
+      "website": "www.bharattraders.com",
+      "market_price": "",
+      "year_established": ""
+    },
+    {
+      "name": "Bharat Store House",
+      "state": "Telangana",
+      "district": "Nizamabad",
+      "taluk": "Nizamabad Rural",
+      "product": "jaggery",
+      "entity_type": "wholesaler",
+      "contact": "+91-7868401419",
+      "email": "contact@bharatstore.com",
+      "website": "www.bharatstore.com",
+      "market_price": "",
+      "year_established": ""
+    },
+    {
+      "name": "Sai Agro Foods",
+      "state": "Punjab",
+      "district": "Ludhiana",
+      "taluk": "Ludhiana Rural",
+      "product": "moong dal",
+      "entity_type": "manufacturer",
+      "contact": "+91-8166653988",
+      "email": "contact@saiagro.com",
+      "website": "www.saiagro.com",
+      "market_price": "",
+      "year_established": ""
+    },
+    {
+      "name": "Indian Corporation",
+      "state": "Odisha",
+      "district": "Rourkela",
+      "taluk": "Rourkela Rural",
+      "product": "refined sugar",
+      "entity_type": "wholesaler",
+      "contact": "+91-8122698918",
+      "email": "contact@indiancorporation.com",
+      "website": "www.indiancorporation.com",
+      "market_price": "",
+      "year_established": ""
+    },
+    {
+      "name": "Global Trading Co.",
+      "state": "Haryana",
+      "district": "Gurgaon",
+      "taluk": "Gurgaon Rural",
+      "product": "refined sugar",
+      "entity_type": "wholesaler",
+      "contact": "+91-9880086445",
+      "email": "contact@globaltrading.com",
+      "website": "www.globaltrading.com",
+      "market_price": "",
+      "year_established": ""
+    },
+    {
+      "name": "Global Industries",
+      "state": "Madhya Pradesh",
+      "district": "Ujjain",
+      "taluk": "Ujjain Rural",
+      "product": "jowar",
+      "entity_type": "exporter",
+      "contact": "+91-7641901848",
+      "email": "contact@globalindustries.com",
+      "website": "www.globalindustries.com",
+      "market_price": "",
+      "year_established": ""
+    },
+    {
+      "name": "Ganesh Exports",
+      "state": "Rajasthan",
+      "district": "Jodhpur",
+      "taluk": "Jodhpur Rural",
+      "product": "basmati rice",
+      "entity_type": "government market yard",
+      "contact": "+91-7894630338",
+      "email": "contact@ganeshexports.com",
+      "website": "www.ganeshexports.com",
+      "market_price": "",
+      "year_established": ""
+    },
+    {
+      "name": "Raj Supply Chain",
+      "state": "West Bengal",
+      "district": "Siliguri",
+      "taluk": "Siliguri Rural",
+      "product": "groundnut",
+      "entity_type": "government market yard",
+      "contact": "+91-9836154694",
+      "email": "contact@rajsupply.com",
+      "website": "www.rajsupply.com",
+      "market_price": "",
+      "year_established": ""
+    },
+    {
+      "name": "Raj Farmers Prod.",
+      "state": "Uttar Pradesh",
+      "district": "Meerut",
+      "taluk": "Meerut Rural",
+      "product": "toor dal",
+      "entity_type": "government market yard",
+      "contact": "+91-9548542482",
+      "email": "contact@rajfarmers.com",
+      "website": "www.rajfarmers.com",
+      "market_price": "",
+      "year_established": ""
+    },
+    {
+      "name": "Hindustan Trading Co.",
+      "state": "Maharashtra",
+      "district": "Nagpur",
+      "taluk": "Nagpur Rural",
+      "product": "raw sugar",
+      "entity_type": "government market yard",
+      "contact": "+91-8163877482",
+      "email": "contact@hindustantrading.com",
+      "website": "www.hindustantrading.com",
+      "market_price": "",
+      "year_established": ""
+    },
+    {
+      "name": "Sai Exports",
+      "state": "Maharashtra",
+      "district": "Aurangabad",
+      "taluk": "Aurangabad Rural",
+      "product": "raw sugar",
+      "entity_type": "government market yard",
+      "contact": "+91-8607642443",
+      "email": "contact@saiexports.com",
+      "website": "www.saiexports.com",
+      "market_price": "",
+      "year_established": ""
+    },
+    {
+      "name": "Kiran Exports",
+      "state": "Madhya Pradesh",
+      "district": "Gwalior",
+      "taluk": "Gwalior Rural",
+      "product": "pbw wheat",
+      "entity_type": "government market yard",
+      "contact": "+91-9191528035",
+      "email": "contact@kiranexports.com",
+      "website": "www.kiranexports.com",
+      "market_price": "",
+      "year_established": ""
+    },
+    {
+      "name": "Hindustan Impex",
+      "state": "Tamil Nadu",
+      "district": "Madurai",
+      "taluk": "Madurai Rural",
+      "product": "lokwan wheat",
+      "entity_type": "government market yard",
+      "contact": "+91-8335847055",
+      "email": "contact@hindustanimpex.com",
+      "website": "www.hindustanimpex.com",
+      "market_price": "",
+      "year_established": ""
+    },
+    {
+      "name": "Raj Market Yard",
+      "state": "Madhya Pradesh",
+      "district": "Gwalior",
+      "taluk": "Gwalior Rural",
+      "product": "sona masuri",
+      "entity_type": "government market yard",
+      "contact": "+91-9108367435",
+      "email": "contact@rajmarket.com",
+      "website": "www.rajmarket.com",
+      "market_price": "",
+      "year_established": ""
+    },
+    {
+      "name": "Royal Agri Business",
+      "state": "West Bengal",
+      "district": "Asansol",
+      "taluk": "Asansol Rural",
+      "product": "bajra",
+      "entity_type": "government market yard",
+      "contact": "+91-8554508710",
+      "email": "contact@royalagri.com",
+      "website": "www.royalagri.com",
+      "market_price": "",
+      "year_established": ""
+    },
+    {
+      "name": "Premier Agro Foods",
+      "state": "Gujarat",
+      "district": "Ahmedabad",
+      "taluk": "Ahmedabad Rural",
+      "product": "pbw wheat",
+      "entity_type": "apmc market",
+      "contact": "+91-9982593861",
+      "email": "contact@premieragro.com",
+      "website": "www.premieragro.com",
+      "market_price": "",
+      "year_established": ""
+    },
+    {
+      "name": "Premier Enterprises",
+      "state": "Maharashtra",
+      "district": "Aurangabad",
+      "taluk": "Aurangabad Rural",
+      "product": "lokwan wheat",
+      "entity_type": "apmc market",
+      "contact": "+91-7101214967",
+      "email": "contact@premierenterprises.com",
+      "website": "www.premierenterprises.com",
+      "market_price": "",
+      "year_established": ""
+    },
+    {
+      "name": "Raj Commodities",
+      "state": "Bihar",
+      "district": "Muzaffarpur",
+      "taluk": "Muzaffarpur Rural",
+      "product": "basmati rice",
+      "entity_type": "exporter",
+      "contact": "+91-7869190152",
+      "email": "contact@rajcommodities.com",
+      "website": "www.rajcommodities.com",
+      "market_price": "",
+      "year_established": ""
+    },
+    {
+      "name": "Global Enterprises",
+      "state": "Telangana",
+      "district": "Hyderabad",
+      "taluk": "Hyderabad Rural",
+      "product": "durum wheat",
+      "entity_type": "exporter",
+      "contact": "+91-8982466322",
+      "email": "contact@globalenterprises.com",
+      "website": "www.globalenterprises.com",
+      "market_price": "",
+      "year_established": ""
+    },
+    {
+      "name": "Hindustan Farmers Prod.",
+      "state": "Madhya Pradesh",
+      "district": "Ujjain",
+      "taluk": "Ujjain Rural",
+      "product": "toor dal",
+      "entity_type": "online seller",
+      "contact": "+91-9876812221",
+      "email": "contact@hindustanfarmers.com",
+      "website": "www.hindustanfarmers.com",
+      "market_price": "",
+      "year_established": ""
+    },
+    {
+      "name": "Royal Exports",
+      "state": "Gujarat",
+      "district": "Ahmedabad",
+      "taluk": "Ahmedabad Rural",
+      "product": "toor dal",
+      "entity_type": "online seller",
+      "contact": "+91-8868732982",
+      "email": "contact@royalexports.com",
+      "website": "www.royalexports.com",
+      "market_price": "",
+      "year_established": ""
+    },
+    {
+      "name": "Pacific Agri Business",
+      "state": "Kerala",
+      "district": "Thiruvananthapuram",
+      "taluk": "Thiruvananthapuram Rural",
+      "product": "ponni rice",
+      "entity_type": "online seller",
+      "contact": "+91-9911089084",
+      "email": "contact@pacificagri.com",
+      "website": "www.pacificagri.com",
+      "market_price": "",
+      "year_established": ""
+    },
+    {
+      "name": "Sai Agro Foods",
+      "state": "West Bengal",
+      "district": "Howrah",
+      "taluk": "Howrah Rural",
+      "product": "Refined Sugar",
+      "entity_type": "Online Seller",
+      "contact": "+91-9126762172",
+      "email": "contact@saiagro.com",
+      "website": "www.saiagro.com",
+      "market_price": "",
+      "year_established": ""
+    },
+    {
+      "name": "Kiran Impex",
+      "state": "Tamil Nadu",
+      "district": "Tiruchirappalli",
+      "taluk": "Tiruchirappalli Rural",
+      "product": "pbw wheat",
+      "entity_type": "online seller",
+      "contact": "+91-7838457244",
+      "email": "contact@kiranimpex.com",
+      "website": "www.kiranimpex.com",
+      "market_price": "",
+      "year_established": ""
+    },
+    {
+      "name": "Royal Impex",
+      "state": "Karnataka",
+      "district": "Belagavi",
+      "taluk": "Belagavi Rural",
+      "product": "toor dal",
+      "entity_type": "online seller",
+      "contact": "+91-8534533031",
+      "email": "contact@royalimpex.com",
+      "website": "www.royalimpex.com",
+      "market_price": "",
+      "year_established": ""
+    },
+    {
+      "name": "Lakshmi Agro Foods",
+      "state": "Maharashtra",
+      "district": "Nashik",
+      "taluk": "Nashik Rural",
+      "product": "sharbati wheat",
+      "entity_type": "online seller",
+      "contact": "+91-9514375582",
+      "email": "contact@lakshmiagro.com",
+      "website": "www.lakshmiagro.com",
+      "market_price": "",
+      "year_established": ""
+    },
+    {
+      "name": "Sri Market Yard",
+      "state": "Tamil Nadu",
+      "district": "Tiruchirappalli",
+      "taluk": "Tiruchirappalli Rural",
+      "product": "groundnut",
+      "entity_type": "online seller",
+      "contact": "+91-8864215575",
+      "email": "contact@srimarket.com",
+      "website": "www.srimarket.com",
+      "market_price": "",
+      "year_established": ""
+    },
+    {
+      "name": "Om Trading Co.",
+      "state": "Punjab",
+      "district": "Patiala",
+      "taluk": "Patiala Rural",
+      "product": "sona masuri",
+      "entity_type": "online seller",
+      "contact": "+91-8119961332",
+      "email": "contact@omtrading.com",
+      "website": "www.omtrading.com",
+      "market_price": "",
+      "year_established": ""
+    },
+    {
+      "name": "Hindustan Traders",
+      "state": "Assam",
+      "district": "Dibrugarh",
+      "taluk": "Dibrugarh Rural",
+      "product": "bajra",
+      "entity_type": "online seller",
+      "contact": "+91-9543828890",
+      "email": "contact@hindustantraders.com",
+      "website": "www.hindustantraders.com",
+      "market_price": "",
+      "year_established": ""
+    },
+    {
+      "name": "Sai Commodities",
+      "state": "Telangana",
+      "district": "Hyderabad",
+      "taluk": "Hyderabad Rural",
+      "product": "Mustard Seeds",
+      "entity_type": "Online Seller",
+      "contact": "+91-7832269185",
+      "email": "contact@saicommodities.com",
+      "website": "www.saicommodities.com",
+      "market_price": "",
+      "year_established": ""
+    },
+    {
+      "name": "Raj Farmers Prod.",
+      "state": "Karnataka",
+      "district": "Hubballi",
+      "taluk": "Hubballi Rural",
+      "product": "Bajra",
+      "entity_type": "Online Seller",
+      "contact": "+91-7609957978",
+      "email": "contact@rajfarmers.com",
+      "website": "www.rajfarmers.com",
+      "market_price": "",
+      "year_established": ""
+    },
+    {
+      "name": "Premier Traders",
+      "state": "Gujarat",
+      "district": "Anand",
+      "taluk": "Anand Rural",
+      "product": "brown sugar",
+      "entity_type": "government source",
+      "contact": "+91-8883219278",
+      "email": "contact@premiertraders.com",
+      "website": "www.premiertraders.com",
+      "market_price": "",
+      "year_established": ""
+    },
+    {
+      "name": "Indian Corporation",
+      "state": "Gujarat",
+      "district": "Vadodara",
+      "taluk": "Vadodara Rural",
+      "product": "Raw Sugar",
+      "entity_type": "Government Source",
+      "contact": "+91-7117561007",
+      "email": "contact@indiancorporation.com",
+      "website": "www.indiancorporation.com",
+      "market_price": "",
+      "year_established": ""
+    },
+    {
+      "name": "Sai Corporation",
+      "state": "West Bengal",
+      "district": "Howrah",
+      "taluk": "Howrah Rural",
+      "product": "pbw wheat",
+      "entity_type": "government source",
+      "contact": "+91-8288008339",
+      "email": "contact@saicorporation.com",
+      "website": "www.saicorporation.com",
+      "market_price": "",
+      "year_established": ""
+    },
+    {
+      "name": "Sai Exports",
+      "state": "Haryana",
+      "district": "Panipat",
+      "taluk": "Panipat Rural",
+      "product": "Raw Sugar",
+      "entity_type": "Government Source",
+      "contact": "+91-7340057930",
+      "email": "contact@saiexports.com",
+      "website": "www.saiexports.com",
+      "market_price": "",
+      "year_established": ""
+    },
+    {
+      "name": "Indian Corporation",
+      "state": "Tamil Nadu",
+      "district": "Madurai",
+      "taluk": "Madurai Rural",
+      "product": "PBW Wheat",
+      "entity_type": "Government Source",
+      "contact": "+91-8487661082",
+      "email": "contact@indiancorporation.com",
+      "website": "www.indiancorporation.com",
+      "market_price": "",
+      "year_established": ""
+    },
+    {
+      "name": "Bharat Market Yard",
+      "state": "Assam",
+      "district": "Guwahati",
+      "taluk": "Guwahati Rural",
+      "product": "groundnut",
+      "entity_type": "government source",
+      "contact": "+91-8405396112",
+      "email": "contact@bharatmarket.com",
+      "website": "www.bharatmarket.com",
+      "market_price": "",
+      "year_established": ""
+    },
+    {
+      "name": "Premier Agri Business",
+      "state": "Bihar",
+      "district": "Gaya",
+      "taluk": "Gaya Rural",
+      "product": "soybean",
+      "entity_type": "government source",
+      "contact": "+91-9324103947",
+      "email": "contact@premieragri.com",
+      "website": "www.premieragri.com",
+      "market_price": "",
+      "year_established": ""
+    },
+    {
+      "name": "Bharat Store House",
+      "state": "Andhra Pradesh",
+      "district": "Visakhapatnam",
+      "taluk": "Visakhapatnam Rural",
+      "product": "soybean",
+      "entity_type": "government source",
+      "contact": "+91-7434430685",
+      "email": "contact@bharatstore.com",
+      "website": "www.bharatstore.com",
+      "market_price": "",
+      "year_established": ""
+    },
+    {
+      "name": "Hindustan Corporation",
+      "state": "Karnataka",
+      "district": "Bengaluru",
+      "taluk": "Bengaluru Rural",
+      "product": "Mustard Seeds",
+      "entity_type": "Government Source",
+      "contact": "+91-9914848341",
+      "email": "contact@hindustancorporation.com",
+      "website": "www.hindustancorporation.com",
+      "market_price": "",
+      "year_established": ""
+    },
+    {
+      "name": "Premier Corporation",
+      "state": "Assam",
+      "district": "Jorhat",
+      "taluk": "Jorhat Rural",
+      "product": "groundnut",
+      "entity_type": "government source",
+      "contact": "+91-7118018194",
+      "email": "contact@premiercorporation.com",
+      "website": "www.premiercorporation.com",
+      "market_price": "",
+      "year_established": ""
+    },
+    {
+      "name": "Hindustan Store House",
+      "state": "Maharashtra",
+      "district": "Aurangabad",
+      "taluk": "Aurangabad Rural",
+      "product": "jaggery",
+      "entity_type": "government source",
+      "contact": "+91-8195612855",
+      "email": "contact@hindustanstore.com",
+      "website": "www.hindustanstore.com",
+      "market_price": "",
+      "year_established": ""
+    },
+    {
+      "name": "Premier Agro Foods",
+      "state": "Rajasthan",
+      "district": "Kota",
+      "taluk": "Kota Rural",
+      "product": "Sunflower Seeds",
+      "entity_type": "Government Source",
+      "contact": "+91-9477098453",
+      "email": "contact@premieragro.com",
+      "website": "www.premieragro.com",
+      "market_price": "",
+      "year_established": ""
+    },
+    {
+      "name": "Bharat Industries",
+      "state": "Odisha",
+      "district": "Bhubaneswar",
+      "taluk": "Bhubaneswar Rural",
+      "product": "groundnut",
+      "entity_type": "government source",
+      "contact": "+91-9512478146",
+      "email": "contact@bharatindustries.com",
+      "website": "www.bharatindustries.com",
+      "market_price": "",
+      "year_established": ""
+    },
+    {
+      "name": "Ganesh Industries",
+      "state": "Telangana",
+      "district": "Khammam",
+      "taluk": "Khammam Rural",
+      "product": "sunflower seeds",
+      "entity_type": "government source",
+      "contact": "+91-7323471239",
+      "email": "contact@ganeshindustries.com",
+      "website": "www.ganeshindustries.com",
+      "market_price": "",
+      "year_established": ""
+    },
+    {
+      "name": "Ganesh Corporation",
+      "state": "Bihar",
+      "district": "Patna",
+      "taluk": "Patna Rural",
+      "product": "non-basmati rice",
+      "entity_type": "government source",
+      "contact": "+91-8410657561",
+      "email": "contact@ganeshcorporation.com",
+      "website": "www.ganeshcorporation.com",
+      "market_price": "",
+      "year_established": ""
+    },
+    {
+      "name": "Pacific Store House",
+      "state": "Punjab",
+      "district": "Bathinda",
+      "taluk": "Bathinda Rural",
+      "product": "ponni rice",
+      "entity_type": "government source",
+      "contact": "+91-9996942283",
+      "email": "contact@pacificstore.com",
+      "website": "www.pacificstore.com",
+      "market_price": "",
+      "year_established": ""
+    },
+    {
+      "name": "Premier Traders",
+      "state": "Kerala",
+      "district": "Kochi",
+      "taluk": "Kochi Rural",
+      "product": "Masoor Dal",
+      "entity_type": "Government Source",
+      "contact": "+91-8555143196",
+      "email": "contact@premiertraders.com",
+      "website": "www.premiertraders.com",
+      "market_price": "",
+      "year_established": ""
+    },
+    {
+      "name": "Om Market Yard",
+      "state": "Punjab",
+      "district": "Ludhiana",
+      "taluk": "Ludhiana Rural",
+      "product": "sesame",
+      "entity_type": "government source",
+      "contact": "+91-7121552947",
+      "email": "contact@ommarket.com",
+      "website": "www.ommarket.com",
+      "market_price": "",
+      "year_established": ""
+    },
+    {
+      "name": "Ganesh Impex",
+      "state": "West Bengal",
+      "district": "Durgapur",
+      "taluk": "Durgapur Rural",
+      "product": "durum wheat",
+      "entity_type": "exporter",
+      "contact": "+91-8161010915",
+      "email": "contact@ganeshimpex.com",
+      "website": "www.ganeshimpex.com",
+      "market_price": "",
+      "year_established": ""
+    }
+  ],
+  "consolidated": {
+    "entities": [
+      {
+        "name": "Bharat Traders",
+        "type": "exporter",
+        "product": "lokwan wheat",
+        "state": "Rajasthan",
+        "district": "Ajmer",
+        "taluk": "Ajmer Rural",
+        "phone": "+91-7487915618",
+        "email": "contact@bharattraders.com",
+        "website": "www.bharattraders.com",
+        "price": 2318.0,
+        "unit": "per kg",
+        "source": "indiamart.com",
+        "year": 2005,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "exporter"
+      },
+      {
+        "name": "Bharat Store House",
+        "type": "wholesaler",
+        "product": "jaggery",
+        "state": "Telangana",
+        "district": "Nizamabad",
+        "taluk": "Nizamabad Rural",
+        "phone": "+91-7868401419",
+        "email": "contact@bharatstore.com",
+        "website": "www.bharatstore.com",
+        "price": 3373.0,
+        "unit": "per bag (50kg)",
+        "source": "indiamart.com",
+        "year": 2008,
+        "gst": "25440310945116ZP",
+        "confidence": 0.8,
+        "entity_type": "wholesaler"
+      },
+      {
+        "name": "Sai Agro Foods",
+        "type": "manufacturer",
+        "product": "moong dal",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "taluk": "Ludhiana Rural",
+        "phone": "+91-8166653988",
+        "email": "contact@saiagro.com",
+        "website": "www.saiagro.com",
+        "price": 10703.0,
+        "unit": "per bag (25kg)",
+        "source": "indiamart.com",
+        "year": 2005,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "manufacturer"
+      },
+      {
+        "name": "Indian Corporation",
+        "type": "wholesaler",
+        "product": "refined sugar",
+        "state": "Odisha",
+        "district": "Rourkela",
+        "taluk": "Rourkela Rural",
+        "phone": "+91-8122698918",
+        "email": "contact@indiancorporation.com",
+        "website": "www.indiancorporation.com",
+        "price": 4621.0,
+        "unit": "per bag (50kg)",
+        "source": "indiamart.com",
+        "year": 2023,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "wholesaler"
+      },
+      {
+        "name": "Global Trading Co.",
+        "type": "wholesaler",
+        "product": "refined sugar",
+        "state": "Haryana",
+        "district": "Gurgaon",
+        "taluk": "Gurgaon Rural",
+        "phone": "+91-9880086445",
+        "email": "contact@globaltrading.com",
+        "website": "www.globaltrading.com",
+        "price": 4047.0,
+        "unit": "per ton",
+        "source": "tradeindia.com",
+        "year": 1986,
+        "gst": "33963643784843ZP",
+        "confidence": 0.8,
+        "entity_type": "wholesaler"
+      },
+      {
+        "name": "Global Industries",
+        "type": "exporter",
+        "product": "jowar",
+        "state": "Madhya Pradesh",
+        "district": "Ujjain",
+        "taluk": "Ujjain Rural",
+        "phone": "+91-7641901848",
+        "email": "contact@globalindustries.com",
+        "website": "www.globalindustries.com",
+        "price": 1945.0,
+        "unit": "per quintal",
+        "source": "tradeindia.com",
+        "year": 1982,
+        "gst": "16462288852937ZZ",
+        "confidence": 0.8,
+        "entity_type": "exporter"
+      },
+      {
+        "name": "Ganesh Exports",
+        "type": "government market yard",
+        "product": "basmati rice",
+        "state": "Rajasthan",
+        "district": "Jodhpur",
+        "taluk": "Jodhpur Rural",
+        "phone": "+91-7894630338",
+        "email": "contact@ganeshexports.com",
+        "website": "www.ganeshexports.com",
+        "price": 4202.0,
+        "unit": "per kg",
+        "source": "agmarknet.gov.in",
+        "year": 1999,
+        "gst": "27568481683078ZP",
+        "confidence": 0.8,
+        "entity_type": "government market yard"
+      },
+      {
+        "name": "Raj Supply Chain",
+        "type": "government market yard",
+        "product": "groundnut",
+        "state": "West Bengal",
+        "district": "Siliguri",
+        "taluk": "Siliguri Rural",
+        "phone": "+91-9836154694",
+        "email": "contact@rajsupply.com",
+        "website": "www.rajsupply.com",
+        "price": 6801.0,
+        "unit": "per quintal",
+        "source": "agmarknet.gov.in",
+        "year": 2016,
+        "gst": "35534156906754ZP",
+        "confidence": 0.8,
+        "entity_type": "government market yard"
+      },
+      {
+        "name": "Raj Farmers Prod.",
+        "type": "government market yard",
+        "product": "toor dal",
+        "state": "Uttar Pradesh",
+        "district": "Meerut",
+        "taluk": "Meerut Rural",
+        "phone": "+91-9548542482",
+        "email": "contact@rajfarmers.com",
+        "website": "www.rajfarmers.com",
+        "price": 7142.0,
+        "unit": "per bag (25kg)",
+        "source": "agmarknet.gov.in",
+        "year": 1989,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "government market yard"
+      },
+      {
+        "name": "Hindustan Trading Co.",
+        "type": "government market yard",
+        "product": "raw sugar",
+        "state": "Maharashtra",
+        "district": "Nagpur",
+        "taluk": "Nagpur Rural",
+        "phone": "+91-8163877482",
+        "email": "contact@hindustantrading.com",
+        "website": "www.hindustantrading.com",
+        "price": 4436.0,
+        "unit": "per ton",
+        "source": "agmarknet.gov.in",
+        "year": 1981,
+        "gst": "20307756421042ZZ",
+        "confidence": 0.8,
+        "entity_type": "government market yard"
+      },
+      {
+        "name": "Sai Exports",
+        "type": "government market yard",
+        "product": "raw sugar",
+        "state": "Maharashtra",
+        "district": "Aurangabad",
+        "taluk": "Aurangabad Rural",
+        "phone": "+91-8607642443",
+        "email": "contact@saiexports.com",
+        "website": "www.saiexports.com",
+        "price": 3598.0,
+        "unit": "per bag (50kg)",
+        "source": "agmarknet.gov.in",
+        "year": 1995,
+        "gst": "19452494050513ZZ",
+        "confidence": 0.8,
+        "entity_type": "government market yard"
+      },
+      {
+        "name": "Kiran Exports",
+        "type": "government market yard",
+        "product": "pbw wheat",
+        "state": "Madhya Pradesh",
+        "district": "Gwalior",
+        "taluk": "Gwalior Rural",
+        "phone": "+91-9191528035",
+        "email": "contact@kiranexports.com",
+        "website": "www.kiranexports.com",
+        "price": 2767.0,
+        "unit": "per bag (50kg)",
+        "source": "agmarknet.gov.in",
+        "year": 2009,
+        "gst": "20723048738123ZP",
+        "confidence": 0.8,
+        "entity_type": "government market yard"
+      },
+      {
+        "name": "Hindustan Impex",
+        "type": "government market yard",
+        "product": "lokwan wheat",
+        "state": "Tamil Nadu",
+        "district": "Madurai",
+        "taluk": "Madurai Rural",
+        "phone": "+91-8335847055",
+        "email": "contact@hindustanimpex.com",
+        "website": "www.hindustanimpex.com",
+        "price": 2110.0,
+        "unit": "per bag (25kg)",
+        "source": "agmarknet.gov.in",
+        "year": 1987,
+        "gst": "35987102487532ZP",
+        "confidence": 0.8,
+        "entity_type": "government market yard"
+      },
+      {
+        "name": "Raj Market Yard",
+        "type": "government market yard",
+        "product": "sona masuri",
+        "state": "Madhya Pradesh",
+        "district": "Gwalior",
+        "taluk": "Gwalior Rural",
+        "phone": "+91-9108367435",
+        "email": "contact@rajmarket.com",
+        "website": "www.rajmarket.com",
+        "price": 3510.0,
+        "unit": "per ton",
+        "source": "agmarknet.gov.in",
+        "year": 2018,
+        "gst": "17531106840003ZP",
+        "confidence": 0.8,
+        "entity_type": "government market yard"
+      },
+      {
+        "name": "Royal Agri Business",
+        "type": "government market yard",
+        "product": "bajra",
+        "state": "West Bengal",
+        "district": "Asansol",
+        "taluk": "Asansol Rural",
+        "phone": "+91-8554508710",
+        "email": "contact@royalagri.com",
+        "website": "www.royalagri.com",
+        "price": 1594.0,
+        "unit": "per kg",
+        "source": "agmarknet.gov.in",
+        "year": 1991,
+        "gst": "19399876715903ZP",
+        "confidence": 0.8,
+        "entity_type": "government market yard"
+      },
+      {
+        "name": "Premier Agro Foods",
+        "type": "apmc market",
+        "product": "pbw wheat",
+        "state": "Gujarat",
+        "district": "Ahmedabad",
+        "taluk": "Ahmedabad Rural",
+        "phone": "+91-9982593861",
+        "email": "contact@premieragro.com",
+        "website": "www.premieragro.com",
+        "price": 2040.0,
+        "unit": "per quintal",
+        "source": "apmc_market",
+        "year": 2008,
+        "gst": "31848908205622ZP",
+        "confidence": 0.8,
+        "entity_type": "apmc market"
+      },
+      {
+        "name": "Premier Enterprises",
+        "type": "apmc market",
+        "product": "lokwan wheat",
+        "state": "Maharashtra",
+        "district": "Aurangabad",
+        "taluk": "Aurangabad Rural",
+        "phone": "+91-7101214967",
+        "email": "contact@premierenterprises.com",
+        "website": "www.premierenterprises.com",
+        "price": 2760.0,
+        "unit": "per quintal",
+        "source": "apmc_market",
+        "year": 2010,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "apmc market"
+      },
+      {
+        "name": "Raj Commodities",
+        "type": "exporter",
+        "product": "basmati rice",
+        "state": "Bihar",
+        "district": "Muzaffarpur",
+        "taluk": "Muzaffarpur Rural",
+        "phone": "+91-7869190152",
+        "email": "contact@rajcommodities.com",
+        "website": "www.rajcommodities.com",
+        "price": 3186.0,
+        "unit": "per kg",
+        "source": "export_directory",
+        "year": 1987,
+        "gst": "12708152656913ZZ",
+        "confidence": 0.8,
+        "entity_type": "exporter"
+      },
+      {
+        "name": "Global Enterprises",
+        "type": "exporter",
+        "product": "durum wheat",
+        "state": "Telangana",
+        "district": "Hyderabad",
+        "taluk": "Hyderabad Rural",
+        "phone": "+91-8982466322",
+        "email": "contact@globalenterprises.com",
+        "website": "www.globalenterprises.com",
+        "price": 2081.0,
+        "unit": "per ton",
+        "source": "export_directory",
+        "year": 2021,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "exporter"
+      },
+      {
+        "name": "Hindustan Farmers Prod.",
+        "type": "online seller",
+        "product": "toor dal",
+        "state": "Madhya Pradesh",
+        "district": "Ujjain",
+        "taluk": "Ujjain Rural",
+        "phone": "+91-9876812221",
+        "email": "contact@hindustanfarmers.com",
+        "website": "www.hindustanfarmers.com",
+        "price": 9159.0,
+        "unit": "per bag (50kg)",
+        "source": "amazon.in",
+        "year": 2022,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Royal Exports",
+        "type": "online seller",
+        "product": "toor dal",
+        "state": "Gujarat",
+        "district": "Ahmedabad",
+        "taluk": "Ahmedabad Rural",
+        "phone": "+91-8868732982",
+        "email": "contact@royalexports.com",
+        "website": "www.royalexports.com",
+        "price": 10136.0,
+        "unit": "per bag (50kg)",
+        "source": "amazon.in",
+        "year": 2006,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Pacific Agri Business",
+        "type": "online seller",
+        "product": "ponni rice",
+        "state": "Kerala",
+        "district": "Thiruvananthapuram",
+        "taluk": "Thiruvananthapuram Rural",
+        "phone": "+91-9911089084",
+        "email": "contact@pacificagri.com",
+        "website": "www.pacificagri.com",
+        "price": 4506.0,
+        "unit": "per bag (50kg)",
+        "source": "amazon.in",
+        "year": 1987,
+        "gst": "15880227440819ZZ",
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Sai Agro Foods",
+        "type": "Online Seller",
+        "product": "Refined Sugar",
+        "state": "West Bengal",
+        "district": "Howrah",
+        "taluk": "Howrah Rural",
+        "phone": "+91-9126762172",
+        "email": "contact@saiagro.com",
+        "website": "www.saiagro.com",
+        "price": 3413,
+        "unit": "per quintal",
+        "source": "amazon.in",
+        "year": 2012,
+        "gst": "21035333074233ZP",
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Kiran Impex",
+        "type": "online seller",
+        "product": "pbw wheat",
+        "state": "Tamil Nadu",
+        "district": "Tiruchirappalli",
+        "taluk": "Tiruchirappalli Rural",
+        "phone": "+91-7838457244",
+        "email": "contact@kiranimpex.com",
+        "website": "www.kiranimpex.com",
+        "price": 2331.0,
+        "unit": "per kg",
+        "source": "amazon.in",
+        "year": 2002,
+        "gst": "30113966793719ZZ",
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Royal Impex",
+        "type": "online seller",
+        "product": "toor dal",
+        "state": "Karnataka",
+        "district": "Belagavi",
+        "taluk": "Belagavi Rural",
+        "phone": "+91-8534533031",
+        "email": "contact@royalimpex.com",
+        "website": "www.royalimpex.com",
+        "price": 11695.0,
+        "unit": "per bag (50kg)",
+        "source": "amazon.in",
+        "year": 1997,
+        "gst": "33173388088695ZP",
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Lakshmi Agro Foods",
+        "type": "online seller",
+        "product": "sharbati wheat",
+        "state": "Maharashtra",
+        "district": "Nashik",
+        "taluk": "Nashik Rural",
+        "phone": "+91-9514375582",
+        "email": "contact@lakshmiagro.com",
+        "website": "www.lakshmiagro.com",
+        "price": 2278.0,
+        "unit": "per kg",
+        "source": "amazon.in",
+        "year": 2014,
+        "gst": "25564473083187ZP",
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Sri Market Yard",
+        "type": "online seller",
+        "product": "groundnut",
+        "state": "Tamil Nadu",
+        "district": "Tiruchirappalli",
+        "taluk": "Tiruchirappalli Rural",
+        "phone": "+91-8864215575",
+        "email": "contact@srimarket.com",
+        "website": "www.srimarket.com",
+        "price": 6860.0,
+        "unit": "per bag (25kg)",
+        "source": "amazon.in",
+        "year": 2010,
+        "gst": "23793756695245ZP",
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Om Trading Co.",
+        "type": "online seller",
+        "product": "sona masuri",
+        "state": "Punjab",
+        "district": "Patiala",
+        "taluk": "Patiala Rural",
+        "phone": "+91-8119961332",
+        "email": "contact@omtrading.com",
+        "website": "www.omtrading.com",
+        "price": 3184.0,
+        "unit": "per bag (50kg)",
+        "source": "flipkart.com",
+        "year": 1984,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Hindustan Traders",
+        "type": "online seller",
+        "product": "bajra",
+        "state": "Assam",
+        "district": "Dibrugarh",
+        "taluk": "Dibrugarh Rural",
+        "phone": "+91-9543828890",
+        "email": "contact@hindustantraders.com",
+        "website": "www.hindustantraders.com",
+        "price": 1509.0,
+        "unit": "per quintal",
+        "source": "flipkart.com",
+        "year": 1996,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Sai Commodities",
+        "type": "Online Seller",
+        "product": "Mustard Seeds",
+        "state": "Telangana",
+        "district": "Hyderabad",
+        "taluk": "Hyderabad Rural",
+        "phone": "+91-7832269185",
+        "email": "contact@saicommodities.com",
+        "website": "www.saicommodities.com",
+        "price": 6002,
+        "unit": "per bag (25kg)",
+        "source": "flipkart.com",
+        "year": 1986,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Raj Farmers Prod.",
+        "type": "Online Seller",
+        "product": "Bajra",
+        "state": "Karnataka",
+        "district": "Hubballi",
+        "taluk": "Hubballi Rural",
+        "phone": "+91-7609957978",
+        "email": "contact@rajfarmers.com",
+        "website": "www.rajfarmers.com",
+        "price": 3028,
+        "unit": "per kg",
+        "source": "flipkart.com",
+        "year": 2002,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Premier Traders",
+        "type": "government source",
+        "product": "brown sugar",
+        "state": "Gujarat",
+        "district": "Anand",
+        "taluk": "Anand Rural",
+        "phone": "+91-8883219278",
+        "email": "contact@premiertraders.com",
+        "website": "www.premiertraders.com",
+        "price": 3475.0,
+        "unit": "per quintal",
+        "source": "data.gov.in",
+        "year": 1993,
+        "gst": "16407308653412ZZ",
+        "confidence": 0.8,
+        "entity_type": "government source"
+      },
+      {
+        "name": "Indian Corporation",
+        "type": "Government Source",
+        "product": "Raw Sugar",
+        "state": "Gujarat",
+        "district": "Vadodara",
+        "taluk": "Vadodara Rural",
+        "phone": "+91-7117561007",
+        "email": "contact@indiancorporation.com",
+        "website": "www.indiancorporation.com",
+        "price": 3518,
+        "unit": "per bag (25kg)",
+        "source": "data.gov.in",
+        "year": 2001,
+        "gst": "25669958607924ZZ",
+        "confidence": 0.8,
+        "entity_type": "Government Source"
+      },
+      {
+        "name": "Sai Corporation",
+        "type": "government source",
+        "product": "pbw wheat",
+        "state": "West Bengal",
+        "district": "Howrah",
+        "taluk": "Howrah Rural",
+        "phone": "+91-8288008339",
+        "email": "contact@saicorporation.com",
+        "website": "www.saicorporation.com",
+        "price": 2529.0,
+        "unit": "per bag (50kg)",
+        "source": "data.gov.in",
+        "year": 1998,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "government source"
+      },
+      {
+        "name": "Sai Exports",
+        "type": "Government Source",
+        "product": "Raw Sugar",
+        "state": "Haryana",
+        "district": "Panipat",
+        "taluk": "Panipat Rural",
+        "phone": "+91-7340057930",
+        "email": "contact@saiexports.com",
+        "website": "www.saiexports.com",
+        "price": 3841,
+        "unit": "per bag (50kg)",
+        "source": "data.gov.in",
+        "year": 1996,
+        "gst": "19904697033833ZZ",
+        "confidence": 0.8,
+        "entity_type": "Government Source"
+      },
+      {
+        "name": "Indian Corporation",
+        "type": "Government Source",
+        "product": "PBW Wheat",
+        "state": "Tamil Nadu",
+        "district": "Madurai",
+        "taluk": "Madurai Rural",
+        "phone": "+91-8487661082",
+        "email": "contact@indiancorporation.com",
+        "website": "www.indiancorporation.com",
+        "price": 2586,
+        "unit": "per bag (25kg)",
+        "source": "data.gov.in",
+        "year": 1989,
+        "gst": "29479063452115ZZ",
+        "confidence": 0.8,
+        "entity_type": "Government Source"
+      },
+      {
+        "name": "Bharat Market Yard",
+        "type": "government source",
+        "product": "groundnut",
+        "state": "Assam",
+        "district": "Guwahati",
+        "taluk": "Guwahati Rural",
+        "phone": "+91-8405396112",
+        "email": "contact@bharatmarket.com",
+        "website": "www.bharatmarket.com",
+        "price": 7739.0,
+        "unit": "per bag (50kg)",
+        "source": "data.gov.in",
+        "year": 2001,
+        "gst": "30170369413792ZP",
+        "confidence": 0.8,
+        "entity_type": "government source"
+      },
+      {
+        "name": "Premier Agri Business",
+        "type": "government source",
+        "product": "soybean",
+        "state": "Bihar",
+        "district": "Gaya",
+        "taluk": "Gaya Rural",
+        "phone": "+91-9324103947",
+        "email": "contact@premieragri.com",
+        "website": "www.premieragri.com",
+        "price": 6052.0,
+        "unit": "per quintal",
+        "source": "data.gov.in",
+        "year": 2011,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "government source"
+      },
+      {
+        "name": "Bharat Store House",
+        "type": "government source",
+        "product": "soybean",
+        "state": "Andhra Pradesh",
+        "district": "Visakhapatnam",
+        "taluk": "Visakhapatnam Rural",
+        "phone": "+91-7434430685",
+        "email": "contact@bharatstore.com",
+        "website": "www.bharatstore.com",
+        "price": 6592.0,
+        "unit": "per kg",
+        "source": "data.gov.in",
+        "year": 2016,
+        "gst": "11009574177245ZZ",
+        "confidence": 0.8,
+        "entity_type": "government source"
+      },
+      {
+        "name": "Hindustan Corporation",
+        "type": "Government Source",
+        "product": "Mustard Seeds",
+        "state": "Karnataka",
+        "district": "Bengaluru",
+        "taluk": "Bengaluru Rural",
+        "phone": "+91-9914848341",
+        "email": "contact@hindustancorporation.com",
+        "website": "www.hindustancorporation.com",
+        "price": 5098,
+        "unit": "per quintal",
+        "source": "data.gov.in",
+        "year": 1997,
+        "gst": "29050945752596ZZ",
+        "confidence": 0.8,
+        "entity_type": "Government Source"
+      },
+      {
+        "name": "Premier Corporation",
+        "type": "government source",
+        "product": "groundnut",
+        "state": "Assam",
+        "district": "Jorhat",
+        "taluk": "Jorhat Rural",
+        "phone": "+91-7118018194",
+        "email": "contact@premiercorporation.com",
+        "website": "www.premiercorporation.com",
+        "price": 4893.0,
+        "unit": "per kg",
+        "source": "data.gov.in",
+        "year": 2012,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "government source"
+      },
+      {
+        "name": "Hindustan Store House",
+        "type": "government source",
+        "product": "jaggery",
+        "state": "Maharashtra",
+        "district": "Aurangabad",
+        "taluk": "Aurangabad Rural",
+        "phone": "+91-8195612855",
+        "email": "contact@hindustanstore.com",
+        "website": "www.hindustanstore.com",
+        "price": 3262.0,
+        "unit": "per quintal",
+        "source": "data.gov.in",
+        "year": 1988,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "government source"
+      },
+      {
+        "name": "Premier Agro Foods",
+        "type": "Government Source",
+        "product": "Sunflower Seeds",
+        "state": "Rajasthan",
+        "district": "Kota",
+        "taluk": "Kota Rural",
+        "phone": "+91-9477098453",
+        "email": "contact@premieragro.com",
+        "website": "www.premieragro.com",
+        "price": 7851,
+        "unit": "per bag (50kg)",
+        "source": "data.gov.in",
+        "year": 1997,
+        "gst": "11024566700035ZP",
+        "confidence": 0.8,
+        "entity_type": "Government Source"
+      },
+      {
+        "name": "Bharat Industries",
+        "type": "government source",
+        "product": "groundnut",
+        "state": "Odisha",
+        "district": "Bhubaneswar",
+        "taluk": "Bhubaneswar Rural",
+        "phone": "+91-9512478146",
+        "email": "contact@bharatindustries.com",
+        "website": "www.bharatindustries.com",
+        "price": 6642.0,
+        "unit": "per bag (25kg)",
+        "source": "data.gov.in",
+        "year": 2002,
+        "gst": "13769924120257ZZ",
+        "confidence": 0.8,
+        "entity_type": "government source"
+      },
+      {
+        "name": "Ganesh Industries",
+        "type": "government source",
+        "product": "sunflower seeds",
+        "state": "Telangana",
+        "district": "Khammam",
+        "taluk": "Khammam Rural",
+        "phone": "+91-7323471239",
+        "email": "contact@ganeshindustries.com",
+        "website": "www.ganeshindustries.com",
+        "price": 4723.0,
+        "unit": "per kg",
+        "source": "data.gov.in",
+        "year": 2009,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "government source"
+      },
+      {
+        "name": "Ganesh Corporation",
+        "type": "government source",
+        "product": "non-basmati rice",
+        "state": "Bihar",
+        "district": "Patna",
+        "taluk": "Patna Rural",
+        "phone": "+91-8410657561",
+        "email": "contact@ganeshcorporation.com",
+        "website": "www.ganeshcorporation.com",
+        "price": 3733.0,
+        "unit": "per quintal",
+        "source": "data.gov.in",
+        "year": 2019,
+        "gst": "33299678893340ZP",
+        "confidence": 0.8,
+        "entity_type": "government source"
+      },
+      {
+        "name": "Pacific Store House",
+        "type": "government source",
+        "product": "ponni rice",
+        "state": "Punjab",
+        "district": "Bathinda",
+        "taluk": "Bathinda Rural",
+        "phone": "+91-9996942283",
+        "email": "contact@pacificstore.com",
+        "website": "www.pacificstore.com",
+        "price": 4893.0,
+        "unit": "per bag (50kg)",
+        "source": "data.gov.in",
+        "year": 2015,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "government source"
+      },
+      {
+        "name": "Premier Traders",
+        "type": "Government Source",
+        "product": "Masoor Dal",
+        "state": "Kerala",
+        "district": "Kochi",
+        "taluk": "Kochi Rural",
+        "phone": "+91-8555143196",
+        "email": "contact@premiertraders.com",
+        "website": "www.premiertraders.com",
+        "price": 9381,
+        "unit": "per bag (25kg)",
+        "source": "data.gov.in",
+        "year": 2007,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "Government Source"
+      },
+      {
+        "name": "Om Market Yard",
+        "type": "government source",
+        "product": "sesame",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "taluk": "Ludhiana Rural",
+        "phone": "+91-7121552947",
+        "email": "contact@ommarket.com",
+        "website": "www.ommarket.com",
+        "price": 5138.0,
+        "unit": "per quintal",
+        "source": "data.gov.in",
+        "year": 2001,
+        "gst": "10393573910786ZP",
+        "confidence": 0.8,
+        "entity_type": "government source"
+      },
+      {
+        "name": "Ganesh Impex",
+        "type": "exporter",
+        "product": "durum wheat",
+        "state": "West Bengal",
+        "district": "Durgapur",
+        "taluk": "Durgapur Rural",
+        "phone": "+91-8161010915",
+        "email": "contact@ganeshimpex.com",
+        "website": "www.ganeshimpex.com",
+        "price": 2697.0,
+        "unit": "per bag (50kg)",
+        "source": "linkedin.com",
+        "year": 1984,
+        "gst": "24244201219773ZP",
+        "confidence": 0.8,
+        "entity_type": "exporter"
+      },
+      {
+        "name": "Kiran Store House",
+        "type": "manufacturer",
+        "product": "sharbati wheat",
+        "state": "Andhra Pradesh",
+        "district": "Visakhapatnam",
+        "taluk": "Visakhapatnam Rural",
+        "phone": "+91-8945845094",
+        "email": "contact@kiranstore.com",
+        "website": "www.kiranstore.com",
+        "price": 2513.0,
+        "unit": "per kg",
+        "source": "linkedin.com",
+        "year": 1995,
+        "gst": "19097676918057ZZ",
+        "confidence": 0.8,
+        "entity_type": "manufacturer"
+      },
+      {
+        "name": "Indian Agro Foods",
+        "type": "wholesaler",
+        "product": "sona masuri",
+        "state": "Uttar Pradesh",
+        "district": "Lucknow",
+        "taluk": "Lucknow Rural",
+        "phone": "+91-7810124168",
+        "email": "contact@indianagro.com",
+        "website": "www.indianagro.com",
+        "price": 5222.0,
+        "unit": "per quintal",
+        "source": "linkedin.com",
+        "year": 2007,
+        "gst": "25915494751967ZZ",
+        "confidence": 0.8,
+        "entity_type": "wholesaler"
+      },
+      {
+        "name": "Hindustan Traders",
+        "type": "News Reference",
+        "product": "Chana Dal",
+        "state": "Gujarat",
+        "district": "Rajkot",
+        "taluk": "Rajkot Rural",
+        "phone": "+91-9213500949",
+        "email": "contact@hindustantraders.com",
+        "website": "www.hindustantraders.com",
+        "price": 10506,
+        "unit": "per bag (50kg)",
+        "source": "commodity_news",
+        "year": 2004,
+        "gst": "13939044459405ZP",
+        "confidence": 0.8,
+        "entity_type": "News Reference"
+      },
+      {
+        "name": "Global Agro Foods",
+        "type": "news reference",
+        "product": "refined sugar",
+        "state": "Punjab",
+        "district": "Patiala",
+        "taluk": "Patiala Rural",
+        "phone": "+91-9300077546",
+        "email": "contact@globalagro.com",
+        "website": "www.globalagro.com",
+        "price": 4269.0,
+        "unit": "per quintal",
+        "source": "commodity_news",
+        "year": 1981,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "news reference"
+      },
+      {
+        "name": "Indian Store House",
+        "type": "News Reference",
+        "product": "Groundnut",
+        "state": "Assam",
+        "district": "Guwahati",
+        "taluk": "Guwahati Rural",
+        "phone": "+91-9195453275",
+        "email": "contact@indianstore.com",
+        "website": "www.indianstore.com",
+        "price": 7855,
+        "unit": "per quintal",
+        "source": "commodity_news",
+        "year": 2005,
+        "gst": "20848975003252ZZ",
+        "confidence": 0.8,
+        "entity_type": "News Reference"
+      },
+      {
+        "name": "Premier Farmers Prod.",
+        "type": "news reference",
+        "product": "brown sugar",
+        "state": "Assam",
+        "district": "Dibrugarh",
+        "taluk": "Dibrugarh Rural",
+        "phone": "+91-9644565073",
+        "email": "contact@premierfarmers.com",
+        "website": "www.premierfarmers.com",
+        "price": 4220.0,
+        "unit": "per ton",
+        "source": "commodity_news",
+        "year": 2023,
+        "gst": "11623486755328ZP",
+        "confidence": 0.8,
+        "entity_type": "news reference"
+      },
+      {
+        "name": "Indian Enterprises",
+        "type": "news reference",
+        "product": "soybean",
+        "state": "Haryana",
+        "district": "Faridabad",
+        "taluk": "Faridabad Rural",
+        "phone": "+91-8482969949",
+        "email": "contact@indianenterprises.com",
+        "website": "www.indianenterprises.com",
+        "price": 6771.0,
+        "unit": "per kg",
+        "source": "commodity_news",
+        "year": 2010,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "news reference"
+      },
+      {
+        "name": "Ganesh Traders",
+        "type": "news reference",
+        "product": "bajra",
+        "state": "Rajasthan",
+        "district": "Ajmer",
+        "taluk": "Ajmer Rural",
+        "phone": "+91-9256250003",
+        "email": "contact@ganeshtraders.com",
+        "website": "www.ganeshtraders.com",
+        "price": 1725.0,
+        "unit": "per kg",
+        "source": "commodity_news",
+        "year": 1990,
+        "gst": "31094972404428ZP",
+        "confidence": 0.8,
+        "entity_type": "news reference"
+      },
+      {
+        "name": "Om Corporation",
+        "type": "news reference",
+        "product": "urad dal",
+        "state": "Maharashtra",
+        "district": "Mumbai",
+        "taluk": "Mumbai Rural",
+        "phone": "+91-9363129428",
+        "email": "contact@omcorporation.com",
+        "website": "www.omcorporation.com",
+        "price": 6766.0,
+        "unit": "per quintal",
+        "source": "commodity_news",
+        "year": 1987,
+        "gst": "32504208115079ZP",
+        "confidence": 0.8,
+        "entity_type": "news reference"
+      },
+      {
+        "name": "Sai Impex",
+        "type": "news reference",
+        "product": "chana dal",
+        "state": "Bihar",
+        "district": "Munger",
+        "taluk": "Munger Rural",
+        "phone": "+91-8830697826",
+        "email": "contact@saiimpex.com",
+        "website": "www.saiimpex.com",
+        "price": 7858.0,
+        "unit": "per bag (50kg)",
+        "source": "commodity_news",
+        "year": 1993,
+        "gst": "29537696099782ZZ",
+        "confidence": 0.8,
+        "entity_type": "news reference"
+      },
+      {
+        "name": "Kiran Agri Business",
+        "type": "news reference",
+        "product": "raw sugar",
+        "state": "Telangana",
+        "district": "Warangal",
+        "taluk": "Warangal Rural",
+        "phone": "+91-9493916570",
+        "email": "contact@kiranagri.com",
+        "website": "www.kiranagri.com",
+        "price": 3646.0,
+        "unit": "per bag (25kg)",
+        "source": "commodity_news",
+        "year": 1998,
+        "gst": "18023382527724ZP",
+        "confidence": 0.8,
+        "entity_type": "news reference"
+      },
+      {
+        "name": "National Impex",
+        "type": "news reference",
+        "product": "toor dal",
+        "state": "Tamil Nadu",
+        "district": "Tiruchirappalli",
+        "taluk": "Tiruchirappalli Rural",
+        "phone": "+91-7882812104",
+        "email": "contact@nationalimpex.com",
+        "website": "www.nationalimpex.com",
+        "price": 6500.0,
+        "unit": "per bag (25kg)",
+        "source": "commodity_news",
+        "year": 2010,
+        "gst": "27782654160485ZP",
+        "confidence": 0.8,
+        "entity_type": "news reference"
+      },
+      {
+        "name": "Lakshmi Store House",
+        "type": "news reference",
+        "product": "pbw wheat",
+        "state": "Punjab",
+        "district": "Jalandhar",
+        "taluk": "Jalandhar Rural",
+        "phone": "+91-9647708220",
+        "email": "contact@lakshmistore.com",
+        "website": "www.lakshmistore.com",
+        "price": 2657.0,
+        "unit": "per bag (25kg)",
+        "source": "commodity_news",
+        "year": 1988,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "news reference"
+      },
+      {
+        "name": "Shree Market Yard",
+        "type": "news reference",
+        "product": "mustard seeds",
+        "state": "Rajasthan",
+        "district": "Kota",
+        "taluk": "Kota Rural",
+        "phone": "+91-8827152086",
+        "email": "contact@shreemarket.com",
+        "website": "www.shreemarket.com",
+        "price": 4945.0,
+        "unit": "per bag (50kg)",
+        "source": "commodity_news",
+        "year": 2003,
+        "gst": "12907291932504ZP",
+        "confidence": 0.8,
+        "entity_type": "news reference"
+      },
+      {
+        "name": "Sri Commodities",
+        "type": "News Reference",
+        "product": "Sharbati Wheat",
+        "state": "Karnataka",
+        "district": "Hubballi",
+        "taluk": "Hubballi Rural",
+        "phone": "+91-9824696614",
+        "email": "contact@sricommodities.com",
+        "website": "www.sricommodities.com",
+        "price": 2398,
+        "unit": "per bag (50kg)",
+        "source": "commodity_news",
+        "year": 1989,
+        "gst": "19813787487801ZZ",
+        "confidence": 0.8,
+        "entity_type": "News Reference"
+      },
+      {
+        "name": "Bharat Corporation",
+        "type": "online seller",
+        "product": "durum wheat",
+        "state": "Uttar Pradesh",
+        "district": "Varanasi",
+        "taluk": "Varanasi Rural",
+        "phone": "+91-8108961277",
+        "email": "contact@bharatcorporation.com",
+        "website": "www.bharatcorporation.com",
+        "price": 2161.0,
+        "unit": "per ton",
+        "source": "jiomart.com",
+        "year": 2006,
+        "gst": "22574117184646ZP",
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Om Agri Business",
+        "type": "online seller",
+        "product": "ponni rice",
+        "state": "Uttar Pradesh",
+        "district": "Lucknow",
+        "taluk": "Lucknow Rural",
+        "phone": "+91-8905261466",
+        "email": "contact@omagri.com",
+        "website": "www.omagri.com",
+        "price": 2712.0,
+        "unit": "per kg",
+        "source": "jiomart.com",
+        "year": 2013,
+        "gst": "16141522157445ZP",
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Royal Traders",
+        "type": "online seller",
+        "product": "pbw wheat",
+        "state": "Madhya Pradesh",
+        "district": "Bhopal",
+        "taluk": "Bhopal Rural",
+        "phone": "+91-8372762775",
+        "email": "contact@royaltraders.com",
+        "website": "www.royaltraders.com",
+        "price": 2434.0,
+        "unit": "per bag (25kg)",
+        "source": "jiomart.com",
+        "year": 2007,
+        "gst": "13404323987549ZP",
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Hindustan Trading Co.",
+        "type": "Online Seller",
+        "product": "Sunflower Seeds",
+        "state": "Andhra Pradesh",
+        "district": "Visakhapatnam",
+        "taluk": "Visakhapatnam Rural",
+        "phone": "+91-8762896424",
+        "email": "contact@hindustantrading.com",
+        "website": "www.hindustantrading.com",
+        "price": 5726,
+        "unit": "per bag (50kg)",
+        "source": "jiomart.com",
+        "year": 1993,
+        "gst": "18674527270694ZP",
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Hindustan Market Yard",
+        "type": "online seller",
+        "product": "ragi",
+        "state": "Odisha",
+        "district": "Cuttack",
+        "taluk": "Cuttack Rural",
+        "phone": "+91-9207016212",
+        "email": "contact@hindustanmarket.com",
+        "website": "www.hindustanmarket.com",
+        "price": 2623.0,
+        "unit": "per kg",
+        "source": "jiomart.com",
+        "year": 2012,
+        "gst": "30951589446335ZP",
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Indian Commodities",
+        "type": "online seller",
+        "product": "foxtail millet",
+        "state": "Punjab",
+        "district": "Bathinda",
+        "taluk": "Bathinda Rural",
+        "phone": "+91-9871864396",
+        "email": "contact@indiancommodities.com",
+        "website": "www.indiancommodities.com",
+        "price": 2118.0,
+        "unit": "per ton",
+        "source": "dmart.in",
+        "year": 1995,
+        "gst": "34027811044474ZP",
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "National Market Yard",
+        "type": "online seller",
+        "product": "lokwan wheat",
+        "state": "Punjab",
+        "district": "Jalandhar",
+        "taluk": "Jalandhar Rural",
+        "phone": "+91-9959873515",
+        "email": "contact@nationalmarket.com",
+        "website": "www.nationalmarket.com",
+        "price": 2150.0,
+        "unit": "per bag (25kg)",
+        "source": "dmart.in",
+        "year": 2019,
+        "gst": "33910356670986ZZ",
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Om Supply Chain",
+        "type": "online seller",
+        "product": "ponni rice",
+        "state": "Punjab",
+        "district": "Amritsar",
+        "taluk": "Amritsar Rural",
+        "phone": "+91-9720015697",
+        "email": "contact@omsupply.com",
+        "website": "www.omsupply.com",
+        "price": 4820.0,
+        "unit": "per quintal",
+        "source": "dmart.in",
+        "year": 2015,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Shree Store House",
+        "type": "online seller",
+        "product": "non-basmati rice",
+        "state": "Madhya Pradesh",
+        "district": "Jabalpur",
+        "taluk": "Jabalpur Rural",
+        "phone": "+91-8790526961",
+        "email": "contact@shreestore.com",
+        "website": "www.shreestore.com",
+        "price": 5436.0,
+        "unit": "per bag (50kg)",
+        "source": "dmart.in",
+        "year": 2005,
+        "gst": "22658711844981ZP",
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Sri Commodities",
+        "type": "Online Seller",
+        "product": "Brown Sugar",
+        "state": "Gujarat",
+        "district": "Vadodara",
+        "taluk": "Vadodara Rural",
+        "phone": "+91-8892050834",
+        "email": "contact@sricommodities.com",
+        "website": "www.sricommodities.com",
+        "price": 3407,
+        "unit": "per kg",
+        "source": "dmart.in",
+        "year": 1992,
+        "gst": "10959744564528ZP",
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Kiran Market Yard",
+        "type": "Online Seller",
+        "product": "Groundnut",
+        "state": "Haryana",
+        "district": "Ambala",
+        "taluk": "Ambala Rural",
+        "phone": "+91-8118678145",
+        "email": "contact@kiranmarket.com",
+        "website": "www.kiranmarket.com",
+        "price": 7606,
+        "unit": "per ton",
+        "source": "dmart.in",
+        "year": 1997,
+        "gst": "10131363366966ZZ",
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Shree Enterprises",
+        "type": "online seller",
+        "product": "pbw wheat",
+        "state": "Andhra Pradesh",
+        "district": "Vijayawada",
+        "taluk": "Vijayawada Rural",
+        "phone": "+91-7808184642",
+        "email": "contact@shreeenterprises.com",
+        "website": "www.shreeenterprises.com",
+        "price": 2721.0,
+        "unit": "per kg",
+        "source": "bigbasket.com",
+        "year": 2008,
+        "gst": "13757262607978ZP",
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Global Exports",
+        "type": "online seller",
+        "product": "mustard seeds",
+        "state": "Andhra Pradesh",
+        "district": "Tirupati",
+        "taluk": "Tirupati Rural",
+        "phone": "+91-8390096519",
+        "email": "contact@globalexports.com",
+        "website": "www.globalexports.com",
+        "price": 4220.0,
+        "unit": "per kg",
+        "source": "bigbasket.com",
+        "year": 2018,
+        "gst": "11298147124010ZZ",
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Pacific Impex",
+        "type": "online seller",
+        "product": "moong dal",
+        "state": "Haryana",
+        "district": "Faridabad",
+        "taluk": "Faridabad Rural",
+        "phone": "+91-8608303779",
+        "email": "contact@pacificimpex.com",
+        "website": "www.pacificimpex.com",
+        "price": 10726.0,
+        "unit": "per kg",
+        "source": "bigbasket.com",
+        "year": 2008,
+        "gst": "32808977249495ZP",
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "National Impex",
+        "type": "Online Seller",
+        "product": "Bajra",
+        "state": "Uttar Pradesh",
+        "district": "Kanpur",
+        "taluk": "Kanpur Rural",
+        "phone": "+91-9861444135",
+        "email": "contact@nationalimpex.com",
+        "website": "www.nationalimpex.com",
+        "price": 2462,
+        "unit": "per bag (50kg)",
+        "source": "bigbasket.com",
+        "year": 2008,
+        "gst": "29719085759417ZP",
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Kiran Commodities",
+        "type": "Online Seller",
+        "product": "Ragi",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "taluk": "Ludhiana Rural",
+        "phone": "+91-9244219730",
+        "email": "contact@kirancommodities.com",
+        "website": "www.kirancommodities.com",
+        "price": 3393,
+        "unit": "per quintal",
+        "source": "bigbasket.com",
+        "year": 2011,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Sai Corporation",
+        "type": "Online Seller",
+        "product": "Groundnut",
+        "state": "Karnataka",
+        "district": "Mysuru",
+        "taluk": "Mysuru Rural",
+        "phone": "+91-8671883235",
+        "email": "contact@saicorporation.com",
+        "website": "www.saicorporation.com",
+        "price": 6251,
+        "unit": "per quintal",
+        "source": "bigbasket.com",
+        "year": 2013,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Sai Commodities",
+        "type": "Online Seller",
+        "product": "Sona Masuri",
+        "state": "Kerala",
+        "district": "Thiruvananthapuram",
+        "taluk": "Thiruvananthapuram Rural",
+        "phone": "+91-9460588569",
+        "email": "contact@saicommodities.com",
+        "website": "www.saicommodities.com",
+        "price": 5225,
+        "unit": "per bag (25kg)",
+        "source": "bigbasket.com",
+        "year": 1992,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Bharat Industries",
+        "type": "Online Seller",
+        "product": "Masoor Dal",
+        "state": "Assam",
+        "district": "Jorhat",
+        "taluk": "Jorhat Rural",
+        "phone": "+91-9190690748",
+        "email": "contact@bharatindustries.com",
+        "website": "www.bharatindustries.com",
+        "price": 10468,
+        "unit": "per kg",
+        "source": "blinkit.com",
+        "year": 2017,
+        "gst": "29123267510739ZZ",
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Pacific Trading Co.",
+        "type": "online seller",
+        "product": "raw sugar",
+        "state": "Andhra Pradesh",
+        "district": "Guntur",
+        "taluk": "Guntur Rural",
+        "phone": "+91-7831276497",
+        "email": "contact@pacifictrading.com",
+        "website": "www.pacifictrading.com",
+        "price": 3735.0,
+        "unit": "per ton",
+        "source": "blinkit.com",
+        "year": 1982,
+        "gst": "21354811225419ZZ",
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Indian Supply Chain",
+        "type": "online seller",
+        "product": "masoor dal",
+        "state": "Haryana",
+        "district": "Faridabad",
+        "taluk": "Faridabad Rural",
+        "phone": "+91-8967074647",
+        "email": "contact@indiansupply.com",
+        "website": "www.indiansupply.com",
+        "price": 7377.0,
+        "unit": "per kg",
+        "source": "blinkit.com",
+        "year": 2014,
+        "gst": "31743225211911ZP",
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Pacific Enterprises",
+        "type": "online seller",
+        "product": "sesame",
+        "state": "Rajasthan",
+        "district": "Udaipur",
+        "taluk": "Udaipur Rural",
+        "phone": "+91-7734826251",
+        "email": "contact@pacificenterprises.com",
+        "website": "www.pacificenterprises.com",
+        "price": 5108.0,
+        "unit": "per bag (50kg)",
+        "source": "blinkit.com",
+        "year": 2013,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Lakshmi Corporation",
+        "type": "online seller",
+        "product": "chana dal",
+        "state": "Karnataka",
+        "district": "Mysuru",
+        "taluk": "Mysuru Rural",
+        "phone": "+91-7891798738",
+        "email": "contact@lakshmicorporation.com",
+        "website": "www.lakshmicorporation.com",
+        "price": 10984.0,
+        "unit": "per bag (50kg)",
+        "source": "blinkit.com",
+        "year": 2016,
+        "gst": "29948958141034ZP",
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Global Supply Chain",
+        "type": "online seller",
+        "product": "basmati rice",
+        "state": "Punjab",
+        "district": "Bathinda",
+        "taluk": "Bathinda Rural",
+        "phone": "+91-7326923730",
+        "email": "contact@globalsupply.com",
+        "website": "www.globalsupply.com",
+        "price": 3448.0,
+        "unit": "per ton",
+        "source": "blinkit.com",
+        "year": 1993,
+        "gst": "18466694908097ZP",
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Pacific Impex",
+        "type": "Online Seller",
+        "product": "Ragi",
+        "state": "Rajasthan",
+        "district": "Kota",
+        "taluk": "Kota Rural",
+        "phone": "+91-9261393615",
+        "email": "contact@pacificimpex.com",
+        "website": "www.pacificimpex.com",
+        "price": 1621,
+        "unit": "per bag (25kg)",
+        "source": "blinkit.com",
+        "year": 2023,
+        "gst": "20954266318994ZZ",
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Lakshmi Trading Co.",
+        "type": "online seller",
+        "product": "groundnut",
+        "state": "Karnataka",
+        "district": "Belagavi",
+        "taluk": "Belagavi Rural",
+        "phone": "+91-9671730656",
+        "email": "contact@lakshmitrading.com",
+        "website": "www.lakshmitrading.com",
+        "price": 7994.0,
+        "unit": "per kg",
+        "source": "blinkit.com",
+        "year": 2006,
+        "gst": "11229919176850ZP",
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Om Farmers Prod.",
+        "type": "online seller",
+        "product": "basmati rice",
+        "state": "Assam",
+        "district": "Jorhat",
+        "taluk": "Jorhat Rural",
+        "phone": "+91-7954541994",
+        "email": "contact@omfarmers.com",
+        "website": "www.omfarmers.com",
+        "price": 4696.0,
+        "unit": "per bag (25kg)",
+        "source": "blinkit.com",
+        "year": 2013,
+        "gst": "17718560113356ZZ",
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Global Commodities",
+        "type": "online seller",
+        "product": "jaggery",
+        "state": "Uttar Pradesh",
+        "district": "Varanasi",
+        "taluk": "Varanasi Rural",
+        "phone": "+91-9667542030",
+        "email": "contact@globalcommodities.com",
+        "website": "www.globalcommodities.com",
+        "price": 4311.0,
+        "unit": "per quintal",
+        "source": "blinkit.com",
+        "year": 1990,
+        "gst": "11473020000093ZZ",
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Royal Trading Co.",
+        "type": "Online Seller",
+        "product": "Jaggery",
+        "state": "Assam",
+        "district": "Silchar",
+        "taluk": "Silchar Rural",
+        "phone": "+91-9532723768",
+        "email": "contact@royaltrading.com",
+        "website": "www.royaltrading.com",
+        "price": 4677,
+        "unit": "per quintal",
+        "source": "blinkit.com",
+        "year": 2019,
+        "gst": "17443969233180ZZ",
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Sri Industries",
+        "type": "online seller",
+        "product": "masoor dal",
+        "state": "West Bengal",
+        "district": "Siliguri",
+        "taluk": "Siliguri Rural",
+        "phone": "+91-7463537794",
+        "email": "contact@sriindustries.com",
+        "website": "www.sriindustries.com",
+        "price": 10932.0,
+        "unit": "per kg",
+        "source": "blinkit.com",
+        "year": 1990,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Bharat Supply Chain",
+        "type": "Online Seller",
+        "product": "Mustard Seeds",
+        "state": "Karnataka",
+        "district": "Mysuru",
+        "taluk": "Mysuru Rural",
+        "phone": "+91-9304008000",
+        "email": "contact@bharatsupply.com",
+        "website": "www.bharatsupply.com",
+        "price": 4461,
+        "unit": "per kg",
+        "source": "blinkit.com",
+        "year": 2019,
+        "gst": "13423768166421ZZ",
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Sai Exports",
+        "type": "Online Seller",
+        "product": "Raw Sugar",
+        "state": "Bihar",
+        "district": "Patna",
+        "taluk": "Patna Rural",
+        "phone": "+91-7850376402",
+        "email": "contact@saiexports.com",
+        "website": "www.saiexports.com",
+        "price": 4073,
+        "unit": "per quintal",
+        "source": "zepto.com",
+        "year": 2018,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Sri Traders",
+        "type": "online seller",
+        "product": "durum wheat",
+        "state": "Uttar Pradesh",
+        "district": "Kanpur",
+        "taluk": "Kanpur Rural",
+        "phone": "+91-7916214053",
+        "email": "contact@sritraders.com",
+        "website": "www.sritraders.com",
+        "price": 2371.0,
+        "unit": "per bag (25kg)",
+        "source": "zepto.com",
+        "year": 1999,
+        "gst": "14912364514384ZZ",
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Raj Enterprises",
+        "type": "online seller",
+        "product": "jowar",
+        "state": "Bihar",
+        "district": "Gaya",
+        "taluk": "Gaya Rural",
+        "phone": "+91-7440968892",
+        "email": "contact@rajenterprises.com",
+        "website": "www.rajenterprises.com",
+        "price": 2227.0,
+        "unit": "per quintal",
+        "source": "zepto.com",
+        "year": 2012,
+        "gst": "21276328408987ZZ",
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Ganesh Impex",
+        "type": "Online Seller",
+        "product": "Mustard Seeds",
+        "state": "Uttar Pradesh",
+        "district": "Varanasi",
+        "taluk": "Varanasi Rural",
+        "phone": "+91-8145459526",
+        "email": "contact@ganeshimpex.com",
+        "website": "www.ganeshimpex.com",
+        "price": 5219,
+        "unit": "per kg",
+        "source": "zepto.com",
+        "year": 2001,
+        "gst": "11330504162763ZZ",
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Kiran Enterprises",
+        "type": "Online Seller",
+        "product": "Sharbati Wheat",
+        "state": "Karnataka",
+        "district": "Mysuru",
+        "taluk": "Mysuru Rural",
+        "phone": "+91-7969654144",
+        "email": "contact@kiranenterprises.com",
+        "website": "www.kiranenterprises.com",
+        "price": 2301,
+        "unit": "per quintal",
+        "source": "zepto.com",
+        "year": 2004,
+        "gst": "27030742496846ZP",
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "National Market Yard",
+        "type": "Online Seller",
+        "product": "Urad Dal",
+        "state": "Odisha",
+        "district": "Sambalpur",
+        "taluk": "Sambalpur Rural",
+        "phone": "+91-9225890141",
+        "email": "contact@nationalmarket.com",
+        "website": "www.nationalmarket.com",
+        "price": 10848,
+        "unit": "per bag (50kg)",
+        "source": "zepto.com",
+        "year": 2018,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Sri Impex",
+        "type": "Online Seller",
+        "product": "Sesame",
+        "state": "Odisha",
+        "district": "Berhampur",
+        "taluk": "Berhampur Rural",
+        "phone": "+91-9769856707",
+        "email": "contact@sriimpex.com",
+        "website": "www.sriimpex.com",
+        "price": 5004,
+        "unit": "per quintal",
+        "source": "zepto.com",
+        "year": 2005,
+        "gst": "14816834514305ZP",
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Premier Farmers Prod.",
+        "type": "Online Seller",
+        "product": "Masoor Dal",
+        "state": "Maharashtra",
+        "district": "Mumbai",
+        "taluk": "Mumbai Rural",
+        "phone": "+91-9233818697",
+        "email": "contact@premierfarmers.com",
+        "website": "www.premierfarmers.com",
+        "price": 7055,
+        "unit": "per ton",
+        "source": "zepto.com",
+        "year": 2008,
+        "gst": "21034395114647ZZ",
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Bharat Corporation",
+        "type": "Online Seller",
+        "product": "Urad Dal",
+        "state": "Andhra Pradesh",
+        "district": "Hyderabad",
+        "taluk": "Hyderabad Rural",
+        "phone": "+91-9877027287",
+        "email": "contact@bharatcorporation.com",
+        "website": "www.bharatcorporation.com",
+        "price": 9096,
+        "unit": "per bag (50kg)",
+        "source": "swiggy.com",
+        "year": 2001,
+        "gst": "35690770338967ZP",
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Ganesh Trading Co.",
+        "type": "online seller",
+        "product": "chana dal",
+        "state": "Telangana",
+        "district": "Nizamabad",
+        "taluk": "Nizamabad Rural",
+        "phone": "+91-9989677746",
+        "email": "contact@ganeshtrading.com",
+        "website": "www.ganeshtrading.com",
+        "price": 7519.0,
+        "unit": "per bag (25kg)",
+        "source": "swiggy.com",
+        "year": 2006,
+        "gst": "35640110944925ZP",
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Raj Commodities",
+        "type": "Online Seller",
+        "product": "PBW Wheat",
+        "state": "Telangana",
+        "district": "Warangal",
+        "taluk": "Warangal Rural",
+        "phone": "+91-8616437132",
+        "email": "contact@rajcommodities.com",
+        "website": "www.rajcommodities.com",
+        "price": 2237,
+        "unit": "per bag (25kg)",
+        "source": "swiggy.com",
+        "year": 2003,
+        "gst": "19910049287085ZP",
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Bharat Trading Co.",
+        "type": "online seller",
+        "product": "groundnut",
+        "state": "Tamil Nadu",
+        "district": "Salem",
+        "taluk": "Salem Rural",
+        "phone": "+91-8417519269",
+        "email": "contact@bharattrading.com",
+        "website": "www.bharattrading.com",
+        "price": 5222.0,
+        "unit": "per quintal",
+        "source": "swiggy.com",
+        "year": 1983,
+        "gst": "21909776302497ZZ",
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Pacific Farmers Prod.",
+        "type": "online seller",
+        "product": "sunflower seeds",
+        "state": "Karnataka",
+        "district": "Mysuru",
+        "taluk": "Mysuru Rural",
+        "phone": "+91-8902080099",
+        "email": "contact@pacificfarmers.com",
+        "website": "www.pacificfarmers.com",
+        "price": 6977.0,
+        "unit": "per bag (25kg)",
+        "source": "swiggy.com",
+        "year": 1996,
+        "gst": "27828066859938ZZ",
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Shree Enterprises",
+        "type": "Online Seller",
+        "product": "Bajra",
+        "state": "West Bengal",
+        "district": "Kolkata",
+        "taluk": "Kolkata Rural",
+        "phone": "+91-8906332009",
+        "email": "contact@shreeenterprises.com",
+        "website": "www.shreeenterprises.com",
+        "price": 1834,
+        "unit": "per kg",
+        "source": "swiggy.com",
+        "year": 2019,
+        "gst": "27827022921626ZP",
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Indian Agro Foods",
+        "type": "online seller",
+        "product": "ponni rice",
+        "state": "Telangana",
+        "district": "Karimnagar",
+        "taluk": "Karimnagar Rural",
+        "phone": "+91-9683736858",
+        "email": "contact@indianagro.com",
+        "website": "www.indianagro.com",
+        "price": 5405.0,
+        "unit": "per ton",
+        "source": "swiggy.com",
+        "year": 1993,
+        "gst": "25894835325568ZZ",
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Global Trading Co.",
+        "type": "Online Seller",
+        "product": "Raw Sugar",
+        "state": "Bihar",
+        "district": "Gaya",
+        "taluk": "Gaya Rural",
+        "phone": "+91-7148038120",
+        "email": "contact@globaltrading.com",
+        "website": "www.globaltrading.com",
+        "price": 4014,
+        "unit": "per ton",
+        "source": "swiggy.com",
+        "year": 2019,
+        "gst": "17326666598895ZP",
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Sai Trading Co.",
+        "type": "online seller",
+        "product": "sunflower seeds",
+        "state": "Tamil Nadu",
+        "district": "Madurai",
+        "taluk": "Madurai Rural",
+        "phone": "+91-9199144434",
+        "email": "contact@saitrading.com",
+        "website": "www.saitrading.com",
+        "price": 7159.0,
+        "unit": "per ton",
+        "source": "reliancefresh.com",
+        "year": 2001,
+        "gst": "28457499570359ZP",
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Shree Agro Foods",
+        "type": "online seller",
+        "product": "maize",
+        "state": "Rajasthan",
+        "district": "Udaipur",
+        "taluk": "Udaipur Rural",
+        "phone": "+91-7490147076",
+        "email": "contact@shreeagro.com",
+        "website": "www.shreeagro.com",
+        "price": 3314.0,
+        "unit": "per ton",
+        "source": "reliancefresh.com",
+        "year": 2021,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Lakshmi Corporation",
+        "type": "Online Seller",
+        "product": "Lokwan Wheat",
+        "state": "Madhya Pradesh",
+        "district": "Ujjain",
+        "taluk": "Ujjain Rural",
+        "phone": "+91-8634374189",
+        "email": "contact@lakshmicorporation.com",
+        "website": "www.lakshmicorporation.com",
+        "price": 2082,
+        "unit": "per bag (25kg)",
+        "source": "reliancefresh.com",
+        "year": 2011,
+        "gst": "23854380508476ZP",
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Pacific Traders",
+        "type": "online seller",
+        "product": "sharbati wheat",
+        "state": "Madhya Pradesh",
+        "district": "Jabalpur",
+        "taluk": "Jabalpur Rural",
+        "phone": "+91-9716181540",
+        "email": "contact@pacifictraders.com",
+        "website": "www.pacifictraders.com",
+        "price": 2728.0,
+        "unit": "per bag (50kg)",
+        "source": "reliancefresh.com",
+        "year": 1993,
+        "gst": "27786003872722ZZ",
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Kiran Traders",
+        "type": "online seller",
+        "product": "durum wheat",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "taluk": "Ludhiana Rural",
+        "phone": "+91-8419654900",
+        "email": "contact@kirantraders.com",
+        "website": "www.kirantraders.com",
+        "price": 2778.0,
+        "unit": "per kg",
+        "source": "reliancefresh.com",
+        "year": 2002,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Sai Corporation",
+        "type": "Online Seller",
+        "product": "Durum Wheat",
+        "state": "Gujarat",
+        "district": "Vadodara",
+        "taluk": "Vadodara Rural",
+        "phone": "+91-9138924609",
+        "email": "contact@saicorporation.com",
+        "website": "www.saicorporation.com",
+        "price": 2458,
+        "unit": "per bag (25kg)",
+        "source": "reliancefresh.com",
+        "year": 1989,
+        "gst": "29818487979754ZP",
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Raj Enterprises",
+        "type": "Online Seller",
+        "product": "Brown Sugar",
+        "state": "Maharashtra",
+        "district": "Mumbai",
+        "taluk": "Mumbai Rural",
+        "phone": "+91-8688509395",
+        "email": "contact@rajenterprises.com",
+        "website": "www.rajenterprises.com",
+        "price": 3760,
+        "unit": "per ton",
+        "source": "reliancefresh.com",
+        "year": 1995,
+        "gst": "23213202758091ZZ",
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "National Supply Chain",
+        "type": "online seller",
+        "product": "bajra",
+        "state": "Odisha",
+        "district": "Sambalpur",
+        "taluk": "Sambalpur Rural",
+        "phone": "+91-7675644459",
+        "email": "contact@nationalsupply.com",
+        "website": "www.nationalsupply.com",
+        "price": 2395.0,
+        "unit": "per bag (25kg)",
+        "source": "more.com",
+        "year": 1999,
+        "gst": "14300715613501ZZ",
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Royal Supply Chain",
+        "type": "Online Seller",
+        "product": "Sesame",
+        "state": "Madhya Pradesh",
+        "district": "Jabalpur",
+        "taluk": "Jabalpur Rural",
+        "phone": "+91-8375160058",
+        "email": "contact@royalsupply.com",
+        "website": "www.royalsupply.com",
+        "price": 7029,
+        "unit": "per bag (25kg)",
+        "source": "more.com",
+        "year": 1993,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Bharat Agro Foods",
+        "type": "online seller",
+        "product": "refined sugar",
+        "state": "Odisha",
+        "district": "Rourkela",
+        "taluk": "Rourkela Rural",
+        "phone": "+91-8662318916",
+        "email": "contact@bharatagro.com",
+        "website": "www.bharatagro.com",
+        "price": 4585.0,
+        "unit": "per bag (25kg)",
+        "source": "more.com",
+        "year": 1987,
+        "gst": "13388517323370ZP",
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Shree Commodities",
+        "type": "online seller",
+        "product": "ragi",
+        "state": "Maharashtra",
+        "district": "Pune",
+        "taluk": "Pune Rural",
+        "phone": "+91-7762013993",
+        "email": "contact@shreecommodities.com",
+        "website": "www.shreecommodities.com",
+        "price": 3388.0,
+        "unit": "per bag (25kg)",
+        "source": "more.com",
+        "year": 2001,
+        "gst": "22636566215849ZP",
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Om Industries",
+        "type": "online seller",
+        "product": "sunflower seeds",
+        "state": "Bihar",
+        "district": "Muzaffarpur",
+        "taluk": "Muzaffarpur Rural",
+        "phone": "+91-9562118356",
+        "email": "contact@omindustries.com",
+        "website": "www.omindustries.com",
+        "price": 7578.0,
+        "unit": "per quintal",
+        "source": "more.com",
+        "year": 1981,
+        "gst": "17240269438681ZZ",
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Lakshmi Exports",
+        "type": "online seller",
+        "product": "non-basmati rice",
+        "state": "Rajasthan",
+        "district": "Kota",
+        "taluk": "Kota Rural",
+        "phone": "+91-9753678026",
+        "email": "contact@lakshmiexports.com",
+        "website": "www.lakshmiexports.com",
+        "price": 5041.0,
+        "unit": "per quintal",
+        "source": "more.com",
+        "year": 2013,
+        "gst": "19743197813826ZP",
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Indian Farmers Prod.",
+        "type": "Online Seller",
+        "product": "Non-Basmati Rice",
+        "state": "Karnataka",
+        "district": "Belagavi",
+        "taluk": "Belagavi Rural",
+        "phone": "+91-7683914412",
+        "email": "contact@indianfarmers.com",
+        "website": "www.indianfarmers.com",
+        "price": 3586,
+        "unit": "per kg",
+        "source": "more.com",
+        "year": 2001,
+        "gst": "23067616199789ZP",
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Sri Corporation",
+        "type": "online seller",
+        "product": "basmati rice",
+        "state": "Andhra Pradesh",
+        "district": "Tirupati",
+        "taluk": "Tirupati Rural",
+        "phone": "+91-7331761613",
+        "email": "contact@sricorporation.com",
+        "website": "www.sricorporation.com",
+        "price": 2627.0,
+        "unit": "per bag (50kg)",
+        "source": "spencers.in",
+        "year": 2008,
+        "gst": "18630855833723ZZ",
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "National Commodities",
+        "type": "online seller",
+        "product": "groundnut",
+        "state": "Andhra Pradesh",
+        "district": "Guntur",
+        "taluk": "Guntur Rural",
+        "phone": "+91-7370558510",
+        "email": "contact@nationalcommodities.com",
+        "website": "www.nationalcommodities.com",
+        "price": 6234.0,
+        "unit": "per bag (50kg)",
+        "source": "spencers.in",
+        "year": 2007,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "National Store House",
+        "type": "online seller",
+        "product": "raw sugar",
+        "state": "Haryana",
+        "district": "Gurgaon",
+        "taluk": "Gurgaon Rural",
+        "phone": "+91-8938328928",
+        "email": "contact@nationalstore.com",
+        "website": "www.nationalstore.com",
+        "price": 4126.0,
+        "unit": "per ton",
+        "source": "spencers.in",
+        "year": 2017,
+        "gst": "20736186966263ZZ",
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Hindustan Corporation",
+        "type": "Online Seller",
+        "product": "Ragi",
+        "state": "Telangana",
+        "district": "Karimnagar",
+        "taluk": "Karimnagar Rural",
+        "phone": "+91-8592779740",
+        "email": "contact@hindustancorporation.com",
+        "website": "www.hindustancorporation.com",
+        "price": 3462,
+        "unit": "per bag (25kg)",
+        "source": "walmart.com",
+        "year": 2017,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Sai Enterprises",
+        "type": "Online Seller",
+        "product": "Maize",
+        "state": "Punjab",
+        "district": "Amritsar",
+        "taluk": "Amritsar Rural",
+        "phone": "+91-8766547136",
+        "email": "contact@saienterprises.com",
+        "website": "www.saienterprises.com",
+        "price": 2324,
+        "unit": "per bag (25kg)",
+        "source": "walmart.com",
+        "year": 2021,
+        "gst": "13137871483846ZZ",
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Hindustan Agro Foods",
+        "type": "Online Seller",
+        "product": "Sona Masuri",
+        "state": "Uttar Pradesh",
+        "district": "Lucknow",
+        "taluk": "Lucknow Rural",
+        "phone": "+91-7902183150",
+        "email": "contact@hindustanagro.com",
+        "website": "www.hindustanagro.com",
+        "price": 3492,
+        "unit": "per ton",
+        "source": "walmart.com",
+        "year": 2009,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Lakshmi Traders",
+        "type": "online seller",
+        "product": "sesame",
+        "state": "Madhya Pradesh",
+        "district": "Jabalpur",
+        "taluk": "Jabalpur Rural",
+        "phone": "+91-8738883516",
+        "email": "contact@lakshmitraders.com",
+        "website": "www.lakshmitraders.com",
+        "price": 7239.0,
+        "unit": "per quintal",
+        "source": "walmart.com",
+        "year": 2001,
+        "gst": "15641751028970ZZ",
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Royal Exports",
+        "type": "Online Seller",
+        "product": "Brown Sugar",
+        "state": "Assam",
+        "district": "Silchar",
+        "taluk": "Silchar Rural",
+        "phone": "+91-9604684848",
+        "email": "contact@royalexports.com",
+        "website": "www.royalexports.com",
+        "price": 4093,
+        "unit": "per bag (50kg)",
+        "source": "walmart.com",
+        "year": 2011,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Kiran Farmers Prod.",
+        "type": "online seller",
+        "product": "maize",
+        "state": "Tamil Nadu",
+        "district": "Tiruchirappalli",
+        "taluk": "Tiruchirappalli Rural",
+        "phone": "+91-7183107328",
+        "email": "contact@kiranfarmers.com",
+        "website": "www.kiranfarmers.com",
+        "price": 2500.0,
+        "unit": "per kg",
+        "source": "walmart.com",
+        "year": 2006,
+        "gst": "11042367766053ZP",
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Indian Market Yard",
+        "type": "Online Seller",
+        "product": "Durum Wheat",
+        "state": "Rajasthan",
+        "district": "Kota",
+        "taluk": "Kota Rural",
+        "phone": "+91-8677593479",
+        "email": "contact@indianmarket.com",
+        "website": "www.indianmarket.com",
+        "price": 2344,
+        "unit": "per kg",
+        "source": "walmart.com",
+        "year": 2004,
+        "gst": "18246551692754ZP",
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Lakshmi Farmers Prod.",
+        "type": "online seller",
+        "product": "soybean",
+        "state": "Karnataka",
+        "district": "Belagavi",
+        "taluk": "Belagavi Rural",
+        "phone": "+91-7373334905",
+        "email": "contact@lakshmifarmers.com",
+        "website": "www.lakshmifarmers.com",
+        "price": 5295.0,
+        "unit": "per ton",
+        "source": "walmart.com",
+        "year": 2017,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Kiran Commodities",
+        "type": "Online Seller",
+        "product": "Urad Dal",
+        "state": "Odisha",
+        "district": "Berhampur",
+        "taluk": "Berhampur Rural",
+        "phone": "+91-8634081888",
+        "email": "contact@kirancommodities.com",
+        "website": "www.kirancommodities.com",
+        "price": 5534,
+        "unit": "per quintal",
+        "source": "walmart.com",
+        "year": 1999,
+        "gst": "25407155330771ZZ",
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Global Impex",
+        "type": "online seller",
+        "product": "sharbati wheat",
+        "state": "Tamil Nadu",
+        "district": "Coimbatore",
+        "taluk": "Coimbatore Rural",
+        "phone": "+91-7925879708",
+        "email": "contact@globalimpex.com",
+        "website": "www.globalimpex.com",
+        "price": 2476.0,
+        "unit": "per quintal",
+        "source": "walmart.com",
+        "year": 2023,
+        "gst": "10234375049088ZP",
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Premier Store House",
+        "type": "online seller",
+        "product": "masoor dal",
+        "state": "Karnataka",
+        "district": "Mangaluru",
+        "taluk": "Mangaluru Rural",
+        "phone": "+91-8748043118",
+        "email": "contact@premierstore.com",
+        "website": "www.premierstore.com",
+        "price": 11658.0,
+        "unit": "per ton",
+        "source": "walmart.com",
+        "year": 2006,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Indian Supply Chain",
+        "type": "Online Seller",
+        "product": "Urad Dal",
+        "state": "Madhya Pradesh",
+        "district": "Indore",
+        "taluk": "Indore Rural",
+        "phone": "+91-9809482707",
+        "email": "contact@indiansupply.com",
+        "website": "www.indiansupply.com",
+        "price": 5615,
+        "unit": "per bag (50kg)",
+        "source": "costco.com",
+        "year": 2020,
+        "gst": "10517736126794ZZ",
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Bharat Agro Foods",
+        "type": "online seller",
+        "product": "bajra",
+        "state": "Andhra Pradesh",
+        "district": "Visakhapatnam",
+        "taluk": "Visakhapatnam Rural",
+        "phone": "+91-8142161361",
+        "email": "contact@bharatagro.com",
+        "website": "www.bharatagro.com",
+        "price": 1947.0,
+        "unit": "per bag (25kg)",
+        "source": "costco.com",
+        "year": 1995,
+        "gst": "33867952183808ZZ",
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "National Industries",
+        "type": "online seller",
+        "product": "ponni rice",
+        "state": "Karnataka",
+        "district": "Mangaluru",
+        "taluk": "Mangaluru Rural",
+        "phone": "+91-7199203417",
+        "email": "contact@nationalindustries.com",
+        "website": "www.nationalindustries.com",
+        "price": 5464.0,
+        "unit": "per quintal",
+        "source": "costco.com",
+        "year": 2019,
+        "gst": "27181547808508ZZ",
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Sri Supply Chain",
+        "type": "Online Seller",
+        "product": "Maize",
+        "state": "Telangana",
+        "district": "Nizamabad",
+        "taluk": "Nizamabad Rural",
+        "phone": "+91-7969330512",
+        "email": "contact@srisupply.com",
+        "website": "www.srisupply.com",
+        "price": 2440,
+        "unit": "per bag (25kg)",
+        "source": "costco.com",
+        "year": 1985,
+        "gst": "19142972689654ZP",
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Om Commodities",
+        "type": "online seller",
+        "product": "durum wheat",
+        "state": "West Bengal",
+        "district": "Kolkata",
+        "taluk": "Kolkata Rural",
+        "phone": "+91-9793841063",
+        "email": "contact@omcommodities.com",
+        "website": "www.omcommodities.com",
+        "price": 2620.0,
+        "unit": "per kg",
+        "source": "costco.com",
+        "year": 1989,
+        "gst": "27254885645763ZZ",
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Lakshmi Market Yard",
+        "type": "online seller",
+        "product": "brown sugar",
+        "state": "Uttar Pradesh",
+        "district": "Lucknow",
+        "taluk": "Lucknow Rural",
+        "phone": "+91-7383663388",
+        "email": "contact@lakshmimarket.com",
+        "website": "www.lakshmimarket.com",
+        "price": 4676.0,
+        "unit": "per ton",
+        "source": "costco.com",
+        "year": 2020,
+        "gst": "13346788785781ZP",
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Om Exports",
+        "type": "online seller",
+        "product": "basmati rice",
+        "state": "Kerala",
+        "district": "Kochi",
+        "taluk": "Kochi Rural",
+        "phone": "+91-8495619844",
+        "email": "contact@omexports.com",
+        "website": "www.omexports.com",
+        "price": 3354.0,
+        "unit": "per bag (50kg)",
+        "source": "costco.com",
+        "year": 2017,
+        "gst": "33339733202386ZZ",
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "National Market Yard",
+        "type": "Online Seller",
+        "product": "Soybean",
+        "state": "Andhra Pradesh",
+        "district": "Hyderabad",
+        "taluk": "Hyderabad Rural",
+        "phone": "+91-9559954405",
+        "email": "contact@nationalmarket.com",
+        "website": "www.nationalmarket.com",
+        "price": 4331,
+        "unit": "per quintal",
+        "source": "costco.com",
+        "year": 2007,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Om Traders",
+        "type": "online seller",
+        "product": "sona masuri",
+        "state": "Gujarat",
+        "district": "Surat",
+        "taluk": "Surat Rural",
+        "phone": "+91-8646024841",
+        "email": "contact@omtraders.com",
+        "website": "www.omtraders.com",
+        "price": 3989.0,
+        "unit": "per bag (50kg)",
+        "source": "carrefour.com",
+        "year": 2021,
+        "gst": "33586424631301ZZ",
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Royal Enterprises",
+        "type": "Online Seller",
+        "product": "Sona Masuri",
+        "state": "Uttar Pradesh",
+        "district": "Meerut",
+        "taluk": "Meerut Rural",
+        "phone": "+91-8818537737",
+        "email": "contact@royalenterprises.com",
+        "website": "www.royalenterprises.com",
+        "price": 2990,
+        "unit": "per ton",
+        "source": "carrefour.com",
+        "year": 2022,
+        "gst": "29591497946935ZP",
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Kiran Exports",
+        "type": "Online Seller",
+        "product": "Bajra",
+        "state": "Gujarat",
+        "district": "Ahmedabad",
+        "taluk": "Ahmedabad Rural",
+        "phone": "+91-8690499208",
+        "email": "contact@kiranexports.com",
+        "website": "www.kiranexports.com",
+        "price": 3316,
+        "unit": "per bag (25kg)",
+        "source": "carrefour.com",
+        "year": 2013,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Indian Exports",
+        "type": "online seller",
+        "product": "pbw wheat",
+        "state": "Punjab",
+        "district": "Patiala",
+        "taluk": "Patiala Rural",
+        "phone": "+91-9115884243",
+        "email": "contact@indianexports.com",
+        "website": "www.indianexports.com",
+        "price": 2048.0,
+        "unit": "per bag (50kg)",
+        "source": "carrefour.com",
+        "year": 1998,
+        "gst": "31766508527998ZZ",
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Shree Agro Foods",
+        "type": "online seller",
+        "product": "foxtail millet",
+        "state": "Andhra Pradesh",
+        "district": "Visakhapatnam",
+        "taluk": "Visakhapatnam Rural",
+        "phone": "+91-8951771678",
+        "email": "contact@shreeagro.com",
+        "website": "www.shreeagro.com",
+        "price": 2320.0,
+        "unit": "per quintal",
+        "source": "carrefour.com",
+        "year": 1986,
+        "gst": "34805354213569ZZ",
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Bharat Impex",
+        "type": "online seller",
+        "product": "ragi",
+        "state": "Haryana",
+        "district": "Faridabad",
+        "taluk": "Faridabad Rural",
+        "phone": "+91-7377227150",
+        "email": "contact@bharatimpex.com",
+        "website": "www.bharatimpex.com",
+        "price": 3088.0,
+        "unit": "per bag (50kg)",
+        "source": "tesco.com",
+        "year": 2019,
+        "gst": "30348753120579ZZ",
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Royal Trading Co.",
+        "type": "Online Seller",
+        "product": "Ponni Rice",
+        "state": "Gujarat",
+        "district": "Surat",
+        "taluk": "Surat Rural",
+        "phone": "+91-7556590375",
+        "email": "contact@royaltrading.com",
+        "website": "www.royaltrading.com",
+        "price": 3249,
+        "unit": "per kg",
+        "source": "tesco.com",
+        "year": 1981,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Kiran Agri Business",
+        "type": "Online Seller",
+        "product": "Durum Wheat",
+        "state": "Andhra Pradesh",
+        "district": "Vijayawada",
+        "taluk": "Vijayawada Rural",
+        "phone": "+91-7903857173",
+        "email": "contact@kiranagri.com",
+        "website": "www.kiranagri.com",
+        "price": 2089,
+        "unit": "per bag (50kg)",
+        "source": "tesco.com",
+        "year": 1987,
+        "gst": "24893843052467ZP",
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "National Exports",
+        "type": "online seller",
+        "product": "urad dal",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "taluk": "Ludhiana Rural",
+        "phone": "+91-9609905807",
+        "email": "contact@nationalexports.com",
+        "website": "www.nationalexports.com",
+        "price": 8147.0,
+        "unit": "per bag (50kg)",
+        "source": "tesco.com",
+        "year": 1994,
+        "gst": "22986775892715ZP",
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "National Exports",
+        "type": "Online Seller",
+        "product": "Jaggery",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "taluk": "Ludhiana Rural",
+        "phone": "+91-7383046755",
+        "email": "contact@nationalexports.com",
+        "website": "www.nationalexports.com",
+        "price": 3705,
+        "unit": "per bag (25kg)",
+        "source": "tesco.com",
+        "year": 2021,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "National Trading Co.",
+        "type": "online seller",
+        "product": "sona masuri",
+        "state": "Rajasthan",
+        "district": "Kota",
+        "taluk": "Kota Rural",
+        "phone": "+91-9471430060",
+        "email": "contact@nationaltrading.com",
+        "website": "www.nationaltrading.com",
+        "price": 2572.0,
+        "unit": "per quintal",
+        "source": "alibaba.com",
+        "year": 1987,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Raj Exports",
+        "type": "online seller",
+        "product": "masoor dal",
+        "state": "West Bengal",
+        "district": "Siliguri",
+        "taluk": "Siliguri Rural",
+        "phone": "+91-9596650202",
+        "email": "contact@rajexports.com",
+        "website": "www.rajexports.com",
+        "price": 6615.0,
+        "unit": "per ton",
+        "source": "alibaba.com",
+        "year": 1982,
+        "gst": "23102639029177ZP",
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Shree Commodities",
+        "type": "Online Seller",
+        "product": "Bajra",
+        "state": "Karnataka",
+        "district": "Hubballi",
+        "taluk": "Hubballi Rural",
+        "phone": "+91-7597132356",
+        "email": "contact@shreecommodities.com",
+        "website": "www.shreecommodities.com",
+        "price": 2800,
+        "unit": "per kg",
+        "source": "alibaba.com",
+        "year": 2000,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Sai Corporation",
+        "type": "Online Seller",
+        "product": "Jowar",
+        "state": "Bihar",
+        "district": "Gaya",
+        "taluk": "Gaya Rural",
+        "phone": "+91-9454000265",
+        "email": "contact@saicorporation.com",
+        "website": "www.saicorporation.com",
+        "price": 2168,
+        "unit": "per ton",
+        "source": "alibaba.com",
+        "year": 2008,
+        "gst": "16113880763152ZZ",
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Pacific Traders",
+        "type": "Online Seller",
+        "product": "Refined Sugar",
+        "state": "Maharashtra",
+        "district": "Mumbai",
+        "taluk": "Mumbai Rural",
+        "phone": "+91-7546764470",
+        "email": "contact@pacifictraders.com",
+        "website": "www.pacifictraders.com",
+        "price": 4488,
+        "unit": "per bag (50kg)",
+        "source": "alibaba.com",
+        "year": 2009,
+        "gst": "15629974132301ZP",
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Royal Commodities",
+        "type": "Online Seller",
+        "product": "Lokwan Wheat",
+        "state": "Maharashtra",
+        "district": "Nashik",
+        "taluk": "Nashik Rural",
+        "phone": "+91-7224919214",
+        "email": "contact@royalcommodities.com",
+        "website": "www.royalcommodities.com",
+        "price": 2431,
+        "unit": "per quintal",
+        "source": "alibaba.com",
+        "year": 2018,
+        "gst": "30522943747519ZZ",
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Om Enterprises",
+        "type": "online seller",
+        "product": "sunflower seeds",
+        "state": "Gujarat",
+        "district": "Anand",
+        "taluk": "Anand Rural",
+        "phone": "+91-7804893105",
+        "email": "contact@omenterprises.com",
+        "website": "www.omenterprises.com",
+        "price": 7112.0,
+        "unit": "per kg",
+        "source": "amazon.com",
+        "year": 2000,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Sri Trading Co.",
+        "type": "Online Seller",
+        "product": "Sona Masuri",
+        "state": "Kerala",
+        "district": "Kozhikode",
+        "taluk": "Kozhikode Rural",
+        "phone": "+91-8135921703",
+        "email": "contact@sritrading.com",
+        "website": "www.sritrading.com",
+        "price": 4226,
+        "unit": "per bag (50kg)",
+        "source": "amazon.com",
+        "year": 1987,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Kiran Enterprises",
+        "type": "Online Seller",
+        "product": "Moong Dal",
+        "state": "Kerala",
+        "district": "Thrissur",
+        "taluk": "Thrissur Rural",
+        "phone": "+91-7232719198",
+        "email": "contact@kiranenterprises.com",
+        "website": "www.kiranenterprises.com",
+        "price": 7920,
+        "unit": "per bag (25kg)",
+        "source": "amazon.com",
+        "year": 2002,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Om Traders",
+        "type": "Online Seller",
+        "product": "Refined Sugar",
+        "state": "Tamil Nadu",
+        "district": "Chennai",
+        "taluk": "Chennai Rural",
+        "phone": "+91-7159835138",
+        "email": "contact@omtraders.com",
+        "website": "www.omtraders.com",
+        "price": 3530,
+        "unit": "per kg",
+        "source": "amazon.com",
+        "year": 2002,
+        "gst": "29008272432097ZP",
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Shree Exports",
+        "type": "online seller",
+        "product": "jaggery",
+        "state": "Andhra Pradesh",
+        "district": "Visakhapatnam",
+        "taluk": "Visakhapatnam Rural",
+        "phone": "+91-8335879428",
+        "email": "contact@shreeexports.com",
+        "website": "www.shreeexports.com",
+        "price": 3596.0,
+        "unit": "per kg",
+        "source": "amazon.com",
+        "year": 1990,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Sai Impex",
+        "type": "Online Seller",
+        "product": "Sharbati Wheat",
+        "state": "Odisha",
+        "district": "Berhampur",
+        "taluk": "Berhampur Rural",
+        "phone": "+91-9759518441",
+        "email": "contact@saiimpex.com",
+        "website": "www.saiimpex.com",
+        "price": 2541,
+        "unit": "per bag (25kg)",
+        "source": "amazon.com",
+        "year": 1994,
+        "gst": "18049025509123ZZ",
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Kiran Traders",
+        "type": "Online Seller",
+        "product": "Ponni Rice",
+        "state": "Telangana",
+        "district": "Karimnagar",
+        "taluk": "Karimnagar Rural",
+        "phone": "+91-9164908432",
+        "email": "contact@kirantraders.com",
+        "website": "www.kirantraders.com",
+        "price": 5467,
+        "unit": "per quintal",
+        "source": "amazon.com",
+        "year": 2004,
+        "gst": "12065388421038ZZ",
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Sri Supply Chain",
+        "type": "Online Seller",
+        "product": "Basmati Rice",
+        "state": "Haryana",
+        "district": "Karnal",
+        "taluk": "Karnal Rural",
+        "phone": "+91-7727038495",
+        "email": "contact@srisupply.com",
+        "website": "www.srisupply.com",
+        "price": 3814,
+        "unit": "per ton",
+        "source": "amazon.com",
+        "year": 1993,
+        "gst": "12926847349335ZZ",
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Global Trading Co.",
+        "type": "Online Seller",
+        "product": "Non-Basmati Rice",
+        "state": "Kerala",
+        "district": "Kozhikode",
+        "taluk": "Kozhikode Rural",
+        "phone": "+91-7927033525",
+        "email": "contact@globaltrading.com",
+        "website": "www.globaltrading.com",
+        "price": 2540,
+        "unit": "per ton",
+        "source": "amazon.com",
+        "year": 2020,
+        "gst": "21820005087855ZP",
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Premier Supply Chain",
+        "type": "online seller",
+        "product": "raw sugar",
+        "state": "Karnataka",
+        "district": "Mangaluru",
+        "taluk": "Mangaluru Rural",
+        "phone": "+91-8869263914",
+        "email": "contact@premiersupply.com",
+        "website": "www.premiersupply.com",
+        "price": 3476.0,
+        "unit": "per kg",
+        "source": "amazon.com",
+        "year": 1995,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Pacific Farmers Prod.",
+        "type": "Online Seller",
+        "product": "Ponni Rice",
+        "state": "Andhra Pradesh",
+        "district": "Hyderabad",
+        "taluk": "Hyderabad Rural",
+        "phone": "+91-8164950025",
+        "email": "contact@pacificfarmers.com",
+        "website": "www.pacificfarmers.com",
+        "price": 3267,
+        "unit": "per quintal",
+        "source": "amazon.com",
+        "year": 1985,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Om Impex",
+        "type": "online seller",
+        "product": "non-basmati rice",
+        "state": "Uttar Pradesh",
+        "district": "Agra",
+        "taluk": "Agra Rural",
+        "phone": "+91-7818295783",
+        "email": "contact@omimpex.com",
+        "website": "www.omimpex.com",
+        "price": 3626.0,
+        "unit": "per ton",
+        "source": "amazon.com",
+        "year": 1997,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Pacific Agri Business",
+        "type": "Online Seller",
+        "product": "Maize",
+        "state": "Uttar Pradesh",
+        "district": "Agra",
+        "taluk": "Agra Rural",
+        "phone": "+91-8746316171",
+        "email": "contact@pacificagri.com",
+        "website": "www.pacificagri.com",
+        "price": 1661,
+        "unit": "per bag (50kg)",
+        "source": "amazon.com",
+        "year": 2004,
+        "gst": "10068603921009ZP",
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Lakshmi Store House",
+        "type": "online seller",
+        "product": "groundnut",
+        "state": "Kerala",
+        "district": "Thiruvananthapuram",
+        "taluk": "Thiruvananthapuram Rural",
+        "phone": "+91-7914148305",
+        "email": "contact@lakshmistore.com",
+        "website": "www.lakshmistore.com",
+        "price": 5757.0,
+        "unit": "per bag (50kg)",
+        "source": "amazon.com",
+        "year": 2005,
+        "gst": "33103025319482ZP",
+        "confidence": 0.8,
+        "entity_type": "online seller"
+      },
+      {
+        "name": "Raj Market Yard",
+        "type": "Online Seller",
+        "product": "Foxtail Millet",
+        "state": "Odisha",
+        "district": "Bhubaneswar",
+        "taluk": "Bhubaneswar Rural",
+        "phone": "+91-7795213189",
+        "email": "contact@rajmarket.com",
+        "website": "www.rajmarket.com",
+        "price": 2978,
+        "unit": "per bag (25kg)",
+        "source": "amazon.com",
+        "year": 1989,
+        "gst": "15223063777836ZZ",
+        "confidence": 0.8,
+        "entity_type": "Online Seller"
+      },
+      {
+        "name": "Sai Agro Foods",
+        "type": "Marine Exporter",
+        "product": "Refined Sugar",
+        "state": "Maharashtra",
+        "district": "Nashik",
+        "taluk": "Nashik Rural",
+        "phone": "+91-8253915037",
+        "email": "contact@saiagro.com",
+        "website": "www.saiagro.com",
+        "price": 3297,
+        "unit": "per quintal",
+        "source": "seafood_export",
+        "year": 2018,
+        "gst": "25863598600840ZZ",
+        "confidence": 0.8,
+        "entity_type": "Marine Exporter"
+      },
+      {
+        "name": "Sri Agro Foods",
+        "type": "Marine Exporter",
+        "product": "Jowar",
+        "state": "Karnataka",
+        "district": "Hubballi",
+        "taluk": "Hubballi Rural",
+        "phone": "+91-7139904510",
+        "email": "contact@sriagro.com",
+        "website": "www.sriagro.com",
+        "price": 2242,
+        "unit": "per bag (50kg)",
+        "source": "seafood_export",
+        "year": 2006,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "Marine Exporter"
+      },
+      {
+        "name": "Royal Trading Co.",
+        "type": "marine exporter",
+        "product": "basmati rice",
+        "state": "Andhra Pradesh",
+        "district": "Vijayawada",
+        "taluk": "Vijayawada Rural",
+        "phone": "+91-8556908789",
+        "email": "contact@royaltrading.com",
+        "website": "www.royaltrading.com",
+        "price": 3826.0,
+        "unit": "per bag (25kg)",
+        "source": "seafood_export",
+        "year": 2020,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "marine exporter"
+      },
+      {
+        "name": "Shree Farmers Prod.",
+        "type": "marine exporter",
+        "product": "jaggery",
+        "state": "Uttar Pradesh",
+        "district": "Agra",
+        "taluk": "Agra Rural",
+        "phone": "+91-9827627424",
+        "email": "contact@shreefarmers.com",
+        "website": "www.shreefarmers.com",
+        "price": 4666.0,
+        "unit": "per kg",
+        "source": "seafood_export",
+        "year": 2007,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "marine exporter"
+      },
+      {
+        "name": "Bharat Traders",
+        "type": "Marine Exporter",
+        "product": "Sona Masuri",
+        "state": "Andhra Pradesh",
+        "district": "Guntur",
+        "taluk": "Guntur Rural",
+        "phone": "+91-9264303041",
+        "email": "contact@bharattraders.com",
+        "website": "www.bharattraders.com",
+        "price": 4502,
+        "unit": "per bag (50kg)",
+        "source": "seafood_export",
+        "year": 1996,
+        "gst": "25126919869153ZZ",
+        "confidence": 0.8,
+        "entity_type": "Marine Exporter"
+      },
+      {
+        "name": "National Store House",
+        "type": "Corporate Farm",
+        "product": "PBW Wheat",
+        "state": "Karnataka",
+        "district": "Hubballi",
+        "taluk": "Hubballi Rural",
+        "phone": "+91-7813546540",
+        "email": "contact@nationalstore.com",
+        "website": "www.nationalstore.com",
+        "price": 2501,
+        "unit": "per bag (50kg)",
+        "source": "corporate_farm",
+        "year": 2020,
+        "gst": "23285982981032ZZ",
+        "confidence": 0.8,
+        "entity_type": "Corporate Farm"
+      },
+      {
+        "name": "Sri Commodities",
+        "type": "Corporate Farm",
+        "product": "Ponni Rice",
+        "state": "Haryana",
+        "district": "Ambala",
+        "taluk": "Ambala Rural",
+        "phone": "+91-7651627683",
+        "email": "contact@sricommodities.com",
+        "website": "www.sricommodities.com",
+        "price": 3632,
+        "unit": "per bag (50kg)",
+        "source": "corporate_farm",
+        "year": 2023,
+        "gst": "18931150804322ZZ",
+        "confidence": 0.8,
+        "entity_type": "Corporate Farm"
+      },
+      {
+        "name": "Indian Trading Co.",
+        "type": "Corporate Farm",
+        "product": "Raw Sugar",
+        "state": "Madhya Pradesh",
+        "district": "Jabalpur",
+        "taluk": "Jabalpur Rural",
+        "phone": "+91-8605586636",
+        "email": "contact@indiantrading.com",
+        "website": "www.indiantrading.com",
+        "price": 3632,
+        "unit": "per quintal",
+        "source": "corporate_farm",
+        "year": 2017,
+        "gst": "22931007493359ZZ",
+        "confidence": 0.8,
+        "entity_type": "Corporate Farm"
+      },
+      {
+        "name": "Royal Industries",
+        "type": "marine farm",
+        "product": "mustard seeds",
+        "state": "Karnataka",
+        "district": "Mysuru",
+        "taluk": "Mysuru Rural",
+        "phone": "+91-8495721388",
+        "email": "contact@royalindustries.com",
+        "website": "www.royalindustries.com",
+        "price": 4111.0,
+        "unit": "per ton",
+        "source": "marine_harvest",
+        "year": 2010,
+        "gst": "31772545572458ZP",
+        "confidence": 0.8,
+        "entity_type": "marine farm"
+      },
+      {
+        "name": "Lakshmi Agri Business",
+        "type": "marine farm",
+        "product": "moong dal",
+        "state": "Odisha",
+        "district": "Bhubaneswar",
+        "taluk": "Bhubaneswar Rural",
+        "phone": "+91-7444626257",
+        "email": "contact@lakshmiagri.com",
+        "website": "www.lakshmiagri.com",
+        "price": 7280.0,
+        "unit": "per kg",
+        "source": "marine_harvest",
+        "year": 1980,
+        "gst": "30855237043866ZP",
+        "confidence": 0.8,
+        "entity_type": "marine farm"
+      },
+      {
+        "name": "National Trading Co.",
+        "type": "Marine Farm",
+        "product": "Refined Sugar",
+        "state": "Odisha",
+        "district": "Bhubaneswar",
+        "taluk": "Bhubaneswar Rural",
+        "phone": "+91-7407599911",
+        "email": "contact@nationaltrading.com",
+        "website": "www.nationaltrading.com",
+        "price": 3321,
+        "unit": "per kg",
+        "source": "marine_harvest",
+        "year": 2007,
+        "gst": null,
+        "confidence": 0.8,
+        "entity_type": "Marine Farm"
+      },
+      {
+        "name": "National Corporation",
+        "type": "marine farm",
+        "product": "ponni rice",
+        "state": "Karnataka",
+        "district": "Bengaluru",
+        "taluk": "Bengaluru Rural",
+        "phone": "+91-7747018780",
+        "email": "contact@nationalcorporation.com",
+        "website": "www.nationalcorporation.com",
+        "price": 3325.0,
+        "unit": "per kg",
+        "source": "marine_harvest",
+        "year": 1992,
+        "gst": "17543196255581ZP",
+        "confidence": 0.8,
+        "entity_type": "marine farm"
+      },
+      {
+        "name": "Global Commodities",
+        "type": "Marine Farm",
+        "product": "Brown Sugar",
+        "state": "Assam",
+        "district": "Jorhat",
+        "taluk": "Jorhat Rural",
+        "phone": "+91-8745777719",
+        "email": "contact@globalcommodities.com",
+        "website": "www.globalcommodities.com",
+        "price": 4585,
+        "unit": "per bag (50kg)",
+        "source": "marine_harvest",
+        "year": 2015,
+        "gst": "31910930837833ZP",
+        "confidence": 0.8,
+        "entity_type": "Marine Farm"
+      },
+      {
+        "name": "Hindustan Agri Business",
+        "type": "marine farm",
+        "product": "basmati rice",
+        "state": "Odisha",
+        "district": "Cuttack",
+        "taluk": "Cuttack Rural",
+        "phone": "+91-8803612273",
+        "email": "contact@hindustanagri.com",
+        "website": "www.hindustanagri.com",
+        "price": 4507.0,
+        "unit": "per bag (50kg)",
+        "source": "marine_harvest",
+        "year": 1983,
+        "gst": "20952086625162ZP",
+        "confidence": 0.8,
+        "entity_type": "marine farm"
+      },
+      {
+        "name": "Sri Traders",
+        "type": "Marine Farm",
+        "product": "Jaggery",
+        "state": "Haryana",
+        "district": "Panipat",
+        "taluk": "Panipat Rural",
+        "phone": "+91-7172699750",
+        "email": "contact@sritraders.com",
+        "website": "www.sritraders.com",
+        "price": 3891,
+        "unit": "per bag (25kg)",
+        "source": "marine_harvest",
+        "year": 1995,
+        "gst": "15516639721778ZZ",
+        "confidence": 0.8,
+        "entity_type": "Marine Farm"
+      }
+    ],
+    "stats": {
+      "total": 194
+    }
+  }
+}

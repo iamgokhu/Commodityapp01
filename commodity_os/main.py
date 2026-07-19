@@ -7,7 +7,6 @@ Main entrypoint that orchestrates the full pipeline:
 import asyncio
 import json
 import logging
-import shutil
 import sys
 import time
 from pathlib import Path
@@ -154,18 +153,6 @@ class CommodityOS:
                 # Run the full collection pipeline via integration layer
                 summary = await self.integration.run_collection_cycle()
                 logger.info(f"Cycle {self._cycle_count} summary: {json.dumps(summary, indent=2, default=str)}")
-
-                # Copy output to docs for GitHub Pages
-                src_html = OUTPUT_DIR / "dashboard.html"
-                if src_html.exists():
-                    shutil.copy2(src_html, DOCS_DIR / "index.html")
-                    logger.info("Dashboard copied to docs/")
-
-                # Copy data to docs
-                entities_file = OUTPUT_DIR / "all_entities.json"
-                if entities_file.exists():
-                    shutil.copy2(entities_file, DOCS_DIR / "data.json")
-                    logger.info("Data copied to docs/data.json")
 
                 # Publish to GitHub
                 if self.config.get("auto_publish", True):
