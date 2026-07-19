@@ -1,0 +1,224 @@
+{
+  "cycle": 0,
+  "raw_entities": 209,
+  "pipeline_output": 119,
+  "pipeline_stages": [
+    {
+      "stage_name": "validation",
+      "input_count": 209,
+      "output_count": 209,
+      "errors": 0,
+      "skipped": 0,
+      "processing_time_ms": 1.3930000131949782,
+      "error_details": []
+    },
+    {
+      "stage_name": "deduplication",
+      "input_count": 209,
+      "output_count": 119,
+      "errors": 0,
+      "skipped": 90,
+      "processing_time_ms": 1587.8730000113137,
+      "error_details": []
+    },
+    {
+      "stage_name": "cleaning",
+      "input_count": 119,
+      "output_count": 119,
+      "errors": 0,
+      "skipped": 0,
+      "processing_time_ms": 4.3178999912925065,
+      "error_details": []
+    },
+    {
+      "stage_name": "normalization",
+      "input_count": 119,
+      "output_count": 119,
+      "errors": 0,
+      "skipped": 0,
+      "processing_time_ms": 0.3782999701797962,
+      "error_details": []
+    },
+    {
+      "stage_name": "translation",
+      "input_count": 119,
+      "output_count": 119,
+      "errors": 0,
+      "skipped": 0,
+      "processing_time_ms": 0.9130999678745866,
+      "error_details": []
+    },
+    {
+      "stage_name": "entity_recognition",
+      "input_count": 119,
+      "output_count": 119,
+      "errors": 0,
+      "skipped": 0,
+      "processing_time_ms": 0.45849999878555536,
+      "error_details": []
+    },
+    {
+      "stage_name": "commodity_classification",
+      "input_count": 119,
+      "output_count": 119,
+      "errors": 0,
+      "skipped": 0,
+      "processing_time_ms": 1.7716999864205718,
+      "error_details": []
+    },
+    {
+      "stage_name": "sector_classification",
+      "input_count": 119,
+      "output_count": 119,
+      "errors": 0,
+      "skipped": 0,
+      "processing_time_ms": 1.1127999750897288,
+      "error_details": []
+    }
+  ],
+  "graph_stats": {
+    "total_nodes": 256,
+    "total_edges": 410,
+    "entity_count": 140,
+    "commodity_count": 27,
+    "geography_count": 89,
+    "relationship_counts": {
+      "SUPPLIES": 205,
+      "LOCATED_IN": 205
+    },
+    "is_dag": true,
+    "num_connected_components": 79
+  },
+  "crawler_stats": {
+    "indiamart.com_30cdcd63": {
+      "entities_collected": 3,
+      "status": "success"
+    },
+    "tradeindia.com_1ab9a7f2": {
+      "entities_collected": 4,
+      "status": "success"
+    },
+    "agmarknet.gov.in_41ab7846": {
+      "entities_collected": 12,
+      "status": "success"
+    },
+    "apmc_market_cfed6d52": {
+      "entities_collected": 2,
+      "status": "success"
+    },
+    "export_directory_52044883": {
+      "entities_collected": 6,
+      "status": "success"
+    },
+    "amazon.in_03abaf37": {
+      "entities_collected": 11,
+      "status": "success"
+    },
+    "flipkart.com_bbe1cdf4": {
+      "entities_collected": 4,
+      "status": "success"
+    },
+    "data.gov.in_ad16a26f": {
+      "entities_collected": 17,
+      "status": "success"
+    },
+    "linkedin.com_33cdae85": {
+      "entities_collected": 3,
+      "status": "success"
+    },
+    "commodity_news_9b5b8000": {
+      "entities_collected": 5,
+      "status": "success"
+    },
+    "jiomart.com_ac802093": {
+      "entities_collected": 9,
+      "status": "success"
+    },
+    "dmart.in_181bdd91": {
+      "entities_collected": 8,
+      "status": "success"
+    },
+    "bigbasket.com_e5536c44": {
+      "entities_collected": 9,
+      "status": "success"
+    },
+    "blinkit.com_b95360ad": {
+      "entities_collected": 8,
+      "status": "success"
+    },
+    "zepto.com_71d22582": {
+      "entities_collected": 9,
+      "status": "success"
+    },
+    "swiggy.com_797ab30f": {
+      "entities_collected": 9,
+      "status": "success"
+    },
+    "reliancefresh.com_3bc98401": {
+      "entities_collected": 6,
+      "status": "success"
+    },
+    "more.com_10fcf521": {
+      "entities_collected": 4,
+      "status": "success"
+    },
+    "spencers.in_d29de25c": {
+      "entities_collected": 6,
+      "status": "success"
+    },
+    "walmart.com_2ffac035": {
+      "entities_collected": 11,
+      "status": "success"
+    },
+    "costco.com_cbee67b3": {
+      "entities_collected": 9,
+      "status": "success"
+    },
+    "carrefour.com_7404b59b": {
+      "entities_collected": 7,
+      "status": "success"
+    },
+    "tesco.com_3141c25a": {
+      "entities_collected": 8,
+      "status": "success"
+    },
+    "alibaba.com_41ad3bfa": {
+      "entities_collected": 9,
+      "status": "success"
+    },
+    "amazon.com_23c4f978": {
+      "entities_collected": 12,
+      "status": "success"
+    },
+    "seafood_export_2c9bb766": {
+      "entities_collected": 9,
+      "status": "success"
+    },
+    "corporate_farm_95ce04e5": {
+      "entities_collected": 5,
+      "status": "success"
+    },
+    "marine_harvest_25c40264": {
+      "entities_collected": 4,
+      "status": "success"
+    }
+  },
+  "resources": {
+    "timestamp": 1784444753.0179627,
+    "cpu_percent": 25.0,
+    "ram_total_gb": 7.823066711425781,
+    "ram_used_gb": 6.880504608154297,
+    "ram_percent": 88.0,
+    "disk_total_gb": 41.117183685302734,
+    "disk_used_gb": 16.860275268554688,
+    "disk_percent": 41.0,
+    "gpu_available": false,
+    "gpu_name": "N/A",
+    "gpu_memory_gb": 0.0,
+    "network_available": false,
+    "load_average": 0.25,
+    "runtime_remaining_minutes": 999.0,
+    "queue_length": 0,
+    "api_budget_remaining": 1.0
+  }
+}

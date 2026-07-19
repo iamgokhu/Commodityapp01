@@ -20,6 +20,7 @@ from commodity_os.meta_agents.quality_agent import QualityAgent
 from commodity_os.meta_agents.executive_agent import ExecutiveIntelligenceAgent
 from commodity_os.github_integration.github import GitHubIntegration
 from commodity_os.dashboard.generator import DashboardGenerator
+from commodity_os.integration import IntegrationOrchestrator
 
 CONFIG_PATH = Path(__file__).parent / "config.json"
 DATA_DIR = Path(__file__).resolve().parent.parent / "data"
@@ -93,6 +94,7 @@ class CommodityOS:
             remote=self.config.get("remote", "origin"),
             branch=self.config.get("branch", "main"),
         )
+        self.integration = IntegrationOrchestrator(self.config)
         self._running = False
         self._cycle_count = 0
         self._start_time = None
@@ -136,6 +138,7 @@ class CommodityOS:
         try:
             while self._running:
                 self._cycle_count += 1
+                self.integration._cycle_count = self._cycle_count
                 logger.info(f"\n{'='*60}")
                 logger.info(f"CYCLE {self._cycle_count} START")
                 logger.info(f"{'='*60}")
@@ -148,30 +151,23 @@ class CommodityOS:
                     "recommendation": {"mode": "full", "batch_size": 100},
                 }, source="main")
 
-                await self.orchestrator.run_cycle()
+                # Run the full collection pipeline via integration layer
+                summary = await self.integration.run_collection_cycle()
+                logger.info(f"Cycle {self._cycle_count} summary: {json.dumps(summary, indent=2, default=str)}")
 
-                await event_bus.emit(EventType.CYCLE_COMPLETE, {
-                    "cycle": self._cycle_count,
-                    "completed": len([
-                        t for t in self.orchestrator.active_tasks.values()
-                        if hasattr(t, 'status') and t.status.name == "COMPLETED"
-                    ]),
-                }, source="main")
+                # Copy output to docs for GitHub Pages
+                src_html = OUTPUT_DIR / "dashboard.html"
+                if src_html.exists():
+                    shutil.copy2(src_html, DOCS_DIR / "index.html")
+                    logger.info("Dashboard copied to docs/")
 
-                entities = load_existing_data()
-                if entities:
-                    dash_gen = DashboardGenerator()
-                    consolidated = {"entities": entities, "stats": {"total": len(entities)}}
-                    await dash_gen.generate(entities, consolidated)
-                    src_html = OUTPUT_DIR / "dashboard.html"
-                    if src_html.exists():
-                        shutil.copy2(src_html, DOCS_DIR / "index.html")
-                        logger.info(f"Dashboard copied to docs/")
-                    data_file = DOCS_DIR / "data.json"
-                    with open(data_file, 'w') as f:
-                        json.dump(entities, f)
-                    logger.info(f"Data exported to docs/data.json ({len(entities)} entities)")
+                # Copy data to docs
+                entities_file = OUTPUT_DIR / "all_entities.json"
+                if entities_file.exists():
+                    shutil.copy2(entities_file, DOCS_DIR / "data.json")
+                    logger.info("Data copied to docs/data.json")
 
+                # Publish to GitHub
                 if self.config.get("auto_publish", True):
                     await self.github.auto_commit(f"Update dashboard - cycle {self._cycle_count}")
                     await self.github.push()
@@ -209,6 +205,7 @@ class CommodityOS:
         logger.info(f"Total uptime: {uptime:.0f}s, Cycles completed: {self._cycle_count}")
 
         await self.github.auto_commit(f"Session end: {self._cycle_count} cycles completed")
+        await self.integration.shutdown()
         await self.executive_agent.shutdown()
         await self.quality_agent.shutdown()
         await self.orchestrator_agent.shutdown()
@@ -227,6 +224,8 @@ class CommodityOS:
             "executive": self.executive_agent.get_executive_summary(),
             "github": self.github.get_status(),
             "monitoring": self.monitoring.get_health_dashboard(),
+            "crawlers": len(self.integration.crawler_manager.list_crawlers()),
+            "graph_stats": self.integration.graph.get_stats(),
         }
 
 

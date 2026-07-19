@@ -67,6 +67,24 @@ CRAWLER_SOURCE_NAMES = {
     "GovernmentAPICrawler": "data.gov.in",
     "LinkedInCrawler": "linkedin.com",
     "NewsCrawler": "commodity_news",
+    "JioMartCrawler": "jiomart.com",
+    "DMartCrawler": "dmart.in",
+    "BigBasketCrawler": "bigbasket.com",
+    "BlinkitCrawler": "blinkit.com",
+    "ZeptoCrawler": "zepto.com",
+    "SwiggyInstamartCrawler": "swiggy.com",
+    "RelianceFreshCrawler": "reliancefresh.com",
+    "MoreRetailCrawler": "more.com",
+    "SpencersCrawler": "spencers.in",
+    "WalmartGlobalCrawler": "walmart.com",
+    "CostcoGlobalCrawler": "costco.com",
+    "CarrefourGlobalCrawler": "carrefour.com",
+    "TescoGlobalCrawler": "tesco.com",
+    "AlibabaCrawler": "alibaba.com",
+    "AmazonGlobalCrawler": "amazon.com",
+    "SeafoodExporterCrawler": "seafood_export",
+    "CorporateFarmCrawler": "corporate_farm",
+    "MarineHarvestCrawler": "marine_harvest",
 }
 
 
@@ -675,6 +693,402 @@ class NewsCrawler(BaseCrawler):
             e["published_date"] = datetime.utcnow().isoformat()
             e["market_sentiment"] = random.choice(["bullish", "bearish", "neutral"])
             e["price_trend"] = random.choice(["up", "down", "stable"])
+            entities.append(e)
+        return entities
+
+
+class JioMartCrawler(BaseCrawler):
+    """Crawls JioMart (jiomart.com) for grocery and commodity listings."""
+
+    def __init__(self):
+        super().__init__("jiomart.com", rate_limit=15, rate_window=60.0)
+
+    async def fetch(self, task: Dict[str, Any]) -> List[Dict[str, Any]]:
+        await asyncio.sleep(random.uniform(0.4, 1.2))
+        count = random.randint(5, 12)
+        entities = []
+        for _ in range(count):
+            e = _generate_entity(self.source_name)
+            e["entity_type"] = "Online Seller"
+            e["platform"] = "JioMart"
+            e["seller_rating"] = round(random.uniform(3.5, 5.0), 1)
+            e["delivery_available"] = True
+            e["same_day_delivery"] = random.choice([True, False])
+            entities.append(e)
+        return entities
+
+
+class DMartCrawler(BaseCrawler):
+    """Crawls DMart (dmart.in) for supermarket commodity listings."""
+
+    def __init__(self):
+        super().__init__("dmart.in", rate_limit=12, rate_window=60.0)
+
+    async def fetch(self, task: Dict[str, Any]) -> List[Dict[str, Any]]:
+        await asyncio.sleep(random.uniform(0.5, 1.5))
+        count = random.randint(4, 10)
+        entities = []
+        for _ in range(count):
+            e = _generate_entity(self.source_name)
+            e["entity_type"] = "Online Seller"
+            e["platform"] = "DMart"
+            e["store_count"] = random.randint(200, 350)
+            e["delivery_available"] = True
+            e["offline_stores"] = True
+            entities.append(e)
+        return entities
+
+
+class BigBasketCrawler(BaseCrawler):
+    """Crawls BigBasket (bigbasket.com) for grocery and fresh produce."""
+
+    def __init__(self):
+        super().__init__("bigbasket.com", rate_limit=15, rate_window=60.0)
+
+    async def fetch(self, task: Dict[str, Any]) -> List[Dict[str, Any]]:
+        await asyncio.sleep(random.uniform(0.4, 1.3))
+        count = random.randint(5, 12)
+        entities = []
+        for _ in range(count):
+            e = _generate_entity(self.source_name)
+            e["entity_type"] = "Online Seller"
+            e["platform"] = "BigBasket"
+            e["seller_rating"] = round(random.uniform(3.8, 5.0), 1)
+            e["delivery_available"] = True
+            e["fresh_guarantee"] = True
+            entities.append(e)
+        return entities
+
+
+class BlinkitCrawler(BaseCrawler):
+    """Crawls Blinkit (blinkit.com) for quick commerce grocery data."""
+
+    def __init__(self):
+        super().__init__("blinkit.com", rate_limit=20, rate_window=60.0)
+
+    async def fetch(self, task: Dict[str, Any]) -> List[Dict[str, Any]]:
+        await asyncio.sleep(random.uniform(0.2, 0.8))
+        count = random.randint(6, 15)
+        entities = []
+        for _ in range(count):
+            e = _generate_entity(self.source_name)
+            e["entity_type"] = "Online Seller"
+            e["platform"] = "Blinkit"
+            e["delivery_time"] = "10 minutes"
+            e["quick_commerce"] = True
+            e["delivery_available"] = True
+            entities.append(e)
+        return entities
+
+
+class ZeptoCrawler(BaseCrawler):
+    """Crawls Zepto (zepto.com) for quick commerce data."""
+
+    def __init__(self):
+        super().__init__("zepto.com", rate_limit=20, rate_window=60.0)
+
+    async def fetch(self, task: Dict[str, Any]) -> List[Dict[str, Any]]:
+        await asyncio.sleep(random.uniform(0.2, 0.8))
+        count = random.randint(6, 15)
+        entities = []
+        for _ in range(count):
+            e = _generate_entity(self.source_name)
+            e["entity_type"] = "Online Seller"
+            e["platform"] = "Zepto"
+            e["delivery_time"] = "10 minutes"
+            e["quick_commerce"] = True
+            e["delivery_available"] = True
+            entities.append(e)
+        return entities
+
+
+class SwiggyInstamartCrawler(BaseCrawler):
+    """Crawls Swiggy Instamart for quick commerce grocery data."""
+
+    def __init__(self):
+        super().__init__("swiggy.com", rate_limit=18, rate_window=60.0)
+
+    async def fetch(self, task: Dict[str, Any]) -> List[Dict[str, Any]]:
+        await asyncio.sleep(random.uniform(0.3, 1.0))
+        count = random.randint(5, 12)
+        entities = []
+        for _ in range(count):
+            e = _generate_entity(self.source_name)
+            e["entity_type"] = "Online Seller"
+            e["platform"] = "Swiggy Instamart"
+            e["delivery_time"] = "15 minutes"
+            e["quick_commerce"] = True
+            e["delivery_available"] = True
+            entities.append(e)
+        return entities
+
+
+class RelianceFreshCrawler(BaseCrawler):
+    """Crawls Reliance Fresh for retail commodity data."""
+
+    def __init__(self):
+        super().__init__("reliancefresh.com", rate_limit=12, rate_window=60.0)
+
+    async def fetch(self, task: Dict[str, Any]) -> List[Dict[str, Any]]:
+        await asyncio.sleep(random.uniform(0.5, 1.5))
+        count = random.randint(4, 10)
+        entities = []
+        for _ in range(count):
+            e = _generate_entity(self.source_name)
+            e["entity_type"] = "Online Seller"
+            e["platform"] = "Reliance Fresh"
+            e["store_count"] = random.randint(500, 2000)
+            e["offline_stores"] = True
+            e["delivery_available"] = True
+            entities.append(e)
+        return entities
+
+
+class MoreRetailCrawler(BaseCrawler):
+    """Crawls More Retail for supermarket commodity data."""
+
+    def __init__(self):
+        super().__init__("more.com", rate_limit=10, rate_window=60.0)
+
+    async def fetch(self, task: Dict[str, Any]) -> List[Dict[str, Any]]:
+        await asyncio.sleep(random.uniform(0.5, 1.5))
+        count = random.randint(3, 8)
+        entities = []
+        for _ in range(count):
+            e = _generate_entity(self.source_name)
+            e["entity_type"] = "Online Seller"
+            e["platform"] = "More Retail"
+            e["store_count"] = random.randint(500, 800)
+            e["offline_stores"] = True
+            entities.append(e)
+        return entities
+
+
+class SpencersCrawler(BaseCrawler):
+    """Crawls Spencer's for retail commodity data."""
+
+    def __init__(self):
+        super().__init__("spencers.in", rate_limit=10, rate_window=60.0)
+
+    async def fetch(self, task: Dict[str, Any]) -> List[Dict[str, Any]]:
+        await asyncio.sleep(random.uniform(0.5, 1.5))
+        count = random.randint(3, 8)
+        entities = []
+        for _ in range(count):
+            e = _generate_entity(self.source_name)
+            e["entity_type"] = "Online Seller"
+            e["platform"] = "Spencer's"
+            e["store_count"] = random.randint(100, 300)
+            e["offline_stores"] = True
+            entities.append(e)
+        return entities
+
+
+class WalmartGlobalCrawler(BaseCrawler):
+    """Crawls Walmart global for commodity data across countries."""
+
+    def __init__(self):
+        super().__init__("walmart.com", rate_limit=15, rate_window=60.0)
+
+    async def fetch(self, task: Dict[str, Any]) -> List[Dict[str, Any]]:
+        await asyncio.sleep(random.uniform(0.5, 1.5))
+        count = random.randint(5, 12)
+        entities = []
+        countries = ["USA", "Mexico", "Canada", "UK", "China", "India", "Chile", "Argentina"]
+        for _ in range(count):
+            e = _generate_entity(self.source_name)
+            e["entity_type"] = "Online Seller"
+            e["platform"] = "Walmart"
+            e["country"] = random.choice(countries)
+            e["store_count"] = random.randint(1000, 10000)
+            e["global_reach"] = True
+            entities.append(e)
+        return entities
+
+
+class CostcoGlobalCrawler(BaseCrawler):
+    """Crawls Costco global for wholesale commodity data."""
+
+    def __init__(self):
+        super().__init__("costco.com", rate_limit=12, rate_window=60.0)
+
+    async def fetch(self, task: Dict[str, Any]) -> List[Dict[str, Any]]:
+        await asyncio.sleep(random.uniform(0.5, 1.5))
+        count = random.randint(4, 10)
+        entities = []
+        countries = ["USA", "Canada", "Mexico", "UK", "Japan", "South Korea", "Australia", "Spain"]
+        for _ in range(count):
+            e = _generate_entity(self.source_name)
+            e["entity_type"] = "Online Seller"
+            e["platform"] = "Costco"
+            e["country"] = random.choice(countries)
+            e["membership_required"] = True
+            e["bulk_pricing"] = True
+            entities.append(e)
+        return entities
+
+
+class CarrefourGlobalCrawler(BaseCrawler):
+    """Crawls Carrefour global for retail commodity data."""
+
+    def __init__(self):
+        super().__init__("carrefour.com", rate_limit=12, rate_window=60.0)
+
+    async def fetch(self, task: Dict[str, Any]) -> List[Dict[str, Any]]:
+        await asyncio.sleep(random.uniform(0.5, 1.5))
+        count = random.randint(4, 10)
+        entities = []
+        countries = ["France", "Spain", "Italy", "Belgium", "Poland", "Romania", "Argentina", "Brazil", "Taiwan", "Morocco"]
+        for _ in range(count):
+            e = _generate_entity(self.source_name)
+            e["entity_type"] = "Online Seller"
+            e["platform"] = "Carrefour"
+            e["country"] = random.choice(countries)
+            e["store_count"] = random.randint(500, 12000)
+            e["global_reach"] = True
+            entities.append(e)
+        return entities
+
+
+class TescoGlobalCrawler(BaseCrawler):
+    """Crawls Tesco global for retail commodity data."""
+
+    def __init__(self):
+        super().__init__("tesco.com", rate_limit=12, rate_window=60.0)
+
+    async def fetch(self, task: Dict[str, Any]) -> List[Dict[str, Any]]:
+        await asyncio.sleep(random.uniform(0.5, 1.5))
+        count = random.randint(4, 10)
+        entities = []
+        countries = ["UK", "Ireland", "Czech Republic", "Hungary", "Poland", "Slovakia", "Malaysia", "Thailand"]
+        for _ in range(count):
+            e = _generate_entity(self.source_name)
+            e["entity_type"] = "Online Seller"
+            e["platform"] = "Tesco"
+            e["country"] = random.choice(countries)
+            e["store_count"] = random.randint(2000, 7000)
+            e["online_grocery"] = True
+            entities.append(e)
+        return entities
+
+
+class AlibabaCrawler(BaseCrawler):
+    """Crawls Alibaba (alibaba.com) for B2B global commodity data."""
+
+    def __init__(self):
+        super().__init__("alibaba.com", rate_limit=20, rate_window=60.0)
+
+    async def fetch(self, task: Dict[str, Any]) -> List[Dict[str, Any]]:
+        await asyncio.sleep(random.uniform(0.5, 1.5))
+        count = random.randint(6, 15)
+        entities = []
+        countries = ["China", "India", "Vietnam", "Thailand", "Indonesia", "Turkey", "Bangladesh", "Pakistan", "Egypt", "Brazil"]
+        for _ in range(count):
+            e = _generate_entity(self.source_name)
+            e["entity_type"] = "Online Seller"
+            e["platform"] = "Alibaba"
+            e["country"] = random.choice(countries)
+            e["seller_rating"] = round(random.uniform(3.5, 5.0), 1)
+            e["b2b_platform"] = True
+            e["moq"] = random.randint(100, 10000)
+            entities.append(e)
+        return entities
+
+
+class AmazonGlobalCrawler(BaseCrawler):
+    """Crawls Amazon global marketplaces for commodity data."""
+
+    def __init__(self):
+        super().__init__("amazon.com", rate_limit=20, rate_window=60.0)
+
+    async def fetch(self, task: Dict[str, Any]) -> List[Dict[str, Any]]:
+        await asyncio.sleep(random.uniform(0.5, 1.5))
+        count = random.randint(6, 15)
+        entities = []
+        countries = ["USA", "UK", "Germany", "France", "Japan", "Canada", "Australia", "Italy", "Spain", "India", "Mexico", "Brazil"]
+        for _ in range(count):
+            e = _generate_entity(self.source_name)
+            e["entity_type"] = "Online Seller"
+            e["platform"] = f"Amazon {random.choice(countries)}"
+            e["country"] = random.choice(countries)
+            e["seller_rating"] = round(random.uniform(3.5, 5.0), 1)
+            e["prime_eligible"] = random.choice([True, False])
+            e["fba_available"] = True
+            entities.append(e)
+        return entities
+
+
+class SeafoodExporterCrawler(BaseCrawler):
+    """Crawls seafood exporters and marine product traders globally."""
+
+    def __init__(self):
+        super().__init__("seafood_export", rate_limit=10, rate_window=60.0)
+
+    async def fetch(self, task: Dict[str, Any]) -> List[Dict[str, Any]]:
+        await asyncio.sleep(random.uniform(0.8, 2.0))
+        count = random.randint(4, 10)
+        entities = []
+        countries = ["India", "Norway", "Chile", "Thailand", "Vietnam", "Indonesia", "Ecuador", "China", "Bangladesh", "Pakistan", "Japan", "South Korea"]
+        products = ["Shrimp", "Prawn", "Lobster", "Crab", "Tuna", "Salmon", "Sardine", "Mackerel", "Squid", "Octopus"]
+        for _ in range(count):
+            e = _generate_entity(self.source_name)
+            e["entity_type"] = "Marine Exporter"
+            e["country"] = random.choice(countries)
+            e["marine_product"] = random.choice(products)
+            e["export_license"] = f"MPE-{random.randint(100000, 999999)}"
+            e["cold_chain_available"] = True
+            e["haccp_certified"] = random.choice([True, True, False])
+            e["iso_certified"] = random.choice([True, False])
+            entities.append(e)
+        return entities
+
+
+class CorporateFarmCrawler(BaseCrawler):
+    """Crawls corporate farming operations and agri-business data."""
+
+    def __init__(self):
+        super().__init__("corporate_farm", rate_limit=8, rate_window=60.0)
+
+    async def fetch(self, task: Dict[str, Any]) -> List[Dict[str, Any]]:
+        await asyncio.sleep(random.uniform(1.0, 2.5))
+        count = random.randint(3, 8)
+        entities = []
+        countries = ["India", "USA", "Brazil", "China", "Australia", "Argentina", "Thailand", "Vietnam"]
+        farm_types = ["Corporate Farming", "Contract Farming", "Organic Farming", "Vertical Farming", "Hydroponic Farming", "Precision Farming"]
+        for _ in range(count):
+            e = _generate_entity(self.source_name)
+            e["entity_type"] = "Corporate Farm"
+            e["country"] = random.choice(countries)
+            e["farm_type"] = random.choice(farm_types)
+            e["farm_size_acres"] = random.randint(100, 10000)
+            e["annual_production_tons"] = random.randint(500, 50000)
+            e["certifications"] = random.sample(["ISO 22000", "GAP", "Organic", "Fair Trade", "Rainforest Alliance", "BRC"], k=random.randint(1, 3))
+            e["exports_to"] = random.sample(["USA", "UK", "Germany", "Japan", "UAE", "Singapore"], k=random.randint(1, 4))
+            entities.append(e)
+        return entities
+
+
+class MarineHarvestCrawler(BaseCrawler):
+    """Crawls marine farming and aquaculture operations globally."""
+
+    def __init__(self):
+        super().__init__("marine_harvest", rate_limit=8, rate_window=60.0)
+
+    async def fetch(self, task: Dict[str, Any]) -> List[Dict[str, Any]]:
+        await asyncio.sleep(random.uniform(1.0, 2.5))
+        count = random.randint(3, 8)
+        entities = []
+        countries = ["Norway", "Chile", "India", "Vietnam", "Indonesia", "Thailand", "China", "Japan", "Australia", "New Zealand"]
+        farm_types = ["Shrimp Farming", "Fish Farming", "Seaweed Farming", "Oyster Farming", "Mussel Farming", "Pearl Farming"]
+        for _ in range(count):
+            e = _generate_entity(self.source_name)
+            e["entity_type"] = "Marine Farm"
+            e["country"] = random.choice(countries)
+            e["farm_type"] = random.choice(farm_types)
+            e["farm_size_hectares"] = random.randint(10, 500)
+            e["annual_yield_tons"] = random.randint(50, 5000)
+            e["species"] = random.sample(["Shrimp", "Salmon", "Tilapia", "Seaweed", "Oyster", "Mussel", "Abalone", "Barramundi"], k=random.randint(1, 3))
+            e["certifications"] = random.sample(["ASC", "BAP", "GlobalGAP", "Organic"], k=random.randint(1, 2))
             entities.append(e)
         return entities
 

@@ -1,55 +1,148 @@
 {
   "system": {
     "name": "CommodityOS",
-    "version": "2.0.0",
-    "log_level": "INFO"
+    "version": "3.0.0",
+    "log_level": "INFO",
+    "scale": "global"
   },
   "cycle": {
-    "interval_seconds": 3600,
+    "interval_seconds": 1800,
     "max_cycles": 0,
     "auto_publish": true
   },
-  "products": [
-    "Sugar", "Rice", "Grains", "Pulses", "Wheat", "Dals", "Basmathi Rice",
-    "Oilseeds", "Spices", "Cotton", "Tea", "Coffee", "Rubber", "Coconut"
-  ],
-  "states": [
-    "Maharashtra", "Uttar Pradesh", "Punjab", "Gujarat", "Rajasthan",
-    "Madhya Pradesh", "Karnataka", "Tamil Nadu", "Andhra Pradesh", "West Bengal",
-    "Bihar", "Odisha", "Telangana", "Kerala", "Haryana", "Assam", "Chhattisgarh"
-  ],
-  "countries": [
-    "India", "USA", "China", "Brazil", "Thailand", "Vietnam", "Pakistan",
-    "Indonesia", "Bangladesh", "Sri Lanka", "Nepal", "Myanmar", "UAE",
-    "Saudi Arabia", "UK", "Germany", "Japan", "Singapore", "Malaysia", "Australia"
-  ],
-  "entity_types": ["Manufacturer", "Wholesaler", "Exporter", "Online Seller", "Government Source", "News Reference"],
+  "products": {
+    "cereals": ["Rice","Wheat","Maize","Bajra","Jowar","Ragi","Barley","Oats","Quinoa","Millet","Sorghum","Spelt","Triticale","Kamut","Farro"],
+    "pulses": ["Toor Dal","Moong Dal","Masoor Dal","Chana Dal","Urad Dal","Rajma","Kabuli Chana","Black Gram","Green Gram","Lentils","Pigeon Pea","Cowpea","Horse Gram","Bambara Groundnut"],
+    "sugar": ["Raw Sugar","Refined Sugar","Jaggery","Brown Sugar","Powdered Sugar","Cubes Sugar","Organic Sugar","Sugar Syrup","Molasses","Sugar Candy"],
+    "oilseeds": ["Mustard Seeds","Groundnut","Soybean","Sunflower Seeds","Sesame","Safflower","Niger Seeds","Rapeseed","Canola","Palm Kernel","Copra","Castor Seeds","Linseed","Perilla Seeds"],
+    "spices": ["Turmeric","Red Chili","Coriander","Cumin","Black Pepper","Cardamom","Cloves","Cinnamon","Ginger","Garlic","Fenugreek","Mustard Powder","Asafoetida","Bay Leaf","Nutmeg","Mace","Saffron","Vanilla","Anise","Caraway"],
+    "fruits": ["Mango","Banana","Apple","Orange","Grapes","Pineapple","Papaya","Guava","Pomegranate","Watermelon","Muskmelon","Lemon","Lime","Coconut","Dates","Fig","Kiwi","Avocado","Dragon Fruit","Passion Fruit"],
+    "vegetables": ["Potato","Onion","Tomato","Cauliflower","Cabbage","Peas","Carrot","Brinjal","Okra","Spinach","Capsicum","Broccoli","Mushroom","Beetroot","Turnip","Radish","Pumpkin","Bottle Gourd","Bitter Gourd","Drumstick"],
+    "tea_coffee": ["Green Tea","Black Tea","Oolong Tea","White Tea","Herbal Tea","Coffee Beans","Arabica Coffee","Robusta Coffee","Instant Coffee","Coffee Powder","Tea Dust","CTC Tea","Assam Tea","Darjeeling Tea","Nilgiri Tea"],
+    "cotton_fiber": ["Raw Cotton","Cotton Yarn","Cotton Fabric","Jute","Hemp","Silk","Wool","Polyester","Nylon","Viscose","Linen","Bamboo Fiber","Cashmere","Alpaca","Mohair"],
+    "rubber_cocoa": ["Natural Rubber","Synthetic Rubber","Rubber Latex","Cocoa Beans","Cocoa Powder","Cocoa Butter","Chocolate Liquor","Cocoa Shell"],
+    "dairy": ["Milk","Butter","Cheese","Ghee","Paneer","Yogurt","Cream","Whey","Casein","Milk Powder","Condensed Milk","Ice Cream Mix"],
+    "meat_seafood": ["Chicken","Mutton","Goat Meat","Pork","Beef","Fish","Shrimp","Prawn","Crab","Lobster","Squid","Octopus","Tuna","Salmon","Sardine","Mackerel","Pomfret","Rohu","Catla","Hilsa"],
+    "nuts_dryfruits": ["Almond","Cashew","Walnut","Pistachio","Raisin","Apricot","Fig Dry","Date Dry","Pine Nuts","Chestnut","Hazelnut","Macadamia","Brazil Nut","Pecan","Sunflower Seeds"],
+    "fertilizer_chemicals": ["Urea","DAP","MOP","NPK Complex","Super Phosphate","Zinc Sulphate","Boron","Iron Sulphate","Copper Sulphate","Magnesium Sulphate","Calcium Nitrate","Ammonium Sulphate"],
+    "packaging": ["Carton Boxes","Bubble Wrap","Stretch Film","Corrugated Rolls","PP Bags","HDPE Bags","LDPE Rolls","Thermocol","Foam Sheets","Paper Tape","BOPP Tape","Shrink Wrap"],
+    "seafood_farming": ["Shrimp Feed","Fish Feed","Algae","Seaweed","Oyster","Mussel","Clam","Abalone","Sea Cucumber","Fish Oil","Fish Meal","Shrimp Postlarvae","Fish Fry","Spirulina","Chlorella"],
+    "corporate_farming": ["Seeds","Hybrid Seeds","GMO Seeds","Organic Seeds","Seedlings","Saplings","Plant Tissue Culture","Bio-fertilizers","Bio-pesticides","Drip Irrigation","Sprinkler Systems","Greenhouse Material","Polyhouse","Vertical Farming Equipment","Hydroponics Kit","Aeroponics System"],
+    "modern_retail": ["FMCG Products","Packaged Food","Beverages","Snacks","Confectionery","Personal Care","Home Care","Electronics","Apparel","Footwear","Stationery","Pet Food","Baby Products","Health Supplements","Organic Products"]
+  },
+  "india": {
+    "states": {
+      "Maharashtra": ["Mumbai","Pune","Nagpur","Nashik","Aurangabad","Solapur","Amravati","Kolhapur","Sangli","Jalgaon","Ahmednagar","Raigad","Satara","Thane","Palghar","Nandurbar","Dhule","Jalna","Parbhani","Hingoli","Wardha","Chandrapur","Yavatmal","Gadchiroli","Bhandara","Gondia","Sindhudurg","Ratnagiri"],
+      "Uttar Pradesh": ["Lucknow","Kanpur","Agra","Varanasi","Meerut","Prayagraj","Bareilly","Aligarh","Moradabad","Jhansi","Ghaziabad","Noida","Agra","Firozabad","Mathura","Etawah","Kanpur Dehat","Unnao","Hardoi","Sitapur","Basti","Gorakhpur","Azamgarh","Jaunpur","Allahabad","Mirzapur","Sonbhadra","Rae Bareli","Fatehpur","Kaushambi","Pratapgarh","Amethi","Bahraich","Shravasti","Gonda","Balrampur","Siddharthnagar","Maharajganj","Kushinagar","Deoria","Mau","Ballia","Chandauli","Sant Ravi Das Nagar","Bhadohi","Ghazipur","Bandra","Pilibhit","Shahjahanpur"," Farrukhabad","Kannauj","Etah","Mainpuri","Budaun","Auraiya","Kanpur Nagar","Lucknow","Ambedkar Nagar","Sultanpur","Ayodhya","Barabanki","Balrampur","Bahraich","Gonda","Siddharthnagar","Basti","Mahrajganj","Gorakhpur","Kushinagar","Deoria","Azamgarh","Mau","Ballia","Jaunpur","Ghazipur","Varanasi","Chandauli","Sonbhadra","Mirzapur","Prayagraj","Pratapgarh","Amethi","Raebareli","Fatehpur","Kaushambi","Banda","Mahoba","Hamirpur","Jalaun","Lalitpur","Jhansi","Auriya","Etawah","Kannauj","Farrukhabad","Badaun","Shahjahanpur","Bareilly","Pilibhit","Lakhimpur Kheri","Sitapur","Hardoi","Unnao","Lucknow","Kanpur Dehat","Kanpur Nagar","Etah","Mainpuri","Firozabad","Hathras","Mathura","Agra","Aligarh","Hapur","Ghaziabad","Meerut","Muzaffarnagar","Bijnor","Amroha","Moradabad","Rampur","Sambhal","Bulandshahr","Baghpat","Gautam Buddha Nagar","Jyotiba Phule Nagar","Budaun"],
+      "Punjab": ["Ludhiana","Amritsar","Jalandhar","Patiala","Bathinda","Mohali","Hoshiarpur","Kapurthala","Sangrur","Barnala","Moga","Ferozepur","Muktsar","Faridkot","Rupnagar","Gurdaspur","Pathankot","Tarn Taran","Fazilka","Mansa","Patiala","SAS Nagar","Chandigarh"],
+      "Gujarat": ["Ahmedabad","Surat","Vadodara","Rajkot","Anand","Gandhinagar","Bharuch","Bhavnagar","Jamnagar","Junagadh","Kutch","Mehsana","Patan","Porbandar","Surendranagar","Tapi","Dangs","Navsari","Valsad","Daman","Diu","Dadra Nagar Haveli"],
+      "Rajasthan": ["Jaipur","Jodhpur","Udaipur","Kota","Ajmer","Alwar","Bharatpur","Bikaner","Chittorgarh","Churu","Dungarpur","Hanumangarh","Jaisalmer","Jhalawar","Jhunjhunu","Karauli","Nagaur","Pali","Pratapgarh","Rajsamand","Sawai Madhopur","Sikar","Sirohi","Tonk","Barmer","Banswara","Dausa","Bhilwara","Swai Madhopur"],
+      "Madhya Pradesh": ["Bhopal","Indore","Jabalpur","Gwalior","Ujjain","Satna","Sagar","Rewa","Dewas","Ratlam","Shivpuri","Dhar","Mandsaur","Neemuch","Betul","Chhindwara","Hoshangabad","Katni","Khandwa","Khargone","Narsinghpur","Panna","Raisen","Rajgarh","Sehore","Seoni","Shahdol","Shajapur","Shyopur","Sidhi","Tikamgarh","Vidisha","Morena","Datia","Damoh","Chhatarpur","Balaghat","Anuppur","Dindori","Mandla","Alirajpur","Barwani","Harda","Jhabua","Niwari","Maihar","Nagda"],
+      "Karnataka": ["Bengaluru","Mysuru","Mangaluru","Hubballi","Belagavi","Kalaburagi","Vijayapura","Ballari","Tumakuru","Shivamogga","Davangere","Hassan","Chikkamagaluru","Dakshina Kannada","Udupi","Kodagu","Mandya","Haveri","Gadag","Bagalkot","Yadgir","Raichur","Koppal","Chitradurga","Dharwad","Gulbarga","Bidar","Bijapur","Ramanagara","Chikkaballapura","Kolar","Bangalore Rural","Devanagere"],
+      "Tamil Nadu": ["Chennai","Coimbatore","Madurai","Tiruchirappalli","Salem","Tirunelveli","Erode","Vellore","Thoothukudi","Dindigul","Kanchipuram","Cuddalore","Kumbakonam","Thanjavur","Karur","Namakkal","Perambalur","Ariyalur","Krishnagiri","Dharmapuri","Nilgiris","Coimbatore","Tiruppur","Theni","Virudhunagar","Ramanathapuram","Sivaganga","Pudukkottai","Tiruvarur","Nagapattinam","Mayiladuthurai"],
+      "Andhra Pradesh": ["Hyderabad","Visakhapatnam","Vijayawada","Guntur","Tirupati","Nellore","Kurnool","Kakinada","Rajahmundry","Anantapur","Chittoor","Kadapa","Prakasam","West Godavari","East Godavari","Srikakulam","Vizianagaram","Krishna","Guntur"],
+      "Telangana": ["Hyderabad","Warangal","Nizamabad","Karimnagar","Khammam","Mahbubnagar","Nalgonda","Medak","Adilabad","Rangareddy","Nizamabad","Karimnagar","Khammam","Warangal Urban","Warangal Rural","Mahabubabad","Jangaon","Jayashankar","Mulugu","Bhadradri","Mancherial","Nirmal","Nizamabad","Jagtial","Siddipet","Suryapet","Vikarabad","Wanaparthy","Hanamkonda"],
+      "West Bengal": ["Kolkata","Howrah","Durgapur","Asansol","Siliguri","Bardhaman","Birbhum","Bankura","Purulia","Jalpaiguri","Cooch Behar","Malda","Murshidabad","Nadia","24 Parganas North","24 Parganas South","Hooghly","Medinipur","Jhargram","Alipurduar","Kalimpong","Darjeeling"],
+      "Bihar": ["Patna","Gaya","Muzaffarpur","Bhagalpur","Munger","Vaishali","Saran","Siwan","Gopalganj","East Champaran","West Champaran","Sheohar","Sitamarhi","Madhubani","Darbhanga","Samastipur","Begusarai","Khagaria","Sahebganj","Katihar","Purnia","Araria","Kishanganj","Supaul","Madhepura","Saharsa","Nawada","Jehanabad","Aurangabad","Rohtas","Kaimur","Buxar","Bhojpur","Arwal","Lakhisarai","Sheikhpura"],
+      "Odisha": ["Bhubaneswar","Cuttack","Rourkela","Berhampur","Sambalpur","Balasore","Mayurbhanj","Kendujhar","Sundargarh","Jharsuguda","Bargarh","Nuapada","Kalahandi","Rayagada","Malkangiri","Koraput","Nabarangpur","Dhenkanal","Angul","Deogarh","Sambalpur","Subarnapur","Boudh","Ganjam","Gajapati","Khordha","Puri","Jagatsinghpur","Kendrapara","Jajpur","Bhadrak","Balangir","Kandhamal","Rayagada","Koraput"],
+      "Kerala": ["Thiruvananthapuram","Kochi","Kozhikode","Thrissur","Kollam","Palakkad","Malappuram","Kannur","Kasaragod","Idukki","Ernakulam","Alappuzha","Pathanamthitta","Wayanad","Malappuram"],
+      "Haryana": ["Faridabad","Gurgaon","Panipat","Ambala","Karnal","Kurukshetra","Jind","Hisar","Sirsa","Bhiwani","Rohtak","Sonipat","Panchkula","Yamunanagar","Palwal","Mewat","Kaithal","Fatehabad"],
+      "Assam": ["Guwahati","Silchar","Dibrugarh","Jorhat","Tezpur","Nagaon","Tinsukia","Bongaigaon","Barpeta","Kamrup","Dhemaji","Lakhimpur","Sivasagar","Golaghat","Karimganj","Hailakandi","Cachar","Dima Hasao","Karbi Anglong","Baksa","Udalguri","Chirang","Kokrajhar","Dhubri","Goalpara"],
+      "Chhattisgarh": ["Raipur","Bhilai","Bilaspur","Durg","Korba","Rajnandgaon","Jagdalpur","Ambikapur","Dhamtari","Raigarh","Janjgir","Sakti","Kabirdham","Rajnandgaon","Kondagaon","Bastar","Kanker","Dantewada"],
+      "Jharkhand": ["Ranchi","Jamshedpur","Dhanbad","Bokaro","Deoghar","Hazaribag","Giridih","Chaibasa","Medininagar","Dumka","Godda","Sahebganj","Pakur","Ramgarh","Lohardaga","Gumla","Simdega","Khunti","West Singhbhum","East Singhbhum","Seraikela","Koderma","Chatra","Latehar","Palamu","Garo"],
+      "Uttarakhand": ["Dehradun","Haridwar","Haldwani","Roorkee","Rudrapur","Kashipur","Mussoorie","Nainital","Almora","Pithoragarh","Champawat","Bageshwar","Chamoli","Uttarkashi","Tehri Garhwal","Pauri Garhwal","Rudraprayag","Srinagar"],
+      "Himachal Pradesh": ["Shimla","Manali","Dharamshala","Solan","Mandi","Kullu","Hamirpur","Bilaspur","Una","Chamba","Kangra","Kinnaur","Lahaul Spiti","Sirmaur"],
+      "Goa": ["Panaji","Margao","Vasco da Gama","Mapusa","Ponda","Calangute","Canacona"],
+      "Tripura": ["Agartala","Dharmanagar","Udaipur","Kailasahar","Belonia"],
+      "Meghalaya": ["Shillong","Tura","Jowai","Nongstoin","Baghmara"],
+      "Manipur": ["Imphal","Thoubal","Churachandpur","Kakching"],
+      "Nagaland": ["Kohima","Dimapur","Mokokchung","Tuensang"],
+      "Mizoram": ["Aizawl","Lunglei","Saiha"],
+      "Sikkim": ["Gangtok","Namchi","Gyalshing","Pelling"]
+    },
+    "union_territories": {
+      "Delhi": ["New Delhi","Central Delhi","North Delhi","South Delhi","East Delhi","West Delhi","Shahdara","South East Delhi","North East Delhi","North West Delhi","South West Delhi"],
+      "Chandigarh": ["Chandigarh"],
+      "Puducherry": ["Puducherry","Karaikal","Mahe","Yanam"],
+      "Jammu & Kashmir": ["Srinagar","Jammu","Anantnag","Baramulla","Budgam","Pulwama","Kupwara","Bandipora","Ganderbal","Shopian","Kulgam","Poonch","Rajouri","Reasi","Kathua","Samba","Udhampur","Doda","Kishtwar","Ramban","Mirpur","Muzaffarabad","Punch","Bhimber","Hattian Bala","Kotli"],
+      "Ladakh": ["Leh","Kargil"],
+      "Lakshadweep": ["Kavaratti","Agatti","Minicoy"],
+      "Andaman & Nicobar Islands": ["Port Blair","Car Nicobar","Rangat","Mayabunder","Diglipur"],
+      "Dadra & Nagar Haveli and Daman & Diu": ["Silvassa","Daman","Diu"]
+    }
+  },
+  "global": {
+    "regions": {
+      "South Asia": ["India","Pakistan","Bangladesh","Sri Lanka","Nepal","Bhutan","Maldives","Afghanistan"],
+      "Southeast Asia": ["Thailand","Vietnam","Indonesia","Malaysia","Philippines","Myanmar","Cambodia","Laos","Singapore","Brunei","Timor-Leste"],
+      "East Asia": ["China","Japan","South Korea","North Korea","Taiwan","Mongolia","Hong Kong","Macau"],
+      "Central Asia": ["Kazakhstan","Uzbekistan","Turkmenistan","Kyrgyzstan","Tajikistan"],
+      "Middle East": ["UAE","Saudi Arabia","Qatar","Bahrain","Kuwait","Oman","Yemen","Iraq","Iran","Jordan","Lebanon","Syria","Israel","Palestine","Turkey","Cyprus"],
+      "Europe": ["UK","Germany","France","Italy","Spain","Netherlands","Belgium","Switzerland","Austria","Portugal","Sweden","Norway","Denmark","Finland","Ireland","Poland","Czech Republic","Hungary","Romania","Bulgaria","Greece","Croatia","Slovakia","Slovenia","Lithuania","Latvia","Estonia","Serbia","Montenegro","Bosnia","Albania","North Macedonia","Moldova","Ukraine","Belarus","Russia"],
+      "North America": ["USA","Canada","Mexico","Guatemala","Honduras","El Salvador","Nicaragua","Costa Rica","Panama","Cuba","Jamaica","Haiti","Dominican Republic","Trinidad","Bahamas","Barbados","Belize"],
+      "South America": ["Brazil","Argentina","Chile","Colombia","Peru","Venezuela","Ecuador","Bolivia","Paraguay","Uruguay","Guyana","Suriname"],
+      "Africa": ["Nigeria","Ethiopia","Egypt","South Africa","Kenya","Ghana","Tanzania","Uganda","Morocco","Algeria","Tunisia","Libya","Sudan","Chad","Niger","Mali","Senegal","Guinea","Cameroon","Ivory Coast","Mozambique","Madagascar","Zambia","Zimbabwe","Botswana","Namibia","Angola","Congo","Gabon","Rwanda","Burundi","Somalia","Djibouti","Eritrea"],
+      "Oceania": ["Australia","New Zealand","Papua New Guinea","Fiji","Samoa","Tonga","Vanuatu","Solomon Islands","Kiribati","Marshall Islands","Micronesia","Palau","Nauru","Tuvalu"],
+      "Caribbean": ["Jamaica","Trinidad","Barbados","Bahamas","Cuba","Dominican Republic","Haiti","Puerto Rico","Guadeloupe","Martinique","Aruba","Curaçao"]
+    },
+    "major_markets": ["Mumbai","Delhi","Kolkata","Chennai","Bangalore","Hyderabad","Ahmedabad","Pune","Jaipur","Lucknow","Surat","Kanpur","Nagpur","Indore","Bhopal","Visakhapatnam","Patna","Vadodara","Ghaziabad","Ludhiana","Agra","Nashik","Meerut","Rajkot","Varanasi","Srinagar","Aurangabad","Dhanbad","Amritsar","Allahabad","Ranchi","Howrah","Coimbatore","Jabalpur","Gwalior","Vijayawada","Jodhpur","Madurai","Raipur","Kochi","Thiruvananthapuram","Chandigarh","Guwahati","Bhubaneswar","Dehradun","Shimla","Panaji","Gangtok","Shillong","Imphal","Kohima","Aizawl","Agartala","Itanagar","Patna","Dispur"]
+  },
+  "entity_types": {
+    "traditional": ["Manufacturer","Wholesaler","Trader","Distributor","Retailer","Agent","Broker","Commission Agent"],
+    "modern_retail": ["Supermarket","Hypermarket","Convenience Store","Online Marketplace","E-commerce","Quick Commerce","D2C Brand"],
+    "farming": ["Corporate Farming","Sea Farming","Marine Farming","Organic Farming","Contract Farming","Hydroponic Farming","Vertical Farming","Aqua Farming","Silviculture"],
+    "processing": ["Cold Storage","Pack House","Food Processing","Flour Mill","Rice Mill","Sugar Mill","Oil Mill","Spice Processing","Dairy Processing","Meat Processing","Fish Processing"],
+    "logistics": ["Warehousing","Cold Chain","Transport","Freight Forwarder","Customs House Agent","Shipping Line","Air Cargo","Rail Freight"],
+    "government": ["Government Source","APMC Market Yard","Mandi","Government Procurement","MSP Purchase Center"],
+    "export": ["Exporter","Import-Exporter","Trading House","Star Trading House","Export Promotion Council"],
+    "digital": ["Online Seller","Amazon Seller","Flipkart Seller","JioMart Seller","BigBasket Seller","DMart Seller"],
+    "marine": ["Fishery","Aquaculture","Marine Harvest","Seafood Processor","Fishing Cooperative","Marine Export"]
+  },
+  "modern_traders": {
+    "india": ["7-Eleven","JioMart","DMart","BigBasket","Blinkit","Zepto","Swiggy Instamart","Amazon Fresh","Flipkart Supermart","More Retail"," Spencer's","Reliance Fresh","Easyday","Vishal Mega Mart","Future Group","Star Bazaar","Godrej Nature's Basket","FoodWorld","Nilgiris","Adani Wilmar","ITC Master Chef","Haldiram's","Bikaji","Patanjali","Dabur","Emami","Marico","Britannia","Nestle India","Parle","Cadbury","Amul","Mother Dairy","Amul","Sudha Dairy","Kwality Walls","Creambell"],
+    "global": ["Walmart","Costco","Target","Kroger","Aldi","Lidl","Carrefour","Aeon","Tesco","Sainsbury","ASDA","Metro AG","Rewe","Edeka","Auchan","Leclerc","Casino","Intermarche","Dollar General","Dollar Tree","Family Dollar","7-Eleven Japan","FamilyMart","Lawson","Ministop","Alfamart","Indomaret","CP All","BKK","Lotus's","Tops","Makro","Giant","Cold Storage","FairPrice","Redmart","Ocado","Amazon Go","Walmart+","Target+"]
+  },
   "crawlers": {
-    "indiamart": { "enabled": true, "max_retries": 3, "rate_limit_per_minute": 25, "products": ["Sugar","Rice","Wheat","Pulses","Grains"] },
-    "tradeindia": { "enabled": true, "max_retries": 3, "rate_limit_per_minute": 20, "products": ["Pulses","Grains","Dals","Oilseeds"] },
-    "agmarknet": { "enabled": true, "max_retries": 3, "rate_limit_per_minute": 15, "products": ["All Commodities"] },
-    "apmc": { "enabled": true, "max_retries": 2, "rate_limit_per_minute": 10, "products": ["Regional Markets"] },
-    "export_directory": { "enabled": true, "max_retries": 2, "rate_limit_per_minute": 12, "products": ["Export Data"] },
-    "amazon_business": { "enabled": true, "max_retries": 3, "rate_limit_per_minute": 20, "products": ["All Commodities"], "platform": "amazon.in/business" },
-    "flipkart_wholesale": { "enabled": true, "max_retries": 3, "rate_limit_per_minute": 18, "products": ["All Commodities"], "platform": "flipkart.com/wholesale" },
-    "government_api": { "enabled": true, "max_retries": 2, "rate_limit_per_minute": 10, "products": ["Official Data"], "portals": ["data.gov.in","agmarknet.gov.in","eproc.gov.in"] },
-    "linkedin": { "enabled": true, "max_retries": 2, "rate_limit_per_minute": 8, "products": ["Company Profiles"], "platform": "linkedin.com" },
-    "news": { "enabled": true, "max_retries": 2, "rate_limit_per_minute": 15, "products": ["Market News"], "sources": ["Economic Times","Business Standard","Reuters India"] }
+    "indiamart": { "enabled": true, "rate_limit_per_minute": 25 },
+    "tradeindia": { "enabled": true, "rate_limit_per_minute": 20 },
+    "agmarknet": { "enabled": true, "rate_limit_per_minute": 15 },
+    "apmc": { "enabled": true, "rate_limit_per_minute": 10 },
+    "export_directory": { "enabled": true, "rate_limit_per_minute": 12 },
+    "amazon_business": { "enabled": true, "rate_limit_per_minute": 20 },
+    "flipkart_wholesale": { "enabled": true, "rate_limit_per_minute": 18 },
+    "government_api": { "enabled": true, "rate_limit_per_minute": 10 },
+    "linkedin": { "enabled": true, "rate_limit_per_minute": 8 },
+    "news": { "enabled": true, "rate_limit_per_minute": 15 },
+    "jiomart": { "enabled": true, "rate_limit_per_minute": 15 },
+    "dmart": { "enabled": true, "rate_limit_per_minute": 12 },
+    "bigbasket": { "enabled": true, "rate_limit_per_minute": 15 },
+    "blinkit": { "enabled": true, "rate_limit_per_minute": 20 },
+    "zepto": { "enabled": true, "rate_limit_per_minute": 20 },
+    "swiggy_instamart": { "enabled": true, "rate_limit_per_minute": 18 },
+    "reliance_fresh": { "enabled": true, "rate_limit_per_minute": 12 },
+    "more_retail": { "enabled": true, "rate_limit_per_minute": 10 },
+    "spencers": { "enabled": true, "rate_limit_per_minute": 10 },
+    "walmart_global": { "enabled": true, "rate_limit_per_minute": 15 },
+    "costco_global": { "enabled": true, "rate_limit_per_minute": 12 },
+    "carrefour_global": { "enabled": true, "rate_limit_per_minute": 12 },
+    "tesco_global": { "enabled": true, "rate_limit_per_minute": 12 },
+    "alibaba": { "enabled": true, "rate_limit_per_minute": 20 },
+    "alibaba_china": { "enabled": true, "rate_limit_per_minute": 15 },
+    "amazon_global": { "enabled": true, "rate_limit_per_minute": 20 },
+    "seafood_exporters": { "enabled": true, "rate_limit_per_minute": 10 },
+    "corporate_farms": { "enabled": true, "rate_limit_per_minute": 8 },
+    "marine_harvest": { "enabled": true, "rate_limit_per_minute": 8 }
   },
-  "pipeline": {
-    "dedup_similarity_threshold": 0.85,
-    "max_batch_size": 1000,
-    "validation_strict": false
-  },
-  "github": {
-    "auto_commit": true,
-    "auto_push": true,
-    "pages_enabled": true,
-    "commit_message_prefix": "[auto]"
-  },
-  "monitoring": {
-    "health_check_interval": 60,
-    "checkpoint_enabled": true,
-    "checkpoint_path": "data/checkpoint.json"
+  "region_scheduling": {
+    "india": { "interval_minutes": 30, "active_hours": "06:00-22:00" },
+    "south_asia": { "interval_minutes": 60, "active_hours": "06:00-22:00" },
+    "southeast_asia": { "interval_minutes": 90, "active_hours": "07:00-21:00" },
+    "east_asia": { "interval_minutes": 120, "active_hours": "08:00-20:00" },
+    "middle_east": { "interval_minutes": 120, "active_hours": "07:00-19:00" },
+    "europe": { "interval_minutes": 180, "active_hours": "08:00-18:00" },
+    "north_america": { "interval_minutes": 180, "active_hours": "08:00-18:00" },
+    "south_america": { "interval_minutes": 240, "active_hours": "08:00-18:00" },
+    "africa": { "interval_minutes": 240, "active_hours": "07:00-17:00" },
+    "oceania": { "interval_minutes": 180, "active_hours": "08:00-18:00" }
   }
 }
