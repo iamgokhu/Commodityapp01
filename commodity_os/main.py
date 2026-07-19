@@ -104,7 +104,7 @@ class CommodityOS:
             "remote": "origin",
             "branch": "main",
             "max_cycles": 0,  # 0 = infinite
-            "cycle_interval": 3600,  # 1 hour
+            "cycle_interval": 30,  # 30 seconds
             "auto_publish": True,
         }
 

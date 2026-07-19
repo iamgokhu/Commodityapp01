@@ -212,14 +212,36 @@ class IntegrationOrchestrator:
         logger.info(f"Knowledge graph: {graph_entities} entities, {len(graph_commodities)} commodities, "
                      f"{len(graph_geographies)} geographies")
 
-        # 6. Save results
+        # 6. Save results - APPEND new entities (dedup by name+product+source)
         DATA_DIR.mkdir(parents=True, exist_ok=True)
         OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
         all_entities_file = OUTPUT_DIR / "all_entities.json"
+        existing_entities = []
+        if all_entities_file.exists():
+            try:
+                with open(all_entities_file, "r", encoding="utf-8") as f:
+                    existing_entities = json.load(f)
+            except (json.JSONDecodeError, IOError):
+                existing_entities = []
+
+        # Dedup: keep existing, add new ones not already present
+        seen = set()
+        for e in existing_entities:
+            key = (e.get("name", ""), e.get("commodity", e.get("commodity_group", "")), e.get("source", ""))
+            seen.add(key)
+
+        new_count = 0
+        for e in all_raw_entities:
+            key = (e.get("name", ""), e.get("commodity", e.get("commodity_group", "")), e.get("source", ""))
+            if key not in seen:
+                existing_entities.append(e)
+                seen.add(key)
+                new_count += 1
+
         with open(all_entities_file, "w", encoding="utf-8") as f:
-            json.dump(all_raw_entities, f, indent=2, ensure_ascii=False)
-        logger.info(f"Saved {len(all_raw_entities)} raw entities to {all_entities_file}")
+            json.dump(existing_entities, f, indent=2, ensure_ascii=False)
+        logger.info(f"Entities: {len(existing_entities)} total ({new_count} new, {len(all_raw_entities)} in this cycle)")
 
         stats_file = OUTPUT_DIR / "pipeline_stats.json"
         with open(stats_file, "w", encoding="utf-8") as f:
@@ -237,31 +259,31 @@ class IntegrationOrchestrator:
         discovered = self.graph.discover_relationships()
         logger.info(f"Discovered relationships: {discovered}")
 
-        # 8. Generate dashboard
+        # 8. Generate dashboard using ALL accumulated entities
         dash_gen = DashboardGenerator(str(OUTPUT_DIR))
         dashboard_entities = []
-        for record in mapped_records:
+        for record in existing_entities:
             dashboard_entities.append({
-                "name": record.get("company_name", ""),
-                "type": record.get("entity_type", ""),
-                "product": record.get("product", ""),
-                "category": record.get("category", record.get("commodity_group", "")),
+                "name": record.get("name", record.get("company_name", "")),
+                "type": record.get("entity_type", record.get("type", "")),
+                "product": record.get("commodity", record.get("product", "")),
+                "category": record.get("commodity_group", record.get("category", "")),
                 "state": record.get("state", ""),
                 "district": record.get("district", ""),
                 "taluk": record.get("taluk", ""),
-                "phone": record.get("contact_phone", ""),
+                "phone": record.get("contact", record.get("contact_phone", record.get("phone", ""))),
                 "email": record.get("email", ""),
                 "website": record.get("website", ""),
-                "market_price": record.get("market_price", 0),
-                "purchase_price": record.get("purchase_price", 0),
-                "selling_price": record.get("selling_price", 0),
-                "unit": record.get("price_unit", "KG"),
+                "market_price": record.get("pricing", {}).get("market_price", record.get("market_price", 0)),
+                "purchase_price": record.get("pricing", {}).get("purchase_price", record.get("purchase_price", 0)),
+                "selling_price": record.get("pricing", {}).get("selling_price", record.get("selling_price", 0)),
+                "unit": record.get("pricing", {}).get("unit", record.get("price_unit", "KG")),
                 "source": record.get("source", ""),
-                "year": record.get("year_of_establishment", ""),
-                "gst": record.get("gst_number", ""),
+                "year": record.get("year_of_establishment", record.get("year", "")),
+                "gst": record.get("gst_number", record.get("gst", "")),
                 "confidence": 0.8,
-                "entity_type": record.get("entity_type", ""),
-                "commodity_group": record.get("category", ""),
+                "entity_type": record.get("entity_type", record.get("type", "")),
+                "commodity_group": record.get("commodity_group", record.get("category", "")),
             })
         consolidated = {"entities": dashboard_entities, "stats": {"total": len(dashboard_entities)}}
         await dash_gen.generate(dashboard_entities, consolidated)
@@ -280,11 +302,12 @@ class IntegrationOrchestrator:
             shutil.copy2(src_json, DOCS_DIR / "dashboard.json")
             logger.info("Dashboard JSON copied to docs/")
 
-        # 10. Copy entities to docs for frontend data
-        entities_file = OUTPUT_DIR / "all_entities.json"
-        if entities_file.exists():
+        # 10. Copy dashboard JSON to docs/data.json for frontend auto-refresh
+        dashboard_json = OUTPUT_DIR / "dashboard.json"
+        if dashboard_json.exists():
             import shutil
-            shutil.copy2(entities_file, DOCS_DIR / "data.json")
+            shutil.copy2(dashboard_json, DOCS_DIR / "data.json")
+            logger.info("Dashboard JSON copied to docs/data.json for frontend")
             logger.info("Entity data copied to docs/data.json")
 
         cycle_duration = time.time() - cycle_start

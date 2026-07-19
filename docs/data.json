@@ -1,5 +1,5 @@
 {
-  "generated_at": 1784467917.2704275,
+  "generated_at": 1784481677.8073344,
   "summary": {
     "total_entities": 195,
     "states_covered": 16,
@@ -2644,8 +2644,8 @@
     }
   },
   "system_metrics": {
-    "cpu": 36.1,
-    "ram": 86.2,
+    "cpu": 12.3,
+    "ram": 88.6,
     "disk": 41.0,
     "platform": "Windows"
   }
