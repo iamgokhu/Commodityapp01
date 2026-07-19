@@ -2938,6 +2938,12 @@
       "commodity": "Ragi",
       "node_type": "entity",
       "name": "Raj Agro Foods"
+    },
+    {
+      "id": "x",
+      "type": "Manufacturer",
+      "node_type": "entity",
+      "name": "X"
     }
   ],
   "edges": [

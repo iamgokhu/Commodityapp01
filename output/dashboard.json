@@ -1,5 +1,5 @@
 {
-  "generated_at": 1784451588.5850396,
+  "generated_at": 1784454148.6012852,
   "summary": {
     "total_entities": 2,
     "states_covered": 2,
@@ -181,5 +181,10 @@
     "stats": {
       "total": 2
     }
+  },
+  "product_hierarchy": {},
+  "state_hierarchy": {
+    "MH": {},
+    "UP": {}
   }
 }
