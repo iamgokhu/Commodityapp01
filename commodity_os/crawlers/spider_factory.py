@@ -281,8 +281,8 @@ class SpiderFactory:
             news_sites = region_config["news_sites"]
 
             for country in countries:
-                # 1. B2B spider
-                for site in b2b_sites[:1]:
+                # 1. B2B spider (one per b2b site)
+                for site in b2b_sites[:3]:
                     spider_id += 1
                     self.spiders.append(GlobalSpider(
                         spider_id=f"b2b_{spider_id:04d}",
@@ -295,8 +295,8 @@ class SpiderFactory:
                     ))
                     spider_count += 1
 
-                # 2. Retail spider
-                for site in retail_sites[:1]:
+                # 2. Retail spider (one per retail site)
+                for site in retail_sites[:3]:
                     spider_id += 1
                     self.spiders.append(GlobalSpider(
                         spider_id=f"ret_{spider_id:04d}",
@@ -310,7 +310,7 @@ class SpiderFactory:
                     spider_count += 1
 
                 # 3. Government spider
-                for site in gov_sites[:1]:
+                for site in gov_sites[:2]:
                     spider_id += 1
                     self.spiders.append(GlobalSpider(
                         spider_id=f"gov_{spider_id:04d}",
@@ -324,7 +324,7 @@ class SpiderFactory:
                     spider_count += 1
 
                 # 4. News spider
-                for site in news_sites[:1]:
+                for site in news_sites[:3]:
                     spider_id += 1
                     self.spiders.append(GlobalSpider(
                         spider_id=f"news_{spider_id:04d}",
@@ -337,18 +337,19 @@ class SpiderFactory:
                     ))
                     spider_count += 1
 
-                # 5. Corporate Farm spider
-                spider_id += 1
-                self.spiders.append(GlobalSpider(
-                    spider_id=f"farm_{spider_id:04d}",
-                    name=f"corporate_farm_{country.replace(' ', '_')}",
-                    region=region_name, country=country,
-                    site_type="corporate_farm", source="alibaba.com",
-                    base_url="https://www.alibaba.com",
-                    commodities=commodities,
-                    max_pages=self.max_pages, concurrency=1,
-                ))
-                spider_count += 1
+                # 5. Corporate Farm spider (land + marine)
+                for farm_type in ["corporate_farm", "marine_harvest"]:
+                    spider_id += 1
+                    self.spiders.append(GlobalSpider(
+                        spider_id=f"farm_{spider_id:04d}",
+                        name=f"{farm_type}_{country.replace(' ', '_')}",
+                        region=region_name, country=country,
+                        site_type="corporate_farm", source="alibaba.com",
+                        base_url="https://www.alibaba.com",
+                        commodities=commodities,
+                        max_pages=self.max_pages, concurrency=1,
+                    ))
+                    spider_count += 1
 
         logger.info(f"SpiderFactory generated {len(self.spiders)} spiders across {len(REGIONS)} regions")
         self._print_stats()

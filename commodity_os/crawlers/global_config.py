@@ -16,10 +16,10 @@ REGIONS: Dict[str, Dict[str, Any]] = {
             "Bhutan", "Maldives", "Afghanistan",
         ],
         "priority_commodities": ["Rice", "Wheat", "Pulses", "Sugar", "Tea", "Cotton"],
-        "b2b_sites": ["indiamart.com", "tradeindia.com", "alibaba.com"],
-        "retail_sites": ["amazon.in", "flipkart.com", "jiomart.com", "bigbasket.com"],
-        "gov_sites": ["data.gov.in", "agmarknet.gov.in"],
-        "news_sites": ["economictimes.indiatimes.com", "business-standard.com"],
+        "b2b_sites": ["indiamart.com", "tradeindia.com", "alibaba.com", "exportersindia.com", "justdial.com"],
+        "retail_sites": ["amazon.in", "flipkart.com", "jiomart.com", "bigbasket.com", "snapdeal.com"],
+        "gov_sites": ["data.gov.in", "agmarknet.gov.in", "eproc.gov.in"],
+        "news_sites": ["economictimes.indiatimes.com", "business-standard.com", "livemint.com"],
     },
     "Southeast Asia": {
         "countries": [
@@ -27,10 +27,10 @@ REGIONS: Dict[str, Dict[str, Any]] = {
             "Myanmar", "Cambodia", "Laos", "Singapore", "Brunei", "Timor-Leste",
         ],
         "priority_commodities": ["Rice", "Rubber", "Palm Oil", "Spices", "Seafood", "Coconut"],
-        "b2b_sites": ["alibaba.com", "indiamart.com", "tradeindia.com"],
-        "retail_sites": ["lazada.com", "shopee.com", "tokopedia.com"],
-        "gov_sites": ["data.go.th", "bps.go.id"],
-        "news_sites": ["bangkokpost.com", "thejakartapost.com"],
+        "b2b_sites": ["alibaba.com", "indiamart.com", "tradeindia.com", "thomasnet.com", "kompass.com"],
+        "retail_sites": ["lazada.com", "shopee.com", "tokopedia.com", "bukalapak.com", "blibli.com"],
+        "gov_sites": ["data.go.th", "bps.go.id", "psa.gov.ph"],
+        "news_sites": ["bangkokpost.com", "thejakartapost.com", "vietnamnews.vn"],
     },
     "East Asia": {
         "countries": [
@@ -38,10 +38,10 @@ REGIONS: Dict[str, Dict[str, Any]] = {
             "Hong Kong", "Macau", "North Korea",
         ],
         "priority_commodities": ["Rice", "Wheat", "Soybean", "Tea", "Seafood", "Silk"],
-        "b2b_sites": ["alibaba.com", "made-in-china.com", "globalsources.com"],
-        "retail_sites": ["amazon.co.jp", "jd.com", "coupang.com"],
-        "gov_sites": ["stats.gov.cn", "maff.go.jp"],
-        "news_sites": ["nikkei.com", "globaltimes.cn"],
+        "b2b_sites": ["alibaba.com", "made-in-china.com", "globalsources.com", "1688.com", "dhgate.com"],
+        "retail_sites": ["amazon.co.jp", "jd.com", "coupang.com", "rakuten.co.jp", "tmall.com"],
+        "gov_sites": ["stats.gov.cn", "maff.go.jp", "kostat.go.kr"],
+        "news_sites": ["nikkei.com", "globaltimes.cn", "koreaherald.com"],
     },
     "Middle East": {
         "countries": [
@@ -50,10 +50,10 @@ REGIONS: Dict[str, Dict[str, Any]] = {
             "Turkey", "Syria", "Yemen", "Palestine",
         ],
         "priority_commodities": ["Wheat", "Rice", "Sugar", "Dates", "Oilseeds", "Dairy"],
-        "b2b_sites": ["alibaba.com", "tradearabia.com", "dubizzle.com"],
-        "retail_sites": ["amazon.ae", "noon.com", "carrefouruae.com"],
-        "gov_sites": ["zayed.gov.ae", "samra.gov.sa"],
-        "news_sites": ["gulfbusiness.com", "arabianbusiness.com"],
+        "b2b_sites": ["alibaba.com", "tradearabia.com", "dubizzle.com", "saudisale.com", "haraj.com.sa"],
+        "retail_sites": ["amazon.ae", "noon.com", "carrefouruae.com", "souq.com", "namshi.com"],
+        "gov_sites": ["zayed.gov.ae", "samra.gov.sa", "gov.ae"],
+        "news_sites": ["gulfbusiness.com", "arabianbusiness.com", "thenational.ae"],
     },
     "Europe": {
         "countries": [
@@ -68,10 +68,10 @@ REGIONS: Dict[str, Dict[str, Any]] = {
             "Azerbaijan", "Turkey",
         ],
         "priority_commodities": ["Wheat", "Sugar", "Dairy", "Wine", "Olive Oil", "Grains"],
-        "b2b_sites": ["alibaba.com", "made-in-germany.com", "europages.com"],
-        "retail_sites": ["amazon.de", "amazon.co.uk", "tesco.com", "carrefour.com"],
-        "gov_sites": ["ec.europa.eu/eurostat", "gov.uk"],
-        "news_sites": ["reuters.com", "ft.com", "bbc.com"],
+        "b2b_sites": ["alibaba.com", "made-in-germany.com", "europages.com", "wlw.de", "kompass.com"],
+        "retail_sites": ["amazon.de", "amazon.co.uk", "tesco.com", "carrefour.com", "otto.de"],
+        "gov_sites": ["ec.europa.eu/eurostat", "gov.uk", "destatis.de"],
+        "news_sites": ["reuters.com", "ft.com", "bbc.com", "dw.com"],
     },
     "Africa": {
         "countries": [
@@ -86,13 +86,13 @@ REGIONS: Dict[str, Dict[str, Any]] = {
             "Sierra Leone", "Liberia", "Guinea", "Gambia", "Guinea-Bissau",
             "Togo", "Benin", "Central African Rep.", "Libya", "Tunisia",
             "Algeria", "Morocco", "Egypt", "Mauritania", "Western Sahara",
-            "Réunion", "Mayotte", "Somaliland",
+            "Reunion", "Mayotte", "Somaliland",
         ],
         "priority_commodities": ["Cocoa", "Coffee", "Tea", "Cotton", "Cashew", "Spices"],
-        "b2b_sites": ["alibaba.com", "indiamart.com", "afrikta.com"],
-        "retail_sites": ["jumia.com", "amazon.com", "takealot.com"],
-        "gov_sites": ["worldbank.org", "fao.org"],
-        "news_sites": ["africanews.com", "bloombergafrica.com"],
+        "b2b_sites": ["alibaba.com", "indiamart.com", "afrikta.com", "go4worldbusiness.com", "tradekey.com"],
+        "retail_sites": ["jumia.com", "amazon.com", "takealot.com", "bidorbuy.co.za", "kilimall.com"],
+        "gov_sites": ["worldbank.org", "fao.org", "afdb.org"],
+        "news_sites": ["africanews.com", "bloombergafrica.com", "businessday.ng"],
     },
     "North America": {
         "countries": [
@@ -104,10 +104,10 @@ REGIONS: Dict[str, Dict[str, Any]] = {
             "St. Kitts", "Puerto Rico", "Guadeloupe", "Martinique",
         ],
         "priority_commodities": ["Corn", "Wheat", "Soybean", "Sugar", "Cotton", "Coffee"],
-        "b2b_sites": ["alibaba.com", "amazon.com", "thomasnet.com"],
-        "retail_sites": ["amazon.com", "walmart.com", "costco.com", "target.com"],
-        "gov_sites": ["usda.gov", "statistics.canada.ca"],
-        "news_sites": ["reuters.com", "bloomberg.com", "wsj.com"],
+        "b2b_sites": ["alibaba.com", "amazon.com", "thomasnet.com", "kompass.com", "europages.co.uk"],
+        "retail_sites": ["amazon.com", "walmart.com", "costco.com", "target.com", "samsclub.com"],
+        "gov_sites": ["usda.gov", "statistics.canada.ca", "inegi.org.mx"],
+        "news_sites": ["reuters.com", "bloomberg.com", "wsj.com", "cnbc.com"],
     },
     "South America": {
         "countries": [
@@ -116,10 +116,10 @@ REGIONS: Dict[str, Dict[str, Any]] = {
             "Guyana", "Suriname", "French Guiana",
         ],
         "priority_commodities": ["Soybean", "Sugar", "Coffee", "Corn", "Wheat", "Beef"],
-        "b2b_sites": ["alibaba.com", "mercadolibre.com", "b2brazil.com"],
-        "retail_sites": ["mercadolibre.com", "amazon.com.br", "magazineluiza.com.br"],
-        "gov_sites": ["ibge.gov.br", "indec.gob.ar"],
-        "news_sites": ["reuters.com", "bloomberg.com.br", "infobae.com"],
+        "b2b_sites": ["alibaba.com", "mercadolibre.com", "b2brazil.com", "indiamart.com", "go4worldbusiness.com"],
+        "retail_sites": ["mercadolibre.com", "amazon.com.br", "magazineluiza.com.br", "americanas.com.br", "casasbahia.com.br"],
+        "gov_sites": ["ibge.gov.br", "indec.gob.ar", "ine.cl"],
+        "news_sites": ["reuters.com", "bloomberg.com.br", "infobae.com", "elcomercio.pe"],
     },
     "Oceania": {
         "countries": [
@@ -128,10 +128,10 @@ REGIONS: Dict[str, Dict[str, Any]] = {
             "Micronesia", "Palau", "Marshall Islands", "Nauru", "Tuvalu",
         ],
         "priority_commodities": ["Wheat", "Wool", "Beef", "Dairy", "Sugar", "Rice"],
-        "b2b_sites": ["alibaba.com", "indiamart.com", "tradeindia.com"],
-        "retail_sites": ["amazon.com.au", "woolworths.com.au", "countdown.co.nz"],
-        "gov_sites": ["abs.gov.au", "stats.govt.nz"],
-        "news_sites": ["abc.net.au", "nzherald.co.nz"],
+        "b2b_sites": ["alibaba.com", "indiamart.com", "tradeindia.com", "thomasnet.com.au", "europages.com"],
+        "retail_sites": ["amazon.com.au", "woolworths.com.au", "countdown.co.nz", "coles.com.au", "kmart.com.au"],
+        "gov_sites": ["abs.gov.au", "stats.govt.nz", "data.gov.au"],
+        "news_sites": ["abc.net.au", "nzherald.co.nz", "smh.com.au", "afr.com"],
     },
 }
 
