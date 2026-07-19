@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CommodityOS - Market Intelligence Dashboard</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0f172a; color: #e2e8f0; min-height: 100vh; }
+        .header { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); padding: 2rem; border-bottom: 1px solid #334155; }
+        .header h1 { font-size: 2rem; color: #38bdf8; }
+        .header p { color: #94a3b8; margin-top: 0.5rem; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .stat-card { background: #1e293b; border-radius: 12px; padding: 1.5rem; border: 1px solid #334155; }
+        .stat-card h3 { color: #64748b; font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.05em; }
+        .stat-card .value { font-size: 2rem; font-weight: 700; color: #38bdf8; margin-top: 0.5rem; }
+        .section { background: #1e293b; border-radius: 12px; padding: 1.5rem; border: 1px solid #334155; margin-bottom: 1.5rem; }
+        .section h2 { color: #f1f5f9; margin-bottom: 1rem; font-size: 1.25rem; }
+        .products { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+        .product-tag { background: #334155; color: #94a3b8; padding: 0.5rem 1rem; border-radius: 9999px; font-size: 0.875rem; }
+        .product-tag.active { background: #0ea5e9; color: white; }
+        .footer { text-align: center; padding: 2rem; color: #64748b; border-top: 1px solid #334155; margin-top: 2rem; }
+        .status { display: inline-flex; align-items: center; gap: 0.5rem; }
+        .status-dot { width: 8px; height: 8px; border-radius: 50%; background: #22c55e; animation: pulse 2s infinite; }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>CommodityOS</h1>
+        <p>Automated Market Intelligence System for Indian Commodities</p>
+    </div>
+    <div class="container">
+        <div class="stats">
+            <div class="stat-card">
+                <h3>Products Tracked</h3>
+                <div class="value">7</div>
+            </div>
+            <div class="stat-card">
+                <h3>States Covered</h3>
+                <div class="value">15</div>
+            </div>
+            <div class="stat-card">
+                <h3>Entity Types</h3>
+                <div class="value">3</div>
+            </div>
+            <div class="stat-card">
+                <h3>System Status</h3>
+                <div class="value"><span class="status"><span class="status-dot"></span> Online</span></div>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Products Monitored</h2>
+            <div class="products">
+                <span class="product-tag active">Sugar</span>
+                <span class="product-tag active">Rice</span>
+                <span class="product-tag active">Grains</span>
+                <span class="product-tag active">Pulses</span>
+                <span class="product-tag active">Wheat</span>
+                <span class="product-tag active">Dals</span>
+                <span class="product-tag active">Basmathi Rice</span>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Geography</h2>
+            <div class="products">
+                <span class="product-tag">Maharashtra</span>
+                <span class="product-tag">Uttar Pradesh</span>
+                <span class="product-tag">Punjab</span>
+                <span class="product-tag">Gujarat</span>
+                <span class="product-tag">Rajasthan</span>
+                <span class="product-tag">Madhya Pradesh</span>
+                <span class="product-tag">Karnataka</span>
+                <span class="product-tag">Tamil Nadu</span>
+                <span class="product-tag">Andhra Pradesh</span>
+                <span class="product-tag">West Bengal</span>
+                <span class="product-tag">Bihar</span>
+                <span class="product-tag">Odisha</span>
+                <span class="product-tag">Telangana</span>
+                <span class="product-tag">Kerala</span>
+                <span class="product-tag">Haryana</span>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Data Sources</h2>
+            <div class="products">
+                <span class="product-tag">IndiaMART</span>
+                <span class="product-tag">TradeIndia</span>
+                <span class="product-tag">AgMarkNet</span>
+                <span class="product-tag">APMC Markets</span>
+                <span class="product-tag">Export Directories</span>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>CommodityOS v1.0.0 | Auto-updated by 32-Agent Intelligence System</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+{
+  "system": {
+    "name": "CommodityOS",
+    "version": "1.0.0",
+    "log_level": "INFO"
+  },
+  "cycle": {
+    "interval_seconds": 3600,
+    "max_cycles": 0,
+    "auto_publish": true
+  },
+  "products": [
+    "Sugar",
+    "Rice",
+    "Grains",
+    "Pulses",
+    "Wheat",
+    "Dals",
+    "Basmathi Rice"
+  ],
+  "states": [
+    "Maharashtra",
+    "Uttar Pradesh",
+    "Punjab",
+    "Gujarat",
+    "Rajasthan",
+    "Madhya Pradesh",
+    "Karnataka",
+    "Tamil Nadu",
+    "Andhra Pradesh",
+    "West Bengal",
+    "Bihar",
+    "Odisha",
+    "Telangana",
+    "Kerala",
+    "Haryana"
+  ],
+  "entity_types": [
+    "Manufacturer",
+    "Wholesaler",
+    "Exporter"
+  ],
+  "crawlers": {
+    "indiamart": {
+      "enabled": true,
+      "max_retries": 3,
+      "rate_limit_per_minute": 10
+    },
+    "tradeindia": {
+      "enabled": true,
+      "max_retries": 3,
+      "rate_limit_per_minute": 10
+    },
+    "agmarknet": {
+      "enabled": true,
+      "max_retries": 3,
+      "rate_limit_per_minute": 5
+    },
+    "apmc": {
+      "enabled": true,
+      "max_retries": 2,
+      "rate_limit_per_minute": 5
+    },
+    "export_directory": {
+      "enabled": true,
+      "max_retries": 2,
+      "rate_limit_per_minute": 5
+    }
+  },
+  "pipeline": {
+    "dedup_similarity_threshold": 0.85,
+    "max_batch_size": 1000,
+    "validation_strict": false
+  },
+  "github": {
+    "auto_commit": true,
+    "auto_push": true,
+    "pages_enabled": true,
+    "commit_message_prefix": "[auto]"
+  },
+  "monitoring": {
+    "health_check_interval": 60,
+    "checkpoint_enabled": true,
+    "checkpoint_path": "data/checkpoint.json"
+  }
+}

@@ -5,6 +5,7 @@ Main entrypoint that orchestrates the full pipeline:
   → Dashboard → Reports → GitHub → Monitoring → Loop
 """
 import asyncio
+import json
 import logging
 import sys
 import time
@@ -18,6 +19,8 @@ from commodity_os.meta_agents.quality_agent import QualityAgent
 from commodity_os.meta_agents.executive_agent import ExecutiveIntelligenceAgent
 from commodity_os.github_integration.github import GitHubIntegration
 
+CONFIG_PATH = Path(__file__).parent / "config.json"
+
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
@@ -29,11 +32,19 @@ logging.basicConfig(
 logger = logging.getLogger("commodity_os")
 
 
+def load_config() -> dict:
+    if CONFIG_PATH.exists():
+        with open(CONFIG_PATH) as f:
+            return json.load(f)
+    return {}
+
+
 class CommodityOS:
     """Main orchestrator for the full automated pipeline."""
 
     def __init__(self, config: dict = None):
-        self.config = config or self._default_config()
+        file_config = load_config()
+        self.config = {**file_config, **(config or {})}
         self.orchestrator = ResourceAwareOrchestrator()
         self.monitoring = MonitoringSystem()
         self.orchestrator_agent = SystemOrchestratorAgent(self.orchestrator)

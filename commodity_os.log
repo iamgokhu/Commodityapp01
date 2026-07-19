@@ -612,3 +612,59 @@
 2026-07-19 11:08:51,892 [INFO] commodity_os.core.orchestrator: Task api_health_check queued (priority=CRITICAL)
 2026-07-19 11:08:56,360 [INFO] commodity_os.core.orchestrator: Task resource_detection queued (priority=CRITICAL)
 2026-07-19 11:09:00,783 [INFO] commodity_os.core.orchestrator: Task crawl_indiamart queued (priority=HIGH)
+2026-07-19 11:10:01,473 [INFO] commodity_os: === Initializing CommodityOS ===
+2026-07-19 11:10:01,473 [INFO] commodity_os.core.orchestrator: Resource-Aware Orchestrator initializing...
+2026-07-19 11:10:03,002 [INFO] commodity_os.core.orchestrator: Resource check: CPU=0.0% RAM=92.4% Disk=40.3% Health=20.0
+2026-07-19 11:10:03,003 [INFO] commodity_os.monitoring.monitor: MonitoringSystem initializing...
+2026-07-19 11:10:03,004 [INFO] commodity_os.monitoring.monitor: Checkpoint loaded. Last stage index: 0
+2026-07-19 11:10:03,005 [INFO] commodity_os.monitoring.monitor: MonitoringSystem ready. 72 components tracked.
+2026-07-19 11:10:03,005 [INFO] commodity_os.meta_agents.orchestrator_agent: System Orchestrator Agent initialized
+2026-07-19 11:10:03,006 [INFO] commodity_os.meta_agents.quality_agent: Quality Agent initialized
+2026-07-19 11:10:03,006 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence Agent initialized
+2026-07-19 11:10:03,006 [INFO] commodity_os.github_integration.github: GitHub Integration initialized
+2026-07-19 11:10:03,007 [INFO] commodity_os: === CommodityOS initialized ===
+2026-07-19 11:10:03,007 [INFO] commodity_os: Starting automated collection pipeline...
+2026-07-19 11:10:03,007 [INFO] commodity_os: 
+============================================================
+2026-07-19 11:10:03,007 [INFO] commodity_os: CYCLE 1 START
+2026-07-19 11:10:03,008 [INFO] commodity_os: ============================================================
+2026-07-19 11:10:03,009 [INFO] commodity_os.meta_agents.orchestrator_agent: Cycle 1: Planning execution with mode=full
+2026-07-19 11:10:04,340 [INFO] commodity_os.core.orchestrator: Task api_health_check queued (priority=CRITICAL)
+2026-07-19 11:10:05,732 [INFO] commodity_os.core.orchestrator: Task resource_detection queued (priority=CRITICAL)
+2026-07-19 11:10:07,067 [INFO] commodity_os.core.orchestrator: Task crawl_indiamart queued (priority=HIGH)
+2026-07-19 11:10:08,401 [INFO] commodity_os.core.orchestrator: Task crawl_tradeindia queued (priority=HIGH)
+2026-07-19 11:10:09,751 [INFO] commodity_os.core.orchestrator: Task crawl_agmarknet queued (priority=HIGH)
+2026-07-19 11:10:11,089 [INFO] commodity_os.core.orchestrator: Task crawl_apmc deferred (low resources)
+2026-07-19 11:10:12,461 [INFO] commodity_os.core.orchestrator: Task crawl_export_dir deferred (low resources)
+2026-07-19 11:10:13,801 [INFO] commodity_os.core.orchestrator: Task data_validation queued (priority=HIGH)
+2026-07-19 11:10:15,169 [INFO] commodity_os.core.orchestrator: Task data_dedup queued (priority=HIGH)
+2026-07-19 11:10:16,521 [INFO] commodity_os.core.orchestrator: Task data_cleaning queued (priority=HIGH)
+2026-07-19 11:10:17,868 [INFO] commodity_os.core.orchestrator: Task data_normalization deferred (low resources)
+2026-07-19 11:10:19,239 [INFO] commodity_os.core.orchestrator: Task entity_recognition deferred (low resources)
+2026-07-19 11:10:20,566 [INFO] commodity_os.core.orchestrator: Task commodity_classification deferred (low resources)
+2026-07-19 11:10:21,950 [INFO] commodity_os.core.orchestrator: Task sector_classification deferred (low resources)
+2026-07-19 11:10:23,305 [INFO] commodity_os.core.orchestrator: Task knowledge_graph_update deferred (low resources)
+2026-07-19 11:10:24,673 [INFO] commodity_os.core.orchestrator: Task trend_analysis deferred (low resources)
+2026-07-19 11:10:26,031 [INFO] commodity_os.core.orchestrator: Task risk_analysis deferred (low resources)
+2026-07-19 11:10:27,403 [INFO] commodity_os.core.orchestrator: Task forecast_generation deferred (low resources)
+2026-07-19 11:10:28,759 [INFO] commodity_os.core.orchestrator: Task executive_summary deferred (low resources)
+2026-07-19 11:10:30,130 [INFO] commodity_os.core.orchestrator: Task dashboard_generation queued (priority=HIGH)
+2026-07-19 11:10:31,469 [INFO] commodity_os.core.orchestrator: Task report_generation deferred (low resources)
+2026-07-19 11:10:32,782 [INFO] commodity_os.core.orchestrator: Task github_publish deferred (low resources)
+2026-07-19 11:10:34,112 [INFO] commodity_os.meta_agents.orchestrator_agent: Cycle 1: Planning execution with mode=deferred
+2026-07-19 11:10:35,471 [INFO] commodity_os.core.orchestrator: Task api_health_check queued (priority=CRITICAL)
+2026-07-19 11:10:36,806 [INFO] commodity_os.core.orchestrator: Task resource_detection queued (priority=CRITICAL)
+2026-07-19 11:10:38,128 [INFO] commodity_os.core.orchestrator: Task crawl_indiamart queued (priority=HIGH)
+2026-07-19 11:10:39,442 [INFO] commodity_os.core.orchestrator: Task crawl_tradeindia queued (priority=HIGH)
+2026-07-19 11:10:40,785 [INFO] commodity_os.core.orchestrator: Task crawl_agmarknet queued (priority=HIGH)
+2026-07-19 11:10:42,124 [INFO] commodity_os.core.orchestrator: Task data_validation queued (priority=HIGH)
+2026-07-19 11:10:43,452 [INFO] commodity_os.core.orchestrator: Task data_dedup queued (priority=HIGH)
+2026-07-19 11:10:44,792 [INFO] commodity_os.core.orchestrator: Task data_cleaning queued (priority=HIGH)
+2026-07-19 11:10:46,132 [INFO] commodity_os.core.orchestrator: Task dashboard_generation queued (priority=HIGH)
+2026-07-19 11:10:46,146 [ERROR] commodity_os.github_integration.github: Commit failed: [WinError 2] The system cannot find the file specified
+2026-07-19 11:10:46,147 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence: Generated summary for cycle 1
+2026-07-19 11:10:46,158 [ERROR] commodity_os.github_integration.github: Commit failed: [WinError 2] The system cannot find the file specified
+2026-07-19 11:10:46,159 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence: Generated summary for cycle 1
+2026-07-19 11:10:46,164 [ERROR] commodity_os.github_integration.github: Commit failed: [WinError 2] The system cannot find the file specified
+2026-07-19 11:10:46,165 [INFO] commodity_os: Cycle 1 complete - Health: 100/100, Quality: 100.00%
+2026-07-19 11:10:46,165 [INFO] commodity_os: Next cycle in 3600s...
