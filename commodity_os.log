@@ -1,0 +1,614 @@
+2026-07-19 10:56:29,519 [INFO] commodity_os: === Initializing CommodityOS ===
+2026-07-19 10:56:29,519 [INFO] commodity_os.core.orchestrator: Resource-Aware Orchestrator initializing...
+2026-07-19 10:56:31,257 [INFO] commodity_os.core.orchestrator: Resource check: CPU=64.0% RAM=92.1% Disk=40.3% Health=20.0
+2026-07-19 10:56:31,258 [WARNING] asyncio: Executing <Task finished name='Task-18' coro=<EventBus._safe_call() done, defined at D:\Play\Commodity\commodity_os\core\events.py:112> result=None created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 1.734 seconds
+2026-07-19 10:56:31,258 [INFO] commodity_os.monitoring.monitor: MonitoringSystem initializing...
+2026-07-19 10:56:31,269 [INFO] commodity_os.monitoring.monitor: Checkpoint loaded. Last stage index: 0
+2026-07-19 10:56:31,269 [INFO] commodity_os.monitoring.monitor: MonitoringSystem ready. 72 components tracked.
+2026-07-19 10:56:31,269 [INFO] commodity_os.meta_agents.orchestrator_agent: System Orchestrator Agent initialized
+2026-07-19 10:56:31,269 [INFO] commodity_os.meta_agents.quality_agent: Quality Agent initialized
+2026-07-19 10:56:31,270 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence Agent initialized
+2026-07-19 10:56:31,270 [INFO] commodity_os.github_integration.github: GitHub Integration initialized
+2026-07-19 10:56:31,270 [INFO] commodity_os: === CommodityOS initialized ===
+2026-07-19 10:56:31,270 [INFO] commodity_os: === Shutting down CommodityOS ===
+2026-07-19 10:56:31,270 [INFO] commodity_os: Total uptime: 0s, Cycles completed: 0
+2026-07-19 10:56:31,273 [ERROR] commodity_os.github_integration.github: Commit failed: [WinError 2] The system cannot find the file specified
+2026-07-19 10:56:31,273 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence Agent shut down
+2026-07-19 10:56:31,273 [INFO] commodity_os.meta_agents.quality_agent: Quality Agent shut down
+2026-07-19 10:56:31,273 [INFO] commodity_os.meta_agents.orchestrator_agent: System Orchestrator Agent shut down
+2026-07-19 10:56:31,274 [INFO] commodity_os.monitoring.monitor: MonitoringSystem shut down
+2026-07-19 10:56:31,274 [INFO] commodity_os.core.orchestrator: Orchestrator shut down
+2026-07-19 10:56:31,274 [INFO] commodity_os: === CommodityOS shut down ===
+2026-07-19 10:56:31,455 [INFO] commodity_os.knowledge_graph.graph: Added entity: Test Co
+2026-07-19 10:56:31,465 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence: KG updated - 0 nodes
+2026-07-19 10:56:31,465 [INFO] commodity_os: Knowledge Graph updated: 0 nodes, 0 edges
+2026-07-19 10:56:31,483 [INFO] commodity_os.knowledge_graph.graph: Loaded knowledge graph from D:\Play\Commodity\data\knowledge_graph.json
+2026-07-19 10:56:31,483 [INFO] commodity_os.knowledge_graph.graph: Added entity: A
+2026-07-19 10:56:31,489 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence: KG updated - 0 nodes
+2026-07-19 10:56:31,489 [INFO] commodity_os: Knowledge Graph updated: 0 nodes, 0 edges
+2026-07-19 10:56:31,508 [INFO] commodity_os.knowledge_graph.graph: Loaded knowledge graph from D:\Play\Commodity\data\knowledge_graph.json
+2026-07-19 10:56:31,508 [INFO] commodity_os.knowledge_graph.graph: Added entity: A
+2026-07-19 10:56:31,515 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence: KG updated - 0 nodes
+2026-07-19 10:56:31,516 [INFO] commodity_os: Knowledge Graph updated: 0 nodes, 0 edges
+2026-07-19 10:56:31,533 [INFO] commodity_os.knowledge_graph.graph: Loaded knowledge graph from D:\Play\Commodity\data\knowledge_graph.json
+2026-07-19 10:56:31,534 [INFO] commodity_os.knowledge_graph.graph: Added entity: X
+2026-07-19 10:56:31,539 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence: KG updated - 0 nodes
+2026-07-19 10:56:31,540 [INFO] commodity_os: Knowledge Graph updated: 0 nodes, 0 edges
+2026-07-19 10:56:31,550 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence Agent initialized
+2026-07-19 10:56:31,551 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence Agent shut down
+2026-07-19 10:56:31,560 [INFO] commodity_os.core.orchestrator: Resource-Aware Orchestrator initializing...
+2026-07-19 10:56:33,023 [INFO] commodity_os.core.orchestrator: Resource check: CPU=8.3% RAM=92.2% Disk=40.3% Health=20.0
+2026-07-19 10:56:33,027 [WARNING] asyncio: Executing <Task pending name='Task-79' coro=<EventBus._safe_call() running at D:\Play\Commodity\commodity_os\core\events.py:114> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:767> cb=[gather.<locals>._done_callback() at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:822] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 1.461 seconds
+2026-07-19 10:56:34,465 [INFO] commodity_os.core.orchestrator: Resource check: CPU=48.1% RAM=92.8% Disk=40.3% Health=20.0
+2026-07-19 10:56:34,468 [WARNING] asyncio: Executing <Task pending name='Task-81' coro=<EventBus._safe_call() running at D:\Play\Commodity\commodity_os\core\events.py:114> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:767> cb=[gather.<locals>._done_callback() at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:822] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 1.441 seconds
+2026-07-19 10:56:34,468 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 10:56:34,469 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 10:56:34,470 [INFO] commodity_os.meta_agents.orchestrator_agent: System Orchestrator Agent initialized
+2026-07-19 10:56:34,470 [INFO] commodity_os.meta_agents.orchestrator_agent: System Orchestrator Agent shut down
+2026-07-19 10:56:34,471 [INFO] commodity_os.core.orchestrator: Orchestrator shut down
+2026-07-19 10:56:34,484 [INFO] commodity_os.meta_agents.quality_agent: Quality Agent initialized
+2026-07-19 10:56:34,484 [INFO] commodity_os.meta_agents.quality_agent: Quality Agent shut down
+2026-07-19 10:56:34,494 [INFO] commodity_os.monitoring.monitor: MonitoringSystem initializing...
+2026-07-19 10:56:34,504 [INFO] commodity_os.monitoring.monitor: Checkpoint loaded. Last stage index: 0
+2026-07-19 10:56:34,504 [INFO] commodity_os.monitoring.monitor: MonitoringSystem ready. 72 components tracked.
+2026-07-19 10:56:34,516 [INFO] commodity_os.monitoring.monitor: MonitoringSystem initializing...
+2026-07-19 10:56:34,517 [INFO] commodity_os.monitoring.monitor: Checkpoint loaded. Last stage index: 0
+2026-07-19 10:56:34,517 [INFO] commodity_os.monitoring.monitor: MonitoringSystem ready. 72 components tracked.
+2026-07-19 10:56:34,526 [INFO] commodity_os.core.orchestrator: Resource-Aware Orchestrator initializing...
+2026-07-19 10:56:35,991 [INFO] commodity_os.core.orchestrator: Resource check: CPU=25.0% RAM=92.8% Disk=40.3% Health=20.0
+2026-07-19 10:56:35,994 [WARNING] asyncio: Executing <Task pending name='Task-104' coro=<EventBus._safe_call() running at D:\Play\Commodity\commodity_os\core\events.py:114> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:767> cb=[gather.<locals>._done_callback() at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:822] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 1.459 seconds
+2026-07-19 10:56:37,454 [INFO] commodity_os.core.orchestrator: Resource check: CPU=42.9% RAM=92.8% Disk=40.3% Health=20.0
+2026-07-19 10:56:37,458 [WARNING] asyncio: Executing <Task pending name='Task-106' coro=<EventBus._safe_call() running at D:\Play\Commodity\commodity_os\core\events.py:114> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:767> cb=[gather.<locals>._done_callback() at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:822] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 1.461 seconds
+2026-07-19 10:56:38,907 [INFO] commodity_os.core.orchestrator: Resource check: CPU=25.0% RAM=92.8% Disk=40.3% Health=20.0
+2026-07-19 10:56:38,910 [WARNING] asyncio: Executing <Task pending name='Task-109' coro=<EventBus._safe_call() running at D:\Play\Commodity\commodity_os\core\events.py:114> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:767> cb=[gather.<locals>._done_callback() at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:822] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 1.452 seconds
+2026-07-19 10:56:38,910 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 10:56:38,911 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 10:56:38,912 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 10:56:38,913 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 10:56:38,914 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 10:56:38,914 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 10:56:40,357 [INFO] commodity_os.core.orchestrator: Task low deferred (low resources)
+2026-07-19 10:56:41,866 [INFO] commodity_os.core.orchestrator: Task crit queued (priority=CRITICAL)
+2026-07-19 10:56:41,867 [WARNING] asyncio: Executing <Task finished name='Task-103' coro=<TestOrchestrator.test_orchestrator_priority_ordering() done, defined at D:\Play\Commodity\commodity_os\testing\tests.py:90> exception=AssertionError("'crit' not found in {}") created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py:101> took 2.951 seconds
+2026-07-19 10:56:41,885 [INFO] commodity_os.core.orchestrator: Resource-Aware Orchestrator initializing...
+2026-07-19 10:56:43,453 [INFO] commodity_os.core.orchestrator: Resource check: CPU=83.3% RAM=93.0% Disk=40.3% Health=5.0
+2026-07-19 10:56:43,460 [WARNING] asyncio: Executing <Task pending name='Task-121' coro=<EventBus._safe_call() running at D:\Play\Commodity\commodity_os\core\events.py:114> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:767> cb=[gather.<locals>._done_callback() at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:822] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 1.562 seconds
+2026-07-19 10:56:45,024 [INFO] commodity_os.core.orchestrator: Resource check: CPU=44.4% RAM=93.0% Disk=40.3% Health=20.0
+2026-07-19 10:56:45,027 [WARNING] asyncio: Executing <Task pending name='Task-123' coro=<EventBus._safe_call() running at D:\Play\Commodity\commodity_os\core\events.py:114> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:767> cb=[gather.<locals>._done_callback() at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:822] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 1.566 seconds
+2026-07-19 10:56:46,459 [INFO] commodity_os.core.orchestrator: Resource check: CPU=60.7% RAM=92.9% Disk=40.3% Health=20.0
+2026-07-19 10:56:46,464 [WARNING] asyncio: Executing <Task pending name='Task-126' coro=<EventBus._safe_call() running at D:\Play\Commodity\commodity_os\core\events.py:114> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:767> cb=[gather.<locals>._done_callback() at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:822] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 1.436 seconds
+2026-07-19 10:56:47,924 [INFO] commodity_os.core.orchestrator: Resource check: CPU=25.0% RAM=93.0% Disk=40.3% Health=20.0
+2026-07-19 10:56:47,929 [WARNING] asyncio: Executing <Task pending name='Task-127' coro=<EventBus._safe_call() running at D:\Play\Commodity\commodity_os\core\events.py:114> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:767> cb=[gather.<locals>._done_callback() at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:822] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 1.465 seconds
+2026-07-19 10:56:47,930 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 10:56:47,930 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 10:56:47,931 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 10:56:47,931 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 10:56:47,932 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 10:56:47,932 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 10:56:47,932 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 10:56:47,933 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 10:56:49,357 [INFO] commodity_os.core.orchestrator: Task test_task queued (priority=HIGH)
+2026-07-19 10:56:49,358 [WARNING] asyncio: Executing <Task finished name='Task-120' coro=<TestOrchestrator.test_orchestrator_submit_and_run() done, defined at D:\Play\Commodity\commodity_os\testing\tests.py:79> exception=AssertionError("'test_1' not found in {}") created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py:101> took 1.422 seconds
+2026-07-19 10:57:57,520 [INFO] commodity_os: === Initializing CommodityOS ===
+2026-07-19 10:57:57,521 [INFO] commodity_os.core.orchestrator: Resource-Aware Orchestrator initializing...
+2026-07-19 10:58:00,326 [INFO] commodity_os.core.orchestrator: Resource check: CPU=7.4% RAM=95.9% Disk=40.3% Health=70.0
+2026-07-19 10:58:00,327 [WARNING] asyncio: Executing <Task finished name='Task-17' coro=<EventBus._safe_call() done, defined at D:\Play\Commodity\commodity_os\core\events.py:112> result=None created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 2.802 seconds
+2026-07-19 10:58:00,329 [INFO] commodity_os.monitoring.monitor: MonitoringSystem initializing...
+2026-07-19 10:58:00,330 [INFO] commodity_os.monitoring.monitor: Checkpoint loaded. Last stage index: 0
+2026-07-19 10:58:00,331 [INFO] commodity_os.monitoring.monitor: MonitoringSystem ready. 72 components tracked.
+2026-07-19 10:58:00,332 [INFO] commodity_os.meta_agents.orchestrator_agent: System Orchestrator Agent initialized
+2026-07-19 10:58:00,332 [INFO] commodity_os.meta_agents.quality_agent: Quality Agent initialized
+2026-07-19 10:58:00,333 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence Agent initialized
+2026-07-19 10:58:00,333 [INFO] commodity_os.github_integration.github: GitHub Integration initialized
+2026-07-19 10:58:00,333 [INFO] commodity_os: === CommodityOS initialized ===
+2026-07-19 10:58:00,334 [INFO] commodity_os: === Shutting down CommodityOS ===
+2026-07-19 10:58:00,334 [INFO] commodity_os: Total uptime: 0s, Cycles completed: 0
+2026-07-19 10:58:00,343 [ERROR] commodity_os.github_integration.github: Commit failed: [WinError 2] The system cannot find the file specified
+2026-07-19 10:58:00,343 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence Agent shut down
+2026-07-19 10:58:00,343 [INFO] commodity_os.meta_agents.quality_agent: Quality Agent shut down
+2026-07-19 10:58:00,344 [INFO] commodity_os.meta_agents.orchestrator_agent: System Orchestrator Agent shut down
+2026-07-19 10:58:00,345 [INFO] commodity_os.monitoring.monitor: MonitoringSystem shut down
+2026-07-19 10:58:00,346 [INFO] commodity_os.core.orchestrator: Orchestrator shut down
+2026-07-19 10:58:00,346 [INFO] commodity_os: === CommodityOS shut down ===
+2026-07-19 10:58:04,735 [INFO] commodity_os.core.orchestrator: System health: 20.0/100
+2026-07-19 10:58:04,735 [WARNING] asyncio: Executing <Task finished name='Task-36' coro=<EventBus._safe_call() done, defined at D:\Play\Commodity\commodity_os\core\events.py:112> result=None created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 4.193 seconds
+2026-07-19 10:58:04,835 [INFO] commodity_os.knowledge_graph.graph: Loaded knowledge graph from D:\Play\Commodity\data\knowledge_graph.json
+2026-07-19 10:58:04,835 [INFO] commodity_os.knowledge_graph.graph: Added entity: Test Co
+2026-07-19 10:58:04,846 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence: KG updated - 0 nodes
+2026-07-19 10:58:04,847 [INFO] commodity_os: Knowledge Graph updated: 0 nodes, 0 edges
+2026-07-19 10:58:04,867 [INFO] commodity_os.knowledge_graph.graph: Loaded knowledge graph from D:\Play\Commodity\data\knowledge_graph.json
+2026-07-19 10:58:04,867 [INFO] commodity_os.knowledge_graph.graph: Added entity: A
+2026-07-19 10:58:04,872 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence: KG updated - 0 nodes
+2026-07-19 10:58:04,874 [INFO] commodity_os: Knowledge Graph updated: 0 nodes, 0 edges
+2026-07-19 10:58:04,877 [INFO] commodity_os.knowledge_graph.graph: Added entity: B
+2026-07-19 10:58:04,881 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence: KG updated - 0 nodes
+2026-07-19 10:58:04,882 [INFO] commodity_os: Knowledge Graph updated: 0 nodes, 0 edges
+2026-07-19 10:58:04,884 [WARNING] commodity_os.knowledge_graph.graph: Unknown relationship type: SUPPLIES_TO
+2026-07-19 10:58:04,900 [INFO] commodity_os.knowledge_graph.graph: Loaded knowledge graph from D:\Play\Commodity\data\knowledge_graph.json
+2026-07-19 10:58:04,901 [INFO] commodity_os.knowledge_graph.graph: Added entity: A
+2026-07-19 10:58:04,906 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence: KG updated - 0 nodes
+2026-07-19 10:58:04,906 [INFO] commodity_os: Knowledge Graph updated: 0 nodes, 0 edges
+2026-07-19 10:58:04,908 [INFO] commodity_os.knowledge_graph.graph: Added entity: B
+2026-07-19 10:58:04,913 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence: KG updated - 0 nodes
+2026-07-19 10:58:04,913 [INFO] commodity_os: Knowledge Graph updated: 0 nodes, 0 edges
+2026-07-19 10:58:04,916 [INFO] commodity_os.knowledge_graph.graph: Added entity: C
+2026-07-19 10:58:04,920 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence: KG updated - 0 nodes
+2026-07-19 10:58:04,921 [INFO] commodity_os: Knowledge Graph updated: 0 nodes, 0 edges
+2026-07-19 10:58:04,938 [INFO] commodity_os.knowledge_graph.graph: Loaded knowledge graph from D:\Play\Commodity\data\knowledge_graph.json
+2026-07-19 10:58:04,938 [INFO] commodity_os.knowledge_graph.graph: Added entity: S1
+2026-07-19 10:58:04,943 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence: KG updated - 0 nodes
+2026-07-19 10:58:04,944 [INFO] commodity_os: Knowledge Graph updated: 0 nodes, 0 edges
+2026-07-19 10:58:04,962 [INFO] commodity_os.knowledge_graph.graph: Loaded knowledge graph from D:\Play\Commodity\data\knowledge_graph.json
+2026-07-19 10:58:04,962 [INFO] commodity_os.knowledge_graph.graph: Added entity: X
+2026-07-19 10:58:04,967 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence: KG updated - 0 nodes
+2026-07-19 10:58:04,967 [INFO] commodity_os: Knowledge Graph updated: 0 nodes, 0 edges
+2026-07-19 10:58:04,979 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence Agent initialized
+2026-07-19 10:58:04,979 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence Agent shut down
+2026-07-19 10:58:04,990 [INFO] commodity_os.core.orchestrator: Resource-Aware Orchestrator initializing...
+2026-07-19 10:58:09,196 [INFO] commodity_os.core.orchestrator: Resource check: CPU=50.0% RAM=90.8% Disk=40.3% Health=20.0
+2026-07-19 10:58:09,204 [WARNING] asyncio: Executing <Task pending name='Task-97' coro=<EventBus._safe_call() running at D:\Play\Commodity\commodity_os\core\events.py:114> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:767> cb=[gather.<locals>._done_callback() at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:822] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 4.209 seconds
+2026-07-19 10:58:13,448 [INFO] commodity_os.core.orchestrator: Resource check: CPU=0.0% RAM=90.6% Disk=40.3% Health=20.0
+2026-07-19 10:58:13,458 [WARNING] asyncio: Executing <Task pending name='Task-99' coro=<EventBus._safe_call() running at D:\Play\Commodity\commodity_os\core\events.py:114> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:767> cb=[gather.<locals>._done_callback() at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:822] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 4.251 seconds
+2026-07-19 10:58:13,458 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 10:58:13,460 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 10:58:13,467 [INFO] commodity_os.meta_agents.orchestrator_agent: System Orchestrator Agent initialized
+2026-07-19 10:58:13,467 [INFO] commodity_os.meta_agents.orchestrator_agent: System Orchestrator Agent shut down
+2026-07-19 10:58:13,468 [INFO] commodity_os.core.orchestrator: Orchestrator shut down
+2026-07-19 10:58:13,488 [INFO] commodity_os.meta_agents.quality_agent: Quality Agent initialized
+2026-07-19 10:58:13,488 [INFO] commodity_os.meta_agents.quality_agent: Quality Agent shut down
+2026-07-19 10:58:13,499 [INFO] commodity_os.monitoring.monitor: MonitoringSystem initializing...
+2026-07-19 10:58:13,508 [INFO] commodity_os.monitoring.monitor: Checkpoint loaded. Last stage index: 0
+2026-07-19 10:58:13,508 [INFO] commodity_os.monitoring.monitor: MonitoringSystem ready. 72 components tracked.
+2026-07-19 10:58:13,520 [INFO] commodity_os.monitoring.monitor: MonitoringSystem initializing...
+2026-07-19 10:58:13,520 [INFO] commodity_os.monitoring.monitor: Checkpoint loaded. Last stage index: 0
+2026-07-19 10:58:13,520 [INFO] commodity_os.monitoring.monitor: MonitoringSystem ready. 72 components tracked.
+2026-07-19 10:58:13,532 [INFO] commodity_os.core.orchestrator: Resource-Aware Orchestrator initializing...
+2026-07-19 10:58:17,709 [INFO] commodity_os.core.orchestrator: Resource check: CPU=4.2% RAM=90.4% Disk=40.3% Health=20.0
+2026-07-19 10:58:17,731 [WARNING] asyncio: Executing <Task pending name='Task-122' coro=<EventBus._safe_call() running at D:\Play\Commodity\commodity_os\core\events.py:114> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:767> cb=[gather.<locals>._done_callback() at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:822] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 4.191 seconds
+2026-07-19 10:58:21,966 [INFO] commodity_os.core.orchestrator: Resource check: CPU=10.7% RAM=89.5% Disk=40.3% Health=40.0
+2026-07-19 10:58:21,968 [WARNING] asyncio: Executing <Task finished name='Task-124' coro=<EventBus._safe_call() done, defined at D:\Play\Commodity\commodity_os\core\events.py:112> result=None created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 4.236 seconds
+2026-07-19 10:58:26,189 [INFO] commodity_os.core.orchestrator: Resource check: CPU=8.3% RAM=89.5% Disk=40.3% Health=40.0
+2026-07-19 10:58:26,191 [WARNING] asyncio: Executing <Task finished name='Task-127' coro=<EventBus._safe_call() done, defined at D:\Play\Commodity\commodity_os\core\events.py:112> result=None created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 4.220 seconds
+2026-07-19 10:58:26,192 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 10:58:26,194 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 10:58:30,414 [INFO] commodity_os.core.orchestrator: Task low queued (priority=LOW)
+2026-07-19 10:58:32,614 [INFO] commodity_os.core.orchestrator: Task crit queued (priority=CRITICAL)
+2026-07-19 10:58:32,616 [WARNING] asyncio: Executing <Task finished name='Task-121' coro=<TestOrchestrator.test_orchestrator_priority_ordering() done, defined at D:\Play\Commodity\commodity_os\testing\tests.py:92> exception=AssertionError("'crit' not found in {}") created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py:101> took 6.419 seconds
+2026-07-19 10:58:32,650 [INFO] commodity_os.core.orchestrator: Resource-Aware Orchestrator initializing...
+2026-07-19 10:58:36,908 [INFO] commodity_os.core.orchestrator: Resource check: CPU=41.7% RAM=89.6% Disk=40.3% Health=40.0
+2026-07-19 10:58:36,910 [WARNING] asyncio: Executing <Task finished name='Task-135' coro=<EventBus._safe_call() done, defined at D:\Play\Commodity\commodity_os\core\events.py:112> result=None created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 4.251 seconds
+2026-07-19 10:58:41,245 [INFO] commodity_os.core.orchestrator: Resource check: CPU=58.3% RAM=89.7% Disk=40.3% Health=40.0
+2026-07-19 10:58:41,247 [WARNING] asyncio: Executing <Task finished name='Task-137' coro=<EventBus._safe_call() done, defined at D:\Play\Commodity\commodity_os\core\events.py:112> result=None created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 4.335 seconds
+2026-07-19 10:58:43,050 [INFO] commodity_os.core.orchestrator: Resource check: CPU=50.0% RAM=89.8% Disk=40.3% Health=90.0
+2026-07-19 10:58:43,051 [WARNING] asyncio: Executing <Task finished name='Task-140' coro=<EventBus._safe_call() done, defined at D:\Play\Commodity\commodity_os\core\events.py:112> result=None created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 1.802 seconds
+2026-07-19 10:58:45,019 [INFO] commodity_os.core.orchestrator: Resource check: CPU=44.0% RAM=89.8% Disk=40.3% Health=90.0
+2026-07-19 10:58:45,024 [WARNING] asyncio: Executing <Task finished name='Task-141' coro=<EventBus._safe_call() done, defined at D:\Play\Commodity\commodity_os\core\events.py:112> result=None created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 1.973 seconds
+2026-07-19 10:58:49,276 [INFO] commodity_os.core.orchestrator: Task test_task queued (priority=HIGH)
+2026-07-19 10:58:49,278 [WARNING] asyncio: Executing <Task finished name='Task-134' coro=<TestOrchestrator.test_orchestrator_submit() done, defined at D:\Play\Commodity\commodity_os\testing\tests.py:80> exception=AssertionError("'test_1' not found in {}") created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py:101> took 4.251 seconds
+2026-07-19 10:59:39,657 [INFO] commodity_os: === Initializing CommodityOS ===
+2026-07-19 10:59:39,657 [INFO] commodity_os.core.orchestrator: Resource-Aware Orchestrator initializing...
+2026-07-19 10:59:41,314 [INFO] commodity_os.core.orchestrator: Resource check: CPU=78.6% RAM=90.6% Disk=40.3% Health=5.0
+2026-07-19 10:59:41,315 [WARNING] asyncio: Executing <Task finished name='Task-34' coro=<EventBus._safe_call() done, defined at D:\Play\Commodity\commodity_os\core\events.py:112> result=None created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 1.655 seconds
+2026-07-19 10:59:41,320 [INFO] commodity_os.monitoring.monitor: MonitoringSystem initializing...
+2026-07-19 10:59:41,322 [INFO] commodity_os.monitoring.monitor: Checkpoint loaded. Last stage index: 0
+2026-07-19 10:59:41,323 [INFO] commodity_os.monitoring.monitor: MonitoringSystem ready. 72 components tracked.
+2026-07-19 10:59:41,324 [INFO] commodity_os.meta_agents.orchestrator_agent: System Orchestrator Agent initialized
+2026-07-19 10:59:41,324 [INFO] commodity_os.meta_agents.quality_agent: Quality Agent initialized
+2026-07-19 10:59:41,324 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence Agent initialized
+2026-07-19 10:59:41,325 [INFO] commodity_os.github_integration.github: GitHub Integration initialized
+2026-07-19 10:59:41,325 [INFO] commodity_os: === CommodityOS initialized ===
+2026-07-19 10:59:41,325 [INFO] commodity_os: === Shutting down CommodityOS ===
+2026-07-19 10:59:41,325 [INFO] commodity_os: Total uptime: 0s, Cycles completed: 0
+2026-07-19 10:59:41,337 [ERROR] commodity_os.github_integration.github: Commit failed: [WinError 2] The system cannot find the file specified
+2026-07-19 10:59:41,338 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence Agent shut down
+2026-07-19 10:59:41,338 [INFO] commodity_os.meta_agents.quality_agent: Quality Agent shut down
+2026-07-19 10:59:41,338 [INFO] commodity_os.meta_agents.orchestrator_agent: System Orchestrator Agent shut down
+2026-07-19 10:59:41,340 [INFO] commodity_os.monitoring.monitor: MonitoringSystem shut down
+2026-07-19 10:59:41,340 [INFO] commodity_os.core.orchestrator: Orchestrator shut down
+2026-07-19 10:59:41,340 [INFO] commodity_os: === CommodityOS shut down ===
+2026-07-19 10:59:43,094 [INFO] commodity_os.core.orchestrator: System health: 20.0/100
+2026-07-19 10:59:43,095 [WARNING] asyncio: Executing <Task finished name='Task-53' coro=<EventBus._safe_call() done, defined at D:\Play\Commodity\commodity_os\core\events.py:112> result=None created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 1.537 seconds
+2026-07-19 10:59:43,196 [INFO] commodity_os.knowledge_graph.graph: Loaded knowledge graph from D:\Play\Commodity\data\knowledge_graph.json
+2026-07-19 10:59:43,197 [INFO] commodity_os.knowledge_graph.graph: Added entity: Test Co
+2026-07-19 10:59:43,205 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence: KG updated - 0 nodes
+2026-07-19 10:59:43,206 [INFO] commodity_os: Knowledge Graph updated: 0 nodes, 0 edges
+2026-07-19 10:59:43,232 [INFO] commodity_os.knowledge_graph.graph: Loaded knowledge graph from D:\Play\Commodity\data\knowledge_graph.json
+2026-07-19 10:59:43,232 [INFO] commodity_os.knowledge_graph.graph: Added entity: A
+2026-07-19 10:59:43,239 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence: KG updated - 0 nodes
+2026-07-19 10:59:43,239 [INFO] commodity_os: Knowledge Graph updated: 0 nodes, 0 edges
+2026-07-19 10:59:43,242 [INFO] commodity_os.knowledge_graph.graph: Added entity: B
+2026-07-19 10:59:43,247 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence: KG updated - 0 nodes
+2026-07-19 10:59:43,247 [INFO] commodity_os: Knowledge Graph updated: 0 nodes, 0 edges
+2026-07-19 10:59:43,251 [WARNING] commodity_os.knowledge_graph.graph: Unknown relationship type: SUPPLIES_TO
+2026-07-19 10:59:43,270 [INFO] commodity_os.knowledge_graph.graph: Loaded knowledge graph from D:\Play\Commodity\data\knowledge_graph.json
+2026-07-19 10:59:43,270 [INFO] commodity_os.knowledge_graph.graph: Added entity: A
+2026-07-19 10:59:43,274 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence: KG updated - 0 nodes
+2026-07-19 10:59:43,275 [INFO] commodity_os: Knowledge Graph updated: 0 nodes, 0 edges
+2026-07-19 10:59:43,277 [INFO] commodity_os.knowledge_graph.graph: Added entity: B
+2026-07-19 10:59:43,281 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence: KG updated - 0 nodes
+2026-07-19 10:59:43,282 [INFO] commodity_os: Knowledge Graph updated: 0 nodes, 0 edges
+2026-07-19 10:59:43,303 [INFO] commodity_os.knowledge_graph.graph: Loaded knowledge graph from D:\Play\Commodity\data\knowledge_graph.json
+2026-07-19 10:59:43,304 [INFO] commodity_os.knowledge_graph.graph: Added entity: S1
+2026-07-19 10:59:43,308 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence: KG updated - 0 nodes
+2026-07-19 10:59:43,308 [INFO] commodity_os: Knowledge Graph updated: 0 nodes, 0 edges
+2026-07-19 10:59:43,327 [INFO] commodity_os.knowledge_graph.graph: Loaded knowledge graph from D:\Play\Commodity\data\knowledge_graph.json
+2026-07-19 10:59:43,327 [INFO] commodity_os.knowledge_graph.graph: Added entity: X
+2026-07-19 10:59:43,335 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence: KG updated - 0 nodes
+2026-07-19 10:59:43,336 [INFO] commodity_os: Knowledge Graph updated: 0 nodes, 0 edges
+2026-07-19 10:59:43,346 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence Agent initialized
+2026-07-19 10:59:43,347 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence Agent shut down
+2026-07-19 10:59:43,359 [INFO] commodity_os.core.orchestrator: Resource-Aware Orchestrator initializing...
+2026-07-19 10:59:44,812 [INFO] commodity_os.core.orchestrator: Resource check: CPU=64.0% RAM=90.9% Disk=40.3% Health=20.0
+2026-07-19 10:59:44,815 [WARNING] asyncio: Executing <Task pending name='Task-111' coro=<EventBus._safe_call() running at D:\Play\Commodity\commodity_os\core\events.py:114> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:767> cb=[gather.<locals>._done_callback() at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:822] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 1.452 seconds
+2026-07-19 10:59:46,286 [INFO] commodity_os.core.orchestrator: Resource check: CPU=0.0% RAM=90.9% Disk=40.3% Health=20.0
+2026-07-19 10:59:46,289 [WARNING] asyncio: Executing <Task pending name='Task-113' coro=<EventBus._safe_call() running at D:\Play\Commodity\commodity_os\core\events.py:114> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:767> cb=[gather.<locals>._done_callback() at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:822] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 1.473 seconds
+2026-07-19 10:59:46,289 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 10:59:46,290 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 10:59:46,292 [INFO] commodity_os.meta_agents.orchestrator_agent: System Orchestrator Agent initialized
+2026-07-19 10:59:46,292 [INFO] commodity_os.meta_agents.orchestrator_agent: System Orchestrator Agent shut down
+2026-07-19 10:59:46,292 [INFO] commodity_os.core.orchestrator: Orchestrator shut down
+2026-07-19 10:59:46,306 [INFO] commodity_os.meta_agents.quality_agent: Quality Agent initialized
+2026-07-19 10:59:46,306 [INFO] commodity_os.meta_agents.quality_agent: Quality Agent shut down
+2026-07-19 10:59:46,318 [INFO] commodity_os.monitoring.monitor: MonitoringSystem initializing...
+2026-07-19 10:59:46,327 [INFO] commodity_os.monitoring.monitor: Checkpoint loaded. Last stage index: 0
+2026-07-19 10:59:46,327 [INFO] commodity_os.monitoring.monitor: MonitoringSystem ready. 72 components tracked.
+2026-07-19 10:59:46,328 [INFO] commodity_os.monitoring.monitor: MonitoringSystem shut down
+2026-07-19 10:59:46,339 [INFO] commodity_os.monitoring.monitor: MonitoringSystem initializing...
+2026-07-19 10:59:46,347 [INFO] commodity_os.monitoring.monitor: Checkpoint loaded. Last stage index: 0
+2026-07-19 10:59:46,347 [INFO] commodity_os.monitoring.monitor: MonitoringSystem ready. 72 components tracked.
+2026-07-19 10:59:46,348 [INFO] commodity_os.monitoring.monitor: MonitoringSystem shut down
+2026-07-19 10:59:46,359 [INFO] commodity_os.core.orchestrator: Resource-Aware Orchestrator initializing...
+2026-07-19 10:59:47,801 [INFO] commodity_os.core.orchestrator: Resource check: CPU=10.7% RAM=90.9% Disk=40.3% Health=20.0
+2026-07-19 10:59:47,805 [WARNING] asyncio: Executing <Task pending name='Task-136' coro=<EventBus._safe_call() running at D:\Play\Commodity\commodity_os\core\events.py:114> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:767> cb=[gather.<locals>._done_callback() at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:822] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 1.437 seconds
+2026-07-19 10:59:49,248 [INFO] commodity_os.core.orchestrator: Resource check: CPU=17.2% RAM=90.9% Disk=40.3% Health=20.0
+2026-07-19 10:59:49,253 [WARNING] asyncio: Executing <Task pending name='Task-138' coro=<EventBus._safe_call() running at D:\Play\Commodity\commodity_os\core\events.py:114> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:767> cb=[gather.<locals>._done_callback() at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:822] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 1.447 seconds
+2026-07-19 10:59:50,712 [INFO] commodity_os.core.orchestrator: Resource check: CPU=28.0% RAM=90.9% Disk=40.3% Health=20.0
+2026-07-19 10:59:50,719 [WARNING] asyncio: Executing <Task pending name='Task-141' coro=<EventBus._safe_call() running at D:\Play\Commodity\commodity_os\core\events.py:114> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:767> cb=[gather.<locals>._done_callback() at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:822] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 1.466 seconds
+2026-07-19 10:59:50,719 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 10:59:50,720 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 10:59:50,721 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 10:59:50,721 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 10:59:50,722 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 10:59:50,722 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 10:59:52,161 [INFO] commodity_os.core.orchestrator: Task low deferred (low resources)
+2026-07-19 10:59:53,612 [INFO] commodity_os.core.orchestrator: Task crit queued (priority=CRITICAL)
+2026-07-19 10:59:53,614 [INFO] commodity_os.core.orchestrator: Orchestrator shut down
+2026-07-19 10:59:53,619 [WARNING] asyncio: Executing <Task finished name='Task-135' coro=<TestOrchestrator.test_priority_ordering() done, defined at D:\Play\Commodity\commodity_os\testing\tests.py:79> result=None created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py:101> took 2.893 seconds
+2026-07-19 10:59:55,204 [WARNING] asyncio: Executing <Task finished name='Task-152' coro=<TestOrchestrator.test_resource_health_score() done, defined at D:\Play\Commodity\commodity_os\testing\tests.py:97> result=None created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py:101> took 1.550 seconds
+2026-07-19 10:59:56,687 [WARNING] asyncio: Executing <Task finished name='Task-157' coro=<TestOrchestrator.test_resource_monitor_snapshot() done, defined at D:\Play\Commodity\commodity_os\testing\tests.py:90> exception=TypeError("argument of type 'ResourceSnapshot' is not iterable") created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py:101> took 1.451 seconds
+2026-07-19 10:59:56,711 [INFO] commodity_os.core.orchestrator: Resource-Aware Orchestrator initializing...
+2026-07-19 10:59:58,176 [INFO] commodity_os.core.orchestrator: Resource check: CPU=12.5% RAM=91.0% Disk=40.3% Health=20.0
+2026-07-19 10:59:58,189 [WARNING] asyncio: Executing <Task pending name='Task-163' coro=<EventBus._safe_call() running at D:\Play\Commodity\commodity_os\core\events.py:114> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:767> cb=[gather.<locals>._done_callback() at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:822] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 1.467 seconds
+2026-07-19 10:59:59,643 [INFO] commodity_os.core.orchestrator: Resource check: CPU=33.3% RAM=91.0% Disk=40.3% Health=20.0
+2026-07-19 10:59:59,654 [WARNING] asyncio: Executing <Task pending name='Task-165' coro=<EventBus._safe_call() running at D:\Play\Commodity\commodity_os\core\events.py:114> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:767> cb=[gather.<locals>._done_callback() at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:822] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 1.464 seconds
+2026-07-19 11:00:01,116 [INFO] commodity_os.core.orchestrator: Resource check: CPU=20.8% RAM=90.5% Disk=40.3% Health=20.0
+2026-07-19 11:00:01,131 [WARNING] asyncio: Executing <Task pending name='Task-168' coro=<EventBus._safe_call() running at D:\Play\Commodity\commodity_os\core\events.py:114> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:767> cb=[gather.<locals>._done_callback() at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:822] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 1.475 seconds
+2026-07-19 11:00:02,646 [INFO] commodity_os.core.orchestrator: Resource check: CPU=93.1% RAM=90.8% Disk=40.3% Health=0.0
+2026-07-19 11:00:02,651 [WARNING] asyncio: Executing <Task pending name='Task-169' coro=<EventBus._safe_call() running at D:\Play\Commodity\commodity_os\core\events.py:114> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:767> cb=[gather.<locals>._done_callback() at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:822] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 1.518 seconds
+2026-07-19 11:00:02,651 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 11:00:02,652 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 11:00:02,653 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 11:00:02,653 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 11:00:02,653 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 11:00:02,654 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 11:00:02,654 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 11:00:02,654 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 11:00:04,141 [INFO] commodity_os.core.orchestrator: Task test_task queued (priority=HIGH)
+2026-07-19 11:00:04,141 [INFO] commodity_os.core.orchestrator: Orchestrator shut down
+2026-07-19 11:00:04,142 [WARNING] asyncio: Executing <Task finished name='Task-162' coro=<TestOrchestrator.test_submit_task() done, defined at D:\Play\Commodity\commodity_os\testing\tests.py:68> result=None created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py:101> took 1.485 seconds
+2026-07-19 11:00:04,164 [ERROR] commodity_os.github_integration.github: Commit failed: [WinError 2] The system cannot find the file specified
+2026-07-19 11:00:04,167 [INFO] commodity_os.reports.generator: Report generated: hourly_20260719_053004
+2026-07-19 11:01:09,198 [INFO] commodity_os: === Initializing CommodityOS ===
+2026-07-19 11:01:09,199 [INFO] commodity_os.core.orchestrator: Resource-Aware Orchestrator initializing...
+2026-07-19 11:01:11,630 [INFO] commodity_os.core.orchestrator: Resource check: CPU=51.9% RAM=91.7% Disk=40.3% Health=70.0
+2026-07-19 11:01:11,634 [WARNING] asyncio: Executing <Task finished name='Task-34' coro=<EventBus._safe_call() done, defined at D:\Play\Commodity\commodity_os\core\events.py:112> result=None created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 2.430 seconds
+2026-07-19 11:01:11,636 [INFO] commodity_os.monitoring.monitor: MonitoringSystem initializing...
+2026-07-19 11:01:11,663 [INFO] commodity_os.monitoring.monitor: Checkpoint loaded. Last stage index: 0
+2026-07-19 11:01:11,663 [INFO] commodity_os.monitoring.monitor: MonitoringSystem ready. 72 components tracked.
+2026-07-19 11:01:11,664 [INFO] commodity_os.meta_agents.orchestrator_agent: System Orchestrator Agent initialized
+2026-07-19 11:01:11,664 [INFO] commodity_os.meta_agents.quality_agent: Quality Agent initialized
+2026-07-19 11:01:11,664 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence Agent initialized
+2026-07-19 11:01:11,664 [INFO] commodity_os.github_integration.github: GitHub Integration initialized
+2026-07-19 11:01:11,664 [INFO] commodity_os: === CommodityOS initialized ===
+2026-07-19 11:01:11,664 [INFO] commodity_os: === Shutting down CommodityOS ===
+2026-07-19 11:01:11,664 [INFO] commodity_os: Total uptime: 0s, Cycles completed: 0
+2026-07-19 11:01:11,668 [ERROR] commodity_os.github_integration.github: Commit failed: [WinError 2] The system cannot find the file specified
+2026-07-19 11:01:11,669 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence Agent shut down
+2026-07-19 11:01:11,669 [INFO] commodity_os.meta_agents.quality_agent: Quality Agent shut down
+2026-07-19 11:01:11,669 [INFO] commodity_os.meta_agents.orchestrator_agent: System Orchestrator Agent shut down
+2026-07-19 11:01:11,670 [INFO] commodity_os.monitoring.monitor: MonitoringSystem shut down
+2026-07-19 11:01:11,670 [INFO] commodity_os.core.orchestrator: Orchestrator shut down
+2026-07-19 11:01:11,670 [INFO] commodity_os: === CommodityOS shut down ===
+2026-07-19 11:01:16,167 [INFO] commodity_os.core.orchestrator: System health: 20.0/100
+2026-07-19 11:01:16,168 [WARNING] asyncio: Executing <Task finished name='Task-53' coro=<EventBus._safe_call() done, defined at D:\Play\Commodity\commodity_os\core\events.py:112> result=None created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 4.285 seconds
+2026-07-19 11:01:16,272 [INFO] commodity_os.knowledge_graph.graph: Loaded knowledge graph from D:\Play\Commodity\data\knowledge_graph.json
+2026-07-19 11:01:16,272 [INFO] commodity_os.knowledge_graph.graph: Added entity: Test Co
+2026-07-19 11:01:16,280 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence: KG updated - 0 nodes
+2026-07-19 11:01:16,281 [INFO] commodity_os: Knowledge Graph updated: 0 nodes, 0 edges
+2026-07-19 11:01:16,295 [INFO] commodity_os.knowledge_graph.graph: Loaded knowledge graph from D:\Play\Commodity\data\knowledge_graph.json
+2026-07-19 11:01:16,295 [INFO] commodity_os.knowledge_graph.graph: Added entity: A
+2026-07-19 11:01:16,300 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence: KG updated - 0 nodes
+2026-07-19 11:01:16,301 [INFO] commodity_os: Knowledge Graph updated: 0 nodes, 0 edges
+2026-07-19 11:01:16,303 [INFO] commodity_os.knowledge_graph.graph: Added entity: B
+2026-07-19 11:01:16,308 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence: KG updated - 0 nodes
+2026-07-19 11:01:16,308 [INFO] commodity_os: Knowledge Graph updated: 0 nodes, 0 edges
+2026-07-19 11:01:16,312 [INFO] commodity_os.knowledge_graph.graph: Added relationship: a --SUPPLIES--> b
+2026-07-19 11:01:16,317 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence: KG updated - 0 nodes
+2026-07-19 11:01:16,318 [INFO] commodity_os: Knowledge Graph updated: 0 nodes, 0 edges
+2026-07-19 11:01:16,337 [INFO] commodity_os.knowledge_graph.graph: Loaded knowledge graph from D:\Play\Commodity\data\knowledge_graph.json
+2026-07-19 11:01:16,337 [INFO] commodity_os.knowledge_graph.graph: Added entity: A
+2026-07-19 11:01:16,342 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence: KG updated - 0 nodes
+2026-07-19 11:01:16,342 [INFO] commodity_os: Knowledge Graph updated: 0 nodes, 0 edges
+2026-07-19 11:01:16,346 [INFO] commodity_os.knowledge_graph.graph: Added entity: B
+2026-07-19 11:01:16,353 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence: KG updated - 0 nodes
+2026-07-19 11:01:16,353 [INFO] commodity_os: Knowledge Graph updated: 0 nodes, 0 edges
+2026-07-19 11:01:16,372 [INFO] commodity_os.knowledge_graph.graph: Loaded knowledge graph from D:\Play\Commodity\data\knowledge_graph.json
+2026-07-19 11:01:16,372 [INFO] commodity_os.knowledge_graph.graph: Added entity: S1
+2026-07-19 11:01:16,378 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence: KG updated - 0 nodes
+2026-07-19 11:01:16,379 [INFO] commodity_os: Knowledge Graph updated: 0 nodes, 0 edges
+2026-07-19 11:01:16,398 [INFO] commodity_os.knowledge_graph.graph: Loaded knowledge graph from D:\Play\Commodity\data\knowledge_graph.json
+2026-07-19 11:01:16,398 [INFO] commodity_os.knowledge_graph.graph: Added entity: X
+2026-07-19 11:01:16,403 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence: KG updated - 0 nodes
+2026-07-19 11:01:16,404 [INFO] commodity_os: Knowledge Graph updated: 0 nodes, 0 edges
+2026-07-19 11:01:16,417 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence Agent initialized
+2026-07-19 11:01:16,417 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence Agent shut down
+2026-07-19 11:01:16,426 [INFO] commodity_os.core.orchestrator: Resource-Aware Orchestrator initializing...
+2026-07-19 11:01:19,091 [INFO] commodity_os.core.orchestrator: Resource check: CPU=25.0% RAM=91.7% Disk=40.3% Health=70.0
+2026-07-19 11:01:19,092 [WARNING] asyncio: Executing <Task finished name='Task-114' coro=<EventBus._safe_call() done, defined at D:\Play\Commodity\commodity_os\core\events.py:112> result=None created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 2.660 seconds
+2026-07-19 11:01:23,324 [INFO] commodity_os.core.orchestrator: Resource check: CPU=4.2% RAM=91.8% Disk=40.3% Health=20.0
+2026-07-19 11:01:23,330 [WARNING] asyncio: Executing <Task pending name='Task-116' coro=<EventBus._safe_call() running at D:\Play\Commodity\commodity_os\core\events.py:114> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:767> cb=[gather.<locals>._done_callback() at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:822] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 4.235 seconds
+2026-07-19 11:01:23,331 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 11:01:23,333 [INFO] commodity_os.meta_agents.orchestrator_agent: System Orchestrator Agent initialized
+2026-07-19 11:01:23,334 [INFO] commodity_os.meta_agents.orchestrator_agent: System Orchestrator Agent shut down
+2026-07-19 11:01:23,334 [INFO] commodity_os.core.orchestrator: Orchestrator shut down
+2026-07-19 11:01:23,356 [INFO] commodity_os.meta_agents.quality_agent: Quality Agent initialized
+2026-07-19 11:01:23,357 [INFO] commodity_os.meta_agents.quality_agent: Quality Agent shut down
+2026-07-19 11:01:23,378 [INFO] commodity_os.monitoring.monitor: MonitoringSystem initializing...
+2026-07-19 11:01:23,391 [INFO] commodity_os.monitoring.monitor: Checkpoint loaded. Last stage index: 0
+2026-07-19 11:01:23,392 [INFO] commodity_os.monitoring.monitor: MonitoringSystem ready. 72 components tracked.
+2026-07-19 11:01:23,396 [INFO] commodity_os.monitoring.monitor: MonitoringSystem shut down
+2026-07-19 11:01:23,409 [INFO] commodity_os.monitoring.monitor: MonitoringSystem initializing...
+2026-07-19 11:01:23,424 [INFO] commodity_os.monitoring.monitor: Checkpoint loaded. Last stage index: 0
+2026-07-19 11:01:23,424 [INFO] commodity_os.monitoring.monitor: MonitoringSystem ready. 72 components tracked.
+2026-07-19 11:01:23,430 [INFO] commodity_os.monitoring.monitor: MonitoringSystem shut down
+2026-07-19 11:01:23,441 [INFO] commodity_os.core.orchestrator: Resource-Aware Orchestrator initializing...
+2026-07-19 11:01:27,681 [INFO] commodity_os.core.orchestrator: Resource check: CPU=43.3% RAM=92.2% Disk=40.3% Health=20.0
+2026-07-19 11:01:27,699 [WARNING] asyncio: Executing <Task pending name='Task-138' coro=<EventBus._safe_call() running at D:\Play\Commodity\commodity_os\core\events.py:114> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:767> cb=[gather.<locals>._done_callback() at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:822] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 4.249 seconds
+2026-07-19 11:01:29,264 [INFO] commodity_os.core.orchestrator: Resource check: CPU=60.7% RAM=92.4% Disk=40.3% Health=70.0
+2026-07-19 11:01:29,265 [WARNING] asyncio: Executing <Task finished name='Task-140' coro=<EventBus._safe_call() done, defined at D:\Play\Commodity\commodity_os\core\events.py:112> result=None created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 1.564 seconds
+2026-07-19 11:01:32,428 [INFO] commodity_os.core.orchestrator: Resource check: CPU=40.7% RAM=92.4% Disk=40.3% Health=70.0
+2026-07-19 11:01:32,434 [WARNING] asyncio: Executing <Task finished name='Task-143' coro=<EventBus._safe_call() done, defined at D:\Play\Commodity\commodity_os\core\events.py:112> result=None created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 3.168 seconds
+2026-07-19 11:01:32,434 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 11:01:32,435 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 11:01:33,962 [INFO] commodity_os.core.orchestrator: Task low deferred (low resources)
+2026-07-19 11:01:35,429 [INFO] commodity_os.core.orchestrator: Task crit queued (priority=CRITICAL)
+2026-07-19 11:01:35,429 [INFO] commodity_os.core.orchestrator: Orchestrator shut down
+2026-07-19 11:01:35,430 [WARNING] asyncio: Executing <Task finished name='Task-137' coro=<TestOrchestrator.test_priority_ordering() done, defined at D:\Play\Commodity\commodity_os\testing\tests.py:79> result=None created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py:101> took 2.992 seconds
+2026-07-19 11:01:36,941 [WARNING] asyncio: Executing <Task finished name='Task-150' coro=<TestOrchestrator.test_resource_health_score() done, defined at D:\Play\Commodity\commodity_os\testing\tests.py:97> result=None created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py:101> took 1.500 seconds
+2026-07-19 11:01:38,534 [WARNING] asyncio: Executing <Task finished name='Task-155' coro=<TestOrchestrator.test_resource_monitor_snapshot() done, defined at D:\Play\Commodity\commodity_os\testing\tests.py:90> result=None created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py:101> took 1.559 seconds
+2026-07-19 11:01:38,544 [INFO] commodity_os.core.orchestrator: Resource-Aware Orchestrator initializing...
+2026-07-19 11:01:39,981 [INFO] commodity_os.core.orchestrator: Resource check: CPU=34.6% RAM=92.3% Disk=40.3% Health=20.0
+2026-07-19 11:01:39,986 [WARNING] asyncio: Executing <Task pending name='Task-161' coro=<EventBus._safe_call() running at D:\Play\Commodity\commodity_os\core\events.py:114> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:767> cb=[gather.<locals>._done_callback() at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:822] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 1.428 seconds
+2026-07-19 11:01:41,474 [INFO] commodity_os.core.orchestrator: Resource check: CPU=16.0% RAM=92.4% Disk=40.3% Health=20.0
+2026-07-19 11:01:41,483 [WARNING] asyncio: Executing <Task pending name='Task-163' coro=<EventBus._safe_call() running at D:\Play\Commodity\commodity_os\core\events.py:114> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:767> cb=[gather.<locals>._done_callback() at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:822] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 1.497 seconds
+2026-07-19 11:01:42,987 [INFO] commodity_os.core.orchestrator: Resource check: CPU=37.5% RAM=92.4% Disk=40.3% Health=20.0
+2026-07-19 11:01:42,990 [WARNING] asyncio: Executing <Task pending name='Task-166' coro=<EventBus._safe_call() running at D:\Play\Commodity\commodity_os\core\events.py:114> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:767> cb=[gather.<locals>._done_callback() at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:822] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 1.505 seconds
+2026-07-19 11:01:44,440 [INFO] commodity_os.core.orchestrator: Resource check: CPU=25.0% RAM=92.4% Disk=40.3% Health=20.0
+2026-07-19 11:01:44,447 [WARNING] asyncio: Executing <Task pending name='Task-167' coro=<EventBus._safe_call() running at D:\Play\Commodity\commodity_os\core\events.py:114> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:767> cb=[gather.<locals>._done_callback() at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:822] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 1.457 seconds
+2026-07-19 11:01:44,447 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 11:01:44,448 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 11:01:44,448 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 11:01:44,448 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 11:01:44,449 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 11:01:44,449 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 11:01:44,450 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 11:01:44,450 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 11:01:45,914 [INFO] commodity_os.core.orchestrator: Task test_task queued (priority=HIGH)
+2026-07-19 11:01:45,914 [INFO] commodity_os.core.orchestrator: Orchestrator shut down
+2026-07-19 11:01:45,915 [WARNING] asyncio: Executing <Task finished name='Task-160' coro=<TestOrchestrator.test_submit_task() done, defined at D:\Play\Commodity\commodity_os\testing\tests.py:68> result=None created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py:101> took 1.462 seconds
+2026-07-19 11:01:45,951 [ERROR] commodity_os.github_integration.github: Commit failed: [WinError 2] The system cannot find the file specified
+2026-07-19 11:01:45,952 [INFO] commodity_os.reports.generator: Report generated: hourly_20260719_053145
+2026-07-19 11:06:33,231 [INFO] commodity_os: === Initializing CommodityOS ===
+2026-07-19 11:06:33,232 [INFO] commodity_os.core.orchestrator: Resource-Aware Orchestrator initializing...
+2026-07-19 11:06:37,847 [INFO] commodity_os.core.orchestrator: Resource check: CPU=31.0% RAM=91.6% Disk=40.3% Health=20.0
+2026-07-19 11:06:37,847 [INFO] commodity_os.monitoring.monitor: MonitoringSystem initializing...
+2026-07-19 11:06:37,857 [INFO] commodity_os.monitoring.monitor: Checkpoint loaded. Last stage index: 0
+2026-07-19 11:06:37,858 [INFO] commodity_os.monitoring.monitor: MonitoringSystem ready. 72 components tracked.
+2026-07-19 11:06:37,858 [INFO] commodity_os.meta_agents.orchestrator_agent: System Orchestrator Agent initialized
+2026-07-19 11:06:37,858 [INFO] commodity_os.meta_agents.quality_agent: Quality Agent initialized
+2026-07-19 11:06:37,858 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence Agent initialized
+2026-07-19 11:06:37,858 [INFO] commodity_os.github_integration.github: GitHub Integration initialized
+2026-07-19 11:06:37,858 [INFO] commodity_os: === CommodityOS initialized ===
+2026-07-19 11:06:37,858 [INFO] commodity_os: Starting automated collection pipeline...
+2026-07-19 11:06:37,858 [INFO] commodity_os: 
+============================================================
+2026-07-19 11:06:37,858 [INFO] commodity_os: CYCLE 1 START
+2026-07-19 11:06:37,858 [INFO] commodity_os: ============================================================
+2026-07-19 11:06:37,858 [INFO] commodity_os: === Shutting down CommodityOS ===
+2026-07-19 11:06:37,858 [INFO] commodity_os: Total uptime: 0s, Cycles completed: 1
+2026-07-19 11:06:37,861 [ERROR] commodity_os.github_integration.github: Commit failed: [WinError 2] The system cannot find the file specified
+2026-07-19 11:06:37,861 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence Agent shut down
+2026-07-19 11:06:37,862 [INFO] commodity_os.meta_agents.quality_agent: Quality Agent shut down
+2026-07-19 11:06:37,862 [INFO] commodity_os.meta_agents.orchestrator_agent: System Orchestrator Agent shut down
+2026-07-19 11:06:37,862 [INFO] commodity_os.monitoring.monitor: MonitoringSystem shut down
+2026-07-19 11:06:37,863 [INFO] commodity_os.core.orchestrator: Orchestrator shut down
+2026-07-19 11:06:37,863 [INFO] commodity_os: === CommodityOS shut down ===
+2026-07-19 11:06:49,520 [INFO] commodity_os: === Initializing CommodityOS ===
+2026-07-19 11:06:49,520 [INFO] commodity_os.core.orchestrator: Resource-Aware Orchestrator initializing...
+2026-07-19 11:06:51,699 [INFO] commodity_os.core.orchestrator: Resource check: CPU=68.0% RAM=91.2% Disk=40.3% Health=70.0
+2026-07-19 11:06:51,700 [INFO] commodity_os.monitoring.monitor: MonitoringSystem initializing...
+2026-07-19 11:06:51,745 [INFO] commodity_os.monitoring.monitor: Checkpoint loaded. Last stage index: 0
+2026-07-19 11:06:51,746 [INFO] commodity_os.monitoring.monitor: MonitoringSystem ready. 72 components tracked.
+2026-07-19 11:06:51,747 [INFO] commodity_os.meta_agents.orchestrator_agent: System Orchestrator Agent initialized
+2026-07-19 11:06:51,747 [INFO] commodity_os.meta_agents.quality_agent: Quality Agent initialized
+2026-07-19 11:06:51,748 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence Agent initialized
+2026-07-19 11:06:51,748 [INFO] commodity_os.github_integration.github: GitHub Integration initialized
+2026-07-19 11:06:51,749 [INFO] commodity_os: === CommodityOS initialized ===
+2026-07-19 11:06:51,749 [INFO] commodity_os: Starting automated collection pipeline...
+2026-07-19 11:06:51,749 [INFO] commodity_os: 
+============================================================
+2026-07-19 11:06:51,750 [INFO] commodity_os: CYCLE 1 START
+2026-07-19 11:06:51,750 [INFO] commodity_os: ============================================================
+2026-07-19 11:06:51,750 [INFO] commodity_os: === Shutting down CommodityOS ===
+2026-07-19 11:06:51,750 [INFO] commodity_os: Total uptime: 0s, Cycles completed: 1
+2026-07-19 11:06:51,762 [ERROR] commodity_os.github_integration.github: Commit failed: [WinError 2] The system cannot find the file specified
+2026-07-19 11:06:51,763 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence Agent shut down
+2026-07-19 11:06:51,764 [INFO] commodity_os.meta_agents.quality_agent: Quality Agent shut down
+2026-07-19 11:06:51,764 [INFO] commodity_os.meta_agents.orchestrator_agent: System Orchestrator Agent shut down
+2026-07-19 11:06:51,766 [INFO] commodity_os.monitoring.monitor: MonitoringSystem shut down
+2026-07-19 11:06:51,767 [INFO] commodity_os.core.orchestrator: Orchestrator shut down
+2026-07-19 11:06:51,767 [INFO] commodity_os: === CommodityOS shut down ===
+2026-07-19 11:07:02,910 [INFO] commodity_os: === Initializing CommodityOS ===
+2026-07-19 11:07:02,911 [INFO] commodity_os.core.orchestrator: Resource-Aware Orchestrator initializing...
+2026-07-19 11:07:04,947 [INFO] commodity_os.core.orchestrator: Resource check: CPU=27.6% RAM=91.3% Disk=40.3% Health=70.0
+2026-07-19 11:07:04,949 [WARNING] asyncio: Executing <Task finished name='Task-34' coro=<EventBus._safe_call() done, defined at D:\Play\Commodity\commodity_os\core\events.py:112> result=None created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 2.034 seconds
+2026-07-19 11:07:04,951 [INFO] commodity_os.monitoring.monitor: MonitoringSystem initializing...
+2026-07-19 11:07:05,009 [INFO] commodity_os.monitoring.monitor: Checkpoint loaded. Last stage index: 0
+2026-07-19 11:07:05,010 [INFO] commodity_os.monitoring.monitor: MonitoringSystem ready. 72 components tracked.
+2026-07-19 11:07:05,011 [INFO] commodity_os.meta_agents.orchestrator_agent: System Orchestrator Agent initialized
+2026-07-19 11:07:05,011 [INFO] commodity_os.meta_agents.quality_agent: Quality Agent initialized
+2026-07-19 11:07:05,012 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence Agent initialized
+2026-07-19 11:07:05,012 [INFO] commodity_os.github_integration.github: GitHub Integration initialized
+2026-07-19 11:07:05,012 [INFO] commodity_os: === CommodityOS initialized ===
+2026-07-19 11:07:05,012 [INFO] commodity_os: === Shutting down CommodityOS ===
+2026-07-19 11:07:05,012 [INFO] commodity_os: Total uptime: 0s, Cycles completed: 0
+2026-07-19 11:07:05,017 [ERROR] commodity_os.github_integration.github: Commit failed: [WinError 2] The system cannot find the file specified
+2026-07-19 11:07:05,017 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence Agent shut down
+2026-07-19 11:07:05,017 [INFO] commodity_os.meta_agents.quality_agent: Quality Agent shut down
+2026-07-19 11:07:05,017 [INFO] commodity_os.meta_agents.orchestrator_agent: System Orchestrator Agent shut down
+2026-07-19 11:07:05,019 [INFO] commodity_os.monitoring.monitor: MonitoringSystem shut down
+2026-07-19 11:07:05,020 [INFO] commodity_os.core.orchestrator: Orchestrator shut down
+2026-07-19 11:07:05,023 [INFO] commodity_os: === CommodityOS shut down ===
+2026-07-19 11:07:09,405 [INFO] commodity_os.core.orchestrator: System health: 20.0/100
+2026-07-19 11:07:09,412 [WARNING] asyncio: Executing <Task finished name='Task-53' coro=<EventBus._safe_call() done, defined at D:\Play\Commodity\commodity_os\core\events.py:112> result=None created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 4.176 seconds
+2026-07-19 11:07:09,591 [INFO] commodity_os.knowledge_graph.graph: Loaded knowledge graph from D:\Play\Commodity\data\knowledge_graph.json
+2026-07-19 11:07:09,592 [INFO] commodity_os.knowledge_graph.graph: Added entity: Test Co
+2026-07-19 11:07:09,602 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence: KG updated - 0 nodes
+2026-07-19 11:07:09,606 [INFO] commodity_os: Knowledge Graph updated: 0 nodes, 0 edges
+2026-07-19 11:07:09,657 [INFO] commodity_os.knowledge_graph.graph: Loaded knowledge graph from D:\Play\Commodity\data\knowledge_graph.json
+2026-07-19 11:07:09,658 [INFO] commodity_os.knowledge_graph.graph: Added entity: A
+2026-07-19 11:07:09,668 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence: KG updated - 0 nodes
+2026-07-19 11:07:09,669 [INFO] commodity_os: Knowledge Graph updated: 0 nodes, 0 edges
+2026-07-19 11:07:09,676 [INFO] commodity_os.knowledge_graph.graph: Added entity: B
+2026-07-19 11:07:09,686 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence: KG updated - 0 nodes
+2026-07-19 11:07:09,689 [INFO] commodity_os: Knowledge Graph updated: 0 nodes, 0 edges
+2026-07-19 11:07:09,694 [INFO] commodity_os.knowledge_graph.graph: Added relationship: a --SUPPLIES--> b
+2026-07-19 11:07:09,703 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence: KG updated - 0 nodes
+2026-07-19 11:07:09,707 [INFO] commodity_os: Knowledge Graph updated: 0 nodes, 0 edges
+2026-07-19 11:07:09,735 [INFO] commodity_os.knowledge_graph.graph: Loaded knowledge graph from D:\Play\Commodity\data\knowledge_graph.json
+2026-07-19 11:07:09,736 [INFO] commodity_os.knowledge_graph.graph: Added entity: A
+2026-07-19 11:07:09,748 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence: KG updated - 0 nodes
+2026-07-19 11:07:09,749 [INFO] commodity_os: Knowledge Graph updated: 0 nodes, 0 edges
+2026-07-19 11:07:09,754 [INFO] commodity_os.knowledge_graph.graph: Added entity: B
+2026-07-19 11:07:09,766 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence: KG updated - 0 nodes
+2026-07-19 11:07:09,767 [INFO] commodity_os: Knowledge Graph updated: 0 nodes, 0 edges
+2026-07-19 11:07:09,784 [INFO] commodity_os.knowledge_graph.graph: Loaded knowledge graph from D:\Play\Commodity\data\knowledge_graph.json
+2026-07-19 11:07:09,784 [INFO] commodity_os.knowledge_graph.graph: Added entity: S1
+2026-07-19 11:07:09,791 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence: KG updated - 0 nodes
+2026-07-19 11:07:09,792 [INFO] commodity_os: Knowledge Graph updated: 0 nodes, 0 edges
+2026-07-19 11:07:09,801 [INFO] commodity_os.knowledge_graph.graph: Loaded knowledge graph from D:\Play\Commodity\data\knowledge_graph.json
+2026-07-19 11:07:09,801 [INFO] commodity_os.knowledge_graph.graph: Added entity: X
+2026-07-19 11:07:09,807 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence: KG updated - 0 nodes
+2026-07-19 11:07:09,808 [INFO] commodity_os: Knowledge Graph updated: 0 nodes, 0 edges
+2026-07-19 11:07:09,816 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence Agent initialized
+2026-07-19 11:07:09,816 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence Agent shut down
+2026-07-19 11:07:09,827 [INFO] commodity_os.core.orchestrator: Resource-Aware Orchestrator initializing...
+2026-07-19 11:07:11,498 [INFO] commodity_os.core.orchestrator: Resource check: CPU=65.4% RAM=91.6% Disk=40.3% Health=20.0
+2026-07-19 11:07:11,510 [WARNING] asyncio: Executing <Task pending name='Task-114' coro=<EventBus._safe_call() running at D:\Play\Commodity\commodity_os\core\events.py:114> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:767> cb=[gather.<locals>._done_callback() at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:822] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 1.680 seconds
+2026-07-19 11:07:13,510 [INFO] commodity_os.core.orchestrator: Resource check: CPU=46.4% RAM=91.8% Disk=40.3% Health=70.0
+2026-07-19 11:07:13,511 [WARNING] asyncio: Executing <Task finished name='Task-116' coro=<EventBus._safe_call() done, defined at D:\Play\Commodity\commodity_os\core\events.py:112> result=None created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 1.998 seconds
+2026-07-19 11:07:13,511 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 11:07:13,512 [INFO] commodity_os.meta_agents.orchestrator_agent: System Orchestrator Agent initialized
+2026-07-19 11:07:13,513 [INFO] commodity_os.meta_agents.orchestrator_agent: System Orchestrator Agent shut down
+2026-07-19 11:07:13,513 [INFO] commodity_os.core.orchestrator: Orchestrator shut down
+2026-07-19 11:07:13,521 [INFO] commodity_os.meta_agents.quality_agent: Quality Agent initialized
+2026-07-19 11:07:13,522 [INFO] commodity_os.meta_agents.quality_agent: Quality Agent shut down
+2026-07-19 11:07:13,531 [INFO] commodity_os.monitoring.monitor: MonitoringSystem initializing...
+2026-07-19 11:07:13,545 [INFO] commodity_os.monitoring.monitor: Checkpoint loaded. Last stage index: 0
+2026-07-19 11:07:13,546 [INFO] commodity_os.monitoring.monitor: MonitoringSystem ready. 72 components tracked.
+2026-07-19 11:07:13,547 [INFO] commodity_os.monitoring.monitor: MonitoringSystem shut down
+2026-07-19 11:07:13,557 [INFO] commodity_os.monitoring.monitor: MonitoringSystem initializing...
+2026-07-19 11:07:13,567 [INFO] commodity_os.monitoring.monitor: Checkpoint loaded. Last stage index: 0
+2026-07-19 11:07:13,567 [INFO] commodity_os.monitoring.monitor: MonitoringSystem ready. 72 components tracked.
+2026-07-19 11:07:13,568 [INFO] commodity_os.monitoring.monitor: MonitoringSystem shut down
+2026-07-19 11:07:13,578 [INFO] commodity_os.core.orchestrator: Resource-Aware Orchestrator initializing...
+2026-07-19 11:07:17,841 [INFO] commodity_os.core.orchestrator: Resource check: CPU=70.8% RAM=91.9% Disk=40.3% Health=5.0
+2026-07-19 11:07:17,858 [WARNING] asyncio: Executing <Task pending name='Task-138' coro=<EventBus._safe_call() running at D:\Play\Commodity\commodity_os\core\events.py:114> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:767> cb=[gather.<locals>._done_callback() at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:822] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 4.271 seconds
+2026-07-19 11:07:20,379 [INFO] commodity_os.core.orchestrator: Resource check: CPU=84.0% RAM=91.8% Disk=40.3% Health=55.0
+2026-07-19 11:07:20,380 [WARNING] asyncio: Executing <Task finished name='Task-140' coro=<EventBus._safe_call() done, defined at D:\Play\Commodity\commodity_os\core\events.py:112> result=None created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 2.519 seconds
+2026-07-19 11:07:22,083 [INFO] commodity_os.core.orchestrator: Resource check: CPU=58.3% RAM=91.8% Disk=40.3% Health=70.0
+2026-07-19 11:07:22,084 [WARNING] asyncio: Executing <Task finished name='Task-143' coro=<EventBus._safe_call() done, defined at D:\Play\Commodity\commodity_os\core\events.py:112> result=None created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 1.702 seconds
+2026-07-19 11:07:22,090 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 11:07:22,093 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 11:07:23,617 [INFO] commodity_os: === Initializing CommodityOS ===
+2026-07-19 11:07:23,618 [INFO] commodity_os.core.orchestrator: Resource-Aware Orchestrator initializing...
+2026-07-19 11:07:24,452 [INFO] commodity_os.core.orchestrator: Task low queued (priority=LOW)
+2026-07-19 11:07:26,132 [INFO] commodity_os.core.orchestrator: Resource check: CPU=76.9% RAM=92.7% Disk=40.3% Health=55.0
+2026-07-19 11:07:26,132 [INFO] commodity_os.monitoring.monitor: MonitoringSystem initializing...
+2026-07-19 11:07:26,172 [INFO] commodity_os.monitoring.monitor: Checkpoint loaded. Last stage index: 0
+2026-07-19 11:07:26,174 [INFO] commodity_os.monitoring.monitor: MonitoringSystem ready. 72 components tracked.
+2026-07-19 11:07:26,174 [INFO] commodity_os.meta_agents.orchestrator_agent: System Orchestrator Agent initialized
+2026-07-19 11:07:26,175 [INFO] commodity_os.meta_agents.quality_agent: Quality Agent initialized
+2026-07-19 11:07:26,176 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence Agent initialized
+2026-07-19 11:07:26,176 [INFO] commodity_os.github_integration.github: GitHub Integration initialized
+2026-07-19 11:07:26,176 [INFO] commodity_os: === CommodityOS initialized ===
+2026-07-19 11:07:26,177 [INFO] commodity_os: Starting automated collection pipeline...
+2026-07-19 11:07:26,177 [INFO] commodity_os: 
+============================================================
+2026-07-19 11:07:26,177 [INFO] commodity_os: CYCLE 1 START
+2026-07-19 11:07:26,177 [INFO] commodity_os: ============================================================
+2026-07-19 11:07:26,178 [INFO] commodity_os.meta_agents.orchestrator_agent: Cycle 1: Planning execution with mode=full
+2026-07-19 11:07:27,844 [INFO] commodity_os.core.orchestrator: Task crit queued (priority=CRITICAL)
+2026-07-19 11:07:27,846 [INFO] commodity_os.core.orchestrator: Orchestrator shut down
+2026-07-19 11:07:27,849 [WARNING] asyncio: Executing <Task finished name='Task-137' coro=<TestOrchestrator.test_priority_ordering() done, defined at D:\Play\Commodity\commodity_os\testing\tests.py:79> result=None created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py:101> took 5.749 seconds
+2026-07-19 11:07:28,883 [INFO] commodity_os.core.orchestrator: Task api_health_check queued (priority=CRITICAL)
+2026-07-19 11:07:30,021 [WARNING] asyncio: Executing <Task finished name='Task-150' coro=<TestOrchestrator.test_resource_health_score() done, defined at D:\Play\Commodity\commodity_os\testing\tests.py:97> result=None created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py:101> took 2.133 seconds
+2026-07-19 11:07:30,352 [INFO] commodity_os.core.orchestrator: Task resource_detection queued (priority=CRITICAL)
+2026-07-19 11:07:31,391 [WARNING] asyncio: Executing <Task finished name='Task-155' coro=<TestOrchestrator.test_resource_monitor_snapshot() done, defined at D:\Play\Commodity\commodity_os\testing\tests.py:90> result=None created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py:101> took 1.359 seconds
+2026-07-19 11:07:31,401 [INFO] commodity_os.core.orchestrator: Resource-Aware Orchestrator initializing...
+2026-07-19 11:07:31,787 [INFO] commodity_os.core.orchestrator: Task crawl_indiamart queued (priority=HIGH)
+2026-07-19 11:07:32,778 [INFO] commodity_os.core.orchestrator: Resource check: CPU=37.5% RAM=93.0% Disk=40.3% Health=20.0
+2026-07-19 11:07:32,786 [WARNING] asyncio: Executing <Task pending name='Task-161' coro=<EventBus._safe_call() running at D:\Play\Commodity\commodity_os\core\events.py:114> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:767> cb=[gather.<locals>._done_callback() at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:822] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 1.372 seconds
+2026-07-19 11:07:33,251 [INFO] commodity_os.core.orchestrator: Task crawl_tradeindia queued (priority=HIGH)
+2026-07-19 11:07:34,205 [INFO] commodity_os.core.orchestrator: Resource check: CPU=34.5% RAM=93.0% Disk=40.3% Health=20.0
+2026-07-19 11:07:34,210 [WARNING] asyncio: Executing <Task pending name='Task-163' coro=<EventBus._safe_call() running at D:\Play\Commodity\commodity_os\core\events.py:114> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:767> cb=[gather.<locals>._done_callback() at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:822] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 1.421 seconds
+2026-07-19 11:07:34,706 [INFO] commodity_os.core.orchestrator: Task crawl_agmarknet queued (priority=HIGH)
+2026-07-19 11:07:35,572 [INFO] commodity_os.core.orchestrator: Resource check: CPU=10.7% RAM=93.1% Disk=40.3% Health=20.0
+2026-07-19 11:07:35,575 [WARNING] asyncio: Executing <Task pending name='Task-166' coro=<EventBus._safe_call() running at D:\Play\Commodity\commodity_os\core\events.py:114> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:767> cb=[gather.<locals>._done_callback() at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:822] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 1.364 seconds
+2026-07-19 11:07:36,151 [INFO] commodity_os.core.orchestrator: Task crawl_apmc deferred (low resources)
+2026-07-19 11:07:36,904 [INFO] commodity_os.core.orchestrator: Resource check: CPU=7.1% RAM=93.0% Disk=40.3% Health=20.0
+2026-07-19 11:07:36,907 [WARNING] asyncio: Executing <Task pending name='Task-167' coro=<EventBus._safe_call() running at D:\Play\Commodity\commodity_os\core\events.py:114> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:767> cb=[gather.<locals>._done_callback() at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:822] created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py:750> took 1.331 seconds
+2026-07-19 11:07:36,907 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 11:07:36,908 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 11:07:36,908 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 11:07:36,908 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 11:07:36,909 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 11:07:36,909 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 11:07:36,909 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 11:07:36,910 [WARNING] commodity_os.meta_agents.orchestrator_agent: Resource low detected - adjusting execution plan
+2026-07-19 11:07:37,670 [INFO] commodity_os.core.orchestrator: Task crawl_export_dir deferred (low resources)
+2026-07-19 11:07:38,301 [INFO] commodity_os.core.orchestrator: Task test_task queued (priority=HIGH)
+2026-07-19 11:07:38,303 [INFO] commodity_os.core.orchestrator: Orchestrator shut down
+2026-07-19 11:07:38,304 [WARNING] asyncio: Executing <Task finished name='Task-160' coro=<TestOrchestrator.test_submit_task() done, defined at D:\Play\Commodity\commodity_os\testing\tests.py:68> result=None created at C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py:101> took 1.392 seconds
+2026-07-19 11:07:38,324 [ERROR] commodity_os.github_integration.github: Commit failed: [WinError 2] The system cannot find the file specified
+2026-07-19 11:07:38,325 [INFO] commodity_os.reports.generator: Report generated: hourly_20260719_053738
+2026-07-19 11:08:43,015 [INFO] commodity_os: === Initializing CommodityOS ===
+2026-07-19 11:08:43,016 [INFO] commodity_os.core.orchestrator: Resource-Aware Orchestrator initializing...
+2026-07-19 11:08:47,552 [INFO] commodity_os.core.orchestrator: Resource check: CPU=37.5% RAM=93.0% Disk=40.3% Health=20.0
+2026-07-19 11:08:47,553 [INFO] commodity_os.monitoring.monitor: MonitoringSystem initializing...
+2026-07-19 11:08:47,556 [INFO] commodity_os.monitoring.monitor: Checkpoint loaded. Last stage index: 0
+2026-07-19 11:08:47,557 [INFO] commodity_os.monitoring.monitor: MonitoringSystem ready. 72 components tracked.
+2026-07-19 11:08:47,557 [INFO] commodity_os.meta_agents.orchestrator_agent: System Orchestrator Agent initialized
+2026-07-19 11:08:47,558 [INFO] commodity_os.meta_agents.quality_agent: Quality Agent initialized
+2026-07-19 11:08:47,558 [INFO] commodity_os.meta_agents.executive_agent: Executive Intelligence Agent initialized
+2026-07-19 11:08:47,558 [INFO] commodity_os.github_integration.github: GitHub Integration initialized
+2026-07-19 11:08:47,559 [INFO] commodity_os: === CommodityOS initialized ===
+2026-07-19 11:08:47,559 [INFO] commodity_os: Starting automated collection pipeline...
+2026-07-19 11:08:47,559 [INFO] commodity_os: 
+============================================================
+2026-07-19 11:08:47,560 [INFO] commodity_os: CYCLE 1 START
+2026-07-19 11:08:47,560 [INFO] commodity_os: ============================================================
+2026-07-19 11:08:47,561 [INFO] commodity_os.meta_agents.orchestrator_agent: Cycle 1: Planning execution with mode=full
+2026-07-19 11:08:51,892 [INFO] commodity_os.core.orchestrator: Task api_health_check queued (priority=CRITICAL)
+2026-07-19 11:08:56,360 [INFO] commodity_os.core.orchestrator: Task resource_detection queued (priority=CRITICAL)
+2026-07-19 11:09:00,783 [INFO] commodity_os.core.orchestrator: Task crawl_indiamart queued (priority=HIGH)

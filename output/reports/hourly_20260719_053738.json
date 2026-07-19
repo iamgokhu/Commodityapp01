@@ -1,0 +1,84 @@
+{
+  "metadata": {
+    "report_type": "hourly",
+    "generated_at": "2026-07-19T05:37:38.314073",
+    "period_start": "2026-07-19T04:37:38.314073",
+    "period_end": "2026-07-19T05:37:38.314073",
+    "report_id": "rpt_hourly_20260719053738",
+    "version": "1.0"
+  },
+  "executive_summary": {
+    "total_entities": 1,
+    "unique_products": 1,
+    "unique_states": 1,
+    "average_market_price": 0,
+    "period": "2026-07-19 to 2026-07-19",
+    "highlights": [
+      "Tracking 1 entities across 1 products"
+    ]
+  },
+  "data_collection_stats": {
+    "total_crawl_cycles": 0,
+    "successful_crawls": 0,
+    "failed_crawls": 0,
+    "success_rate": 0.0,
+    "avg_response_time_ms": 0,
+    "data_points_collected": 0,
+    "deduplication_rate": 0,
+    "api_calls_made": 0
+  },
+  "entity_breakdown": {
+    "by_type": {
+      "Unknown": 1
+    },
+    "by_product": {
+      "Sugar": 1
+    },
+    "by_state": {
+      "MH": 1
+    }
+  },
+  "price_trends": {
+    "current_averages": {},
+    "historical": {},
+    "trend_direction": {}
+  },
+  "top_entities": [
+    {
+      "name": "Co A",
+      "product": "Sugar",
+      "state": "MH",
+      "type": "Manufacturer"
+    }
+  ],
+  "data_quality": {
+    "completeness": {
+      "contact": 0.0,
+      "price": 0.0,
+      "year_established": 0.0,
+      "gst": 0.0,
+      "address": 0.0
+    },
+    "overall_score": 0.0,
+    "duplicate_count": 0,
+    "stale_records": 0
+  },
+  "system_health": {
+    "uptime_hours": 0,
+    "error_rate": 0,
+    "avg_latency_ms": 0,
+    "memory_usage_mb": 0,
+    "active_agents": 0,
+    "queue_depth": 0,
+    "last_cycle_duration_s": 0,
+    "health_score": 100
+  },
+  "notable_changes": {
+    "new_entities_count": 0,
+    "new_entities": [],
+    "price_increases": 0,
+    "price_decreases": 0,
+    "largest_increase": null,
+    "largest_decrease": null
+  }
+}

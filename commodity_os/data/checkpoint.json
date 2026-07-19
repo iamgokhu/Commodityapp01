@@ -1,0 +1,11 @@
+{
+  "start_time": 1784438144.6888728,
+  "pipeline_stage_index": 0,
+  "cycle_count": 0,
+  "last_successful_stage": "",
+  "test_key": "test_val",
+  "saved_at": 1784439433.5682635,
+  "shutdown_time": 1784439433.5681915,
+  "last_health_score": 100.0,
+  "test": "data"
+}

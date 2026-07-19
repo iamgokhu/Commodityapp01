@@ -1,0 +1,82 @@
+project:
+  name: "Commodity Data Collection"
+  version: "1.0.0"
+  agents_count: 32
+
+products:
+  - "Sugar"
+  - "Rice"
+  - "Grains"
+  - "Pulses"
+  - "Wheat"
+  - "Dals"
+  - "Basmathi Rice"
+
+entity_types:
+  - "Manufacturer"
+  - "Wholesaler"
+  - "Exporter"
+
+geography_hierarchy:
+  - "Taluk"
+  - "District"
+  - "State"
+
+data_fields:
+  - "contact_details"
+  - "year_established"
+  - "gst_number"
+  - "office_address"
+  - "market_price_today_per_sku"
+  - "purchase_price"
+  - "market_selling_price"
+  - "payment_terms"
+  - "support_services"
+  - "delivery_available"
+
+data_sources:
+  web_search:
+    enabled: true
+    engines: ["google", "bing", "duckduckgo"]
+    rate_limit_per_minute: 30
+  government_portals:
+    enabled: true
+    portals:
+      - "agmarknet.gov.in"
+      - "agmarknet.nic.in"
+      - "fcamin.gov.in"
+      - "dfpd.gov.in"
+      - "farmer.gov.in"
+      - "enam.gov.in"
+    rate_limit_per_minute: 20
+  market_data:
+    enabled: true
+    sources:
+      - "indiamart.com"
+      - "tradeindia.com"
+      - "exportersindia.com"
+      - "indianexporters.com"
+    rate_limit_per_minute: 15
+
+agent_distribution:
+  by_region: 16
+  by_product: 8
+  by_entity_type: 8
+
+storage:
+  type: "sqlite"
+  path: "data/commodity_data.db"
+
+consolidation:
+  output_format: "json"
+  output_path: "output/commodity_data_consolidated.json"
+  segment_by: "product_category"
+
+rate_limiting:
+  requests_per_minute: 10
+  retry_attempts: 3
+  retry_delay_seconds: 5
+
+logging:
+  level: "INFO"
+  file: "logs/commodity_agents.log"

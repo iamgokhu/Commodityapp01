@@ -1,0 +1,61 @@
+{
+  "nodes": [
+    {
+      "id": "ent_1",
+      "type": "Manufacturer",
+      "product": "Sugar",
+      "state": "Maharashtra",
+      "node_type": "entity",
+      "name": "Test Co"
+    },
+    {
+      "id": "a",
+      "type": "Manufacturer",
+      "node_type": "entity",
+      "name": "A",
+      "product": "Sugar",
+      "state": "MH"
+    },
+    {
+      "id": "x",
+      "type": "Manufacturer",
+      "node_type": "entity",
+      "name": "X"
+    },
+    {
+      "id": "b",
+      "type": "Manufacturer",
+      "node_type": "entity",
+      "name": "B",
+      "product": "Sugar",
+      "state": "MH"
+    },
+    {
+      "id": "c",
+      "type": "Wholesaler",
+      "product": "Rice",
+      "state": "MH",
+      "node_type": "entity",
+      "name": "C"
+    },
+    {
+      "id": "s1",
+      "type": "Manufacturer",
+      "node_type": "entity",
+      "name": "S1"
+    },
+    {
+      "id": "x",
+      "type": "Manufacturer",
+      "node_type": "entity",
+      "name": "X"
+    }
+  ],
+  "edges": [
+    {
+      "source": "a",
+      "target": "b",
+      "relationship": "SUPPLIES"
+    }
+  ]
+}
