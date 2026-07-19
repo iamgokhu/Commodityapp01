@@ -593,7 +593,7 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
         <div id="page-reports" class="page">
             <div class="grid-2" style="margin-bottom:24px">
                 <div class="card">
-                    <div class="card-header"><div class="card-title">Available Reports</div></div>
+                    <div class="card-header"><div class="card-title">Generate Reports</div><span style="font-size:12px;color:#64748b">${new Date().toLocaleDateString()}</span></div>
                     <div id="reports-list"></div>
                 </div>
                 <div class="card">
@@ -601,11 +601,30 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
                     <div id="report-stats"></div>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-header"><div class="card-title">Collection Summary</div></div>
-                <div style="overflow-x:auto">
-                    <table><thead><tr><th>Product</th><th>Entities</th><th>States</th><th>Districts</th><th>Sources</th></tr></thead><tbody id="report-summary-table"></tbody></table>
+            <div class="card" style="margin-bottom:24px">
+                <div class="card-header"><div class="card-title">Collection Summary by Product</div></div>
+                <div style="overflow-x:auto;max-height:350px;overflow-y:auto">
+                    <table><thead><tr><th>Product</th><th>Category</th><th>Entities</th><th>States</th><th>Districts</th><th>Sources</th><th>Avg Price</th></tr></thead><tbody id="report-summary-table"></tbody></table>
                 </div>
+            </div>
+            <div class="card">
+                <div class="card-header"><div class="card-title">Recent Reports</div></div>
+                <div id="report-history"></div>
+            </div>
+        </div>
+
+        <!-- ======== REPORT MODAL ======== -->
+        <div id="report-modal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);z-index:100;overflow-y:auto;padding:32px">
+            <div style="background:white;border-radius:16px;max-width:1100px;margin:0 auto;padding:32px;position:relative">
+                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:24px">
+                    <h2 id="modal-report-title" style="font-size:20px;font-weight:700"></h2>
+                    <div style="display:flex;gap:8px;align-items:center">
+                        <button onclick="exportReport()" style="padding:8px 16px;border-radius:8px;border:1px solid #e2e8f0;background:white;font-size:12px;font-weight:600;cursor:pointer">Export JSON</button>
+                        <button onclick="printReport()" style="padding:8px 16px;border-radius:8px;border:1px solid #e2e8f0;background:white;font-size:12px;font-weight:600;cursor:pointer">Print</button>
+                        <button onclick="closeReportModal()" style="width:36px;height:36px;border-radius:8px;border:1px solid #e2e8f0;background:white;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center">&times;</button>
+                    </div>
+                </div>
+                <div id="modal-report-content"></div>
             </div>
         </div>
     </main>
@@ -922,39 +941,344 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
     }
 
     // ===== REPORTS PAGE =====
+    let currentReportData = null;
+    let reportChartInstances = [];
+
+    const REPORT_TYPES = [
+        { id: 'product', title: 'Product Distribution Report', desc: 'Full breakdown of all product categories and subcategories', icon: '\u{1f4ca}', color: '#22c55e' },
+        { id: 'state', title: 'State Coverage Report', desc: 'Geographic coverage across all Indian states and UTs', icon: '\u{1f5fa}', color: '#3b82f6' },
+        { id: 'crawler', title: 'Crawler Performance Report', desc: 'Status and entity count for all 26 configured crawlers', icon: '\u{1f916}', color: '#f59e0b' },
+        { id: 'quality', title: 'Data Quality Report', desc: 'Validation, deduplication, and field completeness analysis', icon: '\u{2705}', color: '#8b5cf6' },
+        { id: 'entity', title: 'Entity Listing Report', desc: 'Complete list of all collected entities with details', icon: '\u{1f4cb}', color: '#ec4899' },
+        { id: 'price', title: 'Price Analysis Report', desc: 'Market prices, purchase prices, and selling price analysis', icon: '\u{1f4b0}', color: '#06b6d4' },
+        { id: 'geographic', title: 'Geographic Heatmap Report', desc: 'District and taluk-level coverage with density analysis', icon: '\u{1f30d}', color: '#14b8a6' },
+    ];
+
     function renderReportsPage() {
+        // Report cards
+        document.getElementById('reports-list').innerHTML = REPORT_TYPES.map(r => `<div class="cat-card" onclick="generateReport('${r.id}')">
+            <div class="cat-icon" style="background:${r.color}22;color:${r.color}">${r.icon}</div>
+            <div class="cat-info"><div class="cat-name">${r.title}</div><div class="cat-count">${r.desc}</div></div>
+            <button class="report-btn report-btn-primary" onclick="event.stopPropagation();generateReport('${r.id}')">Generate</button>
+        </div>`).join('');
+
+        // Quick stats
+        const states = new Set(allEntities.map(e=>e.state).filter(Boolean));
+        const districts = new Set(allEntities.map(e=>e.district).filter(Boolean));
+        const products = new Set(allEntities.map(e=>e.product).filter(Boolean));
+        const sources = new Set(allEntities.map(e=>e.source).filter(Boolean));
+        const prices = allEntities.filter(e=>e.market_price).map(e=>parseFloat(e.market_price)||0);
+        const avgPrice = prices.length ? (prices.reduce((a,b)=>a+b,0)/prices.length).toFixed(0) : 0;
+        document.getElementById('report-stats').innerHTML = `
+            <div style="font-size:13px;line-height:2.2">
+                <div style="display:flex;justify-content:space-between;border-bottom:1px solid #f1f5f9;padding:4px 0"><span>Total Entities</span><strong>${allEntities.length.toLocaleString()}</strong></div>
+                <div style="display:flex;justify-content:space-between;border-bottom:1px solid #f1f5f9;padding:4px 0"><span>Products</span><strong>${products.size}</strong></div>
+                <div style="display:flex;justify-content:space-between;border-bottom:1px solid #f1f5f9;padding:4px 0"><span>States Covered</span><strong>${states.size}</strong></div>
+                <div style="display:flex;justify-content:space-between;border-bottom:1px solid #f1f5f9;padding:4px 0"><span>Districts</span><strong>${districts.size}</strong></div>
+                <div style="display:flex;justify-content:space-between;border-bottom:1px solid #f1f5f9;padding:4px 0"><span>Data Sources</span><strong>${sources.size}</strong></div>
+                <div style="display:flex;justify-content:space-between;border-bottom:1px solid #f1f5f9;padding:4px 0"><span>Avg Market Price</span><strong>\u20b9${avgPrice}</strong></div>
+                <div style="display:flex;justify-content:space-between;padding:4px 0"><span>Entity Types</span><strong>${new Set(allEntities.map(e=>e.type||e.entity_type).filter(Boolean)).size}</strong></div>
+            </div>`;
+
+        // Collection summary
         const productSummary = {};
         allEntities.forEach(e => {
             const p = e.product || 'Unknown';
-            if (!productSummary[p]) productSummary[p] = { entities: 0, states: new Set(), districts: new Set(), sources: new Set() };
+            const cat = e.category || e.commodity_group || '';
+            if (!productSummary[p]) productSummary[p] = { category: cat, entities: 0, states: new Set(), districts: new Set(), sources: new Set(), prices: [] };
             productSummary[p].entities++;
             if (e.state) productSummary[p].states.add(e.state);
             if (e.district) productSummary[p].districts.add(e.district);
             if (e.source) productSummary[p].sources.add(e.source);
+            const mp = parseFloat(e.market_price);
+            if (!isNaN(mp) && mp > 0) productSummary[p].prices.push(mp);
         });
-        const reports = [
-            { title: 'Product Category Report', desc: 'Distribution across all categories', icon: '\u{1f4ca}', time: new Date().toLocaleString() },
-            { title: 'State Coverage Report', desc: 'Geographic coverage analysis', icon: '\u{1f5fa}', time: new Date().toLocaleString() },
-            { title: 'Crawler Performance Report', desc: 'All 26 crawlers status', icon: '\u{1f916}', time: new Date().toLocaleString() },
-            { title: 'Data Quality Report', desc: 'Validation & dedup stats', icon: '\u{2705}', time: new Date().toLocaleString() },
-        ];
-        document.getElementById('reports-list').innerHTML = reports.map(r => `<div class="report-card">
-            <div class="report-icon" style="background:#dcfce7">${r.icon}</div>
-            <div class="report-info"><div class="report-title">${r.title}</div><div class="report-meta">${r.desc} \u2022 ${r.time}</div></div>
-            <button class="report-btn report-btn-primary" onclick="showPage('dashboard')">View</button>
-        </div>`).join('');
-        document.getElementById('report-stats').innerHTML = `<div style="font-size:13px;line-height:2">
-            <div><strong>Total Entities:</strong> ${allEntities.length.toLocaleString()}</div>
-            <div><strong>Products:</strong> ${Object.keys(productSummary).length}</div>
-            <div><strong>States:</strong> ${new Set(allEntities.map(e=>e.state).filter(Boolean)).size}</div>
-            <div><strong>Districts:</strong> ${new Set(allEntities.map(e=>e.district).filter(Boolean)).size}</div>
-            <div><strong>Sources:</strong> ${new Set(allEntities.map(e=>e.source).filter(Boolean)).size}</div>
-            <div><strong>Entity Types:</strong> ${new Set(allEntities.map(e=>e.type).filter(Boolean)).size}</div>
-        </div>`;
         const sorted = Object.entries(productSummary).sort((a,b)=>b[1].entities-a[1].entities);
-        document.getElementById('report-summary-table').innerHTML = sorted.map(([p,v]) => `<tr>
-            <td><strong>${p}</strong></td><td>${v.entities}</td><td>${v.states.size}</td><td>${v.districts.size}</td><td>${v.sources.size}</td>
-        </tr>`).join('');
+        document.getElementById('report-summary-table').innerHTML = sorted.map(([p,v]) => {
+            const avg = v.prices.length ? '\u20b9'+(v.prices.reduce((a,b)=>a+b,0)/v.prices.length).toFixed(0) : '-';
+            return `<tr><td><strong>${p}</strong></td><td>${v.category}</td><td>${v.entities}</td><td>${v.states.size}</td><td>${v.districts.size}</td><td>${v.sources.size}</td><td>${avg}</td></tr>`;
+        }).join('');
+
+        // Report history
+        const history = JSON.parse(localStorage.getItem('report_history') || '[]');
+        document.getElementById('report-history').innerHTML = history.length ? history.slice(-10).reverse().map(h => `<div style="display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid #f1f5f9">
+            <div style="width:32px;height:32px;border-radius:8px;background:#dcfce7;display:flex;align-items:center;justify-content:center;font-size:14px">\u{1f4c4}</div>
+            <div style="flex:1"><div style="font-size:13px;font-weight:600">${h.title}</div><div style="font-size:11px;color:#64748b">${h.time}</div></div>
+            <button onclick="regenerateReport('${h.type}')" style="padding:4px 10px;border-radius:6px;border:1px solid #e2e8f0;background:white;font-size:11px;cursor:pointer">Regenerate</button>
+        </div>`).join('') : '<div style="padding:24px;text-align:center;color:#64748b;font-size:13px">No reports generated yet. Click "Generate" on any report above.</div>';
+    }
+
+    function closeReportModal() { document.getElementById('report-modal').style.display = 'none'; }
+    function regenerateReport(type) { generateReport(type); }
+
+    function exportReport() {
+        if (!currentReportData) return;
+        const blob = new Blob([JSON.stringify(currentReportData, null, 2)], {type:'application/json'});
+        const a = document.createElement('a');
+        a.href = URL.createObjectURL(blob);
+        a.download = 'report_' + currentReportData.type + '_' + new Date().toISOString().slice(0,10) + '.json';
+        a.click();
+    }
+
+    function printReport() { window.print(); }
+
+    function generateReport(type) {
+        const report = REPORT_TYPES.find(r => r.id === type);
+        if (!report) return;
+        currentReportData = { type, title: report.title, generatedAt: new Date().toISOString(), entities: allEntities.length };
+
+        // Save to history
+        const history = JSON.parse(localStorage.getItem('report_history') || '[]');
+        history.push({ type, title: report.title, time: new Date().toLocaleString() });
+        if (history.length > 20) history.splice(0, history.length - 20);
+        localStorage.setItem('report_history', JSON.stringify(history));
+
+        document.getElementById('modal-report-title').textContent = report.title;
+        let content = '';
+
+        if (type === 'product') content = buildProductReport();
+        else if (type === 'state') content = buildStateReport();
+        else if (type === 'crawler') content = buildCrawlerReport();
+        else if (type === 'quality') content = buildQualityReport();
+        else if (type === 'entity') content = buildEntityReport();
+        else if (type === 'price') content = buildPriceReport();
+        else if (type === 'geographic') content = buildGeographicReport();
+
+        document.getElementById('modal-report-content').innerHTML = content;
+        document.getElementById('report-modal').style.display = 'block';
+
+        // Render charts after DOM update
+        setTimeout(() => {
+            reportChartInstances.forEach(c => c.destroy());
+            reportChartInstances = [];
+            if (type === 'product') renderProductReportCharts();
+            else if (type === 'state') renderStateReportCharts();
+            else if (type === 'crawler') renderCrawlerReportCharts();
+            else if (type === 'quality') renderQualityReportCharts();
+            else if (type === 'price') renderPriceReportCharts();
+            else if (type === 'geographic') renderGeographicReportCharts();
+        }, 100);
+        renderReportsPage();
+    }
+
+    // ── Product Report ──
+    function buildProductReport() {
+        const cats = {};
+        allEntities.forEach(e => {
+            const cat = e.category || e.commodity_group || 'Unknown';
+            const prod = e.product || 'Unknown';
+            if (!cats[cat]) cats[cat] = {};
+            cats[cat][prod] = (cats[cat][prod]||0)+1;
+        });
+        const sorted = Object.entries(cats).sort((a,b) => Object.values(b[1]).reduce((s,v)=>s+v,0) - Object.values(a[1]).reduce((s,v)=>s+v,0));
+        let rows = '';
+        sorted.forEach(([cat, prods]) => {
+            Object.entries(prods).sort((a,b)=>b[1]-a[1]).forEach(([p,c], i) => {
+                rows += `<tr><td>${i===0?'<strong>'+cat+'</strong>':''}</td><td>${p}</td><td>${c}</td><td>${(c/allEntities.length*100).toFixed(1)}%</td></tr>`;
+            });
+        });
+        return `<div style="margin-bottom:16px;font-size:13px;color:#64748b">Generated: ${new Date().toLocaleString()} \u2022 ${allEntities.length} entities \u2022 ${Object.keys(cats).length} categories</div>
+            <div class="grid-2"><div class="card"><div class="card-title" style="margin-bottom:12px">Category Distribution</div><div style="height:300px"><canvas id="rpt-product-chart"></canvas></div></div>
+            <div class="card"><div class="card-title" style="margin-bottom:12px">Products per Category</div><div style="height:300px"><canvas id="rpt-product-bar"></canvas></div></div></div>
+            <div class="card" style="margin-top:16px"><div class="card-title" style="margin-bottom:12px">Full Breakdown</div>
+            <table><thead><tr><th>Category</th><th>Product</th><th>Entities</th><th>Share</th></tr></thead><tbody>${rows}</tbody></table></div>`;
+    }
+    function renderProductReportCharts() {
+        const cats = {};
+        allEntities.forEach(e => { const cat = e.category || e.commodity_group || 'Unknown'; cats[cat] = (cats[cat]||0)+1; });
+        const sorted = Object.entries(cats).sort((a,b)=>b[1]-a[1]);
+        const colors = ['#22c55e','#3b82f6','#f59e0b','#ef4444','#8b5cf6','#ec4899','#06b6d4','#14b8a6','#f97316','#64748b'];
+        reportChartInstances.push(new Chart(document.getElementById('rpt-product-chart'), { type:'doughnut', data:{ labels:sorted.map(s=>s[0]), datasets:[{data:sorted.map(s=>s[1]),backgroundColor:colors.slice(0,sorted.length),borderWidth:0}] }, options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'right',labels:{padding:8,font:{size:10}}}}} }));
+        const prods = {};
+        allEntities.forEach(e => { const p = e.product||'Unknown'; prods[p]=(prods[p]||0)+1; });
+        const pSorted = Object.entries(prods).sort((a,b)=>b[1]-a[1]).slice(0,15);
+        reportChartInstances.push(new Chart(document.getElementById('rpt-product-bar'), { type:'bar', data:{ labels:pSorted.map(s=>s[0]), datasets:[{label:'Entities',data:pSorted.map(s=>s[1]),backgroundColor:'#22c55e88',borderColor:'#22c55e',borderWidth:1,borderRadius:4}] }, options:{responsive:true,maintainAspectRatio:false,indexAxis:'y',plugins:{legend:{display:false}},scales:{x:{beginAtZero:true,grid:{color:'#f1f5f9'}},y:{grid:{display:false}}}} }));
+    }
+
+    // ── State Report ──
+    function buildStateReport() {
+        const states = {};
+        allEntities.forEach(e => {
+            const s = e.state||'Unknown';
+            if (!states[s]) states[s] = {entities:0, products:new Set(), districts:new Set()};
+            states[s].entities++;
+            if (e.product) states[s].products.add(e.product);
+            if (e.district) states[s].districts.add(e.district);
+        });
+        const sorted = Object.entries(states).sort((a,b)=>b[1].entities-a[1].entities);
+        let rows = sorted.map(([s,v]) => `<tr><td><strong>${s}</strong></td><td>${v.entities}</td><td>${v.products.size}</td><td>${v.districts.size}</td><td>${(v.entities/allEntities.length*100).toFixed(1)}%</td></tr>`).join('');
+        return `<div style="margin-bottom:16px;font-size:13px;color:#64748b">Generated: ${new Date().toLocaleString()} \u2022 ${sorted.length} states/UTs covered</div>
+            <div class="grid-2"><div class="card"><div class="card-title" style="margin-bottom:12px">Top States by Entities</div><div style="height:300px"><canvas id="rpt-state-chart"></canvas></div></div>
+            <div class="card"><div class="card-title" style="margin-bottom:12px">District Coverage by State</div><div style="height:300px"><canvas id="rpt-state-bar"></canvas></div></div></div>
+            <div class="card" style="margin-top:16px"><div class="card-title" style="margin-bottom:12px">All States</div>
+            <table><thead><tr><th>State/UT</th><th>Entities</th><th>Products</th><th>Districts</th><th>Share</th></tr></thead><tbody>${rows}</tbody></table></div>`;
+    }
+    function renderStateReportCharts() {
+        const states = {};
+        allEntities.forEach(e => { const s=e.state||'Unknown'; states[s]=(states[s]||0)+1; });
+        const sorted = Object.entries(states).sort((a,b)=>b[1]-a[1]).slice(0,12);
+        const colors = ['#22c55e','#3b82f6','#f59e0b','#ef4444','#8b5cf6','#ec4899','#06b6d4','#14b8a6','#f97316','#64748b','#a855f7','#e11d48'];
+        reportChartInstances.push(new Chart(document.getElementById('rpt-state-chart'), { type:'polarArea', data:{ labels:sorted.map(s=>s[0]), datasets:[{data:sorted.map(s=>s[1]),backgroundColor:colors.map(c=>c+'99'),borderColor:colors,borderWidth:2}] }, options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'right',labels:{padding:8,font:{size:10}}}},scales:{r:{ticks:{display:false},grid:{color:'#e2e8f0'}}}} }));
+        const dists = {};
+        allEntities.forEach(e => { const s=e.state||'Unknown'; if(e.district) dists[s]=(dists[s]||new Set()).size+1; });
+        const distSorted = Object.entries(states).sort((a,b)=>b[1]-a[1]).slice(0,10);
+        reportChartInstances.push(new Chart(document.getElementById('rpt-state-bar'), { type:'bar', data:{ labels:distSorted.map(s=>s[0]), datasets:[{label:'Entities',data:distSorted.map(s=>s[1]),backgroundColor:'#3b82f688',borderColor:'#3b82f6',borderWidth:1,borderRadius:4}] }, options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{y:{beginAtZero:true,grid:{color:'#f1f5f9'}},x:{grid:{display:false}}}} }));
+    }
+
+    // ── Crawler Report ──
+    function buildCrawlerReport() {
+        let rows = CRAWLERS.map(c => {
+            const count = allEntities.filter(e => c.keywords.some(k => (e.source||'').toLowerCase().includes(k))).length;
+            const status = count > 0 ? '<span class="status-badge badge-active">Active</span>' : '<span class="status-badge badge-standby">Standby</span>';
+            return `<tr><td>${c.icon} ${c.name}</td><td>${c.category}</td><td>${c.rate}</td><td>${count}</td><td>${status}</td></tr>`;
+        }).join('');
+        const active = CRAWLERS.filter(c => allEntities.some(e => c.keywords.some(k => (e.source||'').toLowerCase().includes(k)))).length;
+        return `<div style="margin-bottom:16px;font-size:13px;color:#64748b">Generated: ${new Date().toLocaleString()} \u2022 ${active}/${CRAWLERS.length} active crawlers</div>
+            <div class="stats-grid" style="grid-template-columns:repeat(4,1fr);margin-bottom:16px">
+                <div class="stat-card"><h3>Total Crawlers</h3><div class="stat-value">${CRAWLERS.length}</div></div>
+                <div class="stat-card"><h3>Active</h3><div class="stat-value" style="color:var(--success)">${active}</div></div>
+                <div class="stat-card"><h3>Standby</h3><div class="stat-value" style="color:var(--info)">${CRAWLERS.length-active}</div></div>
+                <div class="stat-card"><h3>Total Entities</h3><div class="stat-value">${allEntities.length.toLocaleString()}</div></div>
+            </div>
+            <div class="grid-2"><div class="card"><div class="card-title" style="margin-bottom:12px">Entities per Crawler</div><div style="height:350px"><canvas id="rpt-crawler-chart"></canvas></div></div>
+            <div class="card"><div class="card-title" style="margin-bottom:12px">Crawler by Category</div><div style="height:350px"><canvas id="rpt-crawler-cat"></canvas></div></div></div>
+            <div class="card" style="margin-top:16px"><div class="card-title" style="margin-bottom:12px">All Crawlers</div>
+            <table><thead><tr><th>Crawler</th><th>Category</th><th>Rate</th><th>Entities</th><th>Status</th></tr></thead><tbody>${rows}</tbody></table></div>`;
+    }
+    function renderCrawlerReportCharts() {
+        const data = CRAWLERS.map(c => ({name:c.name, count:allEntities.filter(e=>c.keywords.some(k=>(e.source||'').toLowerCase().includes(k))).length})).sort((a,b)=>b.count-a.count);
+        const colors = ['#22c55e','#3b82f6','#f59e0b','#ef4444','#8b5cf6','#ec4899','#06b6d4','#14b8a6','#f97316','#64748b'];
+        reportChartInstances.push(new Chart(document.getElementById('rpt-crawler-chart'), { type:'bar', data:{ labels:data.map(d=>d.name), datasets:[{label:'Entities',data:data.map(d=>d.count),backgroundColor:colors.map(c=>c+'88'),borderColor:colors,borderWidth:1,borderRadius:4}] }, options:{responsive:true,maintainAspectRatio:false,indexAxis:'y',plugins:{legend:{display:false}},scales:{x:{beginAtZero:true,grid:{color:'#f1f5f9'}},y:{grid:{display:false}}}} }));
+        const cats = {};
+        CRAWLERS.forEach(c => { cats[c.category]=(cats[c.category]||0)+1; });
+        const catArr = Object.entries(cats).sort((a,b)=>b[1]-a[1]);
+        reportChartInstances.push(new Chart(document.getElementById('rpt-crawler-cat'), { type:'doughnut', data:{ labels:catArr.map(c=>c[0]), datasets:[{data:catArr.map(c=>c[1]),backgroundColor:colors.slice(0,catArr.length),borderWidth:0}] }, options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'right',labels:{padding:8,font:{size:10}}}}} }));
+    }
+
+    // ── Quality Report ──
+    function buildQualityReport() {
+        const total = allEntities.length || 1;
+        const fields = ['name','product','state','district','type','source','market_price','contact'];
+        const completeness = fields.map(f => {
+            const count = allEntities.filter(e => e[f] || e[f+'_phone']).length;
+            return { field: f, count, pct: (count/total*100).toFixed(1) };
+        });
+        const rows = completeness.map(c => `<tr><td>${c.field}</td><td>${c.count}</td><td><div class="mini-bar" style="width:200px"><div class="mini-fill" style="width:${c.pct}%;background:${parseFloat(c.pct)>80?'#22c55e':parseFloat(c.pct)>50?'#f59e0b':'#ef4444'}"></div></div></td><td>${c.pct}%</td></tr>`).join('');
+        const sources = {};
+        allEntities.forEach(e => { const s=e.source||'Unknown'; sources[s]=(sources[s]||0)+1; });
+        return `<div style="margin-bottom:16px;font-size:13px;color:#64748b">Generated: ${new Date().toLocaleString()}</div>
+            <div class="stats-grid" style="grid-template-columns:repeat(4,1fr);margin-bottom:16px">
+                <div class="stat-card"><h3>Total Records</h3><div class="stat-value">${allEntities.length.toLocaleString()}</div></div>
+                <div class="stat-card"><h3>Unique Products</h3><div class="stat-value">${new Set(allEntities.map(e=>e.product).filter(Boolean)).size}</div></div>
+                <div class="stat-card"><h3>Unique Sources</h3><div class="stat-value">${Object.keys(sources).length}</div></div>
+                <div class="stat-card"><h3>Avg Completeness</h3><div class="stat-value">${(completeness.reduce((s,c)=>s+parseFloat(c.pct),0)/completeness.length).toFixed(0)}%</div></div>
+            </div>
+            <div class="grid-2"><div class="card"><div class="card-title" style="margin-bottom:12px">Field Completeness</div><div style="height:300px"><canvas id="rpt-quality-chart"></canvas></div></div>
+            <div class="card"><div class="card-title" style="margin-bottom:12px">Records by Source</div><div style="height:300px"><canvas id="rpt-quality-source"></canvas></div></div></div>
+            <div class="card" style="margin-top:16px"><div class="card-title" style="margin-bottom:12px">Field Completeness Details</div>
+            <table><thead><tr><th>Field</th><th>Filled</th><th>Completeness</th><th>Percentage</th></tr></thead><tbody>${rows}</tbody></table></div>`;
+    }
+    function renderQualityReportCharts() {
+        const total = allEntities.length || 1;
+        const fields = ['name','product','state','district','type','source'];
+        const values = fields.map(f => allEntities.filter(e=>e[f]).length/total*100);
+        reportChartInstances.push(new Chart(document.getElementById('rpt-quality-chart'), { type:'radar', data:{ labels:fields, datasets:[{label:'Completeness %',data:values,backgroundColor:'rgba(34,197,94,0.2)',borderColor:'#22c55e',borderWidth:2,pointBackgroundColor:'#22c55e'}] }, options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{r:{beginAtZero:true,max:100,grid:{color:'#e2e8f0'},ticks:{display:false}}}} }));
+        const sources = {};
+        allEntities.forEach(e => { const s=e.source||'Unknown'; sources[s]=(sources[s]||0)+1; });
+        const sArr = Object.entries(sources).sort((a,b)=>b[1]-a[1]).slice(0,10);
+        const colors = ['#22c55e','#3b82f6','#f59e0b','#ef4444','#8b5cf6','#ec4899','#06b6d4','#14b8a6','#f97316','#64748b'];
+        reportChartInstances.push(new Chart(document.getElementById('rpt-quality-source'), { type:'bar', data:{ labels:sArr.map(s=>s[0]), datasets:[{label:'Records',data:sArr.map(s=>s[1]),backgroundColor:colors.map(c=>c+'88'),borderColor:colors,borderWidth:1,borderRadius:4}] }, options:{responsive:true,maintainAspectRatio:false,indexAxis:'y',plugins:{legend:{display:false}},scales:{x:{beginAtZero:true,grid:{color:'#f1f5f9'}},y:{grid:{display:false}}}} }));
+    }
+
+    // ── Entity Report ──
+    function buildEntityReport() {
+        let rows = allEntities.slice(0,100).map(e => {
+            const tc = (e.type||e.entity_type||'').toLowerCase()==='manufacturer'?'tag-m':(e.type||e.entity_type||'').toLowerCase()==='exporter'?'tag-e':'tag-w';
+            return `<tr><td><strong>${(e.name||'N/A').substring(0,30)}</strong></td><td>${e.product||e.commodity||'N/A'}</td><td><span class="tag ${tc}">${e.type||e.entity_type||'N/A'}</span></td><td>${e.state||'N/A'}</td><td>${e.district||'N/A'}</td><td>${e.source||'N/A'}</td></tr>`;
+        }).join('');
+        return `<div style="margin-bottom:16px;font-size:13px;color:#64748b">Generated: ${new Date().toLocaleString()} \u2022 Showing ${Math.min(100,allEntities.length)} of ${allEntities.length} entities</div>
+            <div class="card"><div class="card-title" style="margin-bottom:12px">Entity Listing</div>
+            <div style="max-height:500px;overflow-y:auto"><table><thead><tr><th>Name</th><th>Product</th><th>Type</th><th>State</th><th>District</th><th>Source</th></tr></thead><tbody>${rows}</tbody></table></div></div>`;
+    }
+
+    // ── Price Report ──
+    function buildPriceReport() {
+        const products = {};
+        allEntities.forEach(e => {
+            const p = e.product||'Unknown';
+            const mp = parseFloat(e.market_price);
+            const pp = parseFloat(e.purchase_price);
+            const sp = parseFloat(e.selling_price);
+            if (!products[p]) products[p] = {market:[], purchase:[], selling:[]};
+            if (!isNaN(mp)&&mp>0) products[p].market.push(mp);
+            if (!isNaN(pp)&&pp>0) products[p].purchase.push(pp);
+            if (!isNaN(sp)&&sp>0) products[p].selling.push(sp);
+        });
+        let rows = Object.entries(products).map(([p,v]) => {
+            const avgM = v.market.length ? (v.market.reduce((a,b)=>a+b,0)/v.market.length).toFixed(0) : '-';
+            const avgP = v.purchase.length ? (v.purchase.reduce((a,b)=>a+b,0)/v.purchase.length).toFixed(0) : '-';
+            const avgS = v.selling.length ? (v.selling.reduce((a,b)=>a+b,0)/v.selling.length).toFixed(0) : '-';
+            const margin = v.purchase.length&&v.selling.length ? (((v.selling.reduce((a,b)=>a+b,0)/v.selling.length - v.purchase.reduce((a,b)=>a+b,0)/v.purchase.length)/(v.purchase.reduce((a,b)=>a+b,0)/v.purchase.length)*100).toFixed(1)) : '-';
+            return `<tr><td><strong>${p}</strong></td><td>\u20b9${avgM}</td><td>\u20b9${avgP}</td><td>\u20b9${avgS}</td><td>${margin}%</td></tr>`;
+        }).join('');
+        return `<div style="margin-bottom:16px;font-size:13px;color:#64748b">Generated: ${new Date().toLocaleString()}</div>
+            <div class="grid-2"><div class="card"><div class="card-title" style="margin-bottom:12px">Average Market Prices</div><div style="height:350px"><canvas id="rpt-price-chart"></canvas></div></div>
+            <div class="card"><div class="card-title" style="margin-bottom:12px">Purchase vs Selling Price</div><div style="height:350px"><canvas id="rpt-price-margin"></canvas></div></div></div>
+            <div class="card" style="margin-top:16px"><div class="card-title" style="margin-bottom:12px">Price Breakdown</div>
+            <table><thead><tr><th>Product</th><th>Avg Market Price</th><th>Avg Purchase Price</th><th>Avg Selling Price</th><th>Margin</th></tr></thead><tbody>${rows}</tbody></table></div>`;
+    }
+    function renderPriceReportCharts() {
+        const products = {};
+        allEntities.forEach(e => {
+            const p = e.product||'Unknown';
+            const mp = parseFloat(e.market_price);
+            if (!isNaN(mp)&&mp>0) { if(!products[p]) products[p]=[]; products[p].push(mp); }
+        });
+        const sorted = Object.entries(products).map(([p,v])=>({p,avg:v.reduce((a,b)=>a+b,0)/v.length})).sort((a,b)=>b.avg-a.avg).slice(0,12);
+        const colors = ['#22c55e','#3b82f6','#f59e0b','#ef4444','#8b5cf6','#ec4899','#06b6d4','#14b8a6','#f97316','#64748b','#a855f7','#e11d48'];
+        reportChartInstances.push(new Chart(document.getElementById('rpt-price-chart'), { type:'bar', data:{ labels:sorted.map(s=>s.p), datasets:[{label:'Avg Price (\u20b9)',data:sorted.map(s=>s.avg.toFixed(0)),backgroundColor:colors.map(c=>c+'88'),borderColor:colors,borderWidth:1,borderRadius:6}] }, options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{y:{beginAtZero:true,grid:{color:'#f1f5f9'}},x:{grid:{display:false}}}} }));
+        const ps = {};
+        allEntities.forEach(e => {
+            const p = e.product||'Unknown';
+            const pp = parseFloat(e.purchase_price);
+            const sp = parseFloat(e.selling_price);
+            if(!isNaN(pp)&&pp>0&&!isNaN(sp)&&sp>0) { if(!ps[p]) ps[p]={p:[],s:[]}; ps[p].p.push(pp); ps[p].s.push(sp); }
+        });
+        const psSorted = Object.entries(ps).map(([p,v])=>({p, avgP:v.p.reduce((a,b)=>a+b,0)/v.p.length, avgS:v.s.reduce((a,b)=>a+b,0)/v.s.length})).sort((a,b)=>b.avgS-a.avgS).slice(0,10);
+        reportChartInstances.push(new Chart(document.getElementById('rpt-price-margin'), { type:'bar', data:{ labels:psSorted.map(s=>s.p), datasets:[{label:'Purchase',data:psSorted.map(s=>s.avgP.toFixed(0)),backgroundColor:'#3b82f688',borderColor:'#3b82f6',borderWidth:1,borderRadius:4},{label:'Selling',data:psSorted.map(s=>s.avgS.toFixed(0)),backgroundColor:'#22c55e88',borderColor:'#22c55e',borderWidth:1,borderRadius:4}] }, options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'top',labels:{font:{size:11}}}},scales:{y:{beginAtZero:true,grid:{color:'#f1f5f9'}},x:{grid:{display:false}}}} }));
+    }
+
+    // ── Geographic Report ──
+    function buildGeographicReport() {
+        const states = {};
+        allEntities.forEach(e => {
+            const s=e.state||'Unknown';
+            const d=e.district||'Unknown';
+            if(!states[s]) states[s]={entities:0,districts:{}};
+            states[s].entities++;
+            states[s].districts[d]=(states[s].districts[d]||0)+1;
+        });
+        const sorted = Object.entries(states).sort((a,b)=>b[1].entities-a[1].entities);
+        let rows = sorted.map(([s,v]) => {
+            const topDist = Object.entries(v.districts).sort((a,b)=>b[1]-a[1]).slice(0,3).map(([d,c])=>`${d}(${c})`).join(', ');
+            return `<tr><td><strong>${s}</strong></td><td>${v.entities}</td><td>${Object.keys(v.districts).length}</td><td style="font-size:11px">${topDist}</td></tr>`;
+        }).join('');
+        return `<div style="margin-bottom:16px;font-size:13px;color:#64748b">Generated: ${new Date().toLocaleString()} \u2022 ${sorted.length} states \u2022 ${Object.values(states).reduce((s,v)=>s+Object.keys(v.districts).length,0)} districts</div>
+            <div class="grid-2"><div class="card"><div class="card-title" style="margin-bottom:12px">State Entity Density</div><div style="height:350px"><canvas id="rpt-geo-chart"></canvas></div></div>
+            <div class="card"><div class="card-title" style="margin-bottom:12px">Districts per State</div><div style="height:350px"><canvas id="rpt-geo-bar"></canvas></div></div></div>
+            <div class="card" style="margin-top:16px"><div class="card-title" style="margin-bottom:12px">Geographic Breakdown</div>
+            <table><thead><tr><th>State</th><th>Entities</th><th>Districts</th><th>Top Districts</th></tr></thead><tbody>${rows}</tbody></table></div>`;
+    }
+    function renderGeographicReportCharts() {
+        const states = {};
+        allEntities.forEach(e => { const s=e.state||'Unknown'; states[s]=(states[s]||0)+1; });
+        const sorted = Object.entries(states).sort((a,b)=>b[1]-a[1]).slice(0,12);
+        const colors = ['#22c55e','#3b82f6','#f59e0b','#ef4444','#8b5cf6','#ec4899','#06b6d4','#14b8a6','#f97316','#64748b','#a855f7','#e11d48'];
+        reportChartInstances.push(new Chart(document.getElementById('rpt-geo-chart'), { type:'radar', data:{ labels:sorted.map(s=>s[0]), datasets:[{label:'Entities',data:sorted.map(s=>s[1]),backgroundColor:'rgba(34,197,94,0.2)',borderColor:'#22c55e',borderWidth:2,pointBackgroundColor:'#22c55e',pointBorderColor:'#fff',pointBorderWidth:2,pointRadius:5}] }, options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{r:{beginAtZero:true,grid:{color:'#e2e8f0'},pointLabels:{font:{size:10}},ticks:{display:false}}}} }));
+        const distCounts = {};
+        allEntities.forEach(e => { const s=e.state||'Unknown'; if(e.district) distCounts[s]=(distCounts[s]||new Set()).constructor===Set?distCounts[s]:new Set(); if(e.district) distCounts[s].add(e.district); });
+        const distSorted = Object.entries(states).sort((a,b)=>b[1]-a[1]).slice(0,10).map(([s,c])=>({s,c,d:distCounts[s]?distCounts[s].size:0}));
+        reportChartInstances.push(new Chart(document.getElementById('rpt-geo-bar'), { type:'bar', data:{ labels:distSorted.map(d=>d.s), datasets:[{label:'Districts',data:distSorted.map(d=>d.d),backgroundColor:'#f59e0b88',borderColor:'#f59e0b',borderWidth:1,borderRadius:4}] }, options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{y:{beginAtZero:true,grid:{color:'#f1f5f9'}},x:{grid:{display:false}}}} }));
     }
 
     // ===== DASHBOARD CHARTS =====
